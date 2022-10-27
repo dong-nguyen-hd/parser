@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const pelias = require('../pelias/pelias')
 const custom = require('../custom/custom')
+const { log } = require('console')
 const generateFilenames = require('../helper').generateFilenames
 const dictPath = path.join(__dirname, `./dictionaries`)
 const allPlacetypes = fs.readdirSync(dictPath).filter(p => !p.includes('.'))
@@ -12,6 +13,7 @@ function load (set, placetypes, filenames, options) {
 
   placetypes.forEach(placetype => {
     const directory = path.join(dictPath, placetype)
+    
     generateFilenames(directory, filenames).forEach(filename => {
       let filepath = path.join(directory, filename)
       if (!fs.existsSync(filepath)) { return }

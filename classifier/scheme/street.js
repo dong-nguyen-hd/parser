@@ -16,6 +16,22 @@ module.exports = [
       }
     ]
   },
+  // debug
+  {
+    // Đ. Trường
+    confidence: 0.1,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['PunctuationClassification', 'StopWordClassification'],
+        not: ['StreetNameClassification', 'StreetClassification']
+      },
+      {
+        is: ['StreetNameClassification', 'StreetClassification'],
+        not: ['IntersectionClassification']
+      }
+    ]
+  },
   {
     // Rue Montmartre or Boulevard Charles De Gaulle
     confidence: 0.88,
@@ -23,6 +39,44 @@ module.exports = [
     scheme: [
       {
         is: ['StreetPrefixClassification'],
+        not: ['StreetClassification', 'IntersectionClassification']
+      },
+      {
+        is: ['AlphaClassification', 'PersonClassification', 'StreetNameClassification'],
+        not: ['StreetClassification', 'IntersectionClassification']
+      }
+    ]
+  },
+  {
+    // Đ. Trường Chinh
+    confidence: 0.88,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'PunctuationClassification', 'StopWordClassification'],
+        not: ['StreetClassification', 'IntersectionClassification']
+      },
+      {
+        is: ['AlphaClassification', 'PersonClassification', 'StreetNameClassification'],
+        not: ['StreetClassification', 'IntersectionClassification']
+      },
+      {
+        is: ['AlphaClassification', 'PersonClassification', 'StreetNameClassification'],
+        not: ['StreetClassification', 'IntersectionClassification']
+      }
+    ]
+  },
+  {
+    // Đ. Trường Chinh
+    confidence: 0.88,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'PunctuationClassification', 'StopWordClassification'],
+        not: ['StreetClassification', 'IntersectionClassification']
+      },
+      {
+        is: ['AlphaClassification', 'PersonClassification', 'StreetNameClassification'],
         not: ['StreetClassification', 'IntersectionClassification']
       },
       {
@@ -329,34 +383,34 @@ module.exports = [
       }
     ]
   },
-  {
-    // Main Street West
-    confidence: 0.88,
-    Class: StreetClassification,
-    scheme: [
-      {
-        is: ['StreetClassification'],
-        not: ['DirectionalClassification']
-      },
-      {
-        is: ['DirectionalClassification'],
-        not: ['StreetClassification', 'IntersectionClassification', 'EndTokenSingleCharacterClassification']
-      }
-    ]
-  },
-  {
-    // West Main Street
-    confidence: 0.88,
-    Class: StreetClassification,
-    scheme: [
-      {
-        is: ['DirectionalClassification'],
-        not: ['StreetClassification', 'IntersectionClassification', 'EndTokenSingleCharacterClassification']
-      },
-      {
-        is: ['StreetClassification'],
-        not: ['DirectionalClassification']
-      }
-    ]
-  }
+  // {
+  //   // Main Street West
+  //   confidence: 0.88,
+  //   Class: StreetClassification,
+  //   scheme: [
+  //     {
+  //       is: ['StreetClassification'],
+  //       not: ['DirectionalClassification']
+  //     },
+  //     {
+  //       is: ['DirectionalClassification'],
+  //       not: ['StreetClassification', 'IntersectionClassification', 'EndTokenSingleCharacterClassification']
+  //     }
+  //   ]
+  // },
+  // {
+  //   // West Main Street
+  //   confidence: 0.88,
+  //   Class: StreetClassification,
+  //   scheme: [
+  //     {
+  //       is: ['DirectionalClassification'],
+  //       not: ['StreetClassification', 'IntersectionClassification', 'EndTokenSingleCharacterClassification']
+  //     },
+  //     {
+  //       is: ['StreetClassification'],
+  //       not: ['DirectionalClassification']
+  //     }
+  //   ]
+  // },
 ]

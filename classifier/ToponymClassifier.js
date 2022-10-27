@@ -9,7 +9,7 @@ class ToponymClassifier extends WordClassifier {
   setup () {
     // load street tokens
     this.index = {}
-    libpostal.load(this.index, ['en'], 'toponyms.txt')
+    libpostal.load(this.index, ['vi'], 'toponyms.txt')
   }
 
   each (span) {

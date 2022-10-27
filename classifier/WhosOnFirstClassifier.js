@@ -1,7 +1,7 @@
 const PhraseClassifier = require('./super/PhraseClassifier')
 const AreaClassification = require('../classification/AreaClassification')
 const CountryClassification = require('../classification/CountryClassification')
-// const DependencyClassification = require('../classification/DependencyClassification')
+const CommuneClassification = require('../classification/CommuneClassification')
 const RegionClassification = require('../classification/RegionClassification')
 const LocalityClassification = require('../classification/LocalityClassification')
 const whosonfirst = require('../resources/whosonfirst/whosonfirst')
@@ -13,20 +13,20 @@ const normalize = require('../tokenization/normalizer')({ lowercase: true, remov
 // note: these should be defined from most granular to least granular
 const placetypes = {
   'locality': {
-    files: ['name:*_x_preferred.txt'],
+    files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, LocalityClassification]
   },
   'region': {
-    files: ['abrv:*_x_preferred.txt', 'name:*_x_preferred.txt'],
+    files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, RegionClassification]
   },
-  // 'dependency': {
-  //   files: ['wof:shortcode.txt', 'name:eng_x_preferred.txt'],
-  //   classifications: [AreaClassification, DependencyClassification]
-  // },
   'country': {
-    files: ['name:*_x_preferred.txt', 'wof:country.txt', 'wof:country_alpha3.txt'],
+    files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, CountryClassification]
+  },
+  'commune': {
+    files: ['name_vi_x_preferred.txt'],
+    classifications: [AreaClassification, CommuneClassification]
   }
 }
 

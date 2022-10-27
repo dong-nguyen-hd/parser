@@ -7,7 +7,7 @@ const libpostal = require('../resources/libpostal/libpostal')
 
 // prefix languages
 // languages which use a street prefix instead of a suffix
-const prefix = ['fr', 'ca', 'es', 'pt', 'ro']
+const prefix = ['en', 'vi']
 
 class StreetPrefixClassifier extends WordClassifier {
   setup () {
@@ -25,7 +25,7 @@ class StreetPrefixClassifier extends WordClassifier {
 
     // use an inverted index for full token matching as it's O(1)
     if (this.index.hasOwnProperty(span.norm)) {
-      if (span.norm.length < 2) { confidence = 0.2 } // single letter streets are uncommon
+      if (span.norm.length >= 2) { confidence = 0.2 } // single letter streets are uncommon
       span.classify(new StreetPrefixClassification(confidence))
       return
     }

@@ -8,7 +8,7 @@ class UnitTypeClassifier extends BaseClassifier {
   setup () {
     // load index tokens
     this.index = {}
-    libpostal.load(this.index, ['en'], 'unit_types_numbered.txt')
+    libpostal.load(this.index, ['en', 'vi'], 'unit_types_numbered.txt')
   }
   classify (tokenizer) {
     for (let i = 0; i < tokenizer.section.length; i++) {
