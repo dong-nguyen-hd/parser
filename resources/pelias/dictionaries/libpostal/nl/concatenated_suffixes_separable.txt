@@ -1,7 +1,0 @@
-baan
-daal
-dijk
-!plain|pln.
-plein|pln
-plantsoen|plnts
-singel|sngl
