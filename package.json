@@ -50,8 +50,6 @@
     "tape": "^4.4.0"
   },
   "pre-commit": [
-    "format_check",
-    "lint",
     "validate"
   ],
   "release": {
