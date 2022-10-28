@@ -6,14 +6,14 @@ const classifier = new StreetSuffixClassifier()
 module.exports.tests = {}
 
 function classify (body) {
-  let s = new Span(body)
+  const s = new Span(body)
   classifier.each(s, null, 1)
   return s
 }
 
 module.exports.tests.contains_numerals = (test) => {
   test('contains numerals: honours contains.numerals boolean', (t) => {
-    let s = new Span('example')
+    const s = new Span('example')
     s.contains.numerals = true
     classifier.each(s, null, 1)
     t.deepEqual(s.classifications, {})
@@ -29,7 +29,7 @@ module.exports.tests.single_character_tokens = (test) => {
 }
 
 module.exports.tests.english_suffix = (test) => {
-  let valid = [
+  const valid = [
     'street', 'st', 'st.',
     'road', 'rd', 'rd.',
     'boulevard', 'blvd', 'blvd.'
@@ -37,7 +37,7 @@ module.exports.tests.english_suffix = (test) => {
 
   valid.forEach(token => {
     test(`english suffix: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
       t.deepEqual(s.classifications, {
         StreetSuffixClassification: new StreetSuffixClassification(token.length > 1 ? 1.0 : 0.2)
       })
@@ -47,7 +47,7 @@ module.exports.tests.english_suffix = (test) => {
 }
 
 module.exports.tests.german_suffix = (test) => {
-  let valid = [
+  const valid = [
     'straße', 'strasse', 'str', 'str.',
     'platz', 'pl.',
     'allee', 'al', 'al.',
@@ -56,7 +56,7 @@ module.exports.tests.german_suffix = (test) => {
 
   valid.forEach(token => {
     test(`german suffix: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
       t.deepEqual(s.classifications, {
         StreetSuffixClassification: new StreetSuffixClassification(token.length > 1 ? 1.0 : 0.2)
       })
@@ -66,11 +66,11 @@ module.exports.tests.german_suffix = (test) => {
 }
 
 module.exports.tests.valid_pelias_street_types = (test) => {
-  let valid = ['paku']
+  const valid = ['paku']
 
   valid.forEach(token => {
     test(`valid pelias street types: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
       t.deepEqual(s.classifications, {
         StreetSuffixClassification: new StreetSuffixClassification(token.length > 1 ? 1.0 : 0.2)
       })
@@ -80,11 +80,11 @@ module.exports.tests.valid_pelias_street_types = (test) => {
 }
 
 module.exports.tests.invalid_pelias_street_types = (test) => {
-  let invalid = ['and']
+  const invalid = ['and']
 
   invalid.forEach(token => {
     test(`invalid pelias street types: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
       t.deepEqual(s.classifications, {})
       t.end()
     })
@@ -96,7 +96,7 @@ module.exports.all = (tape, common) => {
     return tape(`StreetSuffixClassifier: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

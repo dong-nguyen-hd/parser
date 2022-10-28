@@ -1,7 +1,7 @@
 const WordClassifier = require('./super/WordClassifier')
 const OrdinalClassification = require('../classification/OrdinalClassification')
 
-var ord = ''
+let ord = ''
 ord += '((1)st?|(2)nd?|(3)rd?|([4-9])th?)' // singles
 ord += '|' // or
 ord += '(0*([0-9]*)(1[0-9])th?)' // teens

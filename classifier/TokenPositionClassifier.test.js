@@ -5,12 +5,12 @@ const classifier = new TokenPositionClassifier()
 module.exports.tests = {}
 
 function classify (body) {
-  let t = new Tokenizer(body)
+  const t = new Tokenizer(body)
   classifier.classify(t)
 
   // generate an array containing all the spans
   // with a final token classification
-  let classifications = {
+  const classifications = {
     EndTokenClassification: [],
     EndTokenSingleCharacterClassification: [],
     StartTokenClassification: []
@@ -33,7 +33,7 @@ function classify (body) {
 
 module.exports.tests.classify = (test) => {
   test('classify: empty string', (t) => {
-    let c = classify('')
+    const c = classify('')
     t.equals(c.StartTokenClassification.length, 0)
     t.equals(c.EndTokenClassification.length, 0)
     t.equals(c.EndTokenSingleCharacterClassification.length, 0)
@@ -41,7 +41,7 @@ module.exports.tests.classify = (test) => {
   })
 
   test('classify: A', (t) => {
-    let c = classify('A')
+    const c = classify('A')
     t.equals(c.StartTokenClassification.length, 1)
     t.equals(c.StartTokenClassification[0].body, 'A')
     t.equals(c.EndTokenClassification.length, 1)
@@ -52,7 +52,7 @@ module.exports.tests.classify = (test) => {
   })
 
   test('classify: A B', (t) => {
-    let c = classify('A B')
+    const c = classify('A B')
     t.equals(c.StartTokenClassification.length, 1)
     t.equals(c.StartTokenClassification[0].body, 'A')
     t.equals(c.EndTokenClassification.length, 1)
@@ -63,7 +63,7 @@ module.exports.tests.classify = (test) => {
   })
 
   test('classify: A BC', (t) => {
-    let c = classify('A BC')
+    const c = classify('A BC')
     t.equals(c.StartTokenClassification.length, 1)
     t.equals(c.StartTokenClassification[0].body, 'A')
     t.equals(c.EndTokenClassification.length, 1)
@@ -73,7 +73,7 @@ module.exports.tests.classify = (test) => {
   })
 
   test('classify: A BC, D', (t) => {
-    let c = classify('A BC, D')
+    const c = classify('A BC, D')
     t.equals(c.StartTokenClassification.length, 1)
     t.equals(c.StartTokenClassification[0].body, 'A')
     t.equals(c.EndTokenClassification.length, 1)
@@ -89,7 +89,7 @@ module.exports.all = (tape, common) => {
     return tape(`TokenPositionClassifier: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

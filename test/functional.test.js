@@ -1,5 +1,5 @@
 const testcase = (test, common) => {
-  let assert = common.assert(test)
+  const assert = common.assert(test)
 
   // street simple
   assert('main pl', [{ street: 'main pl' }])

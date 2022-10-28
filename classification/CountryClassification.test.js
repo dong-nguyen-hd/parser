@@ -4,7 +4,7 @@ module.exports.tests = {}
 
 module.exports.tests.constructor = (test) => {
   test('constructor', (t) => {
-    let c = new Classification()
+    const c = new Classification()
     t.true(c.public)
     t.equals(c.label, 'country')
     t.equals(c.confidence, 0.9)
@@ -18,7 +18,7 @@ module.exports.all = (tape, common) => {
     return tape(`CountryClassification: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

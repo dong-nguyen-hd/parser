@@ -2,7 +2,7 @@
 // https://github.com/DamonOehlman/addressit/tree/master/test
 
 const testcase = (test, common) => {
-  let assert = common.assert(test)
+  const assert = common.assert(test)
 
   assert('123 Main St, New York, NY 10010', [
     { housenumber: '123' }, { street: 'Main St' },

@@ -7,8 +7,8 @@ module.exports.tests = {}
 
 module.exports.tests.boundary = (test) => {
   test('boundary: no commas or quotes', (t) => {
-    let span = new Span('SoHo New York USA')
-    let actual = split(span, funcs.fieldsFuncBoundary)
+    const span = new Span('SoHo New York USA')
+    const actual = split(span, funcs.fieldsFuncBoundary)
 
     t.deepEquals(actual, [
       new Span('SoHo New York USA')
@@ -17,12 +17,12 @@ module.exports.tests.boundary = (test) => {
   })
 
   test('boundary: commas', (t) => {
-    let span = new Span('SoHo,,, New York, USA')
-    let actual = split(span, funcs.fieldsFuncBoundary)
+    const span = new Span('SoHo,,, New York, USA')
+    const actual = split(span, funcs.fieldsFuncBoundary)
 
-    let token1 = new Span('SoHo', 0)
-    let token2 = new Span(' New York', 7)
-    let token3 = new Span(' USA', 17)
+    const token1 = new Span('SoHo', 0)
+    const token2 = new Span(' New York', 7)
+    const token3 = new Span(' USA', 17)
 
     // relationships
     token1.graph.add('next', token2)
@@ -35,12 +35,12 @@ module.exports.tests.boundary = (test) => {
   })
 
   test('boundary: quotes', (t) => {
-    let span = new Span('SoHo "New York" USA')
-    let actual = split(span, funcs.fieldsFuncBoundary)
+    const span = new Span('SoHo "New York" USA')
+    const actual = split(span, funcs.fieldsFuncBoundary)
 
-    let token1 = new Span('SoHo ', 0)
-    let token2 = new Span('New York', 6)
-    let token3 = new Span(' USA', 15)
+    const token1 = new Span('SoHo ', 0)
+    const token2 = new Span('New York', 6)
+    const token3 = new Span(' USA', 15)
 
     // relationships
     token1.graph.add('next', token2)
@@ -55,8 +55,8 @@ module.exports.tests.boundary = (test) => {
 
 module.exports.tests.whitespace = (test) => {
   test('whitespace: no whitespace', (t) => {
-    let span = new Span('SoHo')
-    let actual = split(span, funcs.fieldsFuncWhiteSpace)
+    const span = new Span('SoHo')
+    const actual = split(span, funcs.fieldsFuncWhiteSpace)
 
     t.deepEquals(actual, [
       new Span('SoHo')
@@ -65,13 +65,13 @@ module.exports.tests.whitespace = (test) => {
   })
 
   test('whitespace: contains whitespace', (t) => {
-    let span = new Span('SoHo\t New York \n USA')
-    let actual = split(span, funcs.fieldsFuncWhiteSpace)
+    const span = new Span('SoHo\t New York \n USA')
+    const actual = split(span, funcs.fieldsFuncWhiteSpace)
 
-    let token1 = new Span('SoHo', 0)
-    let token2 = new Span('New', 6)
-    let token3 = new Span('York', 10)
-    let token4 = new Span('USA', 17)
+    const token1 = new Span('SoHo', 0)
+    const token2 = new Span('New', 6)
+    const token3 = new Span('York', 10)
+    const token4 = new Span('USA', 17)
 
     // relationships
     token1.graph.add('next', token2)
@@ -91,7 +91,7 @@ module.exports.all = (tape, common) => {
     return tape(`split: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

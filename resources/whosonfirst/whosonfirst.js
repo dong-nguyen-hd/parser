@@ -2,9 +2,8 @@ const fs = require('fs')
 const path = require('path')
 const pelias = require('../pelias/pelias')
 const custom = require('../custom/custom')
-const { log } = require('console')
 const generateFilenames = require('../helper').generateFilenames
-const dictPath = path.join(__dirname, `./dictionaries`)
+const dictPath = path.join(__dirname, './dictionaries')
 const allPlacetypes = fs.readdirSync(dictPath).filter(p => !p.includes('.'))
 
 function load (set, placetypes, filenames, options) {
@@ -13,11 +12,11 @@ function load (set, placetypes, filenames, options) {
 
   placetypes.forEach(placetype => {
     const directory = path.join(dictPath, placetype)
-    
+
     generateFilenames(directory, filenames).forEach(filename => {
-      let filepath = path.join(directory, filename)
+      const filepath = path.join(directory, filename)
       if (!fs.existsSync(filepath)) { return }
-      let dict = fs.readFileSync(filepath, 'utf8')
+      const dict = fs.readFileSync(filepath, 'utf8')
       dict.split('\n').forEach(row => {
         row.split('|').forEach(add)
       }, this)
@@ -25,11 +24,11 @@ function load (set, placetypes, filenames, options) {
   }, this)
 
   placetypes.forEach(placetype => {
-    pelias.load({ directory: path.join('whosonfirst', placetype), filenames: filenames }, add, remove)
+    pelias.load({ directory: path.join('whosonfirst', placetype), filenames }, add, remove)
   })
 
   placetypes.forEach(placetype => {
-    custom.load({ directory: path.join('whosonfirst', placetype), filenames: filenames }, add, remove)
+    custom.load({ directory: path.join('whosonfirst', placetype), filenames }, add, remove)
   })
 }
 

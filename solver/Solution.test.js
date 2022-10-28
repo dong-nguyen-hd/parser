@@ -5,7 +5,7 @@ module.exports.tests = {}
 
 module.exports.tests.constructor = (test) => {
   test('constructor', (t) => {
-    let sol = new Solution()
+    const sol = new Solution()
     t.deepEquals(sol.pair, [])
     t.equals(sol.score, 0.0)
     t.end()
@@ -27,7 +27,7 @@ module.exports.tests.constructor = (test) => {
 module.exports.tests.mask = (test, common) => {
   test('mask', (t) => {
     //                            'VVVVVV VVV  SSSSSSSSSSSS NN PPPPP AAAAAA'
-    let tokenizer = new Tokenizer('Kaschk Bar, Linienstraße 40 10119 Berlin')
+    const tokenizer = new Tokenizer('Kaschk Bar, Linienstraße 40 10119 Berlin')
     common.parser.classify(tokenizer)
     common.parser.solve(tokenizer)
 
@@ -36,7 +36,7 @@ module.exports.tests.mask = (test, common) => {
   })
   test('mask', (t) => {
     //                            'VVV VVVV NN SSSSSSS AAAAAA PPPPP      '
-    let tokenizer = new Tokenizer('Foo Cafe 10 Main St London 10010 Earth')
+    const tokenizer = new Tokenizer('Foo Cafe 10 Main St London 10010 Earth')
     common.parser.classify(tokenizer)
     common.parser.solve(tokenizer)
 
@@ -45,7 +45,7 @@ module.exports.tests.mask = (test, common) => {
   })
   test('mask', (t) => {
     //                            'UUU UU NNN SSSSSSSSSSSSSS AAAAAAAAAAAA AAA PPPP'
-    let tokenizer = new Tokenizer('Lot 12/345 Illawarra Road Marrickville NSW 2204')
+    const tokenizer = new Tokenizer('Lot 12/345 Illawarra Road Marrickville NSW 2204')
     common.parser.classify(tokenizer)
     common.parser.solve(tokenizer)
 
@@ -59,7 +59,7 @@ module.exports.all = (tape, common) => {
     return tape(`Solution: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

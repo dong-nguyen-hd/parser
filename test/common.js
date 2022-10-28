@@ -12,13 +12,13 @@ const extract = (tokenizer) => {
 }
 
 const assert = (test, parser) => {
-  let p = (parser || globalParser)
+  const p = (parser || globalParser)
   return (input, expected, firstOnly) => {
-    let tokenizer = new Tokenizer(input)
+    const tokenizer = new Tokenizer(input)
     p.classify(tokenizer)
     p.solve(tokenizer)
     test(input, (t) => {
-      let ext = extract(tokenizer)
+      const ext = extract(tokenizer)
       t.deepEquals(firstOnly === false ? ext : ext[0], expected)
       t.end()
     })

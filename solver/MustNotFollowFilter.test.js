@@ -10,22 +10,22 @@ module.exports.tests = {}
 
 module.exports.tests.postcode_preceeds_street = (test) => {
   test('postcode_preceeds_street: remove postcode', (t) => {
-    let tok = new Tokenizer()
+    const tok = new Tokenizer()
 
-    let s1 = new Span('A')
+    const s1 = new Span('A')
     s1.start = 0
     s1.end = 1
 
-    let s2 = new Span('B')
+    const s2 = new Span('B')
     s2.start = 3
     s2.end = 4
 
-    let sp1 = new SolutionPair(s1, new PostcodeClassification(1.0))
-    let sp2 = new SolutionPair(s2, new StreetClassification(1.0))
+    const sp1 = new SolutionPair(s1, new PostcodeClassification(1.0))
+    const sp2 = new SolutionPair(s2, new StreetClassification(1.0))
 
     tok.solution = [new Solution([sp1, sp2])]
 
-    let c = new MustNotFollowFilter('StreetClassification', 'PostcodeClassification')
+    const c = new MustNotFollowFilter('StreetClassification', 'PostcodeClassification')
     c.solve(tok)
 
     t.deepEquals(tok.solution.length, 1)
@@ -40,7 +40,7 @@ module.exports.all = (tape, common) => {
     return tape(`MustNotFollowFilter: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

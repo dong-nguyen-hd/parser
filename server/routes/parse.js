@@ -3,10 +3,10 @@ const DebugOutputBuilder = require('../../debug/DebugOutputBuilder')
 
 module.exports = function (req, res) {
   // address parser
-  var parser = req.app.locals.parser.address
+  const parser = req.app.locals.parser.address
 
   // input text
-  var text = req.query.text || ''
+  const text = req.query.text || ''
 
   // tokenizer
   const t = new Tokenizer(text)

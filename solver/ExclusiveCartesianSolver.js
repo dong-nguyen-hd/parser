@@ -5,19 +5,19 @@ const MAX_SOLUTIONS = 50000
 
 class ExclusiveCartesianSolver extends HashMapSolver {
   solve (tokenizer) {
-    let map = this.generateHashMap(tokenizer, false, true)
-    let solutions = this.exclusiveCartesian.apply(null, Object.keys(map).map(k => map[k]).reverse())
+    const map = this.generateHashMap(tokenizer, false, true)
+    const solutions = this.exclusiveCartesian.apply(null, Object.keys(map).map(k => map[k]).reverse())
     tokenizer.solution = tokenizer.solution.concat(solutions)
   }
 
   // compute the unique cartesian product
   // (all permutations of non-overlapping tokens from different classifications)
   exclusiveCartesian () {
-    let r = []; let arg = arguments; let max = arg.length - 1
+    let r = []; const arg = arguments; const max = arg.length - 1
     if (!arg.length) { return r }
     const helper = (solution, i) => {
       for (let j = 0, l = arg[i].pair.length; j < l; j++) {
-        let copy = solution.copy() // clone solution
+        const copy = solution.copy() // clone solution
         if (arg[i].pair[j].span.body.length) {
           copy.pair.push(arg[i].pair[j])
         }

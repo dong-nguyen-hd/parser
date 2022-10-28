@@ -5,7 +5,7 @@ const classifier = new WhosOnFirstClassifier()
 module.exports.tests = {}
 
 function classify (body) {
-  let s = new Span(body)
+  const s = new Span(body)
   classifier.each(s, null, 1)
   return s
 }
@@ -29,7 +29,7 @@ function classify (body) {
 // }
 
 module.exports.tests.locality = (test) => {
-  let valid = [
+  const valid = [
     'new york',
     'london', 'paris', 'berlin', 'bern',
     'tokyo'
@@ -37,8 +37,8 @@ module.exports.tests.locality = (test) => {
 
   valid.forEach(token => {
     test(`locality: ${token}`, (t) => {
-      let s = classify(token)
-      t.true(s.classifications.hasOwnProperty('LocalityClassification'))
+      const s = classify(token)
+      t.true(s.classifications.hasOwnProperty('DistrictClassification'))
       t.true(s.classifications.hasOwnProperty('AreaClassification'))
       t.end()
     })
@@ -46,12 +46,12 @@ module.exports.tests.locality = (test) => {
 }
 
 module.exports.tests.valid_pelias_localities = (test) => {
-  let valid = ['nyc', 'sf']
+  const valid = ['nyc', 'sf']
 
   valid.forEach(token => {
     test(`valid pelias locality: ${token}`, (t) => {
-      let s = classify(token)
-      t.true(s.classifications.hasOwnProperty('LocalityClassification'))
+      const s = classify(token)
+      t.true(s.classifications.hasOwnProperty('DistrictClassification'))
       t.true(s.classifications.hasOwnProperty('AreaClassification'))
       t.end()
     })
@@ -59,12 +59,12 @@ module.exports.tests.valid_pelias_localities = (test) => {
 }
 
 module.exports.tests.invalid_pelias_localities = (test) => {
-  let invalid = ['texas', 'california', 'italy']
+  const invalid = ['texas', 'california', 'italy']
 
   invalid.forEach(token => {
     test(`invalid pelias locality: ${token}`, (t) => {
-      let s = classify(token)
-      t.false(s.classifications.hasOwnProperty('LocalityClassification'))
+      const s = classify(token)
+      t.false(s.classifications.hasOwnProperty('DistrictClassification'))
       t.end()
     })
   })
@@ -75,7 +75,7 @@ module.exports.all = (tape, common) => {
     return tape(`WhosOnFirstClassifier: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

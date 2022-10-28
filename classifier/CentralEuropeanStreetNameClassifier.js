@@ -15,9 +15,9 @@ class CentralEuropeanStreetNameClassifier extends SectionClassifier {
     if (section.graph.length('child') < 2) { return }
 
     // get first and last child
-    let children = section.graph.findAll('child')
-    let first = _.first(children)
-    let next = first.graph.findOne('next')
+    const children = section.graph.findAll('child')
+    const first = _.first(children)
+    const next = first.graph.findOne('next')
 
     // section must end with a HouseNumberClassification
     if (!next) { return } // no next span found

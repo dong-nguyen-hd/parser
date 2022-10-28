@@ -71,7 +71,7 @@ if (cpus > 1) {
     })
 
     // fork workers
-    for (var c = 0; c < cpus; c++) {
+    for (let c = 0; c < cpus; c++) {
       cluster.fork()
     }
   } else {

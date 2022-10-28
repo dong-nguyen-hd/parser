@@ -6,14 +6,14 @@ const classifier = new CompoundStreetClassifier()
 module.exports.tests = {}
 
 function classify (body) {
-  let s = new Span(body)
+  const s = new Span(body)
   classifier.each(s, null, 1)
   return s
 }
 
 module.exports.tests.contains_numerals = (test) => {
   test('contains numerals: honours contains.numerals boolean', (t) => {
-    let s = new Span('example')
+    const s = new Span('example')
     s.contains.numerals = true
     classifier.each(s, null, 1)
     t.deepEqual(s.classifications, {})
@@ -22,7 +22,7 @@ module.exports.tests.contains_numerals = (test) => {
 }
 
 module.exports.tests.german_compound = (test) => {
-  let valid = [
+  const valid = [
     'teststraße', 'teststrasse', 'teststr.',
     'teststr', 'grolmanstr',
     'testallee',
@@ -32,14 +32,14 @@ module.exports.tests.german_compound = (test) => {
     'testvägen'
   ]
 
-  let invalid = [
+  const invalid = [
     'testal',
     'testw', 'testw.'
   ]
 
   valid.forEach(token => {
     test(`german compound: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
       t.deepEqual(s.classifications, {
         StreetClassification: new StreetClassification(token.length > 1 ? 1.0 : 0.2)
       })
@@ -49,7 +49,7 @@ module.exports.tests.german_compound = (test) => {
 
   invalid.forEach(token => {
     test(`german compound: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
       t.deepEqual(s.classifications, {})
       t.end()
     })
@@ -61,7 +61,7 @@ module.exports.all = (tape, common) => {
     return tape(`CompoundStreetClassifier: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

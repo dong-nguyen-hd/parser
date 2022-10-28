@@ -6,14 +6,14 @@ const classifier = new ToponymClassifier()
 module.exports.tests = {}
 
 function classify (body) {
-  let s = new Span(body)
+  const s = new Span(body)
   classifier.each(s, null, 1)
   return s
 }
 
 module.exports.tests.contains_numerals = (test) => {
   test('contains numerals: honours contains.numerals boolean', (t) => {
-    let s = new Span('example')
+    const s = new Span('example')
     s.contains.numerals = true
     classifier.each(s, null, 1)
     t.deepEqual(s.classifications, {})
@@ -29,14 +29,14 @@ module.exports.tests.single_character_tokens = (test) => {
 }
 
 module.exports.tests.english_suffix = (test) => {
-  let valid = [
+  const valid = [
     'md', 'maryland', 'ca',
     'california', 'ia', 'nj'
   ]
 
   valid.forEach(token => {
     test(`english toponyms: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
 
       t.deepEqual(s.classifications, {
         ToponymClassification: new ToponymClassification(1, { langs: { en: true } })
@@ -51,7 +51,7 @@ module.exports.all = (tape, common) => {
     return tape(`ToponymClassifier: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

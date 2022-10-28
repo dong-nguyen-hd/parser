@@ -8,7 +8,7 @@ const AdjacentClassification = require('../classification/AdjacentClassification
 
 class AdjacencyClassifier extends SectionClassifier {
   each (section, utils) {
-    let children = section.graph.findAll('child')
+    const children = section.graph.findAll('child')
     children.forEach((_, cc) => {
       // skip last two elements
       if (cc >= section.graph.length('child') - 2) { return }
@@ -29,8 +29,8 @@ class AdjacencyClassifier extends SectionClassifier {
       ) {
         // every child must be part of the set above
         // and must not omit any children
-        let matches = section.graph.findAll('phrase').filter(p => {
-          let ch = p.graph.findAll('child')
+        const matches = section.graph.findAll('phrase').filter(p => {
+          const ch = p.graph.findAll('child')
           return (
             ch.length === 3 &&
             ch[cc + 0] === children[cc + 0] &&

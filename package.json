@@ -52,8 +52,8 @@
   "pre-commit": [
     "format_check",
     "lint",
-    "validate",
-    "test"
+    "validate"
+    //"test"
   ],
   "release": {
     "branch": "master",

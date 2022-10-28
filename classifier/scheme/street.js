@@ -382,7 +382,7 @@ module.exports = [
         not: ['DirectionalClassification']
       }
     ]
-  },
+  }
   // {
   //   // Main Street West
   //   confidence: 0.88,

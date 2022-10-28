@@ -5,7 +5,7 @@ module.exports.tests = {}
 
 module.exports.tests.constructor = (test) => {
   test('constructor', (t) => {
-    let fst = new FST()
+    const fst = new FST()
     t.deepEquals(fst.head.constructor.name, 'Graph')
     t.deepEquals(fst.tail.constructor.name, 'Graph')
     t.deepEquals(Object.keys(fst.head.edges).length, 0)
@@ -16,7 +16,7 @@ module.exports.tests.constructor = (test) => {
 
 module.exports.tests.graph = (test) => {
   test('graph', (t) => {
-    let fst = new FST()
+    const fst = new FST()
     fst.add('example')
 
     // left-to-right
@@ -51,7 +51,7 @@ module.exports.tests.graph = (test) => {
 
 module.exports.tests.has = (test) => {
   test('has', (t) => {
-    let fst = new FST()
+    const fst = new FST()
 
     fst.add('example')
     fst.add('exam')
@@ -64,7 +64,7 @@ module.exports.tests.has = (test) => {
 
 module.exports.tests._meta = (test) => {
   test('_meta', (t) => {
-    let fst = new FST()
+    const fst = new FST()
 
     // add term
     fst.add('example')
@@ -132,7 +132,7 @@ module.exports.tests._meta = (test) => {
 
 module.exports.tests.prefix = (test) => {
   test('prefix', (t) => {
-    let fst = new FST()
+    const fst = new FST()
 
     fst.add('example')
     t.true(fst.hasPrefix('e'))
@@ -168,7 +168,7 @@ module.exports.tests.prefix = (test) => {
 
 module.exports.tests.suffix = (test) => {
   test('suffix', (t) => {
-    let fst = new FST()
+    const fst = new FST()
 
     fst.add('example')
     t.true(fst.hasSuffix('e'))
@@ -204,7 +204,7 @@ module.exports.tests.suffix = (test) => {
 
 module.exports.tests.delete = (test) => {
   test('delete', (t) => {
-    let fst = new FST()
+    const fst = new FST()
     t.deepEquals(Object.keys(fst.head.edges), [])
     t.deepEquals(Object.keys(fst.tail.edges), [])
 
@@ -263,7 +263,7 @@ module.exports.all = (tape, common) => {
     return tape(`FST: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

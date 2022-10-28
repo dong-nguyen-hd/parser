@@ -4,7 +4,7 @@ module.exports.tests = {}
 
 module.exports.tests.constructor = (test) => {
   test('constructor', (t) => {
-    let c = new Classification()
+    const c = new Classification()
     t.false(c.public)
     t.equals(c.label, 'middle_initial')
     t.equals(c.confidence, 1.0)
@@ -18,7 +18,7 @@ module.exports.all = (tape, common) => {
     return tape(`MiddleInitialClassification: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

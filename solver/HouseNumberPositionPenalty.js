@@ -4,30 +4,30 @@ const StreetClassification = require('../classification/StreetClassification')
 const basePenalty = 0.05
 // https://github.com/pelias/api/blob/master/middleware/localNamingConventions.js
 const numberLastLangs = {
-  'de': basePenalty,
-  'sl': basePenalty,
-  'pl': basePenalty,
-  'bs': basePenalty,
-  'hr': basePenalty,
-  'nl': basePenalty,
-  'cs': basePenalty,
-  'da': basePenalty,
-  'es': basePenalty / 2, // Guatemala & Honduras do not flip their house numbers
-  'fi': basePenalty,
-  'el': basePenalty,
-  'is': basePenalty,
-  'it': basePenalty,
-  'nb': basePenalty,
-  'pt': basePenalty,
-  'sv': basePenalty,
-  'sk': basePenalty,
-  'tr': basePenalty,
-  'ro': basePenalty,
-  'hu': basePenalty
+  de: basePenalty,
+  sl: basePenalty,
+  pl: basePenalty,
+  bs: basePenalty,
+  hr: basePenalty,
+  nl: basePenalty,
+  cs: basePenalty,
+  da: basePenalty,
+  es: basePenalty / 2, // Guatemala & Honduras do not flip their house numbers
+  fi: basePenalty,
+  el: basePenalty,
+  is: basePenalty,
+  it: basePenalty,
+  nb: basePenalty,
+  pt: basePenalty,
+  sv: basePenalty,
+  sk: basePenalty,
+  tr: basePenalty,
+  ro: basePenalty,
+  hu: basePenalty
 }
 const numberFirstLangs = {
-  'en': basePenalty,
-  'fr': basePenalty / 2 // Switzerland and Andorre has some french streets
+  en: basePenalty,
+  fr: basePenalty / 2 // Switzerland and Andorre has some french streets
 }
 
 class HouseNumberPositionPenalty extends BaseSolver {

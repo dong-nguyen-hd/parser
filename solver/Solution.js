@@ -28,7 +28,7 @@ class Solution {
 
   computeScore (tokenizer) {
     // iterate pairs to compute a score
-    let score = this.pair.reduce((memo, cur) => {
+    const score = this.pair.reduce((memo, cur) => {
       // use the span range if it does not have children
       let range = cur.span.end - cur.span.start
 
@@ -60,26 +60,26 @@ class Solution {
   // N = housenumber, S = street, P = postcode, A = administrative, U = unit
   mask (tokenizer) {
     // use the original input, mask should be the same length
-    let body = tokenizer.span.body
-    let mask = Array(body.length).fill(' ')
-    let map = {
-      'venue': 'V',
-      'housenumber': 'N',
-      'street': 'S',
-      'postcode': 'P',
-      'unit': 'U',
-      'unit_type': 'U',
-      'default': 'A'
+    const body = tokenizer.span.body
+    const mask = Array(body.length).fill(' ')
+    const map = {
+      venue: 'V',
+      housenumber: 'N',
+      street: 'S',
+      postcode: 'P',
+      unit: 'U',
+      unit_type: 'U',
+      default: 'A'
     }
 
     // scan the input letter-by-letter from left-to-right
     for (let i = 0; i < body.length; i++) {
       // find which fields cover this character (should only be covered by 0 or 1 field)
-      let coveredBy = this.pair.filter(p => p.span.start <= i && p.span.end >= i)
+      const coveredBy = this.pair.filter(p => p.span.start <= i && p.span.end >= i)
 
       if (coveredBy.length) {
-        let label = coveredBy[0].classification.label
-        let code = map.hasOwnProperty(label) ? map[label] : map.default
+        const label = coveredBy[0].classification.label
+        const code = map.hasOwnProperty(label) ? map[label] : map.default
         for (let j = coveredBy[0].span.start; j < coveredBy[0].span.end; j++) {
           mask[j] = code
         }

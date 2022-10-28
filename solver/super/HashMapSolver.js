@@ -9,18 +9,18 @@ class HashMapSolver extends BaseSolver {
   // solve() {}
 
   generateHashMap (tokenizer, includePrivate, includeEmpty) {
-    let map = {}
+    const map = {}
     for (let i = 0; i < tokenizer.section.length; i++) {
-      let section = tokenizer.section[i]
+      const section = tokenizer.section[i]
 
       // multi-word phrases
-      let phrases = section.graph.findAll('phrase')
+      const phrases = section.graph.findAll('phrase')
       for (let j = 0; j < phrases.length; j++) {
-        let phrase = phrases[j]
-        let keys = Object.keys(phrase.classifications)
+        const phrase = phrases[j]
+        const keys = Object.keys(phrase.classifications)
         if (!keys.length) { continue }
-        for (let k in phrase.classifications) {
-          let classification = phrase.classifications[k]
+        for (const k in phrase.classifications) {
+          const classification = phrase.classifications[k]
           if (!includePrivate && !classification.public) { continue }
           if (!map.hasOwnProperty(classification.label)) {
             map[classification.label] = new Solution()
@@ -34,13 +34,13 @@ class HashMapSolver extends BaseSolver {
       }
 
       // single-word spans
-      let children = section.graph.findAll('child')
+      const children = section.graph.findAll('child')
       for (let j = 0; j < children.length; j++) {
-        let word = children[j]
-        let keys = Object.keys(word.classifications)
+        const word = children[j]
+        const keys = Object.keys(word.classifications)
         if (!keys.length) { continue }
-        for (let k in word.classifications) {
-          let classification = word.classifications[k]
+        for (const k in word.classifications) {
+          const classification = word.classifications[k]
           if (!includePrivate && !classification.public) { continue }
           if (!map.hasOwnProperty(classification.label)) {
             map[classification.label] = new Solution()

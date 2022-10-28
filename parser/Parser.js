@@ -11,7 +11,7 @@ class Parser {
   // run all classifiers
   // returns timing information
   classify (tokenizer) {
-    let start = new Date()
+    const start = new Date()
     this.classifiers.forEach(c => c.classify(tokenizer))
     return new Date() - start
   }
@@ -19,7 +19,7 @@ class Parser {
   // run all solvers
   // returns timing information
   solve (tokenizer) {
-    let start = new Date()
+    const start = new Date()
     this.solvers.forEach(s => {
       this.scoreAndSort(tokenizer)
 
@@ -52,19 +52,21 @@ class Parser {
   comparitor (a, b) {
     // if scores are equal then enforce a slight penalty for administrative ordering
     if (b.score === a.score) {
-      let areas = {
+      const areas = {
         a: a.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification')),
         b: b.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification'))
       }
-      let classification = {
+      const classification = {
         a: (areas.a.length ? areas.a[0].classification.constructor.name : ''),
         b: (areas.b.length ? areas.b[0].classification.constructor.name : '')
       }
 
-      if (classification.a === 'LocalityClassification') { return -1 }
-      if (classification.b === 'LocalityClassification') { return +1 }
-      if (classification.a === 'RegionClassification') { return -1 }
-      if (classification.b === 'RegionClassification') { return +1 }
+      if (classification.a === 'DistrictClassification') { return -1 }
+      if (classification.b === 'DistrictClassification') { return +1 }
+      if (classification.a === 'CommuneClassification') { return -1 }
+      if (classification.b === 'CommuneClassification') { return +1 }
+      if (classification.a === 'ProvinceClassification') { return -1 }
+      if (classification.b === 'ProvinceClassification') { return +1 }
       if (classification.a === 'CountryClassification') { return -1 }
       if (classification.b === 'CountryClassification') { return +1 }
     }

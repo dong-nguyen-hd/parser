@@ -1,5 +1,5 @@
 const testcase = (test, common) => {
-  let assert = common.assert(test)
+  const assert = common.assert(test)
 
   assert('Bulevardul Iuliu Maniu, Bucharest', [
     { street: 'Bulevardul Iuliu Maniu' }, { locality: 'Bucharest' }

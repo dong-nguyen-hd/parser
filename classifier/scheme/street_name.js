@@ -50,7 +50,7 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['StreetClassification', 'IntersectionClassification', 'LocalityClassification']
+        not: ['StreetClassification', 'IntersectionClassification', 'DistrictClassification']
       }
     ]
   },

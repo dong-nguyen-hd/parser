@@ -18,8 +18,8 @@ class PlaceClassifier extends WordClassifier {
     if (span.contains.numerals) { return }
 
     // do not classify tokens preceeded by an 'IntersectionClassification'
-    let firstChild = span.graph.findOne('child:first') || span
-    let prev = firstChild.graph.findOne('prev')
+    const firstChild = span.graph.findOne('child:first') || span
+    const prev = firstChild.graph.findOne('prev')
     if (
       prev && (
         prev.classifications.hasOwnProperty('IntersectionClassification')

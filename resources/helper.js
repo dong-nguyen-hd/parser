@@ -18,7 +18,7 @@ function generateFilenames (directory, filenames) {
 
 function singleResourceLoader (filepath, add, remove) {
   if (!fs.existsSync(filepath)) { return }
-  let dict = fs.readFileSync(filepath, 'utf8')
+  const dict = fs.readFileSync(filepath, 'utf8')
   dict.split('\n').forEach(row => {
     if (row.trim().startsWith('#')) {
       // Do nothing, this is a comment
@@ -32,7 +32,7 @@ function singleResourceLoader (filepath, add, remove) {
 
 function multiResourceLoader ({ directory, filenames }, add, remove) {
   generateFilenames(directory, filenames).forEach(filename => {
-    let filepath = path.join(directory, filename)
+    const filepath = path.join(directory, filename)
     singleResourceLoader(filepath, add, remove)
   })
 }
@@ -40,11 +40,11 @@ function multiResourceLoader ({ directory, filenames }, add, remove) {
 function resourceLoader (dictPath) {
   return (opts, add, remove) => {
     if (typeof opts === 'string') {
-      let filename = path.join(dictPath, opts)
+      const filename = path.join(dictPath, opts)
       return singleResourceLoader(filename, add, remove)
     }
-    let directory = path.join(dictPath, opts.directory)
-    multiResourceLoader({ directory: directory, filenames: opts.filenames }, add, remove)
+    const directory = path.join(dictPath, opts.directory)
+    multiResourceLoader({ directory, filenames: opts.filenames }, add, remove)
   }
 }
 

@@ -6,19 +6,19 @@ const classifier = new UnitTypeClassifier()
 module.exports.tests = {}
 
 function classify (body) {
-  let s = new Span(body)
+  const s = new Span(body)
   classifier.each(s, null, 1)
   return s
 }
 
 module.exports.tests.english_unit_types = (test) => {
-  let valid = [
+  const valid = [
     'unit', 'apt', 'lot'
   ]
 
   valid.forEach(token => {
     test(`english unit types: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
 
       t.deepEqual(s.classifications, {
         UnitTypeClassification: new UnitTypeClassification(1, { })
@@ -33,7 +33,7 @@ module.exports.all = (tape, common) => {
     return tape(`UnitTypeClassifier: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

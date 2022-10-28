@@ -10,8 +10,8 @@ const StreetProperNameClassification = require('../classification/StreetProperNa
 class StreetProperNameClassifier extends WordClassifier {
   setup () {
     this.index = {
-      'broadway': true,
-      'esplanade': true
+      broadway: true,
+      esplanade: true
     }
   }
 

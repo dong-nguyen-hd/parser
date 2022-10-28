@@ -1,5 +1,5 @@
 const testcase = (test, common) => {
-  let assert = common.assert(test)
+  const assert = common.assert(test)
 
   assert('Rue Montmartre', [
     { street: 'Rue Montmartre' }
@@ -89,34 +89,34 @@ const testcase = (test, common) => {
     { housenumber: '12' }, { street: 'Cité Roland Garros' }
   ])
 
-  assert(`Rue de l'Amiral Galache, Toulouse`, [
-    { street: `Rue de l'Amiral Galache` }, { locality: 'Toulouse' }
+  assert('Rue de l\'Amiral Galache, Toulouse', [
+    { street: 'Rue de l\'Amiral Galache' }, { locality: 'Toulouse' }
   ])
 
-  assert(`Rue de l'Inspecteur Alles Paris`, [
-    { street: `Rue de l'Inspecteur Alles` }, { locality: 'Paris' }
+  assert('Rue de l\'Inspecteur Alles Paris', [
+    { street: 'Rue de l\'Inspecteur Alles' }, { locality: 'Paris' }
   ])
 
-  assert(`Rue de l'Empereur Julien Paris`, [
-    { street: `Rue de l'Empereur Julien` }, { locality: 'Paris' }
+  assert('Rue de l\'Empereur Julien Paris', [
+    { street: 'Rue de l\'Empereur Julien' }, { locality: 'Paris' }
   ])
 
-  assert(`Rue de l'Adjudant Réau Paris`, [
-    { street: `Rue de l'Adjudant Réau` }, { locality: 'Paris' }
+  assert('Rue de l\'Adjudant Réau Paris', [
+    { street: 'Rue de l\'Adjudant Réau' }, { locality: 'Paris' }
   ])
 
-  assert(`10 Boulevard Saint-Germains Paris`, [
-    { housenumber: '10' }, { street: `Boulevard Saint-Germains` }, { locality: 'Paris' }
+  assert('10 Boulevard Saint-Germains Paris', [
+    { housenumber: '10' }, { street: 'Boulevard Saint-Germains' }, { locality: 'Paris' }
   ])
 
-  assert(`Paris 75000, France`, [
+  assert('Paris 75000, France', [
     { locality: 'Paris' }, { postcode: '75000' }, { country: 'France' }
   ])
 
   // https://github.com/pelias/parser/pull/141#issuecomment-895230721
-  assert(`Esplanade de la Liberté`, [{ street: 'Esplanade de la Liberté' }])
-  assert(`Esplanade du Géneral de Gaulle`, [{ street: 'Esplanade du Géneral de Gaulle' }])
-  assert(`Esplanade Méditerranée`, [{ street: 'Esplanade Méditerranée' }])
+  assert('Esplanade de la Liberté', [{ street: 'Esplanade de la Liberté' }])
+  assert('Esplanade du Géneral de Gaulle', [{ street: 'Esplanade du Géneral de Gaulle' }])
+  assert('Esplanade Méditerranée', [{ street: 'Esplanade Méditerranée' }])
 }
 
 module.exports.all = (tape, common) => {

@@ -8,10 +8,11 @@ class MustNotPreceedFilter {
       subject: subjectClassification
     }
   }
+
   solve (tokenizer) {
     tokenizer.solution = tokenizer.solution.filter(s => {
-      let object = s.pair.filter(p => p.classification.constructor.name === this.classification.object)
-      let subject = s.pair.filter(p => p.classification.constructor.name === this.classification.subject)
+      const object = s.pair.filter(p => p.classification.constructor.name === this.classification.object)
+      const subject = s.pair.filter(p => p.classification.constructor.name === this.classification.subject)
 
       // solution contains both object & subject classifications
       if (object.length > 0 && subject.length > 0) {

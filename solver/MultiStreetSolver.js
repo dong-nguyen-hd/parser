@@ -36,7 +36,7 @@ const MORE_GRANULAR_THAN_STREET = [
 
 class MultiStreetSolver extends HashMapSolver {
   solve (tokenizer) {
-    let map = this.generateHashMap(tokenizer, true)
+    const map = this.generateHashMap(tokenizer, true)
 
     // sanity checking
     if (_.get(map, 'multistreet.pair.length', 0) < 1) { return }
@@ -92,7 +92,7 @@ class MultiStreetSolver extends HashMapSolver {
       streets.forEach(street => {
         if (truncated.pair.every(p => !p.span.intersects(street.span))) {
           // make a copy of the truncated solution and add the additional street
-          let intersection = truncated.copy()
+          const intersection = truncated.copy()
           intersection.pair.push(street)
 
           // append this solution

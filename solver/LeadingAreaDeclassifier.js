@@ -7,8 +7,8 @@ const NETURAL_CLASSIFICATIONS = [
 ]
 
 const ADMIN_CLASSIFICATIONS = [
-  'LocalityClassification',
-  'RegionClassification',
+  'DistrictClassification',
+  'ProvinceClassification',
   'CountryClassification'
 ]
 
@@ -19,15 +19,15 @@ class LeadingAreaDeclassifier {
       let lastNonAdminCursorPosition = 0
 
       for (let i = 0; i < s.pair.length; i++) {
-        let isAdmin = ADMIN_CLASSIFICATIONS.some(c => s.pair[i].classification.constructor.name === c)
-        let isNeut = NETURAL_CLASSIFICATIONS.some(c => s.pair[i].classification.constructor.name === c)
+        const isAdmin = ADMIN_CLASSIFICATIONS.some(c => s.pair[i].classification.constructor.name === c)
+        const isNeut = NETURAL_CLASSIFICATIONS.some(c => s.pair[i].classification.constructor.name === c)
         if (!isAdmin && !isNeut) {
           lastNonAdminCursorPosition = s.pair[i].span.end
         }
       }
 
       s.pair = s.pair.filter(p => {
-        let isAdmin = ADMIN_CLASSIFICATIONS.some(c => p.classification.constructor.name === c)
+        const isAdmin = ADMIN_CLASSIFICATIONS.some(c => p.classification.constructor.name === c)
         if (isAdmin && p.span.end < lastNonAdminCursorPosition) {
           return false
         }

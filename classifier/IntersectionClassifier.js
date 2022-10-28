@@ -32,9 +32,9 @@ class IntersectionClassifier extends PhraseClassifier {
     if (span.contains.numerals) { return }
 
     // do not classify tokens with tokens missing before or afterwards
-    let firstChild = span.graph.findOne('child:first') || span
-    let prev = firstChild.graph.findOne('prev')
-    let next = firstChild.graph.findOne('next')
+    const firstChild = span.graph.findOne('child:first') || span
+    const prev = firstChild.graph.findOne('prev')
+    const next = firstChild.graph.findOne('next')
     if (!prev || !next) { return }
 
     // use an inverted index for full token matching as it's O(1)

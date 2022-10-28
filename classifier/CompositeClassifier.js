@@ -15,7 +15,7 @@ class CompositeClassifier extends SectionClassifier {
   }
 
   match (scheme, phrase) {
-    let children = phrase.graph.findAll('child')
+    const children = phrase.graph.findAll('child')
 
     // 'scheme.is' is a required property
     if (!Array.isArray(scheme.is)) { return false }
@@ -49,7 +49,7 @@ class CompositeClassifier extends SectionClassifier {
   }
 
   each (section) {
-    let phrases = section.graph.findAll('phrase')
+    const phrases = section.graph.findAll('phrase')
 
     // sort phrases so shorter phrases are matched first
     // note: this mutates the original array
@@ -74,9 +74,9 @@ class CompositeClassifier extends SectionClassifier {
       // remove any overlapping composites
       composites = composites.filter(c => {
         for (let i = 0; i < c.length; i++) {
-          let curr = c[i]
-          let next = c[i + 1]
-          let prev = c[i - 1]
+          const curr = c[i]
+          const next = c[i + 1]
+          const prev = c[i - 1]
 
           // enforce adjacency
           if (next && !curr.graph.findOne('child:last').graph.some('next', s => s === next.graph.findOne('child:first'))) {
@@ -89,7 +89,7 @@ class CompositeClassifier extends SectionClassifier {
           // that begins with a street prefix.
           // eg. 'A + Ave B' (ave is both a valid prefix & suffix)
           if (next && next.classifications.hasOwnProperty('StreetClassification')) {
-            let firstChild = next.graph.findOne('child')
+            const firstChild = next.graph.findOne('child')
             if (firstChild && firstChild.classifications.hasOwnProperty('StreetPrefixClassification')) {
               return false
             }
@@ -106,9 +106,9 @@ class CompositeClassifier extends SectionClassifier {
         // find phrases which equal the composites
         let superPhrases = []
         composites.forEach(c => {
-          var carr = Array.isArray(c) ? c : [c] // cast to array
-          let start = carr[0].start
-          let end = carr[carr.length - 1].end
+          const carr = Array.isArray(c) ? c : [c] // cast to array
+          const start = carr[0].start
+          const end = carr[carr.length - 1].end
           superPhrases = superPhrases.concat(phrases.filter(p => p.start === start && p.end === end))
         })
 

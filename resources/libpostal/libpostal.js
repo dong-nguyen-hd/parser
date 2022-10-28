@@ -4,7 +4,7 @@ const path = require('path')
 const pluralize = require('pluralize')
 const pelias = require('../pelias/pelias')
 const custom = require('../custom/custom')
-const dictPath = path.join(__dirname, `./dictionaries`)
+const dictPath = path.join(__dirname, './dictionaries')
 const allLanguages = fs.readdirSync(dictPath).filter(p => !p.includes('.'))
 
 function load (index, langs, filename, options) {
@@ -12,9 +12,9 @@ function load (index, langs, filename, options) {
   const remove = _remove(index, options)
 
   langs.forEach(lang => {
-    let filepath = path.join(dictPath, lang, filename)
+    const filepath = path.join(dictPath, lang, filename)
     if (!fs.existsSync(filepath)) { return }
-    let dict = fs.readFileSync(filepath, 'utf8')
+    const dict = fs.readFileSync(filepath, 'utf8')
     dict.split('\n').forEach(row => {
       row.split('|').forEach(add.bind(null, lang))
     }, this)

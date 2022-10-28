@@ -6,14 +6,14 @@ const classifier = new StreetPrefixClassifier()
 module.exports.tests = {}
 
 function classify (body) {
-  let s = new Span(body)
+  const s = new Span(body)
   classifier.each(s, null, 1)
   return s
 }
 
 module.exports.tests.contains_numerals = (test) => {
   test('contains numerals: honours contains.numerals boolean', (t) => {
-    let s = new Span('example')
+    const s = new Span('example')
     s.contains.numerals = true
     classifier.each(s, null, 1)
     t.deepEqual(s.classifications, {})
@@ -29,7 +29,7 @@ module.exports.tests.single_character_tokens = (test) => {
 }
 
 module.exports.tests.french_prefix = (test) => {
-  let valid = [
+  const valid = [
     'rue', 'allée', 'allee',
     'avenue', 'av', 'rt.',
     'boulevard', 'blvd', 'blvd.'
@@ -37,7 +37,7 @@ module.exports.tests.french_prefix = (test) => {
 
   valid.forEach(token => {
     test(`french prefix: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
       t.deepEqual(s.classifications, {
         StreetPrefixClassification: new StreetPrefixClassification(token.length > 1 ? 1.0 : 0.2)
       })
@@ -51,7 +51,7 @@ module.exports.all = (tape, common) => {
     return tape(`StreetPrefixClassifier: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

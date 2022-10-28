@@ -6,7 +6,7 @@ const classifier = new MiddleInitialClassifier()
 module.exports.tests = {}
 
 function classify (body) {
-  let s = new Span(body)
+  const s = new Span(body)
   classifier.each(s, null, 1)
   return s
 }
@@ -19,7 +19,7 @@ module.exports.tests.classify = (test) => {
 
   valid.forEach(token => {
     test(`classify: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
       t.deepEqual(s.classifications, {
         MiddleInitialClassification: new MiddleInitialClassification(1.0)
       })
@@ -38,7 +38,7 @@ module.exports.tests.classify = (test) => {
 
   invalid.forEach(token => {
     test(`classify: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
       t.deepEqual(s.classifications, {})
       t.end()
     })
@@ -50,7 +50,7 @@ module.exports.all = (tape, common) => {
     return tape(`MiddleInitialClassifier: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

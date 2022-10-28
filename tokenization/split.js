@@ -3,7 +3,7 @@ const Span = require('./Span')
 function split (span, f) {
   // A span is used to record a slice of s of the form s[start:end].
   // The start index is inclusive and the end index is exclusive.
-  let spans = []
+  const spans = []
 
   // Find the field start and end indices.
   let wasField = false
@@ -11,7 +11,7 @@ function split (span, f) {
 
   // Iterate unicode code points in string
   for (let i = 0; i < span.body.length; i++) {
-    let char = span.body.charAt(i)
+    const char = span.body.charAt(i)
     if (f(char)) {
       if (wasField) {
         spans.push(span.graph.findAll('child').find(s => s.start === span.start + fromIndex && s.body === span.body.substring(fromIndex, i)) || new Span(

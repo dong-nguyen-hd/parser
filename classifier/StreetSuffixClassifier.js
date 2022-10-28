@@ -17,7 +17,7 @@ class StreetSuffixClassifier extends WordClassifier {
     libpostal.load(this.index, libpostal.languages.filter(e => !prefix.includes(e)), 'street_types.txt')
 
     // blacklist any token under 2 chars in length
-    for (let token in this.index) {
+    for (const token in this.index) {
       if (token.length < 2) {
         delete this.index[token]
       }

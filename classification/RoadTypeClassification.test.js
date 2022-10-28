@@ -4,7 +4,7 @@ module.exports.tests = {}
 
 module.exports.tests.constructor = (test) => {
   test('constructor', (t) => {
-    let c = new Classification()
+    const c = new Classification()
     t.equals(c.label, 'road_type')
     t.equals(c.confidence, 1.0)
     t.deepEqual(c.meta, {})
@@ -17,7 +17,7 @@ module.exports.all = (tape, common) => {
     return tape(`RoadTypeClassification: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

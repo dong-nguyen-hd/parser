@@ -2,8 +2,8 @@ const PhraseClassifier = require('./super/PhraseClassifier')
 const AreaClassification = require('../classification/AreaClassification')
 const CountryClassification = require('../classification/CountryClassification')
 const CommuneClassification = require('../classification/CommuneClassification')
-const RegionClassification = require('../classification/RegionClassification')
-const LocalityClassification = require('../classification/LocalityClassification')
+const ProvinceClassification = require('../classification/ProvinceClassification')
+const DistrictClassification = require('../classification/DistrictClassification')
 const whosonfirst = require('../resources/whosonfirst/whosonfirst')
 const normalize = require('../tokenization/normalizer')({ lowercase: true, removeHyphen: true, removeAccents: true })
 
@@ -12,19 +12,19 @@ const normalize = require('../tokenization/normalizer')({ lowercase: true, remov
 
 // note: these should be defined from most granular to least granular
 const placetypes = {
-  'locality': {
-    files: ['name_vi_x_preferred.txt'],
-    classifications: [AreaClassification, LocalityClassification]
-  },
-  'region': {
-    files: ['name_vi_x_preferred.txt'],
-    classifications: [AreaClassification, RegionClassification]
-  },
-  'country': {
+  country: {
     files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, CountryClassification]
   },
-  'commune': {
+  province: {
+    files: ['name_vi_x_preferred.txt'],
+    classifications: [AreaClassification, ProvinceClassification]
+  },
+  district: {
+    files: ['name_vi_x_preferred.txt'],
+    classifications: [AreaClassification, DistrictClassification]
+  },
+  commune: {
     files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, CommuneClassification]
   }
@@ -69,10 +69,10 @@ class WhosOnFirstClassifier extends PhraseClassifier {
       // placetype specific modifications
       if (placetype === 'locality') {
         // remove locality names that sound like streets
-        let remove = ['avenue', 'lane', 'terrace', 'street', 'road', 'crescent', 'furlong', 'broadway']
+        const remove = ['avenue', 'lane', 'terrace', 'street', 'road', 'crescent', 'furlong', 'broadway']
         this.tokens.locality.forEach(token => {
-          let split = token.split(/\s/)
-          let lastWord = split[split.length - 1]
+          const split = token.split(/\s/)
+          const lastWord = split[split.length - 1]
           if (remove.includes(lastWord)) {
             this.tokens.locality.delete(token)
           }
@@ -84,8 +84,8 @@ class WhosOnFirstClassifier extends PhraseClassifier {
   each (span) {
     let confidence = 1.0
     // do not classify tokens preceeded by an 'IntersectionClassification' or add a penality to 'StopWordClassification'
-    let firstChild = span.graph.findOne('child:first') || span
-    let prev = firstChild.graph.findOne('prev')
+    const firstChild = span.graph.findOne('child:first') || span
+    const prev = firstChild.graph.findOne('prev')
     if (prev) {
       if (prev.classifications.hasOwnProperty('IntersectionClassification')) {
         return
@@ -95,8 +95,8 @@ class WhosOnFirstClassifier extends PhraseClassifier {
     }
 
     // do not classify tokens preceeding 'StreetSuffixClassification' or 'PlaceClassification'
-    let lastChild = span.graph.findOne('child:last') || span
-    let next = lastChild.graph.findOne('next')
+    const lastChild = span.graph.findOne('child:last') || span
+    const next = lastChild.graph.findOne('next')
     if (
       next && (
         next.classifications.hasOwnProperty('StreetSuffixClassification') ||

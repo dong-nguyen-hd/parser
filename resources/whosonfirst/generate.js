@@ -39,10 +39,10 @@ AND (
 )`)
 
 // an array to hold all languages
-var data = []
+const data = []
 
 // language blacklist
-var blacklist = [ 'unk', 'vol' ]
+const blacklist = ['unk', 'vol']
 
 /**
  * { id: 85633337,
@@ -73,14 +73,14 @@ for (const row of stmt.iterate()) {
   // then write it under the catchall 'all' language, else:
   if (row.fullkey.substr(0, 6) !== '$.wof:') {
     // parse path
-    let parts = row.path.match(/^\$\.(\w+):(\w+)$/)
+    const parts = row.path.match(/^\$\.(\w+):(\w+)$/)
     if (!parts || parts.length !== 3) {
       console.error('invalid path: %d \'%s\'', row.id, row.path)
       continue
     }
 
     // split language tag in to components
-    let s = parts[2].split('_')
+    const s = parts[2].split('_')
     lang = s.slice(0, s.length - 2).join('_')
   }
 
@@ -88,7 +88,7 @@ for (const row of stmt.iterate()) {
   if (blacklist.includes(lang)) { continue }
 
   // generate in-memory data structure
-  let field = row.fullkey.replace(/^\$\.([^[]*).*$/, '$1')
+  const field = row.fullkey.replace(/^\$\.([^[]*).*$/, '$1')
   if (!data[row.placetype]) { data[row.placetype] = {} }
   if (!data[row.placetype][field]) { data[row.placetype][field] = new Set() }
   data[row.placetype][field].add(row.value)
@@ -98,13 +98,13 @@ for (const row of stmt.iterate()) {
 }
 
 // write to disk
-for (let placetype in data) {
+for (const placetype in data) {
   // generate lang dir if it doesn't exist
-  let placetypePath = path.join(dictPath, placetype)
+  const placetypePath = path.join(dictPath, placetype)
   if (!fs.existsSync(placetypePath)) { fs.mkdirSync(placetypePath) }
 
-  for (let field in data[placetype]) {
-    let filePath = path.join(placetypePath, `${field}.txt`)
+  for (const field in data[placetype]) {
+    const filePath = path.join(placetypePath, `${field}.txt`)
 
     // unlink file if exists
     if (fs.existsSync(filePath)) { fs.unlinkSync(filePath) }

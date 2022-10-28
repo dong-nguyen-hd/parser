@@ -86,17 +86,17 @@ class DebugOutputBuilder {
     this.writeLine('-'.repeat(64))
 
     for (let i = 0; i < tokenizer.section.length; i++) {
-      let section = tokenizer.section[i]
-      let children = section.graph.findAll('child')
+      const section = tokenizer.section[i]
+      const children = section.graph.findAll('child')
       for (let j = 0; j < children.length; j++) {
-        let word = children[j]
-        let keys = Object.keys(word.classifications)
+        const word = children[j]
+        const keys = Object.keys(word.classifications)
         if (!keys.length) {
           continue
         }
         this.write(word.body.padEnd(32) + '➜  ')
-        for (let k in word.classifications) {
-          let classification = word.classifications[k]
+        for (const k in word.classifications) {
+          const classification = word.classifications[k]
           let block = chalk.bgGreen.bold(util.format(' %s ', classification.label))
           block += chalk.bgWhite.bold.gray(
             util.format(' %s ', classification.confidence.toFixed(2))
@@ -119,17 +119,17 @@ class DebugOutputBuilder {
     this.writeLine('-'.repeat(64))
 
     for (let i = 0; i < tokenizer.section.length; i++) {
-      let section = tokenizer.section[i]
-      let phrases = section.graph.findAll('phrase')
+      const section = tokenizer.section[i]
+      const phrases = section.graph.findAll('phrase')
       for (let j = 0; j < phrases.length; j++) {
-        let phrase = phrases[j]
-        let keys = Object.keys(phrase.classifications)
+        const phrase = phrases[j]
+        const keys = Object.keys(phrase.classifications)
         if (!keys.length) {
           continue
         }
         this.write(phrase.body.padEnd(32) + '➜  ')
-        for (let k in phrase.classifications) {
-          let classification = phrase.classifications[k]
+        for (const k in phrase.classifications) {
+          const classification = phrase.classifications[k]
           let block = chalk.bgRed.bold(util.format(' %s ', classification.label))
           block += chalk.bgWhite.bold.gray(
             util.format(' %s ', classification.confidence.toFixed(2))
@@ -161,7 +161,7 @@ class DebugOutputBuilder {
 
     // print all solutions
     tokenizer.solution.forEach((s) => {
-      let score = chalk.yellow.bold('(' + s.score.toFixed(2) + ')')
+      const score = chalk.yellow.bold('(' + s.score.toFixed(2) + ')')
       this.writeLine(
         score,
         ' ➜ ',
@@ -178,7 +178,7 @@ class DebugOutputBuilder {
 
   parse (input) {
     // tokenizer
-    var start = new Date()
+    const start = new Date()
     const t = new Tokenizer(input)
     let took = new Date() - start
     this.tokenizer(t, util.format('(%sms)', took))

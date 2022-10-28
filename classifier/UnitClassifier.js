@@ -8,13 +8,13 @@ const LetterThenNumbersRegExp = /^#?[A-Za-z]-?\d+$/
 
 // based on https://stackoverflow.com/questions/9213237/combining-regular-expressions-in-javascript
 function combineRegExps (...args) {
-  var components = []
+  let components = []
 
   args.forEach((arg) => {
     components = components.concat(arg._components || arg.source)
   })
 
-  var combined = new RegExp('(?:' + components.join(')|(?:') + ')')
+  const combined = new RegExp('(?:' + components.join(')|(?:') + ')')
   return combined
 }
 

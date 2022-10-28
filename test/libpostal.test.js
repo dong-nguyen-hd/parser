@@ -2,7 +2,7 @@
 // https://github.com/openvenues/libpostal/issues
 
 const testcase = (test, common) => {
-  let assert = common.assert(test)
+  const assert = common.assert(test)
 
   // https://github.com/openvenues/libpostal/issues/382
   assert('3360 Grand Ave Oakland 94610-2737 CA', [

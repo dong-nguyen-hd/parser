@@ -28,19 +28,19 @@ class FST {
 
   // index contains token
   has (token) {
-    let node = this._walk(this.head, '>', this._split(token))
+    const node = this._walk(this.head, '>', this._split(token))
     return !!node && !!node.length(`>${ETX}`)
   }
 
   // index contains a token with this prefix
   hasPrefix (prefix) {
-    let node = this._walk(this.head, '>', this._split(prefix))
+    const node = this._walk(this.head, '>', this._split(prefix))
     return !!node && (!node.findOne(`>${ETX}`) || node.findOne('_meta')['>count'] > 1)
   }
 
   // index contains a token with this suffix
   hasSuffix (suffix) {
-    let node = this._walk(this.tail, '<', this._split(suffix).reverse())
+    const node = this._walk(this.tail, '<', this._split(suffix).reverse())
     return !!node && (!node.findOne(`<${ETX}`) || node.findOne('_meta')['<count'] > 1)
   }
 
@@ -49,9 +49,9 @@ class FST {
 
   // walk the graph & return the last node
   _walk (parent, direction, chars, create, each) {
-    let DIR = (direction === '<') ? '<' : '>'
-    let END = (DIR === '<') ? this.head : this.tail
-    let LAST = (chars.length - 1)
+    const DIR = (direction === '<') ? '<' : '>'
+    const END = (DIR === '<') ? this.head : this.tail
+    const LAST = (chars.length - 1)
     for (let i = 0; i < chars.length; i++) {
       let child = parent.findOne(`${DIR}${chars[i]}`)
       if (create === true) {
@@ -103,11 +103,11 @@ class FST {
   _recurse (node, direction, each, prefix) {
     if (!direction) { direction = '>' }
     if (!prefix) { prefix = '' }
-    for (let key in node.edges) {
+    for (const key in node.edges) {
       if (key[0] !== direction) { continue }
       if (!node.length(key)) { continue }
       if (node !== this.head && node !== this.tail) {
-        let count = node.findOne('_meta')[`${direction}count`]
+        const count = node.findOne('_meta')[`${direction}count`]
         each(prefix, count)
       } else if (prefix.length > 0) { return }
       this._recurse(node.findOne(key), direction, each, prefix + key)
@@ -126,7 +126,7 @@ class FST {
     let node = this._walk(this.head, '>', chars)
     if (node && node.remove(`>${ETX}`, this.tail)) {
       this._walk(this.head, '>', chars, false, (child, parent, char) => {
-        let meta = child.findOne('_meta')
+        const meta = child.findOne('_meta')
         if (meta && --meta['>count'] < 1) {
           parent.remove(`>${char}`, child)
         }
@@ -134,11 +134,11 @@ class FST {
     }
 
     // right-to-left
-    let reversed = chars.slice().reverse()
+    const reversed = chars.slice().reverse()
     node = this._walk(this.tail, '<', reversed)
     if (node && node.remove(`<${ETX}`, this.head)) {
       this._walk(this.tail, '<', reversed, false, (child, parent, char) => {
-        let meta = child.findOne('_meta')
+        const meta = child.findOne('_meta')
         if (meta && --meta['<count'] < 1) {
           parent.remove(`<${char}`, child)
         }

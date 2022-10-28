@@ -38,7 +38,7 @@ const Tokenizer = require('../tokenization/Tokenizer')
 const parser = new AddressParser()
 
 function extract (row) {
-  let ret = {}
+  const ret = {}
 
   if (row.NUMBER && row.NUMBER.trim().length) {
     ret.housenumber = row.NUMBER.trim()
@@ -54,10 +54,10 @@ function extract (row) {
 }
 
 function assert (t, ext) {
-  let text = Object.keys(ext).map(k => ext[k]).join(' ')
-  let expected = Object.keys(ext).map(k => { return { [k]: ext[k] } })
+  const text = Object.keys(ext).map(k => ext[k]).join(' ')
+  const expected = Object.keys(ext).map(k => { return { [k]: ext[k] } })
 
-  let tokenizer = new Tokenizer(text)
+  const tokenizer = new Tokenizer(text)
   parser.classify(tokenizer)
   parser.solve(tokenizer)
 
@@ -72,14 +72,14 @@ module.exports.all = (tape) => {
   // find all files ending in .test.js
   const files = glob.sync(path.join(__dirname, 'oa/**/*.csv'), { realpath: true })
   files.forEach(csvpath => {
-    let suite = csvpath.replace(__dirname, '')
-    let contents = fs.readFileSync(csvpath)
-    let rows = csv(contents, options)
+    const suite = csvpath.replace(__dirname, '')
+    const contents = fs.readFileSync(csvpath)
+    const rows = csv(contents, options)
     tape(`oa: ${suite}`, (t) => {
       let prev = ''
       rows.forEach(row => {
-        let ext = extract(row)
-        let hash = Object.keys(ext).map(k => ext[k]).join(',')
+        const ext = extract(row)
+        const hash = Object.keys(ext).map(k => ext[k]).join(',')
         if (hash === prev) { return }
         prev = hash
         assert(t, ext)

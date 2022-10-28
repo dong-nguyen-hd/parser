@@ -10,20 +10,22 @@ class UnitTypeClassifier extends BaseClassifier {
     this.index = {}
     libpostal.load(this.index, ['en', 'vi'], 'unit_types_numbered.txt')
   }
+
   classify (tokenizer) {
     for (let i = 0; i < tokenizer.section.length; i++) {
-      let children = tokenizer.section[i].graph.findAll('child')
+      const children = tokenizer.section[i].graph.findAll('child')
       for (let j = 0; j < children.length; j++) {
         this.each(children[j], tokenizer.section[i])
       }
     }
   }
+
   each (span, section) {
     // skip spans whithout numbers
     if (!span.contains.numerals) { return }
 
     // We a searching spans like `U12` which means `Unit 12`
-    for (let token in this.index) {
+    for (const token in this.index) {
       if (span.body.length < token.length) { continue }
 
       // perf: https://gist.github.com/dai-shi/4950506

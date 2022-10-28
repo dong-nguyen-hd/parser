@@ -14,7 +14,7 @@ class Graph {
 
   remove (relationship, node) {
     if (!this.edges[relationship]) { return false }
-    let len = this.edges[relationship].length
+    const len = this.edges[relationship].length
     this.edges[relationship] = this.edges[relationship].filter(n => n !== node)
     if (!this.edges[relationship].length) {
       delete this.edges[relationship]

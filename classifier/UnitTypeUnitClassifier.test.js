@@ -7,24 +7,24 @@ const classifier = new UnitTypeUnitClassifier()
 module.exports.tests = {}
 
 function classify (body) {
-  let s = new Span(body)
+  const s = new Span(body)
   classifier.each(s, s)
   return s
 }
 
 module.exports.tests.english_unit_types = (test) => {
-  let valid = [
+  const valid = [
     'unit16', 'apt23', 'lot75'
   ]
 
-  let invalid = [
+  const invalid = [
     'unit', '23', 'Main'
   ]
 
   valid.forEach(token => {
     test(`english unit types: ${token}`, (t) => {
-      let s = classify(token)
-      let classifications = s.graph.findAll('child').map(s => s.classifications).filter(c => c)
+      const s = classify(token)
+      const classifications = s.graph.findAll('child').map(s => s.classifications).filter(c => c)
 
       t.equal(s.graph.findAll('child').length, 2)
       t.deepEqual(classifications.find(c => c.UnitTypeClassification), {
@@ -39,7 +39,7 @@ module.exports.tests.english_unit_types = (test) => {
 
   invalid.forEach(token => {
     test(`english unit types: ${token}`, (t) => {
-      let s = classify(token)
+      const s = classify(token)
 
       t.equal(s.graph.findAll('child').length, 0)
       t.end()
@@ -52,7 +52,7 @@ module.exports.all = (tape, common) => {
     return tape(`UnitTypeUnitClassifier: ${name}`, testFunction)
   }
 
-  for (var testCase in module.exports.tests) {
+  for (const testCase in module.exports.tests) {
     module.exports.tests[testCase](test, common)
   }
 }

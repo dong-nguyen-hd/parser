@@ -6,8 +6,8 @@ const MAX_DISTANCE = 2
 class TokenDistanceFilter {
   solve (tokenizer) {
     tokenizer.solution = tokenizer.solution.filter(s => {
-      let housenumber = s.pair.filter(p => p.classification.constructor.name === 'HouseNumberClassification')
-      let street = s.pair.filter(p => p.classification.constructor.name === 'StreetClassification')
+      const housenumber = s.pair.filter(p => p.classification.constructor.name === 'HouseNumberClassification')
+      const street = s.pair.filter(p => p.classification.constructor.name === 'StreetClassification')
 
       // housenumber with no street
       // note: remove this as a postcode classification may be more relevant
