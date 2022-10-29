@@ -41,6 +41,9 @@ class WhosOnFirstClassifier extends PhraseClassifier {
       })
 
       // general blacklist
+      this.tokens[placetype].delete('đường')
+      this.tokens[placetype].delete('huyện')
+      this.tokens[placetype].delete('xã')
       this.tokens[placetype].delete('north')
       this.tokens[placetype].delete('south')
       this.tokens[placetype].delete('east')
@@ -69,11 +72,12 @@ class WhosOnFirstClassifier extends PhraseClassifier {
       // placetype specific modifications
       if (placetype === 'locality') {
         // remove locality names that sound like streets
-        const remove = ['avenue', 'lane', 'terrace', 'street', 'road', 'crescent', 'furlong', 'broadway']
+        const remove = ['đường', 'duong', 'avenue', 'lane', 'terrace', 'street', 'road', 'crescent', 'furlong', 'broadway']
         this.tokens.locality.forEach(token => {
           const split = token.split(/\s/)
-          const lastWord = split[split.length - 1]
-          if (remove.includes(lastWord)) {
+          //const lastWord = split[split.length - 1]
+          const firstWord = split[0]
+          if (remove.includes(firstWord)) {
             this.tokens.locality.delete(token)
           }
         })
@@ -86,6 +90,7 @@ class WhosOnFirstClassifier extends PhraseClassifier {
     // do not classify tokens preceeded by an 'IntersectionClassification' or add a penality to 'StopWordClassification'
     const firstChild = span.graph.findOne('child:first') || span
     const prev = firstChild.graph.findOne('prev')
+
     if (prev) {
       if (prev.classifications.hasOwnProperty('IntersectionClassification')) {
         return
