@@ -4,3 +4,5 @@ thị trấn|thi tran|tt.
 tỉnh|t.
 huyện|h.
 p.
+quận
+phường

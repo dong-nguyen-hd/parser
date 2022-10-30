@@ -23,10 +23,17 @@ class Tokenizer {
     temp = temp.replace(/ +(?= )/g,'').replace(/\.+$/, "").replace(/^\.+/, "");
 
     for(var propertyName in this.index) {
-      temp = temp.replace(propertyName,'');
+      if(propertyName == "phường" || propertyName == "quận"){
+        if(this.regexIndexOf(temp, /(phường|quận){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+      } else temp = temp.replace(propertyName,'');
     }
 
     return temp
+  }
+
+  regexIndexOf(string, regex, startpos) {
+    var indexOf = string.substring(startpos || 0).search(regex);
+    return (indexOf >= 0) ? (indexOf + (startpos || 0)) : indexOf;
   }
 
   segment () {
