@@ -70,15 +70,15 @@ class WhosOnFirstClassifier extends PhraseClassifier {
       this.tokens[placetype].delete('grand')
 
       // placetype specific modifications
-      if (placetype === 'locality') {
+      if (placetype === 'commune') {
         // remove locality names that sound like streets
         const remove = ['đường', 'duong', 'avenue', 'lane', 'terrace', 'street', 'road', 'crescent', 'furlong', 'broadway']
-        this.tokens.locality.forEach(token => {
+        this.tokens.commune.forEach(token => {
           const split = token.split(/\s/)
           //const lastWord = split[split.length - 1]
           const firstWord = split[0]
           if (remove.includes(firstWord)) {
-            this.tokens.locality.delete(token)
+            this.tokens.commune.delete(token)
           }
         })
       }

@@ -8,7 +8,7 @@ const libpostal = require('../resources/libpostal/libpostal')
 class ChainClassifier extends PhraseClassifier {
   setup () {
     this.index = {}
-    libpostal.load(this.index, ['all'], 'chains.txt')
+    libpostal.load(this.index, ['vi'], 'chains.txt')
   }
 
   each (span) {

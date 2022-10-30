@@ -2,15 +2,29 @@ const Span = require('./Span')
 const split = require('./split')
 const funcs = require('./split_funcs')
 const permutate = require('./permutate')
+const libpostal = require('../resources/libpostal/libpostal')
 
 class Tokenizer {
   constructor (s) {
-    this.span = new Span(s)
+    this.span = new Span(this.removeQualifier(s))
     this.segment()
     this.split()
     this.computeCoverage()
     this.permute(0, 10)
     this.solution = []
+  }
+
+  removeQualifier(src){
+    this.index = {}
+    libpostal.load(this.index, ['vi'], 'qualifiers.txt');
+
+    let temp = src.trim().replace(/ +(?= )/g,'').toLowerCase();
+
+    for(var propertyName in this.index) {
+      temp = temp.replace(propertyName,'');
+    }
+
+    return temp
   }
 
   segment () {
