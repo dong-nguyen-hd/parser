@@ -48,7 +48,7 @@ class AddressParser extends Parser {
         new TokenPositionClassifier(),
 
         // word classifiers
-        new HouseNumberClassifier(),
+        //new HouseNumberClassifier(),
         new PostcodeClassifier(),
         new StreetPrefixClassifier(),
         new StreetSuffixClassifier(),
@@ -108,6 +108,7 @@ class AddressParser extends Parser {
         new InvalidSolutionFilter([
           ['CommuneClassification', 'ProvinceClassification'],
           ['HouseNumberClassification', 'ProvinceClassification'],
+          ['ProvinceClassification', 'CommuneClassification'],
         ]),
 
         new MustNotFollowFilter('ProvinceClassification', 'CountryClassification'),

@@ -18,7 +18,9 @@ class Tokenizer {
     this.index = {}
     libpostal.load(this.index, ['vi'], 'qualifiers.txt');
 
-    let temp = src.trim().replace(/ +(?= )/g,'').toLowerCase();
+    // Clean input string
+    let temp = src.trim().toLowerCase();
+    temp = temp.replace(/ +(?= )/g,'').replace(/\.+$/, "").replace(/^\.+/, "");
 
     for(var propertyName in this.index) {
       temp = temp.replace(propertyName,'');

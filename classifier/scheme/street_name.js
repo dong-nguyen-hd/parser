@@ -1,90 +1,29 @@
 const StreetNameClassification = require('../../classification/StreetNameClassification')
 
 module.exports = [
-  // {
-  //   //  Lê Văn Hiến
-  //   confidence: 0.5,
-  //   Class: StreetNameClassification,
-  //   scheme: [
-  //     {
-  //       is: ['SurnameClassification'],
-  //       not: []
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     }
-  //   ]
-  // },
-  // {
-  //   //  Nguyễn Đông
-  //   confidence: 0.5,
-  //   Class: StreetNameClassification,
-  //   scheme: [
-  //     {
-  //       is: ['SurnameClassification'],
-  //       not: []
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     }
-  //   ]
-  // },
-  // {
-  //   //  Nguyễn Đông Anh Phan
-  //   confidence: 0.5,
-  //   Class: StreetNameClassification,
-  //   scheme: [
-  //     {
-  //       is: ['SurnameClassification'],
-  //       not: []
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     }
-  //   ]
-  // },
-  // {
-  //   //  đường Cách mạng tháng Tám
-  //   confidence: 0.98,
-  //   Class: StreetNameClassification,
-  //   scheme: [
-  //     {
-  //       is: ['StreetPrefixClassification', 'RoadTypeClassification', 'SurnameClassification'],
-  //       not: ['CommuneClassification']
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     },
-  //     {
-  //       is: ['AlphaClassification'],
-  //       not: []
-  //     }
-  //   ]
-  // },
+  {
+    //  Lê Văn Hiến
+    confidence: 0.5,
+    Class: StreetNameClassification,
+    scheme: [
+      {
+        is: ['SurnameClassification'],
+        not: []
+      },
+      {
+        is: ['AlphaClassification'],
+        not: []
+      },
+      {
+        is: ['AlphaClassification'],
+        not: []
+      },
+      {
+        is: ['AlphaClassification'],
+        not: []
+      }
+    ]
+  },
   // {
   //   // dos Fiéis
   //   confidence: 0.5,

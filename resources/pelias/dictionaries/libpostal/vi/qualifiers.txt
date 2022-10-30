@@ -1,5 +1,6 @@
-thành phố|thanh pho
-thị xã|thi xa
-thị trấn|thi tran
-tỉnh
-huyện
+thành phố|thanh pho|tp.
+thị xã|thi xa|tx.
+thị trấn|thi tran|tt.
+tỉnh|t.
+huyện|h.
+p.
