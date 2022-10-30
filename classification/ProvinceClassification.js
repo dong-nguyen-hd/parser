@@ -4,7 +4,7 @@ class ProvinceClassification extends Classification {
   constructor (confidence, meta) {
     super(confidence, meta)
     this.public = true
-    this.label = 'province'
+    this.label = 'region'
   }
 }
 
