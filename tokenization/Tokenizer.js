@@ -24,7 +24,7 @@ class Tokenizer {
 
     for(var propertyName in this.index) {
       if(propertyName == "phường" || propertyName == "quận"){
-        if(this.regexIndexOf(temp, /(phường|quận){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+        if(this.regexIndexOf(temp, /.*(phường|quận){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
       } else temp = temp.replace(propertyName,'');
     }
 
