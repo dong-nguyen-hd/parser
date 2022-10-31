@@ -1,5 +1,8 @@
-phường|ph|p
-quận|quan|q
-thành phố|thanh pho|tp|t p
-thị xã|thi xa|tx|t x
-thị trấn|thi tran|tt|t t
+thành phố|thanh pho|tp.
+thị xã|thi xa|tx.
+thị trấn|thi tran|tt.
+tỉnh|t.
+huyện|h.
+p.
+quận
+phường

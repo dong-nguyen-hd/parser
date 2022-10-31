@@ -4,7 +4,7 @@ class DistrictClassification extends Classification {
   constructor (confidence, meta) {
     super(confidence, meta)
     this.public = true
-    this.label = 'district'
+    this.label = 'county'
   }
 }
 

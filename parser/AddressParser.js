@@ -1,7 +1,7 @@
 const Parser = require('./Parser')
 const AlphaNumericClassifier = require('../classifier/AlphaNumericClassifier')
 const TokenPositionClassifier = require('../classifier/TokenPositionClassifier')
-const HouseNumberClassifier = require('../classifier/HouseNumberClassifier')
+//const HouseNumberClassifier = require('../classifier/HouseNumberClassifier')
 const PostcodeClassifier = require('../classifier/PostcodeClassifier')
 const StreetPrefixClassifier = require('../classifier/StreetPrefixClassifier')
 const StreetSuffixClassifier = require('../classifier/StreetSuffixClassifier')
@@ -48,7 +48,7 @@ class AddressParser extends Parser {
         new TokenPositionClassifier(),
 
         // word classifiers
-        new HouseNumberClassifier(),
+        //new HouseNumberClassifier(),
         new PostcodeClassifier(),
         new StreetPrefixClassifier(),
         new StreetSuffixClassifier(),
@@ -88,14 +88,6 @@ class AddressParser extends Parser {
         new LeadingAreaDeclassifier(),
         new MultiStreetSolver(),
         new SubsetFilter(),
-        new InvalidSolutionFilter([
-          // ['CommuneClassification', 'DistrictClassification'],
-          // ['CommuneClassification', 'DistrictClassification', 'ProvinceClassification'],
-          // ['CommuneClassification', 'DistrictClassification', 'ProvinceClassification', 'CountryClassification'],
-          // ['DistrictClassification', 'ProvinceClassification'],
-          // ['DistrictClassification', 'ProvinceClassification', 'CountryClassification'],
-          // ['ProvinceClassification', 'CountryClassification']
-        ]),
         // new InvalidSolutionFilter([
         //   ['HouseNumberClassification', 'DistrictClassification'],
         //   ['HouseNumberClassification', 'DistrictClassification', 'ProvinceClassification'],
@@ -112,7 +104,20 @@ class AddressParser extends Parser {
         //   ['VenueClassification', 'PostcodeClassification']
         // ]),
 
-        //new MustNotFollowFilter('DistrictClassification', 'CommuneClassification'),
+        // Debug
+        new InvalidSolutionFilter([
+          ['CommuneClassification', 'ProvinceClassification'],
+          ['HouseNumberClassification', 'ProvinceClassification'],
+          ['ProvinceClassification', 'CommuneClassification'],
+        ]),
+
+        new MustNotFollowFilter('ProvinceClassification', 'CountryClassification'),
+        new MustNotFollowFilter('DistrictClassification', 'CountryClassification'),
+        new MustNotFollowFilter('CommuneClassification', 'CountryClassification'),
+
+        new MustNotFollowFilter('DistrictClassification', 'ProvinceClassification'),
+        new MustNotFollowFilter('CommuneClassification', 'ProvinceClassification'),
+
         new MustNotFollowFilter('CommuneClassification', 'DistrictClassification'),
 
         // OG

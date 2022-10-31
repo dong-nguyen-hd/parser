@@ -56,19 +56,20 @@ class Parser {
         a: a.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification')),
         b: b.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification'))
       }
+
       const classification = {
         a: (areas.a.length ? areas.a[0].classification.constructor.name : ''),
         b: (areas.b.length ? areas.b[0].classification.constructor.name : '')
       }
 
+      if (classification.a === 'CountryClassification') { return -1 }
+      if (classification.b === 'CountryClassification') { return +1 }
+      if (classification.a === 'ProvinceClassification') { return -1 }
+      if (classification.b === 'ProvinceClassification') { return +1 }
       if (classification.a === 'DistrictClassification') { return -1 }
       if (classification.b === 'DistrictClassification') { return +1 }
       if (classification.a === 'CommuneClassification') { return -1 }
       if (classification.b === 'CommuneClassification') { return +1 }
-      if (classification.a === 'ProvinceClassification') { return -1 }
-      if (classification.b === 'ProvinceClassification') { return +1 }
-      if (classification.a === 'CountryClassification') { return -1 }
-      if (classification.b === 'CountryClassification') { return +1 }
     }
 
     // sort results by score desc
