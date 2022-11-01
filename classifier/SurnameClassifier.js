@@ -1,11 +1,12 @@
-const PhraseClassifier = require('./super/PhraseClassifier')
+//const PhraseClassifier = require('./super/PhraseClassifier')
+const WordClassifier = require('./super/WordClassifier')
 const SurnameClassification = require('../classification/SurnameClassification')
 const libpostal = require('../resources/libpostal/libpostal')
 
 // dictionaries sourced from the libpostal project
 // see: https://github.com/openvenues/libpostal
 
-class SurnameClassifier extends PhraseClassifier {
+class SurnameClassifier extends WordClassifier {
   setup () {
     this.index = {}
     libpostal.load(this.index, ['vi'], 'surnames.txt', {
