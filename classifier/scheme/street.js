@@ -12,6 +12,25 @@ module.exports = [
       }
     ]
   },
+  {
+    // [street-prefix + number]
+    confidence: 0.88,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['IntersectionClassification']
+      },
+      {
+        is: ['AlphaClassification', 'StopWordClassification'],
+        not: ['IntersectionClassification']
+      },
+      {
+        is: ['NumericClassification'],
+        not: ['IntersectionClassification']
+      }
+    ]
+  },
   // {
   //   // đường Trường Chinh
   //   confidence: 0.88,
