@@ -32,17 +32,31 @@ class Tokenizer {
     if(!temp) return temp;
 
     for(var propertyName in this.index) {
-      if(propertyName == "phường" || propertyName == "quận" || propertyName == "q." || propertyName == "p."){
-        if(this.regexIndexOf(temp, /.*(phường|quận|q.|p.){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+      if(propertyName == "phường"){
+        if(!this.regexIndexOf(temp, /.*(phường){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+      } else if(propertyName == "quận"){
+        if(!this.regexIndexOf(temp, /.*(quận){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+      } else if(propertyName == "q."){
+        if(!this.regexIndexOf(temp, /.*(q\.){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+      } else if(propertyName == "p."){
+        if(!this.regexIndexOf(temp, /.*(p\.){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
       } else temp = temp.replace(propertyName,'');
     }
 
     return temp
   }
 
-  regexIndexOf(string, regex, startpos) {
-    var indexOf = string.substring(startpos || 0).search(regex);
-    return (indexOf >= 0) ? (indexOf + (startpos || 0)) : indexOf;
+  /**
+   * Checking string validate by regex pattern
+   * @param {*} string 
+   * Input string
+   * @param {*} regex 
+   * Regex pattern
+   * @returns true/false
+   */
+  regexIndexOf(string, regex) {
+    var indexOf = string.substring(0).search(regex);
+    return (indexOf >= 0) ? true : false;
   }
 
   segment () {
