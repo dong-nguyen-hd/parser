@@ -3,6 +3,5 @@ thị xã|thi xa|tx.
 thị trấn|thi tran|tt.
 tỉnh|t.
 huyện|h.
-p.
-quận
-phường
+quận|q.
+phường|p.

@@ -51,7 +51,7 @@ lower/central/upper, etc.)
 - **place_names.txt**: strings found in names of places e.g. "theatre",
 "aquarium", "restaurant". [Nominatim Special Phrases](http://wiki.openstreetmap.org/wiki/Nominatim/Special_Phrases) is a great resource for this.
 - **post_office.txt**: strings like "p.o. box"
-- **qualifiers.txt**: strings like "township"
+- **qualifiers.txt**: strings like "township, district, province,..." will remove from input source
 - **staircase.txt**: strings indicating a staircase, usually just the word "staircase" or "stair".
 - **stopwords.txt**: prepositions and articles mostly, very common words
 which may be ignored in some contexts

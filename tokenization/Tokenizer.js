@@ -15,16 +15,25 @@ class Tokenizer {
   }
 
   removeQualifier(src){
+    if(!src) return src;
+
     this.index = {}
     libpostal.load(this.index, ['vi'], 'qualifiers.txt');
 
     // Clean input string
     let temp = src.trim().toLowerCase();
-    temp = temp.replace(/ +(?= )/g,'').replace(/\.+$/, "").replace(/^\.+/, "");
+    temp = temp.replace(/\([^()]*\)/g, ''); // remove text within parentheses
+    temp = temp.replace(/(?:\s*-\s*)/g, '-'); // remove space around dash
+    temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
+    temp = temp.replace(/\.+$/, ""); // remove dot end
+    temp = temp.replace(/^\.+/, ""); // remove dot start
+    temp = temp.replace(/ +(?= )/g,''); // remove duplicate space
+
+    if(!temp) return temp;
 
     for(var propertyName in this.index) {
-      if(propertyName == "phường" || propertyName == "quận"){
-        if(this.regexIndexOf(temp, /.*(phường|quận){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+      if(propertyName == "phường" || propertyName == "quận" || propertyName == "q." || propertyName == "p."){
+        if(this.regexIndexOf(temp, /.*(phường|quận|q.|p.){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
       } else temp = temp.replace(propertyName,'');
     }
 
