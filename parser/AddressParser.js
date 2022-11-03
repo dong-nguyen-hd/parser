@@ -49,7 +49,7 @@ class AddressParser extends Parser {
 
         // word classifiers
         //new HouseNumberClassifier(),
-        new PostcodeClassifier(),
+        //new PostcodeClassifier(),
         new StreetPrefixClassifier(),
         new StreetSuffixClassifier(),
         new StreetProperNameClassifier(),

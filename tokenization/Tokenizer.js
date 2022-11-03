@@ -21,42 +21,35 @@ class Tokenizer {
     libpostal.load(this.index, ['vi'], 'qualifiers.txt');
 
     // Clean input string
-    let temp = src.trim().toLowerCase();
+    let temp = src.trim().toLowerCase().normalize('NFC');
     temp = temp.replace(/\([^()]*\)/g, ''); // remove text within parentheses
     temp = temp.replace(/(?:\s*-\s*)/g, '-'); // remove space around dash
     temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
     temp = temp.replace(/\.+$/, ""); // remove dot end
     temp = temp.replace(/^\.+/, ""); // remove dot start
-    temp = temp.replace(/ +(?= )/g,''); // remove duplicate space
 
     if(!temp) return temp;
 
     for(var propertyName in this.index) {
       if(propertyName == "phường"){
-        if(!this.regexIndexOf(temp, /.*(phường){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+        temp = temp.replaceAll(/(?:phường)(?=\s*[a-z]+)/g, ""); // remove "phường" follow by word
       } else if(propertyName == "quận"){
-        if(!this.regexIndexOf(temp, /.*(quận){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+        temp = temp.replaceAll(/(?:quận)(?=\s*[a-z]+)/g, ""); // remove "quận" follow by word
       } else if(propertyName == "q."){
-        if(!this.regexIndexOf(temp, /.*(q\.){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
+        temp = temp.replaceAll(/(?:q\.)(?=\s*[a-z]+)/g, ""); // remove "q." follow by word
       } else if(propertyName == "p."){
-        if(!this.regexIndexOf(temp, /.*(p\.){1}\s?\d+/g)) temp = temp.replace(propertyName,'');
-      } else temp = temp.replace(propertyName,'');
+        temp = temp.replaceAll(/(?:p\.)(?=\s*[a-z]+)/g, ""); // remove "p." follow by word
+      } else temp = temp.replaceAll(propertyName,'');
     }
 
-    return temp
-  }
+    if(temp.length > 140){
+      let index = temp.length - 140;
+      temp = temp.slice(index);
+    }
 
-  /**
-   * Checking string validate by regex pattern
-   * @param {*} string 
-   * Input string
-   * @param {*} regex 
-   * Regex pattern
-   * @returns true/false
-   */
-  regexIndexOf(string, regex) {
-    var indexOf = string.substring(0).search(regex);
-    return (indexOf >= 0) ? true : false;
+    temp = temp.replace(/ +(?= )/g,''); // remove duplicate space
+
+    return temp
   }
 
   segment () {
