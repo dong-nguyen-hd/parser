@@ -32,13 +32,13 @@ class Tokenizer {
 
     for(var propertyName in this.index) {
       if(propertyName == "phường"){
-        temp = temp.replaceAll(/(?:phường)(?=\s*[a-z]+)/g, ""); // remove "phường" follow by word
+        temp = temp.replaceAll(/(?:phường)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "phường" follow by word
       } else if(propertyName == "quận"){
-        temp = temp.replaceAll(/(?:quận)(?=\s*[a-z]+)/g, ""); // remove "quận" follow by word
+        temp = temp.replaceAll(/(?:quận)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "quận" follow by word
       } else if(propertyName == "q."){
-        temp = temp.replaceAll(/(?:q\.)(?=\s*[a-z]+)/g, ""); // remove "q." follow by word
+        temp = temp.replaceAll(/(?:q\.)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "q." follow by word
       } else if(propertyName == "p."){
-        temp = temp.replaceAll(/(?:p\.)(?=\s*[a-z]+)/g, ""); // remove "p." follow by word
+        temp = temp.replaceAll(/(?:p\.)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "p." follow by word
       } else temp = temp.replaceAll(propertyName,'');
     }
 
