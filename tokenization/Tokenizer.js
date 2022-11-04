@@ -41,14 +41,14 @@ class Tokenizer {
         temp = temp.replaceAll(/(?:p\.)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "p." follow by word
       } else temp = temp.replaceAll(propertyName,'');
     }
+    
+    temp = temp.trim().replace(/ +(?= )/g,''); // remove duplicate space
 
     if(temp.length > 140){
       let index = temp.length - 140;
       temp = temp.slice(index);
     }
-
-    temp = temp.replace(/ +(?= )/g,''); // remove duplicate space
-
+    
     return temp
   }
 
