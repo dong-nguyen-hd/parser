@@ -22,11 +22,11 @@ class Tokenizer {
 
     // Clean input string
     let temp = src.trim().toLowerCase().normalize('NFC');
-    temp = temp.replace(/\([^()]*\)/g, ''); // remove text within parentheses
-    temp = temp.replace(/(?:\s*-\s*)/g, '-'); // remove space around dash
-    temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
-    temp = temp.replace(/\.+$/g, ""); // remove dot end
-    temp = temp.replace(/^\.+/g, ""); // remove dot start
+    temp = temp.replaceAll(/\([^()]*\)/g, ''); // remove text within parentheses
+    temp = temp.replaceAll(/(?:\s*-\s*)/g, '-'); // remove space around dash
+    temp = temp.replaceAll(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
+    temp = temp.replaceAll(/\.+$/g, ""); // remove dot end
+    temp = temp.replaceAll(/^\.+/g, ""); // remove dot start
 
     if(!temp) return temp;
 
@@ -42,7 +42,7 @@ class Tokenizer {
       } else temp = temp.replaceAll(propertyName,'');
     }
     
-    temp = temp.trim().replace(/ +(?= )/g,''); // remove duplicate space
+    temp = temp.trim().replaceAll(/ +(?= )/g,''); // remove duplicate space
 
     if(temp.length > 140){
       let index = temp.length - 140;
