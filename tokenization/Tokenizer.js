@@ -22,27 +22,27 @@ class Tokenizer {
 
     // Clean input string
     let temp = src.trim().toLowerCase().normalize('NFC');
-    temp = temp.replaceAll(/\([^()]*\)/g, ''); // remove text within parentheses
-    temp = temp.replaceAll(/(?:\s*-\s*)/g, '-'); // remove space around dash
-    temp = temp.replaceAll(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
-    temp = temp.replaceAll(/\.+$/g, ""); // remove dot end
-    temp = temp.replaceAll(/^\.+/g, ""); // remove dot start
+    temp = temp.replace(/\([^()]*\)/g, ''); // remove text within parentheses
+    temp = temp.replace(/(?:\s*-\s*)/g, '-'); // remove space around dash
+    temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
+    temp = temp.replace(/\.+$/g, ""); // remove dot end
+    temp = temp.replace(/^\.+/g, ""); // remove dot start
 
     if(!temp) return temp;
 
     for(var propertyName in this.index) {
       if(propertyName == "phường"){
-        temp = temp.replaceAll(/(?:phường)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "phường" follow by word
+        temp = temp.replace(/(?:phường)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "phường" follow by word
       } else if(propertyName == "quận"){
-        temp = temp.replaceAll(/(?:quận)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "quận" follow by word
+        temp = temp.replace(/(?:quận)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "quận" follow by word
       } else if(propertyName == "q."){
-        temp = temp.replaceAll(/(?:q\.)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "q." follow by word
+        temp = temp.replace(/(?:q\.)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "q." follow by word
       } else if(propertyName == "p."){
-        temp = temp.replaceAll(/(?:p\.)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "p." follow by word
-      } else temp = temp.replaceAll(propertyName,'');
+        temp = temp.replace(/(?:p\.)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "p." follow by word
+      } else temp = temp.replace(propertyName,'');
     }
     
-    temp = temp.trim().replaceAll(/ +(?= )/g,''); // remove duplicate space
+    temp = temp.trim().replace(/ +(?= )/g,''); // remove duplicate space
 
     if(temp.length > 140){
       let index = temp.length - 140;
