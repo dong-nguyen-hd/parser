@@ -48,7 +48,7 @@ class Tokenizer {
       let index = temp.length - 140;
       temp = temp.slice(index);
     }
-    
+
     return temp
   }
 

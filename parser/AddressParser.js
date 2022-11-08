@@ -59,12 +59,12 @@ class AddressParser extends Parser {
         new DirectionalClassifier(),
         new OrdinalClassifier(),
         new StopWordClassifier(),
+        new SurnameClassifier(),
 
         // phrase classifiers
         new IntersectionClassifier(),
         new PersonClassifier(),
         new GivenNameClassifier(),
-        new SurnameClassifier(),
         new MiddleInitialClassifier(),
         new PersonalSuffixClassifier(),
         new PersonalTitleClassifier(),
@@ -73,14 +73,14 @@ class AddressParser extends Parser {
         new WhosOnFirstClassifier(),
 
         // composite classifiers
-        new CompositeClassifier(require('../classifier/scheme/person')),
+        //new CompositeClassifier(require('../classifier/scheme/person')),
         new CompositeClassifier(require('../classifier/scheme/street_name')),
         new CompositeClassifier(require('../classifier/scheme/street')),
-        new CompositeClassifier(require('../classifier/scheme/venue')),
-        new CompositeClassifier(require('../classifier/scheme/intersection')),
+        //new CompositeClassifier(require('../classifier/scheme/venue')),
+        //new CompositeClassifier(require('../classifier/scheme/intersection')),
 
         // additional classifiers which act on unclassified tokens
-        new CentralEuropeanStreetNameClassifier()
+        // new CentralEuropeanStreetNameClassifier()
       ],
       // solvers
       [
