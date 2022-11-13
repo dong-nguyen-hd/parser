@@ -74,9 +74,9 @@ function _sanitize(raw, clean, req) {
     clean.parser = 'pelias';
     clean.parsed_text = parse(tokenizer);
 
-    // console.log("DongND");
-    // console.log(clean);
-    // console.log("DongND");
+    console.log("DongND");
+    console.log(clean);
+    console.log("DongND");
   }
 
   return messages;
@@ -183,6 +183,14 @@ function parse(t) {
     return true;
   }
 
+  function getAdminClosest(){
+    if(parsed_text.region) return `, ${parsed_text.region}`;
+    if(parsed_text.county) return `, ${parsed_text.county}`;
+    if(parsed_text.locality) return `, ${parsed_text.locality}`;
+
+    return '';
+  }
+
   // squash multiple adjacent whitespace characters into a single space
   prefix = prefix.replace(/\s+/g, ' ').trim();
   postfix = postfix.replace(/\s+/g, ' ').trim();
@@ -208,7 +216,7 @@ function parse(t) {
   }
   // a street query
   else if (!_.isEmpty(parsed_text.street)) {
-    parsed_text.subject = parsed_text.street;
+    parsed_text.subject = `${parsed_text.street}${getAdminClosest()}`;
   }
   // query with a $prefix such as a venue query
   else if (!_.isEmpty(prefix)) {
