@@ -203,7 +203,7 @@ function parse(t) {
   // fields in elasticsearch queries
 
   // only contain two component or component same name
-  else if (Object.keys(parsed_text).length === 1 || isDuplicateAdmin()) {
+  if (Object.keys(parsed_text).length === 1 || isDuplicateAdmin()) {
     parsed_text.subject = body;
   }
   // a venue query
