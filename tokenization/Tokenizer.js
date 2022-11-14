@@ -25,6 +25,8 @@ class Tokenizer {
     temp = temp.replace(/\([^()]*\)/g, ''); // remove text within parentheses
     temp = temp.replace(/(?:\s*-\s*)/g, '-'); // remove space around dash
     temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
+    temp = temp.replace(/(?<=\D)(?:\s+(–|-)\s+)(?=\D+)/g, ' '); // (space) remove all [word + dash + word] => [word + space + word]
+    temp = temp.replace(/(?<=\D)(?:–|-)(?=\D+)/g, ' '); // (non-space) remove all [word + dash + word] => [word + space + word]
     temp = temp.replace(/\.+$/g, ""); // remove dot end
     temp = temp.replace(/^\.+/g, ""); // remove dot start
 

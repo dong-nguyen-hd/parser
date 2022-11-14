@@ -179,6 +179,7 @@ monastery|monastry
 monument
 motel|mot|motl|mtel
 municipal building|municipal bldg|mun building|mun bldg|mpal building|mpal bldg
+building
 museum|mus
 music hall
 night club|nightclub
@@ -312,5 +313,8 @@ wine bar|winebar
 winery
 yoga
 youth center|youth centre
+trade center
 zoo
 pearl
+riverside
+park view|parkview

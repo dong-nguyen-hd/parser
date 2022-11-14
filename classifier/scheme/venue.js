@@ -3,7 +3,7 @@ const VenueClassification = require('../../classification/VenueClassification')
 module.exports = [
   {
     // [place + 2 slot]
-    confidence: 0.8,
+    confidence: 0.82,
     Class: VenueClassification,
     scheme: [
       {
@@ -16,13 +16,13 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['VenueClassification']
       },
     ]
   },
   {
     // [place + 3 slot]
-    confidence: 0.8,
+    confidence: 0.83,
     Class: VenueClassification,
     scheme: [
       {
@@ -39,13 +39,13 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['VenueClassification']
       },
     ]
   },
   {
     // [place + 4 slot]
-    confidence: 0.8,
+    confidence: 0.84,
     Class: VenueClassification,
     scheme: [
       {
@@ -66,7 +66,22 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['VenueClassification']
+      },
+    ]
+  },
+  {
+    // [1 slot + place]
+    confidence: 0.8,
+    Class: VenueClassification,
+    scheme: [
+      {
+        is: ['AlphaClassification'],
+        not: ['VenueClassification']
+      },
+      {
+        is: ['PlaceClassification'],
+        not: ['StreetClassification', 'StreetNameClassification']
       },
     ]
   },
@@ -77,7 +92,7 @@ module.exports = [
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['VenueClassification']
       },
       {
         is: ['AlphaClassification'],
@@ -96,7 +111,7 @@ module.exports = [
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['VenueClassification']
       },
       {
         is: ['AlphaClassification'],
@@ -119,7 +134,7 @@ module.exports = [
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['VenueClassification']
       },
       {
         is: ['AlphaClassification'],
