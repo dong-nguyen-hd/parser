@@ -74,9 +74,9 @@ function _sanitize(raw, clean, req) {
     clean.parser = 'pelias';
     clean.parsed_text = parse(tokenizer);
 
-    // console.log("DongND");
-    // console.log(clean);
-    // console.log("DongND");
+    console.log("DongND");
+    console.log(clean);
+    console.log("DongND");
   }
 
   return messages;
