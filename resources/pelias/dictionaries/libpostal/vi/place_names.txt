@@ -11,6 +11,7 @@ khu công nghiệp|khu cong nghiep|kcn|k c n
 khu du lịch|khu du lich|kdl|k d l
 khu dân cư
 khu căn hộ
+khu nhà ở
 khu nghỉ mát|khu nghi mat|knm|k n m
 khách sạn|khach san|ks|k / s
 nhà hát|nha hat|nh|n h
@@ -26,7 +27,7 @@ trung học cơ sở|trung hoc co so|thcs|t h c s
 trung học phổ thông|trung hoc pho thong|thpt|t h p t
 trung tâm thương mại|trung tam thuong mai|tttm|t t t m
 trung tâm|trung tam|tt|t t
-toà|toà nhà
+toà|toà nhà|tòa nhà
 tầng trệt
 bến
 cao ốc

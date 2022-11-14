@@ -1,10 +1,10 @@
-công trường|cong truong|ct|c t
-đại lộ|dai lo|đl|d l
-đường|duong|đg|đg.|đ.|dg|đ|d
+# >= 2 word
+công trường|cong truong|c t
+đại lộ|dai lo|d l
 đường hẻm|duong hem
 đường nhỏ|duong nho
 đường phố|duong pho
-ngõ
-quảng trường|quang truong|qt|q t
-quốc lộ|quoc lo|ql|q l
-tỉnh lộ|tinh lo|tl|t l
+cao tốc
+quảng trường|quang truong|q t
+quốc lộ|quoc lo|q l
+tỉnh lộ|tinh lo|t l

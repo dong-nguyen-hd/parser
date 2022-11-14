@@ -1,11 +1,11 @@
-const WordClassifier = require('./super/WordClassifier')
+const PhraseClassifier = require('./super/PhraseClassifier')
 const RoadTypeClassification = require('../classification/RoadTypeClassification')
 const libpostal = require('../resources/libpostal/libpostal')
 
 // dictionaries sourced from the libpostal project
 // see: https://github.com/openvenues/libpostal
 
-class RoadTypeClassifier extends WordClassifier {
+class RoadTypeClassifier extends PhraseClassifier {
   setup () {
     // load street tokens
     this.index = {}

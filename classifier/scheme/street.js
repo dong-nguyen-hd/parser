@@ -8,7 +8,7 @@ module.exports = [
     scheme: [
       {
         is: ['StreetNameClassification'],
-        not: ['IntersectionClassification', 'PlaceClassification']
+        not: ['IntersectionClassification', 'PlaceClassification', 'RoadTypeClassification']
       }
     ]
   },
@@ -27,6 +27,26 @@ module.exports = [
       },
       {
         is: ['NumericClassification'],
+        not: ['IntersectionClassification']
+      }
+    ]
+  },
+  ,
+  {
+    // [street-prefix + 2 slot]
+    confidence: 0.77,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['IntersectionClassification', 'PlaceClassification']
+      },
+      {
+        is: ['AlphaClassification', 'AreaClassification'],
+        not: ['IntersectionClassification']
+      },
+      {
+        is: ['AlphaClassification', 'AreaClassification'],
         not: ['IntersectionClassification']
       }
     ]

@@ -53,15 +53,15 @@ class AddressParser extends Parser {
         new StreetPrefixClassifier(),
         new StreetSuffixClassifier(),
         new StreetProperNameClassifier(),
-        new RoadTypeClassifier(),
         // new ToponymClassifier(),
         // new CompoundStreetClassifier(),
         // new DirectionalClassifier(),
         // new OrdinalClassifier(),
         new StopWordClassifier(),
         new SurnameClassifier(),
-
+        
         // phrase classifiers
+        new RoadTypeClassifier(),
         new PlaceClassifier(),
         //new IntersectionClassifier(),
         //new PersonClassifier(),
