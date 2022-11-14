@@ -33,7 +33,7 @@ module.exports = [
   },
   ,
   {
-    // [street-prefix + 2 slot]
+    // [street-prefix + 2 slot/2 area]
     confidence: 0.77,
     Class: StreetClassification,
     scheme: [
@@ -52,12 +52,12 @@ module.exports = [
     ]
   },
   {
-    // [alphanumeric + 2 slot]
+    // [numeric + 2 slot]
     confidence: 0.77,
     Class: StreetClassification,
     scheme: [
       {
-        is: ['AlphaNumericClassification', 'NumericClassification'],
+        is: ['NumericClassification'],
         not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
       },
       {
@@ -71,12 +71,12 @@ module.exports = [
     ]
   },
   {
-    // [alphanumeric + 3 slot]
+    // [numeric + 3 slot]
     confidence: 0.77,
     Class: StreetClassification,
     scheme: [
       {
-        is: ['AlphaNumericClassification', 'NumericClassification'],
+        is: ['NumericClassification'],
         not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
       },
       {
@@ -94,12 +94,12 @@ module.exports = [
     ]
   },
   {
-    // [alphanumeric + 4 slot]
+    // [numeric + 4 slot]
     confidence: 0.77,
     Class: StreetClassification,
     scheme: [
       {
-        is: ['AlphaNumericClassification', 'NumericClassification'],
+        is: ['NumericClassification'],
         not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
       },
       {
