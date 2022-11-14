@@ -183,6 +183,14 @@ function parse(t) {
     return true;
   }
 
+  function getAdminClosest(){
+    if(parsed_text.region) return `, ${parsed_text.region}`;
+    if(parsed_text.county) return `, ${parsed_text.county}`;
+    if(parsed_text.locality) return `, ${parsed_text.locality}`;
+
+    return '';
+  }
+
   // squash multiple adjacent whitespace characters into a single space
   prefix = prefix.replace(/\s+/g, ' ').trim();
   postfix = postfix.replace(/\s+/g, ' ').trim();
@@ -194,33 +202,26 @@ function parse(t) {
   // 4. set 'subject', this is the text which will target the 'name.*'
   // fields in elasticsearch queries
 
-  // an address query
-  if (!_.isEmpty(parsed_text.housenumber) && !_.isEmpty(parsed_text.street)) {
-    parsed_text.subject = `${parsed_text.housenumber} ${parsed_text.street}`;
-  }
-  // an intersection query
-  else if (!_.isEmpty(parsed_text.street) && !_.isEmpty(parsed_text.cross_street)) {
-    parsed_text.subject = `${parsed_text.street} & ${parsed_text.cross_street}`;
-  }
   // only contain two component or component same name
-  else if (Object.keys(parsed_text).length === 1 || isDuplicateAdmin()) {
+  if (Object.keys(parsed_text).length === 1 || isDuplicateAdmin()) {
     parsed_text.subject = body;
+  }
+  // a venue query
+  else if (!_.isEmpty(parsed_text.venue)) {
+    parsed_text.subject = `${parsed_text.venue}${getAdminClosest()}`;
   }
   // a street query
   else if (!_.isEmpty(parsed_text.street)) {
-    parsed_text.subject = parsed_text.street;
+    parsed_text.subject = `${parsed_text.street}${getAdminClosest()}`;
   }
   // query with a $prefix such as a venue query
   else if (!_.isEmpty(prefix)) {
     parsed_text.subject = prefix;
   }
-  // a postcode query
-  else if (!_.isEmpty(parsed_text.postcode)) {
-    parsed_text.subject = parsed_text.postcode;
-  }
+  //
   // a locality query
   else if (!_.isEmpty(parsed_text.locality)) {
-    parsed_text.subject = parsed_text.locality;
+    parsed_text.subject = `${parsed_text.locality}${getAdminClosest()}`;
 
     // remove the locality name from $admin
     if (parsed_text.admin) {
@@ -234,7 +235,7 @@ function parse(t) {
   }
   // a county query
   else if (!_.isEmpty(parsed_text.county)) {
-    parsed_text.subject = parsed_text.county;
+    parsed_text.subject = `${parsed_text.county}${getAdminClosest()}`;
 
     // remove the county name from $admin
     if (parsed_text.admin) {
@@ -248,7 +249,7 @@ function parse(t) {
   }
   // a region query
   else if (!_.isEmpty(parsed_text.region)) {
-    parsed_text.subject = parsed_text.region;
+    parsed_text.subject = `${parsed_text.region}${getAdminClosest()}`;
 
     // remove the region name from $admin
     if (parsed_text.admin) {

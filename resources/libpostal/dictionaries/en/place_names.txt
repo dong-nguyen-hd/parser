@@ -313,3 +313,4 @@ winery
 yoga
 youth center|youth centre
 zoo
+pearl

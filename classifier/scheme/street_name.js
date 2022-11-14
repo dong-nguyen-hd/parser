@@ -2,21 +2,36 @@ const StreetNameClassification = require('../../classification/StreetNameClassif
 
 module.exports = [
   {
+    //  [surname + 1 slot]
+    confidence: 0.5,
+    Class: StreetNameClassification,
+    scheme: [
+      {
+        is: ['SurnameClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      },
+      {
+        is: ['AlphaClassification', 'SurnameClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      }
+    ]
+  },
+  {
     //  [surname + 2 slot]
     confidence: 0.5,
     Class: StreetNameClassification,
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       }
     ]
   },
@@ -27,19 +42,19 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       }
     ]
   },
@@ -50,23 +65,23 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
       }
     ]
   },

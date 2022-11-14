@@ -1,11 +1,12 @@
 const WordClassifier = require('./super/WordClassifier')
+const PhraseClassifier = require('./super/PhraseClassifier')
 const PlaceClassification = require('../classification/PlaceClassification')
 const libpostal = require('../resources/libpostal/libpostal')
 
 // dictionaries sourced from the libpostal project
 // see: https://github.com/openvenues/libpostal
 
-class PlaceClassifier extends WordClassifier {
+class PlaceClassifier extends PhraseClassifier {
   setup () {
     // load index tokens
     this.index = {}
@@ -29,7 +30,7 @@ class PlaceClassifier extends WordClassifier {
 
     // use an inverted index for full token matching as it's O(1)
     if (this.index.hasOwnProperty(span.norm)) {
-      span.classify(new PlaceClassification(1.0))
+      span.classify(new PlaceClassification(1))
     }
   }
 }
