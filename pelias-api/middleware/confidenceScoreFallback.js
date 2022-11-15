@@ -9,9 +9,6 @@
  * - fallback status (aka layer match between expected and actual)
  */
 
-const _ = require('lodash');
-const Debug = require('../helper/debug');
-
 function setup() {
   return computeScores;
 }
@@ -66,15 +63,15 @@ function computeConfidenceScore(req, hit) {
 function checkFallbackLevel(req, hit) {
   var baseConfidence = 0;
 
-  if (req.clean.parsed_text.hasOwnProperty("region")) {
+  if (req.clean.parsed_text.hasOwnProperty("region") && hit.parent.region) {
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.region, hit.parent.region, 0.8, 0.4);
   }
 
-  if (req.clean.parsed_text.hasOwnProperty("county")) {
+  if (req.clean.parsed_text.hasOwnProperty("county") && hit.parent.county) {
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.county, hit.parent.county, 0.6, 0.3);
   }
 
-  if (req.clean.parsed_text.hasOwnProperty("locality")) {
+  if (req.clean.parsed_text.hasOwnProperty("locality") && hit.parent.locality) {
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality, hit.parent.locality, 0.4, 0.2);
   }
 
@@ -94,8 +91,10 @@ function checkFallbackLevel(req, hit) {
     } else {
       temp.push(hit.name.default);
     }
-    
-    baseConfidence += computeBaseConfidence(req.clean.parsed_text.street, temp, 0.2, 0.1);
+
+    if (temp) {
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.street, temp, 0.2, 0.1);
+    }
   }
 
   if (req.clean.parsed_text.hasOwnProperty("venue")) {
@@ -115,7 +114,9 @@ function checkFallbackLevel(req, hit) {
       temp.push(hit.name.default);
     }
 
-    baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue, temp, 0.2, 0.1);
+    if (temp) {
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue, temp, 0.1, 0.05);
+    }
   }
 
   return baseConfidence;
