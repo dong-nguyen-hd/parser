@@ -16,15 +16,15 @@ const placetypes = {
     files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, CountryClassification]
   },
-  province: {
+  region: {
     files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, RegionClassification]
   },
-  district: {
+  county: {
     files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, CountyClassification]
   },
-  commune: {
+  locality: {
     files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, LocalityClassification]
   }

@@ -12,11 +12,11 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification', 'StopWordClassification']
+        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: []
+        not: ['ObscureClassification']
       },
     ]
   },
@@ -31,15 +31,15 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification', 'StopWordClassification']
+        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification']
+        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ["StopWordClassification"]
+        not: ["ObscureClassification"]
       },
     ]
   },
@@ -54,7 +54,7 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification', 'StopWordClassification']
+        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
@@ -66,7 +66,7 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ["StopWordClassification"]
+        not: ["ObscureClassification"]
       },
     ]
   },
@@ -77,7 +77,7 @@ module.exports = [
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification', 'StopWordClassification']
+        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['PlaceClassification'],
@@ -92,7 +92,7 @@ module.exports = [
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'StopWordClassification']
+        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
@@ -111,15 +111,15 @@ module.exports = [
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'StopWordClassification']
+        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'StopWordClassification']
+        not: ['PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'StopWordClassification']
+        not: ['PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['PlaceClassification'],
@@ -134,11 +134,11 @@ module.exports = [
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'StopWordClassification']
+        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification',]
+        not: ['PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
@@ -146,7 +146,7 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'StopWordClassification']
+        not: ['PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['PlaceClassification'],

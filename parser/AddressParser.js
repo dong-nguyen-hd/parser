@@ -12,6 +12,7 @@ const CompoundStreetClassifier = require('../classifier/CompoundStreetClassifier
 const DirectionalClassifier = require('../classifier/DirectionalClassifier')
 const OrdinalClassifier = require('../classifier/OrdinalClassifier')
 const StopWordClassifier = require('../classifier/StopWordClassifier')
+const ObscureClassifier = require('../classifier/ObscureClassifier')
 const PersonClassifier = require('../classifier/PersonClassifier')
 const GivenNameClassifier = require('../classifier/GivenNameClassifier')
 const SurnameClassifier = require('../classifier/SurnameClassifier')
@@ -58,6 +59,7 @@ class AddressParser extends Parser {
         // new DirectionalClassifier(),
         // new OrdinalClassifier(),
         new StopWordClassifier(),
+        new ObscureClassifier(),
         new SurnameClassifier(),
         
         // phrase classifiers
@@ -89,12 +91,10 @@ class AddressParser extends Parser {
         new MultiStreetSolver(),
         new SubsetFilter(),
 
-        new InvalidSolutionFilter([
-          ['VenueClassification', 'RegionClassification'],
-          ['VenueClassification', 'CountryClassification'],
-          ['StreetClassification', 'RegionClassification'],
-          ['StreetClassification', 'CountryClassification'],
-        ]),
+        // new InvalidSolutionFilter([
+        //   ['VenueClassification', 'RegionClassification'],
+        //   ['VenueClassification', 'CountryClassification'],
+        // ]),
 
         new MustNotFollowFilter('RegionClassification', 'CountryClassification'),
         new MustNotFollowFilter('CountyClassification', 'CountryClassification'),

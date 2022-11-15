@@ -6,7 +6,7 @@ ao
 ân
 âu|au
 âu
-dương|duong
+dương
 ấu
 bá|ba
 bạc|bac
@@ -37,8 +37,7 @@ chiêm|chiem
 châu|chau
 chu
 chắng|chang
-chung|chung
-chúng|chung
+chúng
 chương|chuong
 chử
 cồ|co
@@ -79,8 +78,7 @@ dư
 đồng|dong
 đổng|dong
 đới|đái|doi|dai
-đương|duong
-đường
+đương
 đức|duc
 giả|gia
 giao|giao
@@ -305,5 +303,5 @@ bùi|bui
 đỗ|do
 hồ|ho
 ngô|ngo
-dương|duong
+dương
 lý|ly
