@@ -10,9 +10,7 @@
  */
 
 const _ = require('lodash');
-const logger = require('pelias-logger').get('api');
 const Debug = require('../helper/debug');
-const debugLog = new Debug('middleware:confidenceScoreFallback');
 
 function setup() {
   return computeScores;
@@ -49,198 +47,136 @@ function computeScores(req, res, next) {
  * @returns {object}
  */
 function computeConfidenceScore(req, hit) {
+  hit.confidence = 0.1;
 
   // if parsed text doesn't exist, which it never should, just assign a low confidence and move on
   if (!req.clean.hasOwnProperty('parsed_text')) {
-    hit.confidence = 0.1;
     hit.match_type = 'unknown';
     return hit;
   }
 
-  // start with a confidence level of 1 because we trust ES queries to be accurate
-  hit.confidence = 1.0;
-
   // in the case of fallback there might be deductions
-  hit.confidence *= checkFallbackLevel(req, hit);
-
-  // truncate the precision
+  hit.confidence += checkFallbackLevel(req, hit);
+  if (hit.confidence > 0.1) hit.match_type = 'exact';
   hit.confidence = Number((hit.confidence).toFixed(3));
 
   return hit;
 }
 
-var lettt = { "center_point": { "lon": 106.651356, "lat": 10.756255 }, "parent": { "region": ["Thành phố Hồ Chí Minh"], "region_id": ["279"], "region_a": [null], "region_source": [null], "county": ["Quận 5"], "county_id": ["3774"], "county_a": [null], "county_source": [null], "locality": ["Phường 12"], "locality_id": ["427310"], "locality_a": [null], "locality_source": [null] }, "name": { "default": "487 Đường Nguyễn Chí Thanh" }, "address_parts": { "number": "487", "street": "Đường Nguyễn Chí Thanh" }, "source": "openstreetmap", "source_id": "node/6712316997", "layer": "address", "_id": "openstreetmap:address:node/6712316997", "_score": 69.29182, "distance": 1146.718, "confidence": 1 };
-
 function checkFallbackLevel(req, hit) {
-  if (hit.layer == 'address') {
-    console.log(JSON.stringify(hit));
-    hit.match_type = 'exact';
-    return 1.0
-  }
-  if (checkFallbackOccurred(req, hit)) {
-    hit.match_type = 'fallback';
+  var baseConfidence = 0;
 
-    // if we know a fallback occurred, deduct points based on layer granularity
-    switch (hit.layer) {
-      case 'venue':
-        //logger.warn('Fallback scenarios should not result in address or venue records!', req.clean.parsed_text);
-        return 0.8;
-      case 'address':
-        return 0.8;
-      case 'street':
-        return 0.8;
-      case 'postalcode':
-        return 0.8;
-      case 'localadmin':
-      case 'locality':
-      case 'borough':
-      case 'neighbourhood':
-        return 0.6;
-      case 'macrocounty':
-      case 'county':
-        return 0.4;
-      case 'region':
-        return 0.3;
-      case 'country':
-      case 'dependency':
-      case 'macroregion':
-        return 0.1;
-      default:
-        return 0.1;
+  if (req.clean.parsed_text.hasOwnProperty("region")) {
+    baseConfidence += computeBaseConfidence(req.clean.parsed_text.region, hit.parent.region, 0.8, 0.4);
+  }
+
+  if (req.clean.parsed_text.hasOwnProperty("county")) {
+    baseConfidence += computeBaseConfidence(req.clean.parsed_text.county, hit.parent.county, 0.6, 0.3);
+  }
+
+  if (req.clean.parsed_text.hasOwnProperty("locality")) {
+    baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality, hit.parent.locality, 0.4, 0.2);
+  }
+
+  if (req.clean.parsed_text.hasOwnProperty("street")) {
+    let temp = [];
+    if (Array.isArray(hit.name.default)) {
+      let arrTemp = hit.name.default;
+      let maxLenght = 0;
+      let indexMaxLenght = 0;
+      for (let i = 0; i < arrTemp.length; i++) {
+        if (arrTemp[i].length > maxLenght) {
+          maxLenght = arrTemp[i].length;
+          indexMaxLenght = i;
+        }
+      }
+      temp.push(hit.name.default[indexMaxLenght]);
+    } else {
+      temp.push(hit.name.default);
+    }
+    
+    baseConfidence += computeBaseConfidence(req.clean.parsed_text.street, temp, 0.2, 0.1);
+  }
+
+  if (req.clean.parsed_text.hasOwnProperty("venue")) {
+    let temp = [];
+    if (Array.isArray(hit.name.default)) {
+      let arrTemp = hit.name.default;
+      let maxLenght = 0;
+      let indexMaxLenght = 0;
+      for (let i = 0; i < arrTemp.length; i++) {
+        if (arrTemp[i].length > maxLenght) {
+          maxLenght = arrTemp[i].length;
+          indexMaxLenght = i;
+        }
+      }
+      temp.push(hit.name.default[indexMaxLenght]);
+    } else {
+      temp.push(hit.name.default);
     }
 
+    baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue, temp, 0.2, 0.1);
   }
 
-  hit.match_type = 'exact';
-  return 1.0;
+  return baseConfidence;
 }
 
 /**
- * In parsed_text we might find any of the following properties:
- *   query
- *   number
- *   street
- *   neighbourhood
- *   borough
- *   city
- *   county
- *   locality
- *   region
- *   state
- *   postalcode
- *   country
- *
- * They do not map 1:1 to our layers so the following somewhat complicated
- * mapping structure is needed to set clear rules for comparing what was requested
- * by the query and what has been received as a result to determine if a fallback occurred.
+ * 
+ * @param {*} parsedText 
+ * Component address in pelias-parser
+ * @param {*} hitLayer 
+ * Component address in database response
+ * @param {*} absoluteScore 
+ * Score when exact match
+ * @param {*} relativeScore 
+ * Score when relative match
+ * @returns 
  */
-const fallbackRules = [
-  {
-    name: 'venue',
-    notSet: [],
-    set: ['query', 'venue'],
-    expectedLayers: ['venue']
-  },
-  {
-    name: 'address',
-    notSet: ['query'],
-    set: ['housenumber', 'street'],
-    expectedLayers: ['address']
-  },
-  {
-    name: 'street',
-    notSet: ['query', 'housenumber'],
-    set: ['street'],
-    expectedLayers: ['street']
-  },
-  {
-    name: 'city',
-    notSet: ['query', 'housenumber', 'street', 'postalcode', 'neighbourhood', 'borough'],
-    set: ['city'],
-    expectedLayers: ['borough', 'locality', 'localadmin']
-  },
-  {
-    name: 'locality',
-    notSet: ['query', 'housenumber', 'street', 'postalcode', 'neighbourhood', 'borough', 'city', 'county'],
-    set: ['locality'],
-    expectedLayers: ['locality']
-  },
-  {
-    name: 'county',
-    notSet: ['query', 'housenumber', 'street', 'postalcode', 'neighbourhood', 'borough', 'city'],
-    set: ['county'],
-    expectedLayers: ['county']
-  },
-  {
-    name: 'region',
-    notSet: ['query', 'housenumber', 'street', 'postalcode', 'neighbourhood', 'borough', 'city', 'county'],
-    set: ['region'],
-    expectedLayers: ['region']
-  },
-  {
-    name: 'state',
-    notSet: ['query', 'housenumber', 'street', 'postalcode', 'neighbourhood', 'borough', 'city', 'county'],
-    set: ['state'],
-    expectedLayers: ['region']
-  },
-  {
-    name: 'country',
-    notSet: ['query', 'housenumber', 'street', 'postalcode', 'neighbourhood', 'borough', 'city', 'county', 'state'],
-    set: ['country'],
-    expectedLayers: ['country']
-  }
-];
+function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScore) {
+  var baseConfidence = 0;
 
-function checkFallbackOccurred(req, hit) {
-  // short-circuit after finding the first fallback scenario
-  const res = _.find(fallbackRules, (rule) => {
-
-    return (
-      // verify that more granular properties are not set
-      //notSet(req.clean.parsed_text, rule.notSet) &&
-      // verify that expected property is set
-      areSet(req.clean.parsed_text, rule.set) &&
-      // verify that expected layer(s) was not returned
-      rule.expectedLayers.indexOf(hit.layer) === -1
-    );
-  });
-
-  // see: https://github.com/pelias/api/pull/1436
-  if (Debug.isEnabled(req) && res) {
-    if (!_.isArray(hit.debug)) { hit.debug = []; }
-    hit.debug.push({
-      'middleware:confidenceScoreFallback': {
-        'fallback rule matched': res
+  if (hitLayer.length) {
+    hitLayer.every(element => {
+      let src = normalizeProcess(element);
+      if (src.includes(parsedText)) {
+        baseConfidence += absoluteScore;
+        return false;
+      } else if (toLowerCaseNonAccentVietnamese(src).includes(parsedText)) {
+        baseConfidence += relativeScore;
+        return false;
       }
     });
   }
 
-  return !!res;
+  return baseConfidence;
 }
 
-function notSet(parsed_text, notSet) {
-  if (notSet.length === 0) {
-    return true;
-  }
+/**
+ * This function converts the string to lowercase, then perform the conversion
+ * Thanks for: https://gist.github.com/jarvisluong/f01e108e963092336f04c4b7dd6f7e45
+ * @param {*} str
+ * @returns 
+ */
+function toLowerCaseNonAccentVietnamese(str) {
+  str = str.toLowerCase();
 
-  return (
-    _.every(notSet, (prop) => {
-      return !_.get(parsed_text, prop, false);
-    })
-  );
+  str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+  str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+  str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+  str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+  str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+  str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+  str = str.replace(/đ/g, "d");
+  // Some system encode vietnamese combining accent as individual utf-8 characters
+  str = str.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, ""); // Huyền sắc hỏi ngã nặng 
+  str = str.replace(/\u02C6|\u0306|\u031B/g, ""); // Â, Ê, Ă, Ơ, Ư
+  return str;
 }
 
-function areSet(parsed_text, areSet) {
-  if (areSet.length === 0) {
-    logger.warn('Expected properties in fallbackRules should never be empty');
-    return true;
-  }
-
-  return (
-    _.every(areSet, (prop) => {
-      return _.get(parsed_text, prop, false);
-    })
-  );
+function normalizeProcess(src) {
+  var temp = src.normalize('NFC').toLowerCase().trim().replace(/ +(?= )/g, '');
+  return temp;
 }
 
 module.exports = setup;
