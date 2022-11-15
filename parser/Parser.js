@@ -64,12 +64,12 @@ class Parser {
 
       if (classification.a === 'CountryClassification') { return -1 }
       if (classification.b === 'CountryClassification') { return +1 }
-      if (classification.a === 'ProvinceClassification') { return -1 }
-      if (classification.b === 'ProvinceClassification') { return +1 }
-      if (classification.a === 'DistrictClassification') { return -1 }
-      if (classification.b === 'DistrictClassification') { return +1 }
-      if (classification.a === 'CommuneClassification') { return -1 }
-      if (classification.b === 'CommuneClassification') { return +1 }
+      if (classification.a === 'RegionClassification') { return -1 }
+      if (classification.b === 'RegionClassification') { return +1 }
+      if (classification.a === 'CountyClassification') { return -1 }
+      if (classification.b === 'CountyClassification') { return +1 }
+      if (classification.a === 'LocalityClassification') { return -1 }
+      if (classification.b === 'LocalityClassification') { return +1 }
     }
 
     // sort results by score desc

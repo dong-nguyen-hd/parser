@@ -90,25 +90,25 @@ class AddressParser extends Parser {
         new SubsetFilter(),
 
         new InvalidSolutionFilter([
-          ['VenueClassification', 'ProvinceClassification'],
+          ['VenueClassification', 'RegionClassification'],
           ['VenueClassification', 'CountryClassification'],
-          ['StreetClassification', 'ProvinceClassification'],
+          ['StreetClassification', 'RegionClassification'],
           ['StreetClassification', 'CountryClassification'],
         ]),
 
-        new MustNotFollowFilter('ProvinceClassification', 'CountryClassification'),
-        new MustNotFollowFilter('DistrictClassification', 'CountryClassification'),
-        new MustNotFollowFilter('CommuneClassification', 'CountryClassification'),
+        new MustNotFollowFilter('RegionClassification', 'CountryClassification'),
+        new MustNotFollowFilter('CountyClassification', 'CountryClassification'),
+        new MustNotFollowFilter('LocalityClassification', 'CountryClassification'),
 
-        new MustNotFollowFilter('DistrictClassification', 'ProvinceClassification'),
-        new MustNotFollowFilter('CommuneClassification', 'ProvinceClassification'),
+        new MustNotFollowFilter('CountyClassification', 'RegionClassification'),
+        new MustNotFollowFilter('LocalityClassification', 'RegionClassification'),
 
-        new MustNotFollowFilter('CommuneClassification', 'DistrictClassification'),
+        new MustNotFollowFilter('LocalityClassification', 'CountyClassification'),
 
         new MustNotFollowFilter('VenueClassification', 'StreetClassification'),
-        new MustNotFollowFilter('VenueClassification', 'CommuneClassification'),
-        new MustNotFollowFilter('VenueClassification', 'DistrictClassification'),
-        new MustNotFollowFilter('VenueClassification', 'ProvinceClassification'),
+        new MustNotFollowFilter('VenueClassification', 'LocalityClassification'),
+        new MustNotFollowFilter('VenueClassification', 'CountyClassification'),
+        new MustNotFollowFilter('VenueClassification', 'RegionClassification'),
         new MustNotFollowFilter('VenueClassification', 'CountryClassification'),
 
         //new HouseNumberPositionPenalty(),

@@ -2,8 +2,8 @@
 // eg. {housenumber} should not be more than n chars from {street}
 
 const MAX_DISTANCE = 2;
-const MAX_DISTANCE_COMMUNE_DISTRICT = 6;
-const MAX_DISTANCE_DISTRICT_PROVINCE = 6;
+const MAX_DISTANCE_LOCALITY_COUNTY = 6;
+const MAX_DISTANCE_COUNTY_REGION = 6;
 
 class TokenDistanceFilter {
   solve (tokenizer) {
@@ -11,22 +11,22 @@ class TokenDistanceFilter {
       //const housenumber = s.pair.filter(p => p.classification.constructor.name === 'HouseNumberClassification')
       //const street = s.pair.filter(p => p.classification.constructor.name === 'StreetClassification');
       //const venue = s.pair.filter(p => p.classification.constructor.name === 'VenueClassification');
-      const commune = s.pair.filter(p => p.classification.constructor.name === 'CommuneClassification');
-      const district = s.pair.filter(p => p.classification.constructor.name === 'DistrictClassification');
-      const province = s.pair.filter(p => p.classification.constructor.name === 'ProvinceClassification');
+      const locality = s.pair.filter(p => p.classification.constructor.name === 'LocalityClassification');
+      const county = s.pair.filter(p => p.classification.constructor.name === 'CountyClassification');
+      const region = s.pair.filter(p => p.classification.constructor.name === 'RegionClassification');
 
-      // both commune and district classified
+      // both locality and county classified
       // ensure tokens are less than n distance apart
-      if (commune.length > 0 && district.length > 0) {
-        if (district[0].span.distance(commune[0].span) > MAX_DISTANCE_COMMUNE_DISTRICT) { 
+      if (locality.length > 0 && county.length > 0) {
+        if (county[0].span.distance(locality[0].span) > MAX_DISTANCE_LOCALITY_COUNTY) { 
           return false
         }
       }
 
-      // both province and district classified
+      // both region and county classified
       // ensure tokens are less than n distance apart
-      if (province.length > 0 && district.length > 0) {
-        if (district[0].span.distance(province[0].span) > MAX_DISTANCE_DISTRICT_PROVINCE) { 
+      if (region.length > 0 && county.length > 0) {
+        if (county[0].span.distance(region[0].span) > MAX_DISTANCE_COUNTY_REGION) { 
           return false
         }
       }

@@ -1,6 +1,6 @@
 const Classification = require('./Classification')
 
-class CommuneClassification extends Classification {
+class LocalityClassification extends Classification {
   constructor (confidence, meta) {
     super(confidence, meta)
     this.public = true
@@ -8,4 +8,4 @@ class CommuneClassification extends Classification {
   }
 }
 
-module.exports = CommuneClassification
+module.exports = LocalityClassification

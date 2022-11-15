@@ -49,9 +49,6 @@
     "tap-spec": "^5.0.0",
     "tape": "^4.4.0"
   },
-  "pre-commit": [
-    "validate"
-  ],
   "release": {
     "branch": "master",
     "success": []

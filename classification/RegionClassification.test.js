@@ -1,4 +1,4 @@
-const Classification = require('./ProvinceClassification')
+const Classification = require('./RegionClassification')
 
 module.exports.tests = {}
 
@@ -15,7 +15,7 @@ module.exports.tests.constructor = (test) => {
 
 module.exports.all = (tape, common) => {
   function test (name, testFunction) {
-    return tape(`ProvinceClassification: ${name}`, testFunction)
+    return tape(`RegionClassification: ${name}`, testFunction)
   }
 
   for (const testCase in module.exports.tests) {

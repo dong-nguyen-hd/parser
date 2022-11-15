@@ -1,11 +1,11 @@
 const Classification = require('./Classification')
 
-class ProvinceClassification extends Classification {
+class CountyClassification extends Classification {
   constructor (confidence, meta) {
     super(confidence, meta)
     this.public = true
-    this.label = 'region'
+    this.label = 'county'
   }
 }
 
-module.exports = ProvinceClassification
+module.exports = CountyClassification

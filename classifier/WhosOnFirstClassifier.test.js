@@ -38,7 +38,7 @@ module.exports.tests.locality = (test) => {
   valid.forEach(token => {
     test(`locality: ${token}`, (t) => {
       const s = classify(token)
-      t.true(s.classifications.hasOwnProperty('DistrictClassification'))
+      t.true(s.classifications.hasOwnProperty('CountyClassification'))
       t.true(s.classifications.hasOwnProperty('AreaClassification'))
       t.end()
     })
@@ -51,7 +51,7 @@ module.exports.tests.valid_pelias_localities = (test) => {
   valid.forEach(token => {
     test(`valid pelias locality: ${token}`, (t) => {
       const s = classify(token)
-      t.true(s.classifications.hasOwnProperty('DistrictClassification'))
+      t.true(s.classifications.hasOwnProperty('CountyClassification'))
       t.true(s.classifications.hasOwnProperty('AreaClassification'))
       t.end()
     })
@@ -64,7 +64,7 @@ module.exports.tests.invalid_pelias_localities = (test) => {
   invalid.forEach(token => {
     test(`invalid pelias locality: ${token}`, (t) => {
       const s = classify(token)
-      t.false(s.classifications.hasOwnProperty('DistrictClassification'))
+      t.false(s.classifications.hasOwnProperty('CountyClassification'))
       t.end()
     })
   })

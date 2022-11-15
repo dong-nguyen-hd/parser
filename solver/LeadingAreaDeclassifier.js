@@ -7,9 +7,9 @@ const NETURAL_CLASSIFICATIONS = [
 ]
 
 const ADMIN_CLASSIFICATIONS = [
-  'CommuneClassification',
-  'DistrictClassification',
-  'ProvinceClassification',
+  'LocalityClassification',
+  'CountyClassification',
+  'RegionClassification',
   'CountryClassification'
 ]
 

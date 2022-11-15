@@ -1,9 +1,9 @@
 const PhraseClassifier = require('./super/PhraseClassifier')
 const AreaClassification = require('../classification/AreaClassification')
 const CountryClassification = require('../classification/CountryClassification')
-const CommuneClassification = require('../classification/CommuneClassification')
-const ProvinceClassification = require('../classification/ProvinceClassification')
-const DistrictClassification = require('../classification/DistrictClassification')
+const LocalityClassification = require('../classification/LocalityClassification')
+const RegionClassification = require('../classification/RegionClassification')
+const CountyClassification = require('../classification/CountyClassification')
 const whosonfirst = require('../resources/whosonfirst/whosonfirst')
 const normalize = require('../tokenization/normalizer')({ lowercase: true, removeHyphen: true, removeAccents: true })
 
@@ -18,15 +18,15 @@ const placetypes = {
   },
   province: {
     files: ['name_vi_x_preferred.txt'],
-    classifications: [AreaClassification, ProvinceClassification]
+    classifications: [AreaClassification, RegionClassification]
   },
   district: {
     files: ['name_vi_x_preferred.txt'],
-    classifications: [AreaClassification, DistrictClassification]
+    classifications: [AreaClassification, CountyClassification]
   },
   commune: {
     files: ['name_vi_x_preferred.txt'],
-    classifications: [AreaClassification, CommuneClassification]
+    classifications: [AreaClassification, LocalityClassification]
   }
 }
 
