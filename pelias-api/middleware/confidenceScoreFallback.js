@@ -9,6 +9,8 @@
  * - fallback status (aka layer match between expected and actual)
  */
 
+const _ = require('lodash');
+
 function setup() {
   return computeScores;
 }

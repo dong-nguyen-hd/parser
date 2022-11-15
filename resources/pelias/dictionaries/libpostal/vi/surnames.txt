@@ -121,7 +121,6 @@ khâu|khau
 khiếu|khieu
 khoa|khoa
 khổng|khong
-khu|khu
 khuất|khuat
 khúc|khuc
 khương|khuong
@@ -131,7 +130,7 @@ kim|kim
 ly|ly
 lý|ly
 la|la
-lã/lữ|la lu
+lã|lữ|la lu
 lành|lanh
 lãnh|lanh
 lạc|lac

@@ -89,11 +89,11 @@ class AddressParser extends Parser {
         new MultiStreetSolver(),
         new SubsetFilter(),
 
-        // Debug
         new InvalidSolutionFilter([
-          ['CommuneClassification', 'ProvinceClassification'],
-          ['HouseNumberClassification', 'ProvinceClassification'],
-          ['ProvinceClassification', 'CommuneClassification'],
+          ['VenueClassification', 'ProvinceClassification'],
+          ['VenueClassification', 'CountryClassification'],
+          ['StreetClassification', 'ProvinceClassification'],
+          ['StreetClassification', 'CountryClassification'],
         ]),
 
         new MustNotFollowFilter('ProvinceClassification', 'CountryClassification'),

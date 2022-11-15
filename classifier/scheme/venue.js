@@ -3,96 +3,96 @@ const VenueClassification = require('../../classification/VenueClassification')
 module.exports = [
   {
     // [place + 2 slot]
-    confidence: 0.82,
+    confidence: 0.81,
     Class: VenueClassification,
     scheme: [
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification']
+        not: ['StreetClassification', 'StreetNameClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'VenueClassification', 'StopWordClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification']
+        not: []
       },
     ]
   },
   {
     // [place + 3 slot]
-    confidence: 0.83,
+    confidence: 0.82,
     Class: VenueClassification,
     scheme: [
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification']
+        not: ['StreetClassification', 'StreetNameClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'VenueClassification', 'StopWordClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification']
+        not: ["StopWordClassification"]
       },
     ]
   },
   {
     // [place + 4 slot]
-    confidence: 0.84,
+    confidence: 0.83,
     Class: VenueClassification,
     scheme: [
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification']
+        not: ['StreetClassification', 'StreetNameClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'VenueClassification', 'StopWordClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification']
+        not: ["StopWordClassification"]
       },
     ]
   },
   {
     // [1 slot + place]
-    confidence: 0.8,
+    confidence: 0.84,
     Class: VenueClassification,
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification']
+        not: ['PlaceClassification', 'VenueClassification', 'StopWordClassification']
       },
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification']
+        not: ['StreetClassification', 'StreetNameClassification', 'VenueClassification']
       },
     ]
   },
   {
     // [2 slot + place]
-    confidence: 0.8,
+    confidence: 0.85,
     Class: VenueClassification,
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification']
+        not: ['VenueClassification', 'PlaceClassification', 'StopWordClassification']
       },
       {
         is: ['AlphaClassification'],
@@ -106,20 +106,20 @@ module.exports = [
   },
   {
     // [3 slot + place]
-    confidence: 0.8,
+    confidence: 0.86,
     Class: VenueClassification,
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification']
+        not: ['VenueClassification', 'PlaceClassification', 'StopWordClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'StopWordClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'StopWordClassification']
       },
       {
         is: ['PlaceClassification'],
@@ -129,12 +129,16 @@ module.exports = [
   },
   {
     // [4 slot + place]
-    confidence: 0.8,
+    confidence: 0.87,
     Class: VenueClassification,
     scheme: [
       {
         is: ['AlphaClassification'],
-        not: ['VenueClassification']
+        not: ['VenueClassification', 'PlaceClassification', 'StopWordClassification']
+      },
+      {
+        is: ['AlphaClassification'],
+        not: ['PlaceClassification',]
       },
       {
         is: ['AlphaClassification'],
@@ -142,11 +146,7 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
-      },
-      {
-        is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'StopWordClassification']
       },
       {
         is: ['PlaceClassification'],

@@ -3,7 +3,7 @@ const StreetClassification = require('../../classification/StreetClassification'
 module.exports = [
   {
     // [generic surname]
-    confidence: 0.76,
+    confidence: 0.71,
     Class: StreetClassification,
     scheme: [
       {
@@ -14,7 +14,7 @@ module.exports = [
   },
   {
     // [street-prefix + word + number]
-    confidence: 0.77,
+    confidence: 0.72,
     Class: StreetClassification,
     scheme: [
       {
@@ -34,7 +34,7 @@ module.exports = [
   ,
   {
     // [street-prefix + 2 slot/2 area]
-    confidence: 0.77,
+    confidence: 0.73,
     Class: StreetClassification,
     scheme: [
       {
@@ -53,7 +53,7 @@ module.exports = [
   },
   {
     // [numeric + 2 slot]
-    confidence: 0.77,
+    confidence: 0.74,
     Class: StreetClassification,
     scheme: [
       {
@@ -72,7 +72,7 @@ module.exports = [
   },
   {
     // [numeric + 3 slot]
-    confidence: 0.77,
+    confidence: 0.75,
     Class: StreetClassification,
     scheme: [
       {
@@ -95,7 +95,7 @@ module.exports = [
   },
   {
     // [numeric + 4 slot]
-    confidence: 0.77,
+    confidence: 0.76,
     Class: StreetClassification,
     scheme: [
       {
