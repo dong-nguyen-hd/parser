@@ -42,7 +42,6 @@ chương|chuong
 chử
 cồ|co
 cổ
-công|cong
 cống
 cung|cung
 cù|cu
@@ -279,7 +278,6 @@ văn|van
 vi|vi
 vĩnh|vinh
 viêm|viem
-viên|vien
 việt|viet
 vừ
 vương|vuong
