@@ -198,13 +198,13 @@ function parse(t) {
   if (Object.keys(parsed_text).length === 1 || isDuplicateAdmin()) {
     parsed_text.subject = body;
   }
-  // a venue query
-  else if (!_.isEmpty(parsed_text.venue)) {
-    parsed_text.subject = parsed_text.venue;
-  }
   // a street query
   else if (!_.isEmpty(parsed_text.street)) {
     parsed_text.subject = parsed_text.street;
+  }
+  // a venue query
+  else if (!_.isEmpty(parsed_text.venue)) {
+    parsed_text.subject = parsed_text.venue;
   }
   // a locality query
   else if (!_.isEmpty(parsed_text.locality)) {

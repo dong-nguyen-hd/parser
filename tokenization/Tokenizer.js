@@ -5,7 +5,7 @@ const permutate = require('./permutate')
 const libpostal = require('../resources/libpostal/libpostal')
 
 class Tokenizer {
-  constructor (s) {
+  constructor(s) {
     this.span = new Span(this.removeQualifier(s))
     this.segment()
     this.split()
@@ -14,8 +14,8 @@ class Tokenizer {
     this.solution = []
   }
 
-  removeQualifier(src){
-    if(!src) return src;
+  removeQualifier(src) {
+    if (!src) return src;
 
     this.index = {}
     libpostal.load(this.index, ['vi'], 'qualifiers.txt');
@@ -27,26 +27,47 @@ class Tokenizer {
     temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
     temp = temp.replace(/(?<=\D)(?:\s+(–|-)\s+)(?=\D+)/g, ' '); // (space) remove all [word + dash + word] => [word + space + word]
     temp = temp.replace(/(?<=\D)(?:–|-)(?=\D+)/g, ' '); // (non-space) remove all [word + dash + word] => [word + space + word]
-    temp = temp.replace(/(?:[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+$)/g, ""); // remove special char end
     temp = temp.replace(/(?:^[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char start
+    temp = temp.replace(/(?:[;|:|{|}|\[|\]|+|_|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char body
+    temp = temp.replace(/(?:[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+$)/g, ""); // remove special char end
 
-    if(!temp) return temp;
+    // TODO: temp of convert abbreviated, you should replace this function
+    temp = temp.replace(/(?<=\s|,)(hn\s*$)/, 'hà nội');
+    temp = temp.replace(/(?<=\s|,)(hcm\s*$)/, 'hồ chí minh');
+    temp = temp.replace(/(?<=\s|,)(sg\s*$)/, 'hồ chí minh');
+    temp = temp.replace(/(?<=\s|,)(sai gon\s*$)/, 'hồ chí minh');
+    temp = temp.replace(/(?<=\s|,)(sài gòn\s*$)/, 'hồ chí minh');
+    temp = temp.replace(/(?<=\s|,)(saigon\s*$)/, 'hồ chí minh');
+    temp = temp.replace(/(?<=\s|,)(hd\s*$)/, 'hải dương');
+    temp = temp.replace(/(?<=\s|,)(dn\s*$)/, 'đà nẵng');
+    temp = temp.replace(/(?<=\s|,)(hp\s*$)/, 'hải phòng');
 
-    for(var propertyName in this.index) {
-      if(propertyName == "phường"){
-        temp = temp.replace(/(?:phường)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "phường" follow by word
-      } else if(propertyName == "quận"){
-        temp = temp.replace(/(?:quận)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "quận" follow by word
-      } else if(propertyName == "q."){
-        temp = temp.replace(/(?:q\.)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "q." follow by word
-      } else if(propertyName == "p."){
-        temp = temp.replace(/(?:p\.)(?=\s*[a-záàạảãâấầậẩẫăắằặẳẵéèẹẻẽêếềệểễóòọỏõôốồộổỗơớờợởỡúùụủũưứừựửữíìịỉĩýỳỵỷỹđ]+)/g, ""); // remove "p." follow by word
-      } else temp = temp.replace(propertyName,'');
+    if (!temp) return temp;
+
+    for (var propertyName in this.index) {
+      let strRegex = propertyName.replace(".", "\\.");
+      let isMatchRegex = new RegExp(`(?<=\\s)(${strRegex})(?=\\s*\\d)`, 'g');
+
+      let excep = ["phường", "quận", "p.", "q."];
+      if (!(excep.some(x => x == propertyName) && isMatchRegex.test(temp))) {
+        // Avoid case "phường 4"
+        if (propertyName.indexOf('.') == (propertyName.length - 1)) {
+          let reg = new RegExp(`(?<=\\s)(${strRegex})`, 'g');
+          temp = temp.replace(reg, '');
+        } else {
+          let reg = new RegExp(`(?<=\\s)(${propertyName})(?=\\s+)`, 'g');
+          temp = temp.replace(reg, '');
+        }
+      } else {
+        // TODO: temp of convert abbreviated, you should replace this function
+        if (propertyName == "p.") temp = temp.replace(/p\./g, ' phường ');
+        if (propertyName == "q.") temp = temp.replace(/q\./g, ' quận ');
+      }
     }
-    
-    temp = temp.trim().replace(/ +(?= )/g,''); // remove duplicate space
 
-    if(temp.length > 140){
+    temp = temp.trim().replace(/ +(?= )/g, ''); // remove duplicate space
+
+    if (temp.length > 140) {
       let index = temp.length - 140;
       temp = temp.slice(index);
     }
@@ -54,18 +75,18 @@ class Tokenizer {
     return temp
   }
 
-  segment () {
+  segment() {
     this.section = split(this.span, funcs.fieldsFuncBoundary)
   }
 
-  split () {
+  split() {
     for (let i = 0; i < this.section.length; i++) {
       this.section[i].setChildren(split(this.section[i], funcs.fieldsFuncWhiteSpace))
       this.section[i].setChildren(split(this.section[i], funcs.fieldsFuncHyphenOrWhiteSpace))
     }
   }
 
-  permute (windowMin, windowMax) {
+  permute(windowMin, windowMax) {
     for (let i = 0; i < this.section.length; i++) {
       this.section[i].setPhrases(
         permutate(this.section[i].graph.findAll('child'), windowMin, windowMax)
@@ -73,12 +94,12 @@ class Tokenizer {
     }
   }
 
-  computeCoverageRec (sum, curr) {
+  computeCoverageRec(sum, curr) {
     if (!curr) { return sum }
     return this.computeCoverageRec(sum + curr.end - curr.start, curr.graph.findOne('next'))
   }
 
-  computeCoverage () {
+  computeCoverage() {
     this.coverage = 0
     this.section.forEach(s => {
       this.coverage += this.computeCoverageRec(0, s.graph.findOne('child'))
