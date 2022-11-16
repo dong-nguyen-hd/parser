@@ -48,9 +48,9 @@ byway|bywy
 camp|cp
 cape|cpe|cp
 canyon|cyn|cnyn
-caravan|cvan|cvn|c van
+caravan|cvan|cvn
 causeway|csway|cswy|causewy|caus|cause|cway
-center|centre|cetr|cntr|ctr|c|cen
+center|centre|cetr|cntr|ctr|cen
 centers|ctrs
 centreway|cnwy
 chase|ch|chas

@@ -203,7 +203,7 @@ function parse(t) {
     parsed_text.subject = parsed_text.street;
   }
   // a venue query
-  else if (!_.isEmpty(parsed_text.venue)) {
+  else if (!_.isEmpty(parsed_text.venue) && parsed_text.venue.split(' ') < 4) {
     parsed_text.subject = parsed_text.venue;
   }
   // a locality query

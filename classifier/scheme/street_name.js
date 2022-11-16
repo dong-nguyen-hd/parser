@@ -3,7 +3,7 @@ const StreetNameClassification = require('../../classification/StreetNameClassif
 module.exports = [
   {
     //  [surname + 1 slot]
-    confidence: 0.5,
+    confidence: 0.51,
     Class: StreetNameClassification,
     scheme: [
       {
@@ -12,13 +12,13 @@ module.exports = [
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
   {
     //  [surname + 2 slot]
-    confidence: 0.5,
+    confidence: 0.52,
     Class: StreetNameClassification,
     scheme: [
       {
@@ -27,17 +27,17 @@ module.exports = [
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
   {
     //  [surname + 3 slot]
-    confidence: 0.5,
+    confidence: 0.53,
     Class: StreetNameClassification,
     scheme: [
       {
@@ -46,7 +46,7 @@ module.exports = [
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
@@ -54,13 +54,13 @@ module.exports = [
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
   {
     //  [surname + 4 slot]
-    confidence: 0.5,
+    confidence: 0.54,
     Class: StreetNameClassification,
     scheme: [
       {
@@ -69,19 +69,19 @@ module.exports = [
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },

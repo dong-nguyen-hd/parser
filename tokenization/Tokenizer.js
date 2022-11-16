@@ -31,17 +31,6 @@ class Tokenizer {
     temp = temp.replace(/(?:[;|:|{|}|\[|\]|+|_|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char body
     temp = temp.replace(/(?:[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+$)/g, ""); // remove special char end
 
-    // TODO: temp of convert abbreviated, you should replace this function
-    temp = temp.replace(/(?<=\s|,)(hn\s*$)/, 'hà nội');
-    temp = temp.replace(/(?<=\s|,)(hcm\s*$)/, 'hồ chí minh');
-    temp = temp.replace(/(?<=\s|,)(sg\s*$)/, 'hồ chí minh');
-    temp = temp.replace(/(?<=\s|,)(sai gon\s*$)/, 'hồ chí minh');
-    temp = temp.replace(/(?<=\s|,)(sài gòn\s*$)/, 'hồ chí minh');
-    temp = temp.replace(/(?<=\s|,)(saigon\s*$)/, 'hồ chí minh');
-    temp = temp.replace(/(?<=\s|,)(hd\s*$)/, 'hải dương');
-    temp = temp.replace(/(?<=\s|,)(dn\s*$)/, 'đà nẵng');
-    temp = temp.replace(/(?<=\s|,)(hp\s*$)/, 'hải phòng');
-
     if (!temp) return temp;
 
     for (var propertyName in this.index) {
@@ -55,7 +44,7 @@ class Tokenizer {
           let reg = new RegExp(`(?<=\\s)(${strRegex})`, 'g');
           temp = temp.replace(reg, '');
         } else {
-          let reg = new RegExp(`(?<=\\s)(${propertyName})(?=\\s+)`, 'g');
+          let reg = new RegExp(`(?<=\\s)(${propertyName})(?=\\s+|,|\\.)`, 'g');
           temp = temp.replace(reg, '');
         }
       } else {
@@ -63,6 +52,17 @@ class Tokenizer {
         if (propertyName == "p.") temp = temp.replace(/p\./g, ' phường ');
         if (propertyName == "q.") temp = temp.replace(/q\./g, ' quận ');
       }
+
+      // TODO: temp of convert abbreviated, you should replace this function
+      temp = temp.replace(/(?<=\s|,)(hn\s*$)/, ' hà nội ');
+      temp = temp.replace(/(?<=\s|,)(hcm\s*$)/, ' hồ chí minh ');
+      temp = temp.replace(/(?<=\s|,)(sg\s*$)/, ' hồ chí minh ');
+      temp = temp.replace(/(?<=\s|,)(sai gon\s*$)/, ' hồ chí minh ');
+      temp = temp.replace(/(?<=\s|,)(sài gòn\s*$)/, ' hồ chí minh ');
+      temp = temp.replace(/(?<=\s|,)(saigon\s*$)/, ' hồ chí minh ');
+      temp = temp.replace(/(?<=\s|,)(hd\s*$)/, ' hải dương ');
+      temp = temp.replace(/(?<=\s|,)(dn\s*$)/, ' đà nẵng ');
+      temp = temp.replace(/(?<=\s|,)(hp\s*$)/, ' hải phòng ');
     }
 
     temp = temp.trim().replace(/ +(?= )/g, ''); // remove duplicate space

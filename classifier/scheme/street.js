@@ -32,8 +32,23 @@ module.exports = [
     ]
   },
   {
-    // [street-prefix + 2 slot/2 area]
+    // [street-prefix + 1 area]
     confidence: 0.73,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification'],
+        not: ['IntersectionClassification']
+      },
+      {
+        is: ['AreaClassification', 'VenueClassification'],
+        not: ['IntersectionClassification']
+      },
+    ]
+  },
+  {
+    // [street-prefix + 2 slot/2 area]
+    confidence: 0.74,
     Class: StreetClassification,
     scheme: [
       {
@@ -52,25 +67,6 @@ module.exports = [
   },
   {
     // [numeric + 2 slot]
-    confidence: 0.74,
-    Class: StreetClassification,
-    scheme: [
-      {
-        is: ['NumericClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
-      },
-      {
-        is: ['SurnameClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
-      },
-      {
-        is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
-      }
-    ]
-  },
-  {
-    // [numeric + 3 slot]
     confidence: 0.75,
     Class: StreetClassification,
     scheme: [
@@ -80,20 +76,16 @@ module.exports = [
       },
       {
         is: ['SurnameClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
-      },
-      {
-        is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
       }
     ]
   },
   {
-    // [numeric + 4 slot]
+    // [numeric + 3 slot]
     confidence: 0.76,
     Class: StreetClassification,
     scheme: [
@@ -103,19 +95,42 @@ module.exports = [
       },
       {
         is: ['SurnameClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+      }
+    ]
+  },
+  {
+    // [numeric + 4 slot]
+    confidence: 0.77,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification'],
         not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
       },
       {
+        is: ['SurnameClassification', 'StreetNameClassification', 'AreaClassification'],
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+      },
+      {
         is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+      },
+      {
+        is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+      },
+      {
+        is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
       }
     ]
   },

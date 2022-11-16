@@ -96,11 +96,11 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: ['PlaceClassification', 'ObscureClassification']
       },
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification']
+        not: ['StreetClassification', 'StreetNameClassification', 'ObscureClassification']
       },
     ]
   },
