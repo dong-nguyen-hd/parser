@@ -208,7 +208,8 @@ sái|sai
 sâm|sam
 sầm|sam
 sơn|son
-sử|su
+sử|
+sư
 sùng|sung
 sỳ|sy
 tán|tan
