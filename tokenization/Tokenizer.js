@@ -44,7 +44,7 @@ class Tokenizer {
           let reg = new RegExp(`(?<=\\s)(${strRegex})`, 'g');
           temp = temp.replace(reg, '');
         } else {
-          let reg = new RegExp(`(?<=\\s)(${strRegex})(?=\\s+|,|\\.)`, 'g');
+          let reg = new RegExp(`(?<=\\s|^)(${strRegex})(?=\\s+|,|\\.|$)`, 'g');
           temp = temp.replace(reg, '');
         }
       } else {
