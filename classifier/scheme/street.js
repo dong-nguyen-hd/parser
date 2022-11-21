@@ -13,6 +13,21 @@ module.exports = [
     ]
   },
   {
+    // [street-prefix + date]
+    confidence: 0.71,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['IntersectionClassification', 'PlaceClassification']
+      },
+      {
+        is: ['AlphaNumericClassification'],
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+      },
+    ]
+  },
+  {
     // [street-prefix + word + number]
     confidence: 0.72,
     Class: StreetClassification,
