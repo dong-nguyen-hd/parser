@@ -5,6 +5,7 @@ const unicode = require('../helper/unicode');
 const Tokenizer = require('pelias-parser/tokenization/Tokenizer');
 const Solution = require('pelias-parser/solver/Solution');
 const AddressParser = require('pelias-parser/parser/AddressParser');
+const Abbreviation = require('pelias-parser/resources/abbreviation/abbreviation')
 const parser = new AddressParser();
 const _ = require('lodash');
 
@@ -72,7 +73,7 @@ function _sanitize(raw, clean, req) {
     // parse text with pelias/parser
     clean.text = text;
     clean.parser = 'pelias';
-    clean.parsed_text = parse(tokenizer);
+    clean.parsed_text = mappingAbbreviated(parse(tokenizer));
 
     console.log("DongND");
     console.log(clean);
@@ -80,6 +81,15 @@ function _sanitize(raw, clean, req) {
   }
 
   return messages;
+}
+
+function mappingAbbreviated(parsed_text) {
+  if(parsed_text.region){
+    var map = Abbreviation.setContentRegionToMap();
+    if(map.get(parsed_text.region)) parsed_text.region = map.get(parsed_text.region);
+  }
+
+  return parsed_text;
 }
 
 function parse(t) {

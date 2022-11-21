@@ -82,7 +82,7 @@ class AddressParser extends Parser {
         //new CompositeClassifier(require('../classifier/scheme/intersection')),
 
         // additional classifiers which act on unclassified tokens
-        // new CentralEuropeanStreetNameClassifier()
+        //new CentralEuropeanStreetNameClassifier()
       ],
       // solvers
       [

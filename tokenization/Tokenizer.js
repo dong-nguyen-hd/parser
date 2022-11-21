@@ -52,17 +52,6 @@ class Tokenizer {
         if (propertyName == "p.") temp = temp.replace(/p\./g, ' phường ');
         if (propertyName == "q.") temp = temp.replace(/q\./g, ' quận ');
       }
-
-      // TODO: temp of convert abbreviated, you should replace this function
-      temp = temp.replace(/(?<=\s|,)(hn\s*$)/g, ' hà nội ');
-      temp = temp.replace(/(?<=\s|,)(hcm\s*$)/g, ' hồ chí minh ');
-      temp = temp.replace(/(?<=\s|,)(sg\s*$)/g, ' hồ chí minh ');
-      temp = temp.replace(/(?<=\s|,)(sai gon\s*$)/g, ' hồ chí minh ');
-      temp = temp.replace(/(?<=\s|,)(sài gòn\s*$)/g, ' hồ chí minh ');
-      temp = temp.replace(/(?<=\s|,)(saigon\s*$)/g, ' hồ chí minh ');
-      temp = temp.replace(/(?<=\s|,)(hd\s*$)/g, ' hải dương ');
-      temp = temp.replace(/(?<=\s|,)(dn\s*$)/g, ' đà nẵng ');
-      temp = temp.replace(/(?<=\s|,)(hp\s*$)/g, ' hải phòng ');
     }
 
     temp = temp.trim().replace(/ +(?= )/g, ''); // remove duplicate space

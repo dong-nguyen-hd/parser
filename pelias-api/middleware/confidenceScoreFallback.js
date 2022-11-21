@@ -32,9 +32,18 @@ function computeScores(req, res, next) {
   res.data = res.data.map(computeConfidenceScore.bind(null, req));
 
   // sort by confidence 
-  res.data.sort(function (a, b) { return b.confidence - a.confidence });
+  res.data = filterHitValid(res.data);
 
   next();
+}
+
+function filterHitValid(data){
+  if(data.length) {
+    let validArr = data.filter(x => x.confidence != 0);
+    return validArr.sort(function (a, b) { return b.confidence - a.confidence });
+  }
+
+  return [];
 }
 
 /**
@@ -55,7 +64,9 @@ function computeConfidenceScore(req, hit) {
   }
 
   // in the case of fallback there might be deductions
-  hit.confidence += checkFallbackLevel(req, hit);
+  let confidence = checkFallbackLevel(req, hit);
+  if(confidence) hit.confidence += checkFallbackLevel(req, hit);
+  else hit.confidence = 0;
   if (hit.confidence > 0.1) hit.match_type = 'exact';
   hit.confidence = Number((hit.confidence).toFixed(3));
 
@@ -66,7 +77,9 @@ function checkFallbackLevel(req, hit) {
   var baseConfidence = 0;
 
   if (req.clean.parsed_text.hasOwnProperty("region") && hit.parent.region) {
+    let tempConfidence = baseConfidence;
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.region, hit.parent.region, 0.8, 0.4);
+    if(baseConfidence == tempConfidence) return 0;
   }
 
   if (req.clean.parsed_text.hasOwnProperty("county") && hit.parent.county) {
