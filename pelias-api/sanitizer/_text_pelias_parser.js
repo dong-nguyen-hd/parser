@@ -84,9 +84,12 @@ function _sanitize(raw, clean, req) {
 }
 
 function mappingAbbreviated(parsed_text) {
-  if(parsed_text.region){
+  if(parsed_text.region) {
     var map = Abbreviation.setContentRegionToMap();
-    if(map.get(parsed_text.region)) parsed_text.region = map.get(parsed_text.region);
+    if(map.get(parsed_text.region)) {
+      parsed_text.region = map.get(parsed_text.region);
+      parsed_text.region_short = true;
+    }
   }
 
   return parsed_text;

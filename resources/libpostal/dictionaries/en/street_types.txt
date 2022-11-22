@@ -69,7 +69,7 @@ common|cmmn|comm|cmn|com|cm
 commons|cmmns|cmns|comms
 concord|cncd|cncrd
 concession|conc
-concourse|con|concs|concse|cnc
+concourse|concs|concse|cnc
 connection|cntn|cxn
 connector|conr|cnctr|cntr
 copse|cps

@@ -79,15 +79,19 @@ function checkFallbackLevel(req, hit) {
   if (req.clean.parsed_text.hasOwnProperty("region") && hit.parent.region) {
     let tempConfidence = baseConfidence;
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.region, hit.parent.region, 0.8, 0.4);
-    if(baseConfidence == tempConfidence) return 0;
+    if(baseConfidence == tempConfidence && !req.clean.parsed_text.region_short) return baseConfidence;
   }
 
   if (req.clean.parsed_text.hasOwnProperty("county") && hit.parent.county) {
+    let tempConfidence = baseConfidence;
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.county, hit.parent.county, 0.6, 0.3);
+    if(baseConfidence - tempConfidence <= 0.2) return baseConfidence;
   }
 
   if (req.clean.parsed_text.hasOwnProperty("locality") && hit.parent.locality) {
+    let tempConfidence = baseConfidence;
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality, hit.parent.locality, 0.4, 0.2);
+    if(baseConfidence - tempConfidence <= 0.1) return baseConfidence;
   }
 
   if (req.clean.parsed_text.hasOwnProperty("street")) {
