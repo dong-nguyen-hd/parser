@@ -1,6 +1,7 @@
 const WordClassifier = require('./super/WordClassifier')
 const AlphaClassification = require('../classification/AlphaClassification')
 const NumericClassification = require('../classification/NumericClassification')
+const DateWordClassification = require('../classification/DateWordClassification')
 const DateClassification = require('../classification/DateClassification')
 const AlphaNumericClassification = require('../classification/AlphaNumericClassification')
 const PunctuationClassification = require('../classification/PunctuationClassification')
