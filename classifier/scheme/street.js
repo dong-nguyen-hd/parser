@@ -104,6 +104,29 @@ module.exports = [
     ]
   },
   {
+    // [numeric + 2 slot + numeric]
+    confidence: 0.74,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification']
+      },
+      {
+        is: ['StreetNameClassification', 'AreaClassification', 'SurnameClassification'],
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+      },
+      {
+        is: ['StreetNameClassification', 'AreaClassification', 'AlphaClassification'],
+        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+    ]
+  },
+  {
     // [numeric + 2 slot]
     confidence: 0.75,
     Class: StreetClassification,

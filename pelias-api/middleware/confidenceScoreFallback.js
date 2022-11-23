@@ -37,8 +37,8 @@ function computeScores(req, res, next) {
   next();
 }
 
-function filterHitValid(data){
-  if(data.length) {
+function filterHitValid(data) {
+  if (data.length) {
     let validArr = data.filter(x => x.confidence != 0);
     return validArr.sort(function (a, b) { return b.confidence - a.confidence });
   }
@@ -65,10 +65,11 @@ function computeConfidenceScore(req, hit) {
 
   // in the case of fallback there might be deductions
   let confidence = checkFallbackLevel(req, hit);
-  if(confidence) hit.confidence += checkFallbackLevel(req, hit);
-  else hit.confidence = 0;
-  if (hit.confidence > 0.1) hit.match_type = 'exact';
-  hit.confidence = Number((hit.confidence).toFixed(3));
+  if (confidence) {
+    hit.confidence += checkFallbackLevel(req, hit);
+    hit.match_type = 'exact';
+    hit.confidence = Number((hit.confidence).toFixed(3));
+  } else hit.confidence = 0;
 
   return hit;
 }
@@ -76,25 +77,25 @@ function computeConfidenceScore(req, hit) {
 function checkFallbackLevel(req, hit) {
   var baseConfidence = 0;
 
-  if (req.clean.parsed_text.hasOwnProperty("region") && hit.parent.region) {
+  if (!!req.clean.parsed_text.region_arr && hit.parent.region) {
     let tempConfidence = baseConfidence;
-    baseConfidence += computeBaseConfidence(req.clean.parsed_text.region, hit.parent.region, 0.8, 0.4);
-    if(baseConfidence == tempConfidence && !req.clean.parsed_text.region_short) return baseConfidence;
+    baseConfidence += computeBaseConfidence(req.clean.parsed_text.region_arr, hit.parent.region, 0.8, 0.4);
+    if (baseConfidence - tempConfidence <= 0.01) return baseConfidence;
   }
 
-  if (req.clean.parsed_text.hasOwnProperty("county") && hit.parent.county) {
+  if (!!req.clean.parsed_text.county_arr && hit.parent.county) {
     let tempConfidence = baseConfidence;
-    baseConfidence += computeBaseConfidence(req.clean.parsed_text.county, hit.parent.county, 0.6, 0.3);
-    if(baseConfidence - tempConfidence <= 0.2) return baseConfidence;
+    baseConfidence += computeBaseConfidence(req.clean.parsed_text.county_arr, hit.parent.county, 0.6, 0.3);
+    if (baseConfidence - tempConfidence <= 0.01) return baseConfidence;
   }
 
-  if (req.clean.parsed_text.hasOwnProperty("locality") && hit.parent.locality) {
+  if (!!req.clean.parsed_text.locality_arr && hit.parent.locality) {
     let tempConfidence = baseConfidence;
-    baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality, hit.parent.locality, 0.4, 0.2);
-    if(baseConfidence - tempConfidence <= 0.1) return baseConfidence;
+    baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality_arr, hit.parent.locality, 0.4, 0.2);
+    if (baseConfidence - tempConfidence <= 0.01) return baseConfidence;
   }
 
-  if (req.clean.parsed_text.hasOwnProperty("street")) {
+  if (!!req.clean.parsed_text.street_arr) {
     let temp = [];
     if (Array.isArray(hit.name.default)) {
       let arrTemp = hit.name.default;
@@ -112,11 +113,11 @@ function checkFallbackLevel(req, hit) {
     }
 
     if (temp) {
-      baseConfidence += computeBaseConfidence(req.clean.parsed_text.street, temp, 0.2, 0.1);
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.street_arr, temp, 0.2, 0.1);
     }
   }
 
-  if (req.clean.parsed_text.hasOwnProperty("venue")) {
+  if (!!req.clean.parsed_text.venue_arr) {
     let temp = [];
     if (Array.isArray(hit.name.default)) {
       let arrTemp = hit.name.default;
@@ -134,7 +135,7 @@ function checkFallbackLevel(req, hit) {
     }
 
     if (temp) {
-      baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue, temp, 0.1, 0.05);
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue_arr, temp, 0.2, 0.1);
     }
   }
 
@@ -144,9 +145,9 @@ function checkFallbackLevel(req, hit) {
 /**
  * 
  * @param {*} parsedText 
- * Component address in pelias-parser
+ * Array component address in pelias-parser
  * @param {*} hitLayer 
- * Component address in database response
+ * Array component address in database response
  * @param {*} absoluteScore 
  * Score when exact match
  * @param {*} relativeScore 
@@ -157,14 +158,20 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
   var baseConfidence = 0;
 
   if (hitLayer.length) {
-    hitLayer.every(element => {
-      let src = normalizeProcess(element);
-      if (src.includes(parsedText)) {
-        baseConfidence += absoluteScore;
-        return false;
-      } else if (toLowerCaseNonAccentVietnamese(src).includes(parsedText)) {
-        baseConfidence += relativeScore;
-        return false;
+    hitLayer.every(elementHit => {
+      let hit = normalizeProcess(elementHit);
+      let hitNonAccent = toLowerCaseNonAccentVietnamese(hit);
+
+      for (let index = 0; index < parsedText.length; index++) {
+        const elementParsed = parsedText[index];
+
+        if (hit.includes(elementParsed)) {
+          baseConfidence += (absoluteScore / (index + 1));
+          return false;
+        } else if (hitNonAccent.includes(parsedText)) {
+          baseConfidence += (relativeScore / (index + 1));
+          return false;
+        }
       }
     });
   }

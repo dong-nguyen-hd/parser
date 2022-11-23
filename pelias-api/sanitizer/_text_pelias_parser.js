@@ -73,24 +73,118 @@ function _sanitize(raw, clean, req) {
     // parse text with pelias/parser
     clean.text = text;
     clean.parser = 'pelias';
-    clean.parsed_text = mappingAbbreviated(parse(tokenizer));
+    clean.parsed_text = mappingAbbreviated(parse(tokenizer), tokenizer.solution);
 
     console.log("DongND");
-    console.log(clean);
+    console.log(clean.parsed_text);
     console.log("DongND");
   }
 
   return messages;
 }
 
-function mappingAbbreviated(parsed_text) {
-  if(parsed_text.region) {
-    var map = Abbreviation.setContentRegionToMap();
-    if(map.get(parsed_text.region)) {
-      parsed_text.region = map.get(parsed_text.region);
-      parsed_text.region_short = true;
+function mappingAbbreviated(parsed_text, solutions) {
+  if (!solutions.length) return parsed_text;
+  var mapRegion = Abbreviation.setContentRegionToMap();
+
+  solutions.forEach(element => {
+    let parseredObj = mappingLabel(element);
+
+    // region
+    if (parseredObj.region) {
+      let abbreviated = mapRegion.get(parseredObj.region);
+      if (!!parsed_text.region_arr) {
+        if (!!abbreviated) parsed_text.region_arr = [...parsed_text.region_arr, ...abbreviated];
+        else parsed_text.region_arr.push(parseredObj.region);
+      } else {
+        if (!!abbreviated) parsed_text.region_arr = abbreviated;
+        else parsed_text.region_arr = [parseredObj.region];
+      }
+
+      parsed_text.region_arr = [...new Set(parsed_text.region_arr)];
     }
-  }
+
+    // county
+    if (parseredObj.county) {
+      let abbreviated = undefined; // TODO: mapCounty.get(parseredObj.region);
+      if (!!parsed_text.county_arr) {
+        if (!!abbreviated) parsed_text.county_arr = [...parsed_text.county_arr, ...abbreviated];
+        else parsed_text.county_arr.push(parseredObj.county);
+      } else {
+        if (!!abbreviated) parsed_text.county_arr = abbreviated;
+        else parsed_text.county_arr = [parseredObj.county];
+      }
+
+      parsed_text.county_arr = [...new Set(parsed_text.county_arr)];
+    }
+
+    // locality
+    if (parseredObj.locality) {
+      let abbreviated = undefined; // TODO: mapLocality.get(parseredObj.region);
+      if (!!parsed_text.locality_arr) {
+        if (!!abbreviated) parsed_text.locality_arr = [...parsed_text.locality_arr, ...abbreviated];
+        else parsed_text.locality_arr.push(parseredObj.locality);
+      } else {
+        if (!!abbreviated) parsed_text.locality_arr = abbreviated;
+        else parsed_text.locality_arr = [parseredObj.locality];
+      }
+
+      parsed_text.locality_arr = [...new Set(parsed_text.locality_arr)];
+    }
+
+    // street
+    if (parseredObj.street) {
+      let abbreviated = undefined; // TODO: mapStreet.get(parseredObj.region);
+      if (!!parsed_text.street_arr) {
+        if (!!abbreviated) parsed_text.street_arr = [...parsed_text.street_arr, ...abbreviated];
+        else parsed_text.street_arr.push(parseredObj.street);
+      } else {
+        if (!!abbreviated) parsed_text.street_arr = abbreviated;
+        else parsed_text.street_arr = [parseredObj.street];
+      }
+
+      parsed_text.street_arr = [...new Set(parsed_text.street_arr)];
+    }
+
+    // venue
+    if (parseredObj.venue) {
+      let abbreviated = undefined; // TODO: mapVenue.get(parseredObj.region);
+      if (!!parsed_text.venue_arr) {
+        if (!!abbreviated) parsed_text.venue_arr = [...parsed_text.venue_arr, ...abbreviated];
+        else parsed_text.venue_arr.push(parseredObj.venue);
+      } else {
+        if (!!abbreviated) parsed_text.street_arr = abbreviated;
+        else parsed_text.venue_arr = [parseredObj.venue];
+      }
+
+      parsed_text.venue_arr = [...new Set(parsed_text.venue_arr)];
+    }
+  });
+
+  return parsed_text;
+}
+
+/**
+ * map the output of the parser in to parsed_text
+ * @param {*} element 
+ */
+function mappingLabel(element) {
+  let solution = new Solution();
+  solution = element;
+
+  let parsed_text = { subject: undefined };
+
+  solution.pair.forEach(p => {
+    let field = p.classification.label;
+
+    // handle intersections
+    if (field === 'street') {
+      field = (!parsed_text.street) ? 'street' : 'cross_street';
+    }
+
+    // set field
+    parsed_text[field] = p.span.body;
+  });
 
   return parsed_text;
 }

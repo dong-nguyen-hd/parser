@@ -14,7 +14,11 @@ function setContentRegionToMap() {
             let valueMap = _normalize(temp[0]);
             let keyArrMap = temp[1].split('|');
             keyArrMap.forEach(key => {
-                mapObj.set(_normalize(key), valueMap);
+                if (!!mapObj.get(_normalize(key))) {
+                    mapObj.set(_normalize(key), [valueMap, ...mapObj.get(_normalize(key))]);
+                } else {
+                    mapObj.set(_normalize(key), [valueMap]);
+                }
             });
         }
     }, this)
