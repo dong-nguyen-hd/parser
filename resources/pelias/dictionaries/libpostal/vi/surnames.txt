@@ -87,7 +87,6 @@ giản|gian
 giảng|giang
 giáp|giap
 hưng|hung
-hương
 h'|h 
 h'ma|h ma
 h'nia|h nia
@@ -144,10 +143,9 @@ liêu|lieu
 liễu|lieu
 linh|linh
 loan|loan
-lò|lo
-lô|lo
-lỗ|lo
-lộ|lo
+lò
+lỗ
+lộ
 lộc|loc
 luyện|luyen
 lục|luc
@@ -303,4 +301,5 @@ bùi|bui
 hồ|ho
 ngô|ngo
 dương
+thuận
 lý|ly

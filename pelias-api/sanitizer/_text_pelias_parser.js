@@ -86,6 +86,7 @@ function _sanitize(raw, clean, req) {
 function mappingAbbreviated(parsed_text, solutions) {
   if (!solutions.length) return parsed_text;
   var mapRegion = Abbreviation.setContentRegionToMap();
+  var mapStreet = Abbreviation.setContentStreetToMap();
 
   solutions.forEach(element => {
     let parseredObj = mappingLabel(element);

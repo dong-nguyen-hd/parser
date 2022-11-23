@@ -2,6 +2,74 @@ const StreetClassification = require('../../classification/StreetClassification'
 
 module.exports = [
   {
+    //  [street-prefix + toponyms]
+    confidence: 0.7,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['IntersectionClassification', 'PlaceClassification']
+      },
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      },
+    ]
+  },
+  {
+    //  [street-prefix + toponyms + numeric]
+    confidence: 0.7,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['IntersectionClassification', 'PlaceClassification']
+      },
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+    ]
+  },
+  {
+    //  [numeric/alphaNumeric + toponyms]
+    confidence: 0.7,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      },
+    ]
+  },
+  {
+    //  [numeric/alphaNumeric + toponyms + numeric]
+    confidence: 0.7,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: ['IntersectionClassification']
+      },
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      },
+      {
+        is: ['NumericClassification'],
+        not: ['IntersectionClassification']
+      },
+    ]
+  },
+  {
     // [street-prefix + date]
     confidence: 0.71,
     Class: StreetClassification,
@@ -12,29 +80,6 @@ module.exports = [
       },
       {
         is: ['DateClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
-      },
-    ]
-  },
-  {
-    // [street-prefix + date_word]
-    confidence: 0.71,
-    Class: StreetClassification,
-    scheme: [
-      {
-        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: ['IntersectionClassification', 'PlaceClassification']
-      },
-      {
-        is: ['NumericClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
-      },
-      {
-        is: ['DateWordClassification'],
-        not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
-      },
-      {
-        is: ['NumericClassification'],
         not: ['IntersectionClassification', 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
       },
     ]

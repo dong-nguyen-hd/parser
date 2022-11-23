@@ -14,7 +14,7 @@ class AlphaNumericClassifier extends WordClassifier {
       span.classify(new DateClassification(1))
     } else if (/^(tháng|năm)$/.test(span.norm)) {
       span.classify(new DateWordClassification(1))
-    } else if (span.contains.numerals && /^\w*\d+\w+$/.test(span.norm)) {
+    } else if (span.contains.numerals && /^\w*\d+\w*$/.test(span.norm)) {
       span.classify(new AlphaNumericClassification(1))
     } else if (/^[@&/\\#,+()$~%.!^'";:*?[\]<>{}]+$/.test(span.norm)) {
       span.classify(new PunctuationClassification(1))

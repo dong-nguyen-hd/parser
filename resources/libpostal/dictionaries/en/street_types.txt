@@ -50,7 +50,7 @@ cape|cpe|cp
 canyon|cyn|cnyn
 caravan|cvan|cvn
 causeway|csway|cswy|causewy|caus|cause|cway
-center|centre|cetr|cntr|ctr|cen
+!center|centre|cetr|cntr|ctr|cen
 centers|ctrs
 centreway|cnwy
 chase|ch|chas
@@ -390,7 +390,7 @@ valley|vlly|vly|vy
 valleys|vlys|vllys
 vennel
 viaduct|via|viad|vdct|viadct
-view|vw
+!view|vw
 views|vws
 villa|vla
 village|vlge
