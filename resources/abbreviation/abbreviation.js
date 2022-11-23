@@ -1,13 +1,14 @@
 const fs = require('fs');
 const path = require('path')
+const filepathRegion = path.join(__dirname, './whosonfirst/region.txt');
+const filepathStreet = path.join(__dirname, './whosonfirst/street.txt')
 
 function setContentRegionToMap() {
     let mapObj = new Map();
+    
+    if (!fs.existsSync(filepathRegion)) { return }
 
-    const filepath = path.join(__dirname, './whosonfirst/region.txt');
-    if (!fs.existsSync(filepath)) { return }
-
-    const dict = fs.readFileSync(filepath, 'utf8');
+    const dict = fs.readFileSync(filepathRegion, 'utf8');
     dict.split('\n').forEach(row => {
         let temp = row.split('=>');
         if (temp.length) {
@@ -28,11 +29,10 @@ function setContentRegionToMap() {
 
 function setContentStreetToMap() {
     let mapObj = new Map();
+    
+    if (!fs.existsSync(filepathStreet)) { return }
 
-    const filepath = path.join(__dirname, './whosonfirst/street.txt')
-    if (!fs.existsSync(filepath)) { return }
-
-    const dict = fs.readFileSync(filepath, 'utf8');
+    const dict = fs.readFileSync(filepathStreet, 'utf8');
     dict.split('\n').forEach(row => {
         let temp = row.split('=>');
         if (temp.length) {

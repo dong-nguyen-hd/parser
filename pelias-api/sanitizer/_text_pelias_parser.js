@@ -73,7 +73,10 @@ function _sanitize(raw, clean, req) {
     // parse text with pelias/parser
     clean.text = text;
     clean.parser = 'pelias';
-    clean.parsed_text = mappingAbbreviated(parse(tokenizer), tokenizer.solution);
+    var mapRegion = Abbreviation.setContentRegionToMap();
+    var mapStreet = Abbreviation.setContentStreetToMap();
+    var parsed_text = parse(tokenizer, mapRegion, mapStreet);
+    clean.parsed_text = mappingAbbreviated(parsed_text, tokenizer.solution, mapRegion, mapStreet);
 
     console.log("DongND");
     console.log(clean.parsed_text);
@@ -83,10 +86,9 @@ function _sanitize(raw, clean, req) {
   return messages;
 }
 
-function mappingAbbreviated(parsed_text, solutions) {
+function mappingAbbreviated(parsed_text, solutions, mapRegion, mapStreet) {
   if (!solutions.length) return parsed_text;
-  var mapRegion = Abbreviation.setContentRegionToMap();
-  var mapStreet = Abbreviation.setContentStreetToMap();
+
 
   solutions.forEach(element => {
     let parseredObj = mappingLabel(element);
@@ -190,7 +192,7 @@ function mappingLabel(element) {
   return parsed_text;
 }
 
-function parse(t) {
+function parse(t, mapRegion, mapStreet) {
   // only use the first solution generated
   // @todo: we could expand this in the future to accomodate more solutions
   let solution = new Solution();
@@ -308,7 +310,17 @@ function parse(t) {
   }
   // a street query
   else if (!_.isEmpty(parsed_text.street)) {
-    parsed_text.subject = parsed_text.street;
+    let subject = parsed_text.street;
+    for (const key of mapStreet.keys()) {
+      let strRegex = key.replace(".", "\\.");
+      let isMatchRegex = new RegExp(`(?<=\\s|^)(${strRegex})(?=\\s+|$)`, 'g');
+      if (isMatchRegex.test(subject)) {
+        subject = subject.replace(isMatchRegex, mapStreet.get(key)[0]);
+        break;
+      }
+    }
+
+    parsed_text.subject = subject;
   }
   // a venue query
   else if (!_.isEmpty(parsed_text.venue) && parsed_text.venue.split(' ') < 4) {
@@ -344,7 +356,11 @@ function parse(t) {
   }
   // a region query
   else if (!_.isEmpty(parsed_text.region)) {
-    parsed_text.subject = parsed_text.region;
+    let subject = parsed_text.region;
+
+    if (!!mapRegion.get(subject)) {
+      subject = mapRegion.get(subject)[0];
+    }
 
     // remove the region name from $admin
     if (parsed_text.admin) {
@@ -355,6 +371,8 @@ function parse(t) {
         if (!parsed_text.admin.length) { delete parsed_text.admin; }
       }
     }
+
+    parsed_text.subject = subject;
   }
   // a country query
   else if (!_.isEmpty(parsed_text.country)) {
