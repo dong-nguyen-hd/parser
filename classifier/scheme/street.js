@@ -270,4 +270,96 @@ module.exports = [
       },
     ]
   },
+  {
+    // [numeric/alphaNumeric + street-prefix + date]
+    confidence: 0.76,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: [ 'PlaceClassification']
+      },
+      {
+        is: ['DateClassification'],
+        not: []
+      },
+    ]
+  },
+  {
+    // [street-prefix + numeric + date_word + numeric]
+    confidence: 0.76,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: [ 'PlaceClassification']
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+      {
+        is: ['DateWordClassification'],
+        not: []
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+    ]
+  },
+  {
+    // [numeric/alphaNumeric + street-prefix + numeric + date_word + numeric]
+    confidence: 0.76,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: [ 'PlaceClassification']
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+      {
+        is: ['DateWordClassification'],
+        not: []
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+    ]
+  },
+  {
+    // [numeric/alphaNumeric + numeric + date_word + numeric]
+    confidence: 0.76,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+      {
+        is: ['DateWordClassification'],
+        not: []
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+    ]
+  },
 ]
