@@ -320,7 +320,7 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
     parsed_text.subject = mappingAbbreviatedStreetOrVenue(parsed_text.street, mapStreet);
   }
   // a venue query
-  else if (!_.isEmpty(parsed_text.venue) && parsed_text.venue.split(' ') <= 4) {
+  else if (!_.isEmpty(parsed_text.venue) && parsed_text.venue.split(' ').length <= 4) {
     parsed_text.subject = mappingAbbreviatedStreetOrVenue(parsed_text.venue, mapStreet);
   }
   // a locality query
