@@ -97,7 +97,6 @@ function _sanitize(raw, clean, req) {
 function mappingAbbreviated(parsed_text, solutions, mapRegion, mapCounty, mapStreet) {
   if (!solutions.length) return parsed_text;
 
-
   solutions.forEach(element => {
     let parseredObj = mappingLabel(element);
 
@@ -145,7 +144,7 @@ function mappingAbbreviated(parsed_text, solutions, mapRegion, mapCounty, mapStr
 
     // street
     if (parseredObj.street) {
-      let abbreviated = mappingAbbreviatedStreetOrVenue(parseredObj.street, mapStreet);
+      let abbreviated = [mappingAbbreviatedStreetOrVenue(parseredObj.street, mapStreet)];
       if (!!parsed_text.street_arr) {
         if (!!abbreviated) parsed_text.street_arr = [...parsed_text.street_arr, ...abbreviated];
         else parsed_text.street_arr.push(parseredObj.street);
@@ -159,7 +158,7 @@ function mappingAbbreviated(parsed_text, solutions, mapRegion, mapCounty, mapStr
 
     // venue
     if (parseredObj.venue) {
-      let abbreviated = mappingAbbreviatedStreetOrVenue(parseredObj.venue, mapStreet);
+      let abbreviated = [mappingAbbreviatedStreetOrVenue(parseredObj.venue, mapStreet)];
       if (!!parsed_text.venue_arr) {
         if (!!abbreviated) parsed_text.venue_arr = [...parsed_text.venue_arr, ...abbreviated];
         else parsed_text.venue_arr.push(parseredObj.venue);
