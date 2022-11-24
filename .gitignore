@@ -2,7 +2,7 @@ node_modules
 package-lock.json
 
 # ignore all of whosonfirst/dictionaries
-resources/whosonfirst/dictionaries/*/*.txt
+!resources/whosonfirst/dictionaries/*/*.txt
 
 # whitelist certain files
 !resources/whosonfirst/dictionaries/country/wof:country.txt
@@ -17,7 +17,7 @@ resources/whosonfirst/dictionaries/*/*.txt
 !resources/whosonfirst/dictionaries/locality/name:fra_x_preferred.txt
 
 # ignore all custom dictionaries
-resources/custom/dictionaries
+!resources/custom/dictionaries
 
 # ignore any openaddresses test cases
 test/oa
