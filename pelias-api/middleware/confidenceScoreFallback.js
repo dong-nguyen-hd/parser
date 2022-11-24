@@ -78,22 +78,18 @@ function checkFallbackLevel(req, hit) {
   var baseConfidence = 0;
 
   if (!!req.clean.parsed_text.region_arr && hit.parent.region) {
-    let tempConfidence = baseConfidence;
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.region_arr, hit.parent.region, 0.8, 0.4);
-    if (baseConfidence - tempConfidence <= 0.01) return baseConfidence;
   }
 
   if (!!req.clean.parsed_text.county_arr && hit.parent.county) {
-    let tempConfidence = baseConfidence;
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.county_arr, hit.parent.county, 0.6, 0.3);
-    if (baseConfidence - tempConfidence <= 0.01) return baseConfidence;
   }
 
   if (!!req.clean.parsed_text.locality_arr && hit.parent.locality) {
-    let tempConfidence = baseConfidence;
     baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality_arr, hit.parent.locality, 0.4, 0.2);
-    if (baseConfidence - tempConfidence <= 0.01) return baseConfidence;
   }
+
+  if ((!!req.clean.parsed_text.region || !!req.clean.parsed_text.county || !!req.clean.parsed_text.locality) && !baseConfidence) return baseConfidence; // Remove hit not match adminstrative
 
   if (!!req.clean.parsed_text.street_arr) {
     let temp = [];

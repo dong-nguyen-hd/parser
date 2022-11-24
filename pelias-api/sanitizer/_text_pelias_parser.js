@@ -14,9 +14,8 @@ const _ = require('lodash');
   see: https://github.com/pelias/parser
 
   'pelias parser' provides the following fields:
-  'name',
-  'housenumber', 'street', 'postcode',
-  'locality', 'region', 'country',
+  'venue', 'street',
+  'locality', 'county', 'region', 'country',
   'admin'
 **/
 
@@ -277,6 +276,20 @@ function parse(t, mapRegion, mapStreet) {
     }
   }
 
+  function mappingAbbreviatedStreetOrVenue(value, mapStreet){
+    let subject = value;
+    for (const key of mapStreet.keys()) {
+      let strRegex = key.replace(".", "\\.");
+      let isMatchRegex = new RegExp(`(?<=\\s|^)(${strRegex})(?=\\s+|$)`, 'g');
+      if (isMatchRegex.test(subject)) {
+        subject = subject.replace(isMatchRegex, mapStreet.get(key)[0]);
+        return subject;
+      }
+    }
+
+    return subject;
+  }
+
   /**
    * Validate adminstrative-component is duplicate
    * @returns true/false
@@ -310,21 +323,11 @@ function parse(t, mapRegion, mapStreet) {
   }
   // a street query
   else if (!_.isEmpty(parsed_text.street)) {
-    let subject = parsed_text.street;
-    for (const key of mapStreet.keys()) {
-      let strRegex = key.replace(".", "\\.");
-      let isMatchRegex = new RegExp(`(?<=\\s|^)(${strRegex})(?=\\s+|$)`, 'g');
-      if (isMatchRegex.test(subject)) {
-        subject = subject.replace(isMatchRegex, mapStreet.get(key)[0]);
-        break;
-      }
-    }
-
-    parsed_text.subject = subject;
+    parsed_text.subject = mappingAbbreviatedStreetOrVenue(parsed_text.street, mapStreet);
   }
   // a venue query
-  else if (!_.isEmpty(parsed_text.venue) && parsed_text.venue.split(' ') < 4) {
-    parsed_text.subject = parsed_text.venue;
+  else if (!_.isEmpty(parsed_text.venue) && parsed_text.venue.split(' ') <= 4) {
+    parsed_text.subject = mappingAbbreviatedStreetOrVenue(parsed_text.venue, mapStreet);
   }
   // a locality query
   else if (!_.isEmpty(parsed_text.locality)) {
