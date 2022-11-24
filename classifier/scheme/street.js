@@ -3,7 +3,7 @@ const StreetClassification = require('../../classification/StreetClassification'
 module.exports = [
   {
     // [street-prefix + word + number]
-    confidence: 0.7,
+    confidence: 0.71,
     Class: StreetClassification,
     scheme: [
       {
@@ -18,74 +18,6 @@ module.exports = [
         is: ['NumericClassification'],
         not: []
       }
-    ]
-  },
-  {
-    //  [street-prefix + toponyms]
-    confidence: 0.71,
-    Class: StreetClassification,
-    scheme: [
-      {
-        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
-      },
-      {
-        is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
-      },
-    ]
-  },
-  {
-    //  [street-prefix + toponyms + numeric]
-    confidence: 0.71,
-    Class: StreetClassification,
-    scheme: [
-      {
-        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
-      },
-      {
-        is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
-      },
-      {
-        is: ['NumericClassification'],
-        not: []
-      },
-    ]
-  },
-  {
-    //  [numeric/alphaNumeric + toponyms]
-    confidence: 0.71,
-    Class: StreetClassification,
-    scheme: [
-      {
-        is: ['NumericClassification', 'AlphaNumericClassification'],
-        not: []
-      },
-      {
-        is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
-      },
-    ]
-  },
-  {
-    //  [numeric/alphaNumeric + toponyms + numeric]
-    confidence: 0.71,
-    Class: StreetClassification,
-    scheme: [
-      {
-        is: ['NumericClassification', 'AlphaNumericClassification'],
-        not: []
-      },
-      {
-        is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
-      },
-      {
-        is: ['NumericClassification'],
-        not: []
-      },
     ]
   },
   {
@@ -124,7 +56,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + 2 slot + numeric]
-    confidence: 0.73,
+    confidence: 0.72,
     Class: StreetClassification,
     scheme: [
       {
@@ -147,7 +79,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + 2 slot]
-    confidence: 0.74,
+    confidence: 0.73,
     Class: StreetClassification,
     scheme: [
       {
@@ -166,7 +98,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + 3 slot]
-    confidence: 0.74,
+    confidence: 0.73,
     Class: StreetClassification,
     scheme: [
       {
@@ -189,7 +121,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + 4 slot]
-    confidence: 0.74,
+    confidence: 0.73,
     Class: StreetClassification,
     scheme: [
       {
@@ -216,7 +148,7 @@ module.exports = [
   },
   {
     // [generic surname]
-    confidence: 0.75,
+    confidence: 0.74,
     Class: StreetClassification,
     scheme: [
       {
@@ -227,7 +159,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + generic surname]
-    confidence: 0.75,
+    confidence: 0.74,
     Class: StreetClassification,
     scheme: [
       {
@@ -242,7 +174,7 @@ module.exports = [
   },
   {
     // [street-prefix + generic surname]
-    confidence: 0.75,
+    confidence: 0.74,
     Class: StreetClassification,
     scheme: [
       {
@@ -256,8 +188,76 @@ module.exports = [
     ]
   },
   {
+    //  [street-prefix + toponyms]
+    confidence: 0.75,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: [ 'PlaceClassification']
+      },
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      },
+    ]
+  },
+  {
+    //  [street-prefix + toponyms + numeric]
+    confidence: 0.75,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: [ 'PlaceClassification']
+      },
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+    ]
+  },
+  {
+    //  [numeric/alphaNumeric + toponyms]
+    confidence: 0.75,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      },
+    ]
+  },
+  {
+    //  [numeric/alphaNumeric + toponyms + numeric]
+    confidence: 0.75,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+    ]
+  },
+  {
     // [street-prefix + date]
-    confidence: 0.76,
+    confidence: 0.75,
     Class: StreetClassification,
     scheme: [
       {
@@ -272,7 +272,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + street-prefix + date]
-    confidence: 0.76,
+    confidence: 0.75,
     Class: StreetClassification,
     scheme: [
       {
@@ -291,7 +291,7 @@ module.exports = [
   },
   {
     // [street-prefix + numeric + date_word + numeric]
-    confidence: 0.76,
+    confidence: 0.75,
     Class: StreetClassification,
     scheme: [
       {
@@ -314,7 +314,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + street-prefix + numeric + date_word + numeric]
-    confidence: 0.76,
+    confidence: 0.75,
     Class: StreetClassification,
     scheme: [
       {
@@ -341,7 +341,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + numeric + date_word + numeric]
-    confidence: 0.76,
+    confidence: 0.75,
     Class: StreetClassification,
     scheme: [
       {

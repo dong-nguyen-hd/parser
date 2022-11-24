@@ -73,9 +73,10 @@ function _sanitize(raw, clean, req) {
     clean.text = text;
     clean.parser = 'pelias';
     var mapRegion = Abbreviation.setContentRegionToMap();
+    var mapCounty = Abbreviation.setContentCountyToMap();
     var mapStreet = Abbreviation.setContentStreetToMap();
-    var parsed_text = parse(tokenizer, mapRegion, mapStreet);
-    clean.parsed_text = mappingAbbreviated(parsed_text, tokenizer.solution, mapRegion, mapStreet);
+    var parsed_text = parse(tokenizer, mapRegion, mapCounty, mapStreet);
+    clean.parsed_text = mappingAbbreviated(parsed_text, tokenizer.solution, mapRegion, mapCounty, mapStreet);
 
     console.log("DongND");
     console.log(clean.parsed_text);
@@ -85,7 +86,15 @@ function _sanitize(raw, clean, req) {
   return messages;
 }
 
-function mappingAbbreviated(parsed_text, solutions, mapRegion, mapStreet) {
+/**
+ * Mapping word abbreviated with all solutions
+ * @param {*} parsed_text 
+ * @param {*} solutions 
+ * @param {*} mapRegion 
+ * @param {*} mapStreet 
+ * @returns 
+ */
+function mappingAbbreviated(parsed_text, solutions, mapRegion, mapCounty, mapStreet) {
   if (!solutions.length) return parsed_text;
 
 
@@ -108,7 +117,7 @@ function mappingAbbreviated(parsed_text, solutions, mapRegion, mapStreet) {
 
     // county
     if (parseredObj.county) {
-      let abbreviated = undefined; // TODO: mapCounty.get(parseredObj.region);
+      let abbreviated = mapCounty.get(parseredObj.county);
       if (!!parsed_text.county_arr) {
         if (!!abbreviated) parsed_text.county_arr = [...parsed_text.county_arr, ...abbreviated];
         else parsed_text.county_arr.push(parseredObj.county);
@@ -136,7 +145,7 @@ function mappingAbbreviated(parsed_text, solutions, mapRegion, mapStreet) {
 
     // street
     if (parseredObj.street) {
-      let abbreviated = undefined; // TODO: mapStreet.get(parseredObj.region);
+      let abbreviated = mappingAbbreviatedStreetOrVenue(parseredObj.street, mapStreet);
       if (!!parsed_text.street_arr) {
         if (!!abbreviated) parsed_text.street_arr = [...parsed_text.street_arr, ...abbreviated];
         else parsed_text.street_arr.push(parseredObj.street);
@@ -150,7 +159,7 @@ function mappingAbbreviated(parsed_text, solutions, mapRegion, mapStreet) {
 
     // venue
     if (parseredObj.venue) {
-      let abbreviated = undefined; // TODO: mapVenue.get(parseredObj.region);
+      let abbreviated = mappingAbbreviatedStreetOrVenue(parseredObj.venue, mapStreet);
       if (!!parsed_text.venue_arr) {
         if (!!abbreviated) parsed_text.venue_arr = [...parsed_text.venue_arr, ...abbreviated];
         else parsed_text.venue_arr.push(parseredObj.venue);
@@ -191,7 +200,7 @@ function mappingLabel(element) {
   return parsed_text;
 }
 
-function parse(t, mapRegion, mapStreet) {
+function parse(t, mapRegion, mapCounty, mapStreet) {
   // only use the first solution generated
   // @todo: we could expand this in the future to accomodate more solutions
   let solution = new Solution();
@@ -276,20 +285,6 @@ function parse(t, mapRegion, mapStreet) {
     }
   }
 
-  function mappingAbbreviatedStreetOrVenue(value, mapStreet){
-    let subject = value;
-    for (const key of mapStreet.keys()) {
-      let strRegex = key.replace(".", "\\.");
-      let isMatchRegex = new RegExp(`(?<=\\s|^)(${strRegex})(?=\\s+|$)`, 'g');
-      if (isMatchRegex.test(subject)) {
-        subject = subject.replace(isMatchRegex, mapStreet.get(key)[0]);
-        return subject;
-      }
-    }
-
-    return subject;
-  }
-
   /**
    * Validate adminstrative-component is duplicate
    * @returns true/false
@@ -319,7 +314,7 @@ function parse(t, mapRegion, mapStreet) {
 
   // only contain two component or component same name
   if (Object.keys(parsed_text).length === 1 || isDuplicateAdmin()) {
-    parsed_text.subject = body;
+    parsed_text.subject = mappingAbbreviatedStreetOrVenue(body, mapStreet);
   }
   // a street query
   else if (!_.isEmpty(parsed_text.street)) {
@@ -345,7 +340,11 @@ function parse(t, mapRegion, mapStreet) {
   }
   // a county query
   else if (!_.isEmpty(parsed_text.county)) {
-    parsed_text.subject = parsed_text.county;
+    let subject = parsed_text.county;
+
+    if (!!mapCounty.get(subject)) {
+      subject = mapCounty.get(subject)[0];
+    }
 
     // remove the county name from $admin
     if (parsed_text.admin) {
@@ -356,6 +355,8 @@ function parse(t, mapRegion, mapStreet) {
         if (!parsed_text.admin.length) { delete parsed_text.admin; }
       }
     }
+
+    parsed_text.subject = subject;
   }
   // a region query
   else if (!_.isEmpty(parsed_text.region)) {
@@ -397,6 +398,20 @@ function parse(t, mapRegion, mapStreet) {
   }
 
   return parsed_text;
+}
+
+function mappingAbbreviatedStreetOrVenue(value, mapStreet){
+  let subject = value;
+  for (const key of mapStreet.keys()) {
+    let strRegex = key.replace(".", "\\.");
+    let isMatchRegex = new RegExp(`(?<=\\s|^)(${strRegex})(?=\\s+|$)`, 'g');
+    if (isMatchRegex.test(subject)) {
+      subject = subject.replace(isMatchRegex, mapStreet.get(key)[0]);
+      return subject;
+    }
+  }
+
+  return subject;
 }
 
 function _expected() {

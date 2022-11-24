@@ -164,7 +164,7 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
         if (hit.includes(elementParsed)) {
           baseConfidence += (absoluteScore / (index + 1));
           return false;
-        } else if (hitNonAccent.includes(parsedText)) {
+        } else if (hitNonAccent.includes(toLowerCaseNonAccentVietnamese(elementParsed))) {
           baseConfidence += (relativeScore / (index + 1));
           return false;
         }
