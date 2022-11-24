@@ -11,9 +11,11 @@ học viện
 đường sắt|duong sat|ds|d s
 khu công nghiệp|khu cong nghiep|kcn|k c n
 khu du lịch|khu du lich|kdl|k d l
-!khu dân cư
+khu dân cư
 !khu căn hộ
 !khu nhà ở
+khu đô thị
+phố đi bộ
 khu nghỉ mát|khu nghi mat|knm|k n m
 khách sạn|khach san|ks|k / s
 nhà hát|nha hat|nh|n h
@@ -36,6 +38,7 @@ tổng công ty|tong cong ty|tcty|tct
 viện bảo tàng|vien bao tang|bảo tàng|vbt|v b t
 vươn quốc gia|vuon quoc gia|vqg|v q g
 chợ
+chùa
 dinh
 !chung cư
 vincom|vinhome|vinhomes|winmart|vinmart|vincity|vinpearl|vinfast|vinmec|vinschool|vineco

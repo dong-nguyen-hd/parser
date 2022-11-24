@@ -339,6 +339,7 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   }
   // a county query
   else if (!_.isEmpty(parsed_text.county)) {
+    parsed_text.subject = parsed_text.county;
     let subject = parsed_text.county;
 
     if (!!mapCounty.get(subject)) {
@@ -359,6 +360,7 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   }
   // a region query
   else if (!_.isEmpty(parsed_text.region)) {
+    parsed_text.subject = parsed_text.region;
     let subject = parsed_text.region;
 
     if (!!mapRegion.get(subject)) {
