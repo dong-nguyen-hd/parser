@@ -175,7 +175,7 @@ function mappingAbbreviated(parsed_text, solutions, mapRegion, mapCounty, mapStr
         if (!!abbreviated) parsed_text.venue_arr = [...parsed_text.venue_arr, ...abbreviated];
         else parsed_text.venue_arr.push(parseredObj.venue);
       } else {
-        if (!!abbreviated) parsed_text.street_arr = abbreviated;
+        if (!!abbreviated) parsed_text.venue_arr = abbreviated;
         else parsed_text.venue_arr = [parseredObj.venue];
       }
 
@@ -224,15 +224,16 @@ function supportNonAccent(srcParsed, nonAccentSolution) {
 
   if (parseredObj.region && !srcParsed.hasOwnProperty('reion_arr')) {
     srcParsed.reion_arr = [parseredObj.region];
+    srcParsed.isNonAccent = true;
   }
   if (parseredObj.county && !srcParsed.hasOwnProperty('county_arr')) {
     srcParsed.county_arr = [parseredObj.county];
+    srcParsed.isNonAccent = true;
   }
   if (parseredObj.locality && !srcParsed.hasOwnProperty('locality_arr')) {
     srcParsed.locality_arr = [parseredObj.locality];
+    srcParsed.isNonAccent = true;
   }
-
-  srcParsed.isNonAccent = true;
 
   return srcParsed;
 }

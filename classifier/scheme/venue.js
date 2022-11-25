@@ -3,7 +3,7 @@ const VenueClassification = require('../../classification/VenueClassification')
 module.exports = [
   {
     // [place + 2 slot]
-    confidence: 0.81,
+    confidence: 0.71,
     Class: VenueClassification,
     scheme: [
       {
@@ -22,7 +22,7 @@ module.exports = [
   },
   {
     // [place + 3 slot]
-    confidence: 0.82,
+    confidence: 0.72,
     Class: VenueClassification,
     scheme: [
       {
@@ -45,7 +45,7 @@ module.exports = [
   },
   {
     // [place + 4 slot]
-    confidence: 0.83,
+    confidence: 0.73,
     Class: VenueClassification,
     scheme: [
       {
@@ -72,7 +72,7 @@ module.exports = [
   },
   {
     // [1 slot + place]
-    confidence: 0.84,
+    confidence: 0.74,
     Class: VenueClassification,
     scheme: [
       {
@@ -87,7 +87,7 @@ module.exports = [
   },
   {
     // [2 slot + place]
-    confidence: 0.85,
+    confidence: 0.75,
     Class: VenueClassification,
     scheme: [
       {
@@ -106,7 +106,7 @@ module.exports = [
   },
   {
     // [3 slot + place]
-    confidence: 0.86,
+    confidence: 0.76,
     Class: VenueClassification,
     scheme: [
       {
@@ -129,7 +129,7 @@ module.exports = [
   },
   {
     // [4 slot + place]
-    confidence: 0.87,
+    confidence: 0.77,
     Class: VenueClassification,
     scheme: [
       {
