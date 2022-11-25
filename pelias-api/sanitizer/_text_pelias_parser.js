@@ -321,11 +321,19 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
    * @returns true/false
    */
   function isDuplicateAdmin() {
+    if(Object.keys(parsed_text).length == 3) return false;
+
     let tempValue = 1;
     for (const property in parsed_text) {
       if (property != "subject" && property != "admin") {
-        if (tempValue === 1) tempValue = parsed_text[property];
-        if (tempValue != parsed_text[property]) return false;
+        if (tempValue == 1) {
+          tempValue = parsed_text[property];
+          continue;
+        }
+        
+        let checkValue = parsed_text[property].replace(".", "\\.");
+        let isMatchRegex = new RegExp(`(?<=\\s|^)(${checkValue})(?=\s+|$)`, 'g');
+        if (!isMatchRegex.test(tempValue)) return false;
       }
     }
 
@@ -343,8 +351,14 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   // 4. set 'subject', this is the text which will target the 'name.*'
   // fields in elasticsearch queries
 
-  // only contain two component or component same name
-  if (Object.keys(parsed_text).length === 1 || isDuplicateAdmin()) {
+  console.log(parsed_text);
+
+  // parser not working
+  if (Object.keys(parsed_text).length === 1) {
+    parsed_text.subject = mappingAbbreviatedStreetOrVenue(body, mapStreet);
+  }
+  // component same name
+  else if (isDuplicateAdmin()) {
     parsed_text.subject = mappingAbbreviatedStreetOrVenue(body, mapStreet);
   }
   // a street query

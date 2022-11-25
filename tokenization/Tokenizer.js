@@ -37,7 +37,7 @@ class Tokenizer {
 
     for (var propertyName in this.index) {
       let strRegex = propertyName.replace(".", "\\.");
-      let isMatchRegex = new RegExp(`(?<=\\s)(${strRegex})(?=\\s*\\d)`, 'g');
+      let isMatchRegex = new RegExp(`(?<=\\s|^)(${strRegex})(?=\\s*\\d|$)`, 'g');
 
       let excep = ["phường", "quận", "p.", "q."];
       if (!(excep.some(x => x == propertyName) && isMatchRegex.test(temp))) {
