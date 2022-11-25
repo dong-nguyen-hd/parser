@@ -75,6 +75,8 @@ function computeConfidenceScore(req, hit) {
 }
 
 function checkFallbackLevel(req, hit) {
+  if (Object.keys(req.clean.parsed_text).length === 1) return 0.1; // Parser not working
+
   var baseConfidence = 0;
 
   if (!!req.clean.parsed_text.region_arr && hit.parent.region) {

@@ -12,8 +12,8 @@ học viện
 khu công nghiệp|khu cong nghiep|kcn|k c n
 khu du lịch|khu du lich|kdl|k d l
 khu dân cư
-!khu căn hộ
-!khu nhà ở
+khu căn hộ
+khu nhà ở
 khu đô thị
 phố đi bộ
 khu nghỉ mát|khu nghi mat|knm|k n m
@@ -40,5 +40,5 @@ vươn quốc gia|vuon quoc gia|vqg|v q g
 chợ
 chùa
 dinh
-!chung cư
+chung cư
 vincom|vinhome|vinhomes|winmart|vinmart|vincity|vinpearl|vinfast|vinmec|vinschool|vineco

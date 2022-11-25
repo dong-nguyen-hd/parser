@@ -6,3 +6,4 @@ quảng trường|qt|
 quốc lộ|ql
 tỉnh lộ|tl
 ngõ
+phố
