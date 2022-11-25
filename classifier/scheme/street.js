@@ -299,7 +299,7 @@ module.exports = [
         not: [ 'PlaceClassification']
       },
       {
-        is: ['NumericClassification'],
+        is: ['NumericClassification', 'AlphaClassification'],
         not: []
       },
       {
@@ -307,7 +307,7 @@ module.exports = [
         not: []
       },
       {
-        is: ['NumericClassification'],
+        is: ['NumericClassification', 'AlphaClassification'],
         not: []
       },
     ]
@@ -349,7 +349,7 @@ module.exports = [
         not: []
       },
       {
-        is: ['NumericClassification'],
+        is: ['NumericClassification', 'AlphaClassification'],
         not: []
       },
       {
@@ -357,7 +357,7 @@ module.exports = [
         not: []
       },
       {
-        is: ['NumericClassification'],
+        is: ['NumericClassification', 'AlphaClassification'],
         not: []
       },
     ]
