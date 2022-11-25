@@ -45,11 +45,6 @@ function _sanitize(raw, clean, req) {
     parser.classify(tokenizer);
     parser.solve(tokenizer);
 
-    // Tokenizer support non-accent
-    const nonAccentTokenizer = new Tokenizer(text, true);
-    parser.classify(nonAccentTokenizer);
-    parser.solve(nonAccentTokenizer);
-
     // log summary info
     logger.info('pelias_parser', {
       response_time: (new Date()) - start,
@@ -84,7 +79,16 @@ function _sanitize(raw, clean, req) {
     var mapStreet = Abbreviation.setContentStreetToMap();
     var parsed_text = parse(tokenizer, mapRegion, mapCounty, mapStreet);
     var parsed_text_arr = mappingAbbreviated(parsed_text, tokenizer.solution, mapRegion, mapCounty, mapStreet);
-    clean.parsed_text = supportNonAccent(parsed_text_arr, nonAccentTokenizer.solution);
+
+    if (!!parsed_text.region || !!parsed_text.county || !!parsed_text.locality) {
+      clean.parsed_text = parsed_text_arr;
+    } else {
+      // Tokenizer support non-accent
+      const nonAccentTokenizer = new Tokenizer(text, true);
+      parser.classify(nonAccentTokenizer);
+      parser.solve(nonAccentTokenizer);
+      clean.parsed_text = supportNonAccent(parsed_text_arr, nonAccentTokenizer.solution);
+    }
 
     console.log("DongND");
     console.log(clean.parsed_text);
@@ -228,6 +232,8 @@ function supportNonAccent(srcParsed, nonAccentSolution) {
     srcParsed.locality_arr = [parseredObj.locality];
   }
 
+  srcParsed.isNonAccent = true;
+
   return srcParsed;
 }
 
@@ -316,30 +322,6 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
     }
   }
 
-  /**
-   * Validate adminstrative-component is duplicate
-   * @returns true/false
-   */
-  function isDuplicateAdmin() {
-    if(Object.keys(parsed_text).length == 3) return false;
-
-    let tempValue = 1;
-    for (const property in parsed_text) {
-      if (property != "subject" && property != "admin") {
-        if (tempValue == 1) {
-          tempValue = parsed_text[property];
-          continue;
-        }
-        
-        let checkValue = parsed_text[property].replace(".", "\\.");
-        let isMatchRegex = new RegExp(`(?<=\\s|^)(${checkValue})(?=\s+|$)`, 'g');
-        if (!isMatchRegex.test(tempValue)) return false;
-      }
-    }
-
-    return true;
-  }
-
   // squash multiple adjacent whitespace characters into a single space
   prefix = prefix.replace(/\s+/g, ' ').trim();
   postfix = postfix.replace(/\s+/g, ' ').trim();
@@ -351,14 +333,9 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   // 4. set 'subject', this is the text which will target the 'name.*'
   // fields in elasticsearch queries
 
-  console.log(parsed_text);
-
   // parser not working
-  if (Object.keys(parsed_text).length === 1) {
-    parsed_text.subject = mappingAbbreviatedStreetOrVenue(body, mapStreet);
-  }
-  // component same name
-  else if (isDuplicateAdmin()) {
+  let lengthKeys = Object.keys(parsed_text).length;
+  if (lengthKeys === 1 || lengthKeys == 3) {
     parsed_text.subject = mappingAbbreviatedStreetOrVenue(body, mapStreet);
   }
   // a street query
