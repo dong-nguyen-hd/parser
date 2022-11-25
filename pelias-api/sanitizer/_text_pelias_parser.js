@@ -39,9 +39,16 @@ function _sanitize(raw, clean, req) {
   else {
     // tokenize text
     const start = new Date();
+
+    // Tokenizer for request ES
     const tokenizer = new Tokenizer(text);
     parser.classify(tokenizer);
     parser.solve(tokenizer);
+
+    // Tokenizer support non-accent
+    const nonAccentTokenizer = new Tokenizer(text, true);
+    parser.classify(nonAccentTokenizer);
+    parser.solve(nonAccentTokenizer);
 
     // log summary info
     logger.info('pelias_parser', {
@@ -76,7 +83,8 @@ function _sanitize(raw, clean, req) {
     var mapCounty = Abbreviation.setContentCountyToMap();
     var mapStreet = Abbreviation.setContentStreetToMap();
     var parsed_text = parse(tokenizer, mapRegion, mapCounty, mapStreet);
-    clean.parsed_text = mappingAbbreviated(parsed_text, tokenizer.solution, mapRegion, mapCounty, mapStreet);
+    var parsed_text_arr = mappingAbbreviated(parsed_text, tokenizer.solution, mapRegion, mapCounty, mapStreet);
+    clean.parsed_text = supportNonAccent(parsed_text_arr, nonAccentTokenizer.solution);
 
     console.log("DongND");
     console.log(clean.parsed_text);
@@ -175,7 +183,7 @@ function mappingAbbreviated(parsed_text, solutions, mapRegion, mapCounty, mapStr
 }
 
 /**
- * map the output of the parser in to parsed_text
+ * Mapping the output of the parser in to parsed_text
  * @param {*} element 
  */
 function mappingLabel(element) {
@@ -197,6 +205,30 @@ function mappingLabel(element) {
   });
 
   return parsed_text;
+}
+
+/**
+ * Support case misspelled
+ * @param {*} srcParsed 
+ * @param {*} nonAccentSolution 
+ * @returns 
+ */
+function supportNonAccent(srcParsed, nonAccentSolution) {
+  if (!nonAccentSolution.length) return srcParsed;
+
+  let parseredObj = mappingLabel(nonAccentSolution[0]);
+
+  if (parseredObj.region && !srcParsed.hasOwnProperty('reion_arr')) {
+    srcParsed.reion_arr = [parseredObj.region];
+  }
+  if (parseredObj.county && !srcParsed.hasOwnProperty('county_arr')) {
+    srcParsed.county_arr = [parseredObj.county];
+  }
+  if (parseredObj.locality && !srcParsed.hasOwnProperty('locality_arr')) {
+    srcParsed.locality_arr = [parseredObj.locality];
+  }
+
+  return srcParsed;
 }
 
 function parse(t, mapRegion, mapCounty, mapStreet) {
@@ -401,7 +433,7 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   return parsed_text;
 }
 
-function mappingAbbreviatedStreetOrVenue(value, mapStreet){
+function mappingAbbreviatedStreetOrVenue(value, mapStreet) {
   let subject = value;
   for (const key of mapStreet.keys()) {
     let strRegex = key.replace(".", "\\.");
