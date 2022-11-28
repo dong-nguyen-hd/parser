@@ -105,7 +105,6 @@ class AddressParser extends Parser {
 
         new MustNotFollowFilter('LocalityClassification', 'CountyClassification'),
 
-        new MustNotFollowFilter('VenueClassification', 'StreetClassification'),
         new MustNotFollowFilter('VenueClassification', 'LocalityClassification'),
         new MustNotFollowFilter('VenueClassification', 'CountyClassification'),
         new MustNotFollowFilter('VenueClassification', 'RegionClassification'),
