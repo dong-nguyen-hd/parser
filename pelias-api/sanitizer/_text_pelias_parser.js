@@ -90,12 +90,51 @@ function _sanitize(raw, clean, req) {
       clean.parsed_text = supportNonAccent(parsed_text_arr, nonAccentTokenizer.solution);
     }
 
+    if (isAdmin(clean.parsed_text)) clean.parsed_text.admin = renderAdmin(clean.parsed_text);
+
     console.log("DongND");
     console.log(clean.parsed_text);
     console.log("DongND");
   }
 
   return messages;
+}
+
+/**
+ * Render string administrative
+ * @param {*} src - clean.parsed_text
+ * @returns 
+ */
+function renderAdmin(src) {
+  var tempAdmin = [];
+  if (!!src.locality_arr) {
+    src.locality_arr.forEach(element => {
+      if (element != src.subject) tempAdmin.push(element);
+    });
+  }
+
+  if (!!src.county_arr) {
+    src.county_arr.forEach(element => {
+      if (element != src.subject) tempAdmin.push(element);
+    });
+  }
+
+  if (!!src.region_arr) {
+    src.region_arr.forEach(element => {
+      if (element != src.subject) tempAdmin.push(element);
+    });
+  }
+
+  if (src.country && src.subject != src.country) {
+    tempAdmin.push(src.country);
+  }
+
+  return tempAdmin.toString();
+}
+
+function isAdmin(src) {
+  if (!!src.region_arr || !!src.county_arr || !!src.locality_arr) return true;
+  return false;
 }
 
 /**
@@ -328,8 +367,9 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   postfix = postfix.replace(/\s+/g, ' ').trim();
 
   // 3. store the unparsed characters in fields which can be used for querying
+  // DongND: not use
   // if (prefix.length) { parsed_text.name = prefix; }
-  if (postfix.length) { parsed_text.admin = postfix; }
+  // if (postfix.length) { parsed_text.admin = postfix; }
 
   // 4. set 'subject', this is the text which will target the 'name.*'
   // fields in elasticsearch queries
@@ -338,6 +378,10 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   let lengthKeys = Object.keys(parsed_text).length;
   if (lengthKeys === 1 || lengthKeys == 3) {
     parsed_text.subject = mappingAbbreviatedStreetOrVenue(body, mapStreet);
+  }
+  // a venue query
+  else if (!_.isEmpty(parsed_text.venue) && parsed_text.venue.split(' ').length <= 4 && !_.isEmpty(parsed_text.street)) {
+    parsed_text.subject = mappingAbbreviatedStreetOrVenue(parsed_text.venue, mapStreet);
   }
   // a street query
   else if (!_.isEmpty(parsed_text.street)) {
@@ -350,55 +394,23 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   // a locality query
   else if (!_.isEmpty(parsed_text.locality)) {
     parsed_text.subject = parsed_text.locality;
-
-    // remove the locality name from $admin
-    if (parsed_text.admin) {
-      let width = parsed_text.subject.length;
-      let cut = parsed_text.admin.substr(0, width);
-      if (cut === parsed_text.subject) {
-        parsed_text.admin = _.trim(parsed_text.admin.substr(width), ', ');
-        if (!parsed_text.admin.length) { delete parsed_text.admin; }
-      }
-    }
   }
   // a county query
   else if (!_.isEmpty(parsed_text.county)) {
-    parsed_text.subject = parsed_text.county;
     let subject = parsed_text.county;
 
     if (!!mapCounty.get(subject)) {
       subject = mapCounty.get(subject)[0];
     }
 
-    // remove the county name from $admin
-    if (parsed_text.admin) {
-      let width = parsed_text.subject.length;
-      let cut = parsed_text.admin.substr(0, width);
-      if (cut === parsed_text.subject) {
-        parsed_text.admin = _.trim(parsed_text.admin.substr(width), ', ');
-        if (!parsed_text.admin.length) { delete parsed_text.admin; }
-      }
-    }
-
     parsed_text.subject = subject;
   }
   // a region query
   else if (!_.isEmpty(parsed_text.region)) {
-    parsed_text.subject = parsed_text.region;
     let subject = parsed_text.region;
 
     if (!!mapRegion.get(subject)) {
       subject = mapRegion.get(subject)[0];
-    }
-
-    // remove the region name from $admin
-    if (parsed_text.admin) {
-      let width = parsed_text.subject.length;
-      let cut = parsed_text.admin.substr(0, width);
-      if (cut === parsed_text.subject) {
-        parsed_text.admin = _.trim(parsed_text.admin.substr(width), ', ');
-        if (!parsed_text.admin.length) { delete parsed_text.admin; }
-      }
     }
 
     parsed_text.subject = subject;
@@ -406,16 +418,6 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   // a country query
   else if (!_.isEmpty(parsed_text.country)) {
     parsed_text.subject = parsed_text.country;
-
-    // remove the country name from $admin
-    if (parsed_text.admin) {
-      let width = parsed_text.subject.length;
-      let cut = parsed_text.admin.substr(0, width);
-      if (cut === parsed_text.subject) {
-        parsed_text.admin = _.trim(parsed_text.admin.substr(width), ', ');
-        if (!parsed_text.admin.length) { delete parsed_text.admin; }
-      }
-    }
   }
   // unknown query type
   else {
