@@ -89,7 +89,7 @@ function _sanitize(raw, clean, req) {
       parser.solve(nonAccentTokenizer);
       clean.parsed_text = supportNonAccent(parsed_text_arr, nonAccentTokenizer.solution);
     }
-
+    
     if (isAdmin(clean.parsed_text)) clean.parsed_text.admin = renderAdmin(clean.parsed_text);
 
     console.log("DongND");
@@ -376,7 +376,7 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
 
   // parser not working
   let lengthKeys = Object.keys(parsed_text).length;
-  if (lengthKeys === 1 || lengthKeys == 3) {
+  if (lengthKeys === 1 || (lengthKeys == 3 && (!_.isEmpty(parsed_text.venue) || !_.isEmpty(parsed_text.street)))) {
     parsed_text.subject = mappingAbbreviatedStreetOrVenue(body, mapStreet);
   }
   // a venue query
