@@ -112,7 +112,7 @@ function checkFallbackLevel(req, hit) {
     }
 
     if (temp) {
-      baseConfidence += computeBaseConfidence(req.clean.parsed_text.street_arr, temp, 0.2, 0.1);
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.street_arr, temp, 0.8, 0.4);
     }
   }
 
@@ -134,7 +134,7 @@ function checkFallbackLevel(req, hit) {
     }
 
     if (temp) {
-      baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue_arr, temp, 0.2, 0.1);
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue_arr, temp, 0.8, 0.4);
     }
   }
 
