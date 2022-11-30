@@ -115,13 +115,13 @@ function renderAdmin(src) {
 
   if (!!src.county_arr) {
     src.county_arr.forEach(element => {
-      if (element != src.subject) tempAdmin.push(element);
+      if (element != src.subject && tempAdmin.findIndex(element) < 0) tempAdmin.push(element);
     });
   }
 
   if (!!src.region_arr) {
     src.region_arr.forEach(element => {
-      if (element != src.subject) tempAdmin.push(element);
+      if (element != src.subject && tempAdmin.findIndex(element) < 0) tempAdmin.push(element);
     });
   }
 
