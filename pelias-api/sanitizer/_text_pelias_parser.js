@@ -92,9 +92,10 @@ function _sanitize(raw, clean, req) {
 
     if (isAdmin(clean.parsed_text)) clean.parsed_text.admin = renderAdmin(clean.parsed_text);
 
-    console.log("DongND");
-    console.log(clean.parsed_text);
-    console.log("DongND");
+    // // Debug
+    // console.log("DongND");
+    // console.log(clean.parsed_text);
+    // console.log("DongND");
   }
 
   return messages;
