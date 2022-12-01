@@ -82,15 +82,15 @@ function checkFallbackLevel(req, hit) {
     var baseConfidence = 0;
 
     if (!!req.clean.parsed_text.region_arr && hit.parent.region) {
-      baseConfidence += computeBaseConfidence(req.clean.parsed_text.region_arr, hit.parent.region, 0.8, 0.4);
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.region_arr, hit.parent.region, 0.9, 0.4);
     }
 
     if (!!req.clean.parsed_text.county_arr && hit.parent.county) {
-      baseConfidence += computeBaseConfidence(req.clean.parsed_text.county_arr, hit.parent.county, 0.6, 0.3);
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.county_arr, hit.parent.county, 0.7, 0.3);
     }
 
     if (!!req.clean.parsed_text.locality_arr && hit.parent.locality) {
-      baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality_arr, hit.parent.locality, 0.4, 0.2);
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality_arr, hit.parent.locality, 0.5, 0.2);
     }
 
     if ((!!req.clean.parsed_text.region || !!req.clean.parsed_text.county || !!req.clean.parsed_text.locality) && !baseConfidence) return baseConfidence; // Remove hit not match adminstrative
@@ -113,7 +113,7 @@ function checkFallbackLevel(req, hit) {
       }
 
       if (temp) {
-        baseConfidence += computeBaseConfidence(req.clean.parsed_text.street_arr, temp, 0.8, 0.4);
+        baseConfidence += computeBaseConfidence(req.clean.parsed_text.street_arr, temp, 0.9, 0.4);
       }
     }
 
@@ -135,7 +135,7 @@ function checkFallbackLevel(req, hit) {
       }
 
       if (temp) {
-        baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue_arr, temp, 0.8, 0.4);
+        baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue_arr, temp, 0.9, 0.4);
       }
     }
 
