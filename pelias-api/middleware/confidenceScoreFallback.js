@@ -66,7 +66,7 @@ function computeConfidenceScore(req, hit) {
   // in the case of fallback there might be deductions
   let confidence = checkFallbackLevel(req, hit);
   if (confidence) {
-    hit.confidence += checkFallbackLevel(req, hit);
+    hit.confidence += confidence;
     hit.match_type = 'exact';
     hit.confidence = Number((hit.confidence).toFixed(3));
   } else hit.confidence = 0;
@@ -75,70 +75,75 @@ function computeConfidenceScore(req, hit) {
 }
 
 function checkFallbackLevel(req, hit) {
-  var lengthKeys = Object.keys(req.clean.parsed_text).length;
-  if (lengthKeys === 1 || (lengthKeys === 2 && req.clean.parsed_text.isNonAccent)) return 0.1; // Parser not working
+  try {
+    var lengthKeys = Object.keys(req.clean.parsed_text).length;
+    if (lengthKeys === 1 || (lengthKeys === 2 && req.clean.parsed_text.isNonAccent)) return 0.1; // Parser not working
 
-  var baseConfidence = 0;
+    var baseConfidence = 0;
 
-  if (!!req.clean.parsed_text.region_arr && hit.parent.region) {
-    baseConfidence += computeBaseConfidence(req.clean.parsed_text.region_arr, hit.parent.region, 0.8, 0.4);
-  }
+    if (!!req.clean.parsed_text.region_arr && hit.parent.region) {
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.region_arr, hit.parent.region, 0.8, 0.4);
+    }
 
-  if (!!req.clean.parsed_text.county_arr && hit.parent.county) {
-    baseConfidence += computeBaseConfidence(req.clean.parsed_text.county_arr, hit.parent.county, 0.6, 0.3);
-  }
+    if (!!req.clean.parsed_text.county_arr && hit.parent.county) {
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.county_arr, hit.parent.county, 0.6, 0.3);
+    }
 
-  if (!!req.clean.parsed_text.locality_arr && hit.parent.locality) {
-    baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality_arr, hit.parent.locality, 0.4, 0.2);
-  }
+    if (!!req.clean.parsed_text.locality_arr && hit.parent.locality) {
+      baseConfidence += computeBaseConfidence(req.clean.parsed_text.locality_arr, hit.parent.locality, 0.4, 0.2);
+    }
 
-  if ((!!req.clean.parsed_text.region || !!req.clean.parsed_text.county || !!req.clean.parsed_text.locality) && !baseConfidence) return baseConfidence; // Remove hit not match adminstrative
+    if ((!!req.clean.parsed_text.region || !!req.clean.parsed_text.county || !!req.clean.parsed_text.locality) && !baseConfidence) return baseConfidence; // Remove hit not match adminstrative
 
-  if (!!req.clean.parsed_text.street_arr) {
-    let temp = [];
-    if (Array.isArray(hit.name.default)) {
-      let arrTemp = hit.name.default;
-      let maxLenght = 0;
-      let indexMaxLenght = 0;
-      for (let i = 0; i < arrTemp.length; i++) {
-        if (arrTemp[i].length > maxLenght) {
-          maxLenght = arrTemp[i].length;
-          indexMaxLenght = i;
+    if (!!req.clean.parsed_text.street_arr) {
+      let temp = [];
+      if (Array.isArray(hit.name.default)) {
+        let arrTemp = hit.name.default;
+        let maxLenght = 0;
+        let indexMaxLenght = 0;
+        for (let i = 0; i < arrTemp.length; i++) {
+          if (arrTemp[i].length > maxLenght) {
+            maxLenght = arrTemp[i].length;
+            indexMaxLenght = i;
+          }
         }
+        temp.push(hit.name.default[indexMaxLenght]);
+      } else {
+        temp.push(hit.name.default);
       }
-      temp.push(hit.name.default[indexMaxLenght]);
-    } else {
-      temp.push(hit.name.default);
+
+      if (temp) {
+        baseConfidence += computeBaseConfidence(req.clean.parsed_text.street_arr, temp, 0.8, 0.4);
+      }
     }
 
-    if (temp) {
-      baseConfidence += computeBaseConfidence(req.clean.parsed_text.street_arr, temp, 0.8, 0.4);
-    }
-  }
-
-  if (!!req.clean.parsed_text.venue_arr) {
-    let temp = [];
-    if (Array.isArray(hit.name.default)) {
-      let arrTemp = hit.name.default;
-      let maxLenght = 0;
-      let indexMaxLenght = 0;
-      for (let i = 0; i < arrTemp.length; i++) {
-        if (arrTemp[i].length > maxLenght) {
-          maxLenght = arrTemp[i].length;
-          indexMaxLenght = i;
+    if (!!req.clean.parsed_text.venue_arr) {
+      let temp = [];
+      if (Array.isArray(hit.name.default)) {
+        let arrTemp = hit.name.default;
+        let maxLenght = 0;
+        let indexMaxLenght = 0;
+        for (let i = 0; i < arrTemp.length; i++) {
+          if (arrTemp[i].length > maxLenght) {
+            maxLenght = arrTemp[i].length;
+            indexMaxLenght = i;
+          }
         }
+        temp.push(hit.name.default[indexMaxLenght]);
+      } else {
+        temp.push(hit.name.default);
       }
-      temp.push(hit.name.default[indexMaxLenght]);
-    } else {
-      temp.push(hit.name.default);
+
+      if (temp) {
+        baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue_arr, temp, 0.8, 0.4);
+      }
     }
 
-    if (temp) {
-      baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue_arr, temp, 0.8, 0.4);
-    }
+    return baseConfidence;
   }
-
-  return baseConfidence;
+  catch {
+    return 0;
+  }
 }
 
 /**
