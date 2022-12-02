@@ -194,7 +194,7 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
             maxAccuracy = accuracy;
           }
 
-          if (accuracyNonAccent > 0.8 && maxAccuracyNonAccent < accuracyNonAccent) {
+          if (accuracyNonAccent > 0.6 && maxAccuracyNonAccent < accuracyNonAccent) {
             indexMaxNonAccent = index;
             maxAccuracyNonAccent = accuracyNonAccent;
           }
