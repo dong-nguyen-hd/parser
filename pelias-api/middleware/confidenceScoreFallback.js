@@ -202,7 +202,7 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
       }
 
       if (usingDistance && !baseConfidence) {
-        if (maxAccuracy > maxAccuracyNonAccent) {
+        if (maxAccuracy >= maxAccuracyNonAccent) {
           let tempConfidence = (absoluteScore / (indexMax + 1.0));
           baseConfidence = tempConfidence * maxAccuracy
         } else {
