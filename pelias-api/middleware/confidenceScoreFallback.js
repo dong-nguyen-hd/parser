@@ -10,6 +10,7 @@
  */
 
 const _ = require('lodash');
+const similarity = require('pelias-parser/helper/levenshteinDistance');
 
 function setup() {
   return computeScores;
@@ -77,7 +78,7 @@ function computeConfidenceScore(req, hit) {
 function checkFallbackLevel(req, hit) {
   try {
     var lengthKeys = Object.keys(req.clean.parsed_text).length;
-    if (lengthKeys === 1 || (lengthKeys === 2 && req.clean.parsed_text.isNonAccent)) return 0.1; // Parser not working
+    if (lengthKeys === 1 || (lengthKeys === 2 && req.clean.parsed_text.isNonAccent)) return 0.01; // Parser not working
 
     var baseConfidence = 0;
 
@@ -113,7 +114,7 @@ function checkFallbackLevel(req, hit) {
       }
 
       if (temp) {
-        baseConfidence += computeBaseConfidence(req.clean.parsed_text.street_arr, temp, 0.9, 0.4);
+        baseConfidence += computeBaseConfidence(req.clean.parsed_text.street_arr, temp, 0.9, 0.4, true);
       }
     }
 
@@ -135,7 +136,7 @@ function checkFallbackLevel(req, hit) {
       }
 
       if (temp) {
-        baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue_arr, temp, 0.9, 0.4);
+        baseConfidence += computeBaseConfidence(req.clean.parsed_text.venue_arr, temp, 0.9, 0.4, true);
       }
     }
 
@@ -156,9 +157,11 @@ function checkFallbackLevel(req, hit) {
  * Score when exact match
  * @param {*} relativeScore 
  * Score when relative match
+ * @param {*} usingDistance - boolean (default: false) 
+ * Using levenshtein-distance to compute
  * @returns 
  */
-function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScore) {
+function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScore, usingDistance = false) {
   var baseConfidence = 0;
 
   if (hitLayer.length) {
@@ -166,16 +169,44 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
       let hit = normalizeProcess(elementHit);
       let hitNonAccent = toLowerCaseNonAccentVietnamese(hit);
 
+      let maxAccuracy = 0;
+      let indexMax = 0;
+      let maxAccuracyNonAccent = 0;
+      let indexMaxNonAccent = 0;
+
       for (let index = 0; index < parsedText.length; index++) {
         const elementParsed = parsedText[index];
 
-        if (hit.includes(elementParsed)) {
-          baseConfidence += (absoluteScore / (index + 1));
-          return false;
-        } else if (hitNonAccent.includes(toLowerCaseNonAccentVietnamese(elementParsed))) {
-          baseConfidence += (relativeScore / (index + 1));
-          return false;
+        if (usingDistance) {
+          let accuracy = similarity(hit, elementParsed);
+          let accuracyNonAccent = similarity(hitNonAccent, toLowerCaseNonAccentVietnamese(elementParsed));
+
+          if (accuracy > 0.4 && maxAccuracy < accuracy) {
+            indexMax = index;
+            maxAccuracy = accuracy;
+          }
+
+          if (accuracyNonAccent > 0.6 && maxAccuracyNonAccent < accuracyNonAccent) {
+            indexMaxNonAccent = index;
+            maxAccuracyNonAccent = accuracyNonAccent;
+          }
+        } else {
+          if (hit.includes(elementParsed)) {
+            baseConfidence = (absoluteScore / (index + 1.0));
+            return false;
+          } else if (hitNonAccent.includes(toLowerCaseNonAccentVietnamese(elementParsed))) {
+            baseConfidence = (relativeScore / (index + 1.0));
+            return false;
+          }
         }
+      }
+
+      if (maxAccuracy > maxAccuracyNonAccent) {
+        let tempConfidence = (absoluteScore / (indexMax + 1.0));
+        baseConfidence = tempConfidence * maxAccuracy
+      } else {
+        let tempConfidence = (relativeScore / (indexMaxNonAccent + 1.0));
+        baseConfidence = tempConfidence * maxAccuracyNonAccent
       }
     });
   }
