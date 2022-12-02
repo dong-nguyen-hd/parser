@@ -201,12 +201,14 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
         }
       }
 
-      if (maxAccuracy > maxAccuracyNonAccent) {
-        let tempConfidence = (absoluteScore / (indexMax + 1.0));
-        baseConfidence = tempConfidence * maxAccuracy
-      } else {
-        let tempConfidence = (relativeScore / (indexMaxNonAccent + 1.0));
-        baseConfidence = tempConfidence * maxAccuracyNonAccent
+      if (usingDistance) {
+        if (maxAccuracy > maxAccuracyNonAccent) {
+          let tempConfidence = (absoluteScore / (indexMax + 1.0));
+          baseConfidence = tempConfidence * maxAccuracy
+        } else {
+          let tempConfidence = (relativeScore / (indexMaxNonAccent + 1.0));
+          baseConfidence = tempConfidence * maxAccuracyNonAccent
+        }
       }
     });
   }
