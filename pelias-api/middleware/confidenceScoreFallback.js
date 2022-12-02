@@ -164,7 +164,7 @@ function checkFallbackLevel(req, hit) {
 function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScore, usingDistance = false) {
   var baseConfidence = 0;
 
-  if (hitLayer.length) {
+  if (hitLayer.length && parsedText.length) {
     hitLayer.every(elementHit => {
       let hit = normalizeProcess(elementHit);
       let hitNonAccent = toLowerCaseNonAccentVietnamese(hit);
@@ -176,6 +176,14 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
 
       for (let index = 0; index < parsedText.length; index++) {
         const elementParsed = parsedText[index];
+
+        if (hit.includes(elementParsed)) {
+          baseConfidence = absoluteScore / (index + 1.0);
+          return false;
+        } else if (hitNonAccent.includes(toLowerCaseNonAccentVietnamese(elementParsed))) {
+          baseConfidence = relativeScore / (index + 1.0);
+          return false;
+        }
 
         if (usingDistance) {
           let accuracy = similarity(hit, elementParsed);
@@ -190,18 +198,10 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
             indexMaxNonAccent = index;
             maxAccuracyNonAccent = accuracyNonAccent;
           }
-        } else {
-          if (hit.includes(elementParsed)) {
-            baseConfidence = (absoluteScore / (index + 1.0));
-            return false;
-          } else if (hitNonAccent.includes(toLowerCaseNonAccentVietnamese(elementParsed))) {
-            baseConfidence = (relativeScore / (index + 1.0));
-            return false;
-          }
         }
       }
 
-      if (usingDistance) {
+      if (usingDistance && !baseConfidence) {
         if (maxAccuracy > maxAccuracyNonAccent) {
           let tempConfidence = (absoluteScore / (indexMax + 1.0));
           baseConfidence = tempConfidence * maxAccuracy
