@@ -189,12 +189,12 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
           let accuracy = similarity(hit, elementParsed);
           let accuracyNonAccent = similarity(hitNonAccent, toLowerCaseNonAccentVietnamese(elementParsed));
 
-          if (accuracy > 0.4 && maxAccuracy < accuracy) {
+          if (accuracy > 0.6 && maxAccuracy < accuracy) {
             indexMax = index;
             maxAccuracy = accuracy;
           }
 
-          if (accuracyNonAccent > 0.6 && maxAccuracyNonAccent < accuracyNonAccent) {
+          if (accuracyNonAccent > 0.8 && maxAccuracyNonAccent < accuracyNonAccent) {
             indexMaxNonAccent = index;
             maxAccuracyNonAccent = accuracyNonAccent;
           }
