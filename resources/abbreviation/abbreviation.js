@@ -12,7 +12,7 @@ function setContentRegionToMap() {
     const dict = fs.readFileSync(filepathRegion, 'utf8');
     dict.split('\n').forEach(row => {
         let temp = row.split('=>');
-        if (temp.length) {
+        if (temp.length && temp[0].trim()) {
             let valueMap = _normalize(temp[0]);
             let keyArrMap = temp[1].split('|');
             keyArrMap.forEach(key => {
@@ -36,7 +36,7 @@ function setContentCountyToMap() {
     const dict = fs.readFileSync(filepathCounty, 'utf8');
     dict.split('\n').forEach(row => {
         let temp = row.split('=>');
-        if (temp.length) {
+        if (temp.length && temp[0].trim()) {
             let valueMap = _normalize(temp[0]);
             let keyArrMap = temp[1].split('|');
             keyArrMap.forEach(key => {
@@ -60,7 +60,7 @@ function setContentStreetToMap() {
     const dict = fs.readFileSync(filepathStreet, 'utf8');
     dict.split('\n').forEach(row => {
         let temp = row.split('=>');
-        if (temp.length) {
+        if (temp.length && temp[0].trim()) {
             let valueMap = _normalize(temp[0]);
             let keyArrMap = temp[1].split('|');
             keyArrMap.forEach(key => {
