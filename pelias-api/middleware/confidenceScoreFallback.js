@@ -250,7 +250,7 @@ function computeConfidenceBaseOnHouseNumber(a, b, score) {
 }
 
 function isNumeric(value) {
-  return /^-?\d+$/.test(value);
+  return /^\d+$/.test(value);
 }
 
 /**
