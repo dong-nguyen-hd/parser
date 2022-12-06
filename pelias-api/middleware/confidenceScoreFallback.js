@@ -204,11 +204,11 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
 
       if (usingDistance && !baseConfidence) {
         if (maxAccuracy >= maxAccuracyNonAccent) {
-          let tempConfidence = (absoluteScore / (indexMax + 1.0));
+          let tempConfidence = (absoluteScore / (indexMax + 2.0));
           baseConfidence = tempConfidence * maxAccuracy;
           baseConfidence += computeConfidenceBaseOnHouseNumber(hit, parsedText[indexMax], baseConfidence);
         } else {
-          let tempConfidence = (relativeScore / (indexMaxNonAccent + 1.0));
+          let tempConfidence = (relativeScore / (indexMaxNonAccent + 2.0));
           baseConfidence = tempConfidence * maxAccuracyNonAccent;
           baseConfidence += computeConfidenceBaseOnHouseNumber(hit, parsedText[indexMaxNonAccent], baseConfidence);
         }
