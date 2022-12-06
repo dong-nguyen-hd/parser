@@ -5,7 +5,8 @@ const unicode = require('../helper/unicode');
 const Tokenizer = require('pelias-parser/tokenization/Tokenizer');
 const Solution = require('pelias-parser/solver/Solution');
 const AddressParser = require('pelias-parser/parser/AddressParser');
-const Abbreviation = require('pelias-parser/resources/abbreviation/abbreviation')
+const Abbreviation = require('pelias-parser/resources/abbreviation/abbreviation');
+const regexHelper = require('pelias-parser/helper/regexHelper');
 const parser = new AddressParser();
 const _ = require('lodash');
 
@@ -92,10 +93,12 @@ function _sanitize(raw, clean, req) {
 
     if (isAdmin(clean.parsed_text)) clean.parsed_text.admin = renderAdmin(clean.parsed_text);
 
+    clean.parsed_text.subject = regexHelper.separateHouseNumber(clean.parsed_text.subject).address;
+
     // // Debug
-    // console.log("DongND");
-    // console.log(clean.parsed_text);
-    // console.log("DongND");
+    console.log("DongND");
+    console.log(clean.parsed_text);
+    console.log("DongND");
   }
 
   return messages;
@@ -380,7 +383,7 @@ function parse(t, mapRegion, mapCounty, mapStreet) {
   if (lengthKeys === 1 || lengthKeys == 2) {
     parsed_text.subject = mappingAbbreviatedStreetOrVenue(body, mapStreet);
   }
-  // a venue query
+  // venue and street
   else if (!_.isEmpty(parsed_text.venue) && parsed_text.venue.split(' ').length <= 4 && !_.isEmpty(parsed_text.street)) {
     parsed_text.subject = mappingAbbreviatedStreetOrVenue(parsed_text.venue, mapStreet);
   }

@@ -11,6 +11,7 @@
 
 const _ = require('lodash');
 const similarity = require('pelias-parser/helper/levenshteinDistance');
+const regexHelper = require('pelias-parser/helper/regexHelper');
 
 function setup() {
   return computeScores;
@@ -204,16 +205,52 @@ function computeBaseConfidence(parsedText, hitLayer, absoluteScore, relativeScor
       if (usingDistance && !baseConfidence) {
         if (maxAccuracy >= maxAccuracyNonAccent) {
           let tempConfidence = (absoluteScore / (indexMax + 1.0));
-          baseConfidence = tempConfidence * maxAccuracy
+          baseConfidence = tempConfidence * maxAccuracy;
+          baseConfidence += computeConfidenceBaseOnHouseNumber(hit, parsedText[indexMax], baseConfidence);
         } else {
           let tempConfidence = (relativeScore / (indexMaxNonAccent + 1.0));
-          baseConfidence = tempConfidence * maxAccuracyNonAccent
+          baseConfidence = tempConfidence * maxAccuracyNonAccent;
+          baseConfidence += computeConfidenceBaseOnHouseNumber(hit, parsedText[indexMaxNonAccent], baseConfidence);
         }
       }
     });
   }
 
   return baseConfidence;
+}
+
+function computeConfidenceBaseOnHouseNumber(a, b, score) {
+  if (!score) return 0;
+  var baseConfidence = 0;
+  var part = score / 10.0;
+
+  var addressA = regexHelper.separateHouseNumber(a);
+  var addressB = regexHelper.separateHouseNumber(b);
+
+  if (!(!!addressA.houseNumber && !!addressB.houseNumber)) return baseConfidence;
+
+  // Process house-number is number
+  if (isNumeric(addressA.houseNumber) && isNumeric(addressB.houseNumber)) {
+    var numberA = parseInt(addressA.houseNumber);
+    var numberB = parseInt(addressB.houseNumber);
+
+    var difference = numberA >= numberB ? numberA - numberB : numberB - numberA;
+
+    if (difference < 5) return score;
+    if (difference < 10) return part * 9;
+    if (difference < 25) return part * 7;
+    if (difference < 50) return part * 5;
+    if (difference < 75) return part * 3;
+    if (difference < 100) return part;
+  }
+
+  // TODO: Process house-number isn't number
+
+  return baseConfidence;
+}
+
+function isNumeric(value) {
+  return /^-?\d+$/.test(value);
 }
 
 /**
