@@ -2,45 +2,45 @@ const Parser = require('./Parser')
 const AlphaNumericClassifier = require('../classifier/AlphaNumericClassifier')
 const TokenPositionClassifier = require('../classifier/TokenPositionClassifier')
 //const HouseNumberClassifier = require('../classifier/HouseNumberClassifier')
-const PostcodeClassifier = require('../classifier/PostcodeClassifier')
+//const PostcodeClassifier = require('../classifier/PostcodeClassifier')
 const StreetPrefixClassifier = require('../classifier/StreetPrefixClassifier')
 const StreetSuffixClassifier = require('../classifier/StreetSuffixClassifier')
 const StreetProperNameClassifier = require('../classifier/StreetProperNameClassifier')
 const RoadTypeClassifier = require('../classifier/RoadTypeClassifier')
 const ToponymClassifier = require('../classifier/ToponymClassifier')
-const CompoundStreetClassifier = require('../classifier/CompoundStreetClassifier')
-const DirectionalClassifier = require('../classifier/DirectionalClassifier')
-const OrdinalClassifier = require('../classifier/OrdinalClassifier')
+//const CompoundStreetClassifier = require('../classifier/CompoundStreetClassifier')
+//const DirectionalClassifier = require('../classifier/DirectionalClassifier')
+//const OrdinalClassifier = require('../classifier/OrdinalClassifier')
 const StopWordClassifier = require('../classifier/StopWordClassifier')
 const ObscureClassifier = require('../classifier/ObscureClassifier')
-const PersonClassifier = require('../classifier/PersonClassifier')
-const GivenNameClassifier = require('../classifier/GivenNameClassifier')
+//const PersonClassifier = require('../classifier/PersonClassifier')
+//const GivenNameClassifier = require('../classifier/GivenNameClassifier')
 const SurnameClassifier = require('../classifier/SurnameClassifier')
-const MiddleInitialClassifier = require('../classifier/MiddleInitialClassifier')
-const PersonalSuffixClassifier = require('../classifier/PersonalSuffixClassifier')
-const PersonalTitleClassifier = require('../classifier/PersonalTitleClassifier')
-const ChainClassifier = require('../classifier/ChainClassifier')
+// const MiddleInitialClassifier = require('../classifier/MiddleInitialClassifier')
+// const PersonalSuffixClassifier = require('../classifier/PersonalSuffixClassifier')
+// const PersonalTitleClassifier = require('../classifier/PersonalTitleClassifier')
+// const ChainClassifier = require('../classifier/ChainClassifier')
 const PlaceClassifier = require('../classifier/PlaceClassifier')
-const IntersectionClassifier = require('../classifier/IntersectionClassifier')
+// const IntersectionClassifier = require('../classifier/IntersectionClassifier')
 // const MultiStreetClassifier = require('../classifier/MultiStreetClassifier')
-const CentralEuropeanStreetNameClassifier = require('../classifier/CentralEuropeanStreetNameClassifier')
+//const CentralEuropeanStreetNameClassifier = require('../classifier/CentralEuropeanStreetNameClassifier')
 const CompositeClassifier = require('../classifier/CompositeClassifier')
 const WhosOnFirstClassifier = require('../classifier/WhosOnFirstClassifier')
 // const AdjacencyClassifier = require('../classifier/AdjacencyClassifier')
 const ExclusiveCartesianSolver = require('../solver/ExclusiveCartesianSolver')
 const LeadingAreaDeclassifier = require('../solver/LeadingAreaDeclassifier')
 const MultiStreetSolver = require('../solver/MultiStreetSolver')
-const InvalidSolutionFilter = require('../solver/InvalidSolutionFilter')
+//const InvalidSolutionFilter = require('../solver/InvalidSolutionFilter')
 const TokenDistanceFilter = require('../solver/TokenDistanceFilter')
 const OrphanedUnitTypeDeclassifier = require('../solver/OrphanedUnitTypeDeclassifier')
-const MustNotPreceedFilter = require('../solver/MustNotPreceedFilter')
+//const MustNotPreceedFilter = require('../solver/MustNotPreceedFilter')
 const MustNotFollowFilter = require('../solver/MustNotFollowFilter')
 const SubsetFilter = require('../solver/SubsetFilter')
-const HouseNumberPositionPenalty = require('../solver/HouseNumberPositionPenalty')
-const PostcodePositionPenalty = require('../solver/PostcodePositionPenalty')
+//const HouseNumberPositionPenalty = require('../solver/HouseNumberPositionPenalty')
+//const PostcodePositionPenalty = require('../solver/PostcodePositionPenalty')
 
 class AddressParser extends Parser {
-  constructor (options) {
+  constructor(options) {
     super(
       // classifiers
       [
@@ -60,7 +60,7 @@ class AddressParser extends Parser {
         new StopWordClassifier(),
         new ObscureClassifier(),
         new SurnameClassifier(),
-        
+
         // phrase classifiers
         new ToponymClassifier(),
         new RoadTypeClassifier(),
