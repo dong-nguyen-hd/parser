@@ -45,3 +45,5 @@ bệnh viện
 vincom|vinhome|vinhomes|winmart|vinmart|vincity|vinpearl|vinfast|vinmec|vinschool|vineco
 khu công
 khu tập thể
+công an|cong an
+ủy ban nhân dân|uy ban nhan dan|UBND
