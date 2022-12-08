@@ -188,6 +188,25 @@ module.exports = [
     ]
   },
   {
+    // [numeric/alphaNumeric + street-prefix + generic surname]
+    confidence: 0.84,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: [ 'PlaceClassification']
+      },
+      {
+        is: ['StreetNameClassification'],
+        not: [ 'PlaceClassification', 'RoadTypeClassification']
+      }
+    ]
+  },
+  {
     //  [street-prefix + toponyms]
     confidence: 0.85,
     Class: StreetClassification,
