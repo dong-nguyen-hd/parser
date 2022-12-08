@@ -2,6 +2,7 @@ const PhraseClassifier = require('./super/PhraseClassifier')
 const AreaClassification = require('../classification/AreaClassification')
 const CountryClassification = require('../classification/CountryClassification')
 const LocalityClassification = require('../classification/LocalityClassification')
+const VillageClassification = require('../classification/VillageClassification')
 const RegionClassification = require('../classification/RegionClassification')
 const CountyClassification = require('../classification/CountyClassification')
 const whosonfirst = require('../resources/whosonfirst/whosonfirst')
@@ -27,6 +28,10 @@ const placetypes = {
   locality: {
     files: ['name_vi_x_preferred.txt'],
     classifications: [AreaClassification, LocalityClassification]
+  },
+  village: {
+    files: ['name_vi_x_preferred.txt'],
+    classifications: [AreaClassification, VillageClassification]
   }
 }
 

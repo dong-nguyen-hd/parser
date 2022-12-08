@@ -99,16 +99,26 @@ class AddressParser extends Parser {
         new MustNotFollowFilter('RegionClassification', 'CountryClassification'),
         new MustNotFollowFilter('CountyClassification', 'CountryClassification'),
         new MustNotFollowFilter('LocalityClassification', 'CountryClassification'),
+        new MustNotFollowFilter('VillageClassification', 'CountryClassification'),
 
         new MustNotFollowFilter('CountyClassification', 'RegionClassification'),
         new MustNotFollowFilter('LocalityClassification', 'RegionClassification'),
+        new MustNotFollowFilter('VillageClassification', 'RegionClassification'),
 
         new MustNotFollowFilter('LocalityClassification', 'CountyClassification'),
+        new MustNotFollowFilter('VillageClassification', 'CountyClassification'),
 
-        new MustNotFollowFilter('VenueClassification', 'LocalityClassification'),
-        new MustNotFollowFilter('VenueClassification', 'CountyClassification'),
-        new MustNotFollowFilter('VenueClassification', 'RegionClassification'),
         new MustNotFollowFilter('VenueClassification', 'CountryClassification'),
+        new MustNotFollowFilter('VenueClassification', 'RegionClassification'),
+        new MustNotFollowFilter('VenueClassification', 'CountyClassification'),
+        new MustNotFollowFilter('VenueClassification', 'LocalityClassification'),
+        new MustNotFollowFilter('VenueClassification', 'VillageClassification'),
+
+        new MustNotFollowFilter('StreetClassification', 'CountryClassification'),
+        new MustNotFollowFilter('StreetClassification', 'RegionClassification'),
+        new MustNotFollowFilter('StreetClassification', 'CountyClassification'),
+        new MustNotFollowFilter('StreetClassification', 'LocalityClassification'),
+        new MustNotFollowFilter('StreetClassification', 'VillageClassification'),
 
         //new HouseNumberPositionPenalty(),
         //new PostcodePositionPenalty(),

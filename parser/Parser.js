@@ -70,6 +70,8 @@ class Parser {
       if (classification.b === 'CountyClassification') { return +1 }
       if (classification.a === 'LocalityClassification') { return -1 }
       if (classification.b === 'LocalityClassification') { return +1 }
+      if (classification.a === 'VillageClassification') { return -1 }
+      if (classification.b === 'VillageClassification') { return +1 }
     }
 
     // sort results by score desc
