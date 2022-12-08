@@ -11,6 +11,7 @@ học viện
 đường sắt|duong sat|ds|d s
 khu công nghiệp|khu cong nghiep|kcn|k c n
 khu du lịch|khu du lich|kdl|k d l
+khu dân cư
 khu căn hộ
 khu nhà ở
 khu đô thị
@@ -32,6 +33,7 @@ trung tâm thương mại|trung tam thuong mai|tttm|t t t m
 trung tâm|trung tam|tt|t t
 toà|toà nhà|tòa nhà
 bến
+cao ốc
 tổng công ty|tong cong ty|tcty|tct
 viện bảo tàng|vien bao tang|bảo tàng|vbt|v b t
 vườn quốc gia|vuon quoc gia|vqg|v q g
