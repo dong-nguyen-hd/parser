@@ -9,7 +9,7 @@ class ObscureClassifier extends WordClassifier {
   setup () {
     // load Obscure tokens
     this.stopWords = {}
-    libpostal.load(this.stopWords, ['vi'], 'obscure.txt')
+    libpostal.load(this.stopWords, ['vi', 'en', 'all'], 'obscure.txt')
   }
 
   each (span) {
