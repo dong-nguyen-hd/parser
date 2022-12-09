@@ -7,7 +7,7 @@ công viên|cong vien|cv|c v
 công viên hồ điều hoà
 căn cứ không quân|can cu khong quan|cckq|c c k q
 đại học|dai hoc|dh|d h|trường đại học|truong dai hoc
-học viện
+học viện|hoc vien
 đường sắt|duong sat|ds|d s
 khu công nghiệp|khu cong nghiep|kcn|k c n
 khu du lịch|khu du lich|kdl|k d l
@@ -17,7 +17,7 @@ khu nhà ở
 khu đô thị
 phố đi bộ
 khu nghỉ mát|khu nghi mat|knm|k n m
-khách sạn|khach san|ks|k / s
+khách sạn|khach san|ks
 nhà hát|nha hat|nh|n h
 nhà thi đấu|nha thi dau|ntd|n t d
 nhà thờ|nha tho|nt|n t
