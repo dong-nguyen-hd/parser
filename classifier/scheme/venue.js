@@ -8,14 +8,14 @@ module.exports = [
     scheme: [
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification', 'VenueClassification']
+        not: []
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
       {
-        is: ['AlphaClassification'],
+        is: ['AlphaClassification', 'AlphaNumericClassification'],
         not: ['ObscureClassification']
       },
     ]
@@ -27,18 +27,18 @@ module.exports = [
     scheme: [
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification', 'VenueClassification']
+        not: []
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
       {
-        is: ['AlphaClassification'],
+        is: ['AlphaClassification', 'AlphaNumericClassification'],
         not: ["ObscureClassification"]
       },
     ]
@@ -50,23 +50,23 @@ module.exports = [
     scheme: [
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification', 'VenueClassification']
+        not: []
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification']
+        not: []
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification']
+        not: []
       },
       {
-        is: ['AlphaClassification'],
-        not: ["ObscureClassification"]
+        is: ['AlphaClassification', 'AlphaNumericClassification'],
+        not: ['ObscureClassification']
       },
     ]
   },
@@ -76,12 +76,12 @@ module.exports = [
     Class: VenueClassification,
     scheme: [
       {
-        is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        is: ['AlphaClassification', 'AlphaNumericClassification'],
+        not: ['ObscureClassification']
       },
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification', 'VenueClassification']
+        not: []
       },
     ]
   },
@@ -91,16 +91,16 @@ module.exports = [
     Class: VenueClassification,
     scheme: [
       {
-        is: ['AlphaClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        is: ['AlphaClassification', 'AlphaNumericClassification'],
+        not: ['ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
     ]
   },
@@ -110,20 +110,20 @@ module.exports = [
     Class: VenueClassification,
     scheme: [
       {
-        is: ['AlphaClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        is: ['AlphaClassification', 'AlphaNumericClassification'],
+        not: ['ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification']
+        not: []
       },
     ]
   },
@@ -133,24 +133,24 @@ module.exports = [
     Class: VenueClassification,
     scheme: [
       {
-        is: ['AlphaClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        is: ['AlphaClassification', 'AlphaNumericClassification'],
+        not: ['ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification']
+        not: []
       },
       {
         is: ['AlphaClassification'],
-        not: ['PlaceClassification', 'ObscureClassification']
+        not: ['ObscureClassification']
       },
       {
         is: ['PlaceClassification'],
-        not: ['StreetClassification', 'StreetNameClassification']
+        not: []
       },
     ]
   },

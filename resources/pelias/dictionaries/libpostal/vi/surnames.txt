@@ -145,7 +145,6 @@ linh|linh
 loan|loan
 lò
 lỗ
-lộ
 lộc|loc
 luyện|luyen
 lục|luc

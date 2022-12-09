@@ -15,6 +15,7 @@ khu dân cư
 khu căn hộ
 khu nhà ở
 khu đô thị
+khu phố
 phố đi bộ
 khu nghỉ mát|khu nghi mat|knm|k n m
 khách sạn|khach san|ks
@@ -31,7 +32,7 @@ trung học cơ sở|trung hoc co so|thcs|t h c s
 trung học phổ thông|trung hoc pho thong|thpt|t h p t
 trung tâm thương mại|trung tam thuong mai|tttm|t t t m
 trung tâm|trung tam|tt|t t
-toà|toà nhà|tòa nhà
+toà|toà nhà|tòa nhà|tầng hầm
 bến
 cao ốc
 tổng công ty|tong cong ty|tcty|tct
