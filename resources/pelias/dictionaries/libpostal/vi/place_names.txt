@@ -31,7 +31,7 @@ sân vận động|san van dong|svd|s v d
 tiểu học|tieu hoc|th|t h
 trung học cơ sở|trung hoc co so|thcs|t h c s
 trung học phổ thông|trung hoc pho thong|thpt|t h p t
-trung tâm thương mại|trung tam thuong mai|tttm|t t t m
+trung tâm thương mại|trung tam thuong mai|tttm|t t t m|trung tâm tm
 trung tâm|trung tam|tt|t t
 toà|toà nhà|tòa nhà|tầng hầm
 bến
@@ -51,3 +51,4 @@ công an|cong an
 ủy ban nhân dân|uy ban nhan dan|ubnd
 nhà máy
 nhà thuốc
+vòng xoay ngã tư

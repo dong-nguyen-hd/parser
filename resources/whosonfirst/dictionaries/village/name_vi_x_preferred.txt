@@ -1,4 +1,4 @@
-thôn kéo pựt|thon keo put
+thôn kéo pựt|thon keo put^\p{L}*\S
 thôn nà chả|thon na cha
 thôn nà hàn|thon na han
 thôn phiêng toản|phjêng toản|thon phieng toan|phjeng toan
@@ -416,7 +416,6 @@ thôn 7|thon 7
 thôn bản lạnh|thon ban lanh
 thôn một|thon mot
 thôn nà hoan|thon na hoan
-thôn|thon
 thôn cốc nao|thon coc nao
 thôn cốc xau|thon coc xau
 thôn nà chỉa|thon na chia
@@ -12581,7 +12580,6 @@ xóm 4 ngọc quyến|xom 4 ngoc quyen
 xóm bản chồi|xom ban choi
 xóm bàn miỏng|xom ban miong
 xóm bản ỏ|xom ban o
-bét|bet
 bó pu|bo pu
 cáp kẻ|cap ke
 xóm cốc thốc|xom coc thoc
@@ -12803,7 +12801,6 @@ xóm cát hảo|xom cat hao
 xóm co lỳ|xom co ly
 xóm co nghịu|xom co nghiu
 co siêo|co sieo
-két|ket
 xóm bản gủn|xom ban gun
 xóm bản máp|xom ban map
 xóm bản phiấy|xom ban phiay
@@ -12898,7 +12895,6 @@ xóm bản riềng|xom ban rieng
 bản bóng|ban bong
 bản cuốn|ban cuon
 xóm dẩn tờ|xom dan to
-đồn|don
 khơ chong|kho chong
 khuổi luội|khuoi luoi
 khuổi phay|khuoi phay
@@ -13483,7 +13479,6 @@ xóm viểng|xom vieng
 xóm lăng hoài noọc|xom lang hoai nooc
 lũng hoài|lung hoai
 xóm noọc tổng|xom nooc tong
-pò|po
 xóm bản mầy|xom ban may
 xóm bó nộc - bó tèng|xom bo noc - bo teng
 xóm cốc khuyết|xom coc khuyet
@@ -13645,7 +13640,6 @@ xóm roỏng cun|xom roong cun
 xóm thôm coóc|xom thom cooc
 bó pha|bo pha
 xóm mấu|xom mau
-mới|moi
 nà lập|na lap
 xóm nà riềng|xom na rieng
 xóm nà thắm|xom na tham
@@ -13756,7 +13750,6 @@ xóm pác phai|xom pac phai
 xóm phiềng sa|xom phieng sa
 xóm rỏng mười|xom rong muoi
 xóm thôm phát|xom thom phat
-tử|tu
 xóm bản hỏ|xom ban ho
 bò ca|bo ca
 bó vài|bo vai
@@ -18632,10 +18625,8 @@ bản chổi|ban choi
 bản đô|ban do
 bản đổ|ban do
 bản hữu văn|ban huu van
-kháng|khang
 bản khoẳng|ban khoang
 bản kim khê|ban kim khe
-lé|le
 bản liên minh|ban lien minh
 bản mồng|ban mong
 bản muồng|ban muong
@@ -25505,8 +25496,6 @@ xóm nà mồng|xom na mong
 thôn pắc liềng|thon pac lieng
 thôn bản ngày 1|thon ban ngay 1
 thôn bản ngày 2|thon ban ngay 2
-cải|cai
-cáu|cau
 thôn khe lánh 1|thon khe lanh 1
 thôn khe lánh 3|thon khe lanh 3
 thôn khủi luông|thon khui luong
@@ -33727,7 +33716,6 @@ thạnh c|thanh c
 ấp lương|ap luong
 phú a|phu a
 ấp thanh|ap thanh
-đăng|dang
 ấp trường|ap truong
 xuân b|xuan b
 xuân a|xuan a
@@ -37072,7 +37060,6 @@ thôn đồng khuân|thon dong khuan
 thôn gia cát|thon gia cat
 thôn bản giỏng|thon ban giong
 thôn bản khẻ|thon ban khe
-dé|de
 thôn đông đa 1|thon dong da 1
 thôn đông đa 2|thon dong da 2
 thôn khoan thượng|thon khoan thuong
@@ -37470,7 +37457,6 @@ thôn khánh hòa|thon khanh hoa
 khe căm|khe cam
 khe cạn|khe can
 thôn khe mon|thon khe mon
-làn|lan
 thôn làng mãn 1|thon lang man 1
 thôn làng mãn 2|thon lang man 2
 thôn lũ khê|thon lu khe
