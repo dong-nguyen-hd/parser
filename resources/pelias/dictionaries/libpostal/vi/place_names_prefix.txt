@@ -11,9 +11,9 @@ học viện|hoc vien
 đường sắt|duong sat|ds|d s
 khu công nghiệp|khu cong nghiep|kcn|k c n
 khu du lịch|khu du lich|kdl|k d l
-khu dân cư
+khu dân cư|khu dan cư|khu dan cu
 khu dân dụng
-khu căn hộ|khu căn hộ cao tầng
+khu căn hộ|khu căn hộ cao tầng|cao ốc căn hộ|căn hộ|khu nhà ở di dân
 khu nhà ở
 khu đô thị
 khu phố
@@ -32,7 +32,8 @@ sân vận động|san van dong|svd|s v d
 tiểu học|tieu hoc|th|t h
 trung học cơ sở|trung hoc co so|thcs|t h c s
 trung học phổ thông|trung hoc pho thong|thpt|t h p t
-khu trung tâm thương mại|trung tâm thương mại|trung tam thuong mai|tttm|t t t m|trung tâm tm|tòa nhà trung tâm thương mại
+khu trung tâm thương mại|trung tâm thương mại|trung tam thuong mai|tttm|t t t m|trung tâm tm|tòa nhà trung tâm thương mại|khu thương mại
+cao ốc căn hộ thương mại 
 trung tâm|trung tam|tt|t t
 toà|toà nhà|tòa nhà
 tầng hầm

@@ -2,6 +2,25 @@ const VenueClassification = require('../../classification/VenueClassification')
 
 module.exports = [
   {
+    // [place + 1 slot + numeric/alphaNumeric]
+    confidence: 0.71,
+    Class: VenueClassification,
+    scheme: [
+      {
+        is: ['PlacePrefixClassification'],
+        not: []
+      },
+      {
+        is: ['AlphaClassification', 'AreaClassification'],
+        not: ['ObscureClassification', 'VillageClassification']
+      },
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+    ]
+  },
+  {
     // [place + 2 slot]
     confidence: 0.71,
     Class: VenueClassification,
