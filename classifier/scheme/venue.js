@@ -7,7 +7,7 @@ module.exports = [
     Class: VenueClassification,
     scheme: [
       {
-        is: ['PlaceClassification'],
+        is: ['PlacePrefixClassification'],
         not: []
       },
       {
@@ -26,7 +26,7 @@ module.exports = [
     Class: VenueClassification,
     scheme: [
       {
-        is: ['PlaceClassification'],
+        is: ['PlacePrefixClassification'],
         not: []
       },
       {
@@ -49,7 +49,7 @@ module.exports = [
     Class: VenueClassification,
     scheme: [
       {
-        is: ['PlaceClassification'],
+        is: ['PlacePrefixClassification'],
         not: []
       },
       {
@@ -80,7 +80,7 @@ module.exports = [
         not: ['ObscureClassification']
       },
       {
-        is: ['PlaceClassification'],
+        is: ['PlaceSuffixClassification'],
         not: []
       },
     ]
@@ -99,7 +99,7 @@ module.exports = [
         not: ['ObscureClassification']
       },
       {
-        is: ['PlaceClassification'],
+        is: ['PlaceSuffixClassification',],
         not: ['ObscureClassification']
       },
     ]
@@ -122,7 +122,7 @@ module.exports = [
         not: ['ObscureClassification']
       },
       {
-        is: ['PlaceClassification'],
+        is: ['PlaceSuffixClassification'],
         not: []
       },
     ]
@@ -149,7 +149,7 @@ module.exports = [
         not: ['ObscureClassification']
       },
       {
-        is: ['PlaceClassification'],
+        is: ['PlaceSuffixClassification'],
         not: []
       },
     ]
@@ -161,10 +161,10 @@ module.exports = [
     scheme: [
       {
         is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       },
       {
-        is: ['PlaceClassification'],
+        is: ['PlaceSuffixClassification'],
         not: []
       },
     ]
@@ -175,12 +175,12 @@ module.exports = [
     Class: VenueClassification,
     scheme: [
       {
-        is: ['PlaceClassification'],
+        is: ['PlacePrefixClassification'],
         not: []
       },
       {
         is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       }
     ]
   },

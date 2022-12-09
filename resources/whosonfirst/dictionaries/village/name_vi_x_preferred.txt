@@ -3819,8 +3819,8 @@ thôn đồng bây|thon dong bay
 thôn bừng rồng|thon bung rong
 thôn bừng núi|thon bung nui
 thôn khuân dẽo|thon khuan deo
-khu 7|đình|khu 7|dinh
-khu 8|cại|khu 8|cai
+khu 7|khu 7
+khu 8|khu 8
 thôn đồng thanh|thon dong thanh
 thôn nòn|thon non
 thôn néo|thon neo
@@ -9548,8 +9548,8 @@ tổ dân phố 2 - 23 tháng 10|to dan pho 2 - 23 thang 10
 tổ dân phố 3 phước bình|to dan pho 3 phuoc binh
 tổ dân phố 4 phước bình|to dan pho 4 phuoc binh
 tổ dân phố 1 nguyễn hữu huân|to dan pho 1 nguyen huu huan
-tổ dân phố 1 nguyễn thiện thuật|bắc|to dan pho 1 nguyen thien thuat|bac
-tổ dân phố 1 nguyễn thiện thuật|nam|to dan pho 1 nguyen thien thuat|nam
+tổ dân phố 1 nguyễn thiện thuật|to dan pho 1 nguyen thien thuat
+tổ dân phố 1 nguyễn thiện thuật|to dan pho 1 nguyen thien thuat
 tổ dân phố 1 trịnh phong|to dan pho 1 trinh phong
 tổ dân phố 2 hồng bàng|to dan pho 2 hong bang
 thôn thanh minh 3|thon thanh minh 3
@@ -9588,10 +9588,10 @@ tổ dân phố trà long 2|to dan pho tra long 2
 tổ dân phố đá bạc|to dan pho da bac
 tổ dân phố 2 lê thánh tôn|to dan pho 2 le thanh ton
 tổ dân phố 2 nguyễn hữu huân|to dan pho 2 nguyen huu huan
-tổ dân phố 2 nguyễn thiện thuật|bắc|to dan pho 2 nguyen thien thuat|bac
-tổ dân phố 2 nguyễn thiện thuật|nam|to dan pho 2 nguyen thien thuat|nam
+tổ dân phố 2 nguyễn thiện thuật|to dan pho 2 nguyen thien thuat
+tổ dân phố 2 nguyễn thiện thuật|to dan pho 2 nguyen thien thuat
 tổ dân phố 2 trịnh phong|to dan pho 2 trinh phong
-tổ dân phố 3 nguyễn thiện thuật|nam|to dan pho 3 nguyen thien thuat|nam
+tổ dân phố 3 nguyễn thiện thuật|to dan pho 3 nguyen thien thuat
 thôn thái thông 1|thon thai thong 1
 thôn thủy tú|thon thuy tu
 thôn thái thông 2|thon thai thong 2
@@ -12852,7 +12852,6 @@ xóm phìn sảng|xom phin sang
 xóm phin sảng|xom phin sang
 xóm sà phìn|xom sa phin
 tát luông|tat luong
-kon
 lũng phúc|lung phuc
 luộc thòm|luoc thom
 nà mu|na mu
@@ -32759,7 +32758,7 @@ khóm long thị d|khom long thi d
 ấp phủm soài|ap phum soai
 ấp vĩnh lợi 1|vĩnh lợi|ap vinh loi 1|vinh loi
 ấp vĩnh lợi 2|ap vinh loi 2
-ấp vĩnh tường 1|trung|ap vinh tuong 1|trung
+ấp vĩnh tường 1|ap vinh tuong 1
 ấp vĩnh tường 2|ap vinh tuong 2
 ấp bình chiến|ap binh chien
 ấp bình chánh 1|ap binh chanh 1
@@ -34832,10 +34831,10 @@ thôn dũng thúy hạ|thon dung thuy ha
 thôn dũng thượng|thon dung thuong
 thôn trà động|thon tra dong
 thôn vô thái|thon vo thai
-xóm 9|bia|xom 9|bia
-xóm 7|chùa|xom 7|chua
+xóm 9|xom 9
+xóm 7|xom 7
 thôn cổ rổng|thon co rong
-xóm 5|đình|xom 5|dinh
+xóm 5|xom 5
 thôn công bồi đông|thon cong boi dong
 thôn công bồi tây|thon cong boi tay
 thôn phương trạch đông|thon phuong trach dong
@@ -45311,8 +45310,8 @@ tổ dân phố trung hoà|to dan pho trung hoa
 tổ dân phố việt hưng|to dan pho viet hung
 xóm hoè|xom hoe
 xóm phạm|xom pham
-xóm tư 1|một|xom tu 1|mot
-xóm tư 2|hai|xom tu 2|hai
+xóm tư 1|xom tu 1
+xóm tư 2|xom tu 2
 thôn cựu hào|thon cuu hao
 thôn đại lại|thon dai lai
 thôn tiên hào|thon tien hao
@@ -48481,7 +48480,7 @@ thôn wang tó|thon wang to
 thôn kon rngâng|thon kon rngang
 thôn kon tu|thon kon tu
 thôn kon braih|kon sơ rêk|thon kon braih|kon so rek
-thôn kon tuh|kon bdeh|thon kon tuh|
+thôn kon tuh|kon bdeh|thon kon tuh
 thôn tam piên|thon tam pien
 thôn kon skôi|thon kon skoi
 thôn đắk toa|thon dak toa

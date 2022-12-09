@@ -1,4 +1,4 @@
-const Classification = require('./PlaceClassification')
+const Classification = require('./PlacePrefixClassification')
 
 module.exports.tests = {}
 
@@ -15,7 +15,7 @@ module.exports.tests.constructor = (test) => {
 
 module.exports.all = (tape, common) => {
   function test (name, testFunction) {
-    return tape(`PlaceClassification: ${name}`, testFunction)
+    return tape(`PlacePrefixClassification: ${name}`, testFunction)
   }
 
   for (const testCase in module.exports.tests) {

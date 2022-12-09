@@ -1,19 +1,19 @@
 const PhraseClassifier = require('./super/PhraseClassifier')
-const PlaceClassification = require('../classification/PlaceClassification')
+const PlaceSuffixClassification = require('../classification/PlaceSuffixClassification')
 const libpostal = require('../resources/libpostal/libpostal')
 
 // dictionaries sourced from the libpostal project
 // see: https://github.com/openvenues/libpostal
 
-class PlaceClassifier extends PhraseClassifier {
-  setup () {
+class PlaceSuffixClassifier extends PhraseClassifier {
+  setup() {
     // load index tokens
     this.index = {}
-    libpostal.load(this.index, ['en', 'vi'], 'place_names.txt')
+    libpostal.load(this.index, ['en', 'vi'], 'place_names_suffix.txt')
     libpostal.generatePlurals(this.index)
   }
 
-  each (span) {
+  each(span) {
     // skip spans which contain numbers
     if (span.contains.numerals) { return }
 
@@ -29,9 +29,9 @@ class PlaceClassifier extends PhraseClassifier {
 
     // use an inverted index for full token matching as it's O(1)
     if (this.index.hasOwnProperty(span.norm)) {
-      span.classify(new PlaceClassification(1))
+      span.classify(new PlaceSuffixClassification(1))
     }
   }
 }
 
-module.exports = PlaceClassifier
+module.exports = PlaceSuffixClassifier

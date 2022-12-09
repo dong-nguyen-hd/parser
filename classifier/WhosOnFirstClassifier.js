@@ -36,7 +36,7 @@ const placetypes = {
 }
 
 class WhosOnFirstClassifier extends PhraseClassifier {
-  setup () {
+  setup() {
     this.tokens = {}
     Object.keys(placetypes).forEach(placetype => {
       this.tokens[placetype] = new Set()
@@ -90,7 +90,7 @@ class WhosOnFirstClassifier extends PhraseClassifier {
     })
   }
 
-  each (span) {
+  each(span) {
     let confidence = 1.0
     // do not classify tokens preceeded by an 'IntersectionClassification' or add a penality to 'StopWordClassification'
     const firstChild = span.graph.findOne('child:first') || span
@@ -104,13 +104,14 @@ class WhosOnFirstClassifier extends PhraseClassifier {
       }
     }
 
-    // do not classify tokens preceeding 'StreetSuffixClassification' or 'PlaceClassification'
+    // do not classify tokens preceeding 'StreetSuffixClassification' or 'PlacePrefixClassification' or 'PlaceSuffixClassification'
     const lastChild = span.graph.findOne('child:last') || span
     const next = lastChild.graph.findOne('next')
     if (
       next && (
         next.classifications.hasOwnProperty('StreetSuffixClassification') ||
-        next.classifications.hasOwnProperty('PlaceClassification')
+        next.classifications.hasOwnProperty('PlaceSuffixClassification') ||
+        next.classifications.hasOwnProperty('PlacePrefixClassification')
       )) {
       return
     }

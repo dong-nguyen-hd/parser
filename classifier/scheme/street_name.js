@@ -12,7 +12,7 @@ module.exports = [
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification', 'SurnameClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification', 'SurnameClassification']
       }
     ]
   },
@@ -27,11 +27,11 @@ module.exports = [
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
@@ -46,15 +46,15 @@ module.exports = [
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
@@ -69,19 +69,19 @@ module.exports = [
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification',, 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },

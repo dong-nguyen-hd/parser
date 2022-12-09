@@ -1,7 +1,7 @@
-const PlaceClassifier = require('./PlaceClassifier')
-const PlaceClassification = require('../classification/PlaceClassification')
+const PlaceSuffixClassifier = require('./PlaceSuffixClassifier')
+const PlaceSuffixClassification = require('../classification/PlaceSuffixClassification')
 const Span = require('../tokenization/Span')
-const classifier = new PlaceClassifier()
+const classifier = new PlaceSuffixClassifier()
 
 module.exports.tests = {}
 
@@ -31,7 +31,7 @@ module.exports.tests.classify = (test) => {
     test(`classify: ${token}`, (t) => {
       const s = classify(token)
       t.deepEqual(s.classifications, {
-        PlaceClassification: new PlaceClassification(1.0)
+        PlaceSuffixClassification: new PlaceSuffixClassification(1.0)
       })
       t.end()
     })
@@ -40,7 +40,7 @@ module.exports.tests.classify = (test) => {
 
 module.exports.all = (tape, common) => {
   function test (name, testFunction) {
-    return tape(`PlaceClassifier: ${name}`, testFunction)
+    return tape(`PlaceSuffixClassifier: ${name}`, testFunction)
   }
 
   for (const testCase in module.exports.tests) {
