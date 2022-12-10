@@ -9879,7 +9879,7 @@ vĩnh thạnh trung|vinh thanh trung
 thạnh mỹ tây|thanh my tay
 bình long|binh long
 bình mỹ|binh my
-bình thủy|binh thuy
+bình thủy|bình thuỷ|binh thuy
 đào hữu cảnh|dao huu canh
 bình phú|binh phu
 bình chánh|binh chanh
@@ -10122,7 +10122,6 @@ long hưng|long hung
 thới an|thoi an
 phước thới|phuoc thoi
 trường lạc|truong lac
-bình thủy|binh thuy
 trà an|tra an
 trà nóc|tra noc
 thới an đông|thoi an dong

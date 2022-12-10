@@ -9,12 +9,12 @@ const f = (a, b) => [].concat(...a.map(d => b.map(e => [].concat(d, e))))
 const cartesian = (a, b, ...c) => (b ? cartesian(f(a, b), ...c) : a)
 
 class CompositeClassifier extends SectionClassifier {
-  constructor (schemes) {
+  constructor(schemes) {
     super()
     this.schemes = schemes || []
   }
 
-  match (scheme, phrase) {
+  match(scheme, phrase) {
     const children = phrase.graph.findAll('child')
 
     // 'scheme.is' is a required property
@@ -48,12 +48,12 @@ class CompositeClassifier extends SectionClassifier {
     return true
   }
 
-  each (section) {
+  each(section) {
     const phrases = section.graph.findAll('phrase')
 
-    // sort phrases so shorter phrases are matched first
+    // sort phrases so longer phrases are matched first
     // note: this mutates the original array
-    phrases.sort((a, b) => a.norm.length - b.norm.length)
+    phrases.sort((a, b) => b.norm.length - a.norm.length)
 
     this.schemes.forEach(s => {
       // invalid scheme
