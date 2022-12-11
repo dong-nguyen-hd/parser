@@ -1,7 +1,7 @@
 const Parser = require('./Parser')
 const AlphaNumericClassifier = require('../classifier/AlphaNumericClassifier')
 const TokenPositionClassifier = require('../classifier/TokenPositionClassifier')
-//const HouseNumberClassifier = require('../classifier/HouseNumberClassifier')
+const HouseNumberClassifier = require('../classifier/HouseNumberClassifier')
 //const PostcodeClassifier = require('../classifier/PostcodeClassifier')
 const StreetPrefixClassifier = require('../classifier/StreetPrefixClassifier')
 const StreetSuffixClassifier = require('../classifier/StreetSuffixClassifier')
@@ -30,10 +30,10 @@ const WhosOnFirstClassifier = require('../classifier/WhosOnFirstClassifier')
 const ExclusiveCartesianSolver = require('../solver/ExclusiveCartesianSolver')
 const LeadingAreaDeclassifier = require('../solver/LeadingAreaDeclassifier')
 const MultiStreetSolver = require('../solver/MultiStreetSolver')
-//const InvalidSolutionFilter = require('../solver/InvalidSolutionFilter')
+const InvalidSolutionFilter = require('../solver/InvalidSolutionFilter')
 const TokenDistanceFilter = require('../solver/TokenDistanceFilter')
 const OrphanedUnitTypeDeclassifier = require('../solver/OrphanedUnitTypeDeclassifier')
-//const MustNotPreceedFilter = require('../solver/MustNotPreceedFilter')
+const MustNotPreceedFilter = require('../solver/MustNotPreceedFilter')
 const MustNotFollowFilter = require('../solver/MustNotFollowFilter')
 const SubsetFilter = require('../solver/SubsetFilter')
 //const HouseNumberPositionPenalty = require('../solver/HouseNumberPositionPenalty')
@@ -49,8 +49,8 @@ class AddressParser extends Parser {
         new TokenPositionClassifier(),
 
         // word classifiers
-        //new HouseNumberClassifier(),
         //new PostcodeClassifier(),
+        new HouseNumberClassifier(),
         new StreetPrefixClassifier(),
         new StreetSuffixClassifier(),
         new StreetProperNameClassifier(),
@@ -91,11 +91,34 @@ class AddressParser extends Parser {
         new MultiStreetSolver(),
         new SubsetFilter(),
 
-        // new InvalidSolutionFilter([
-        //   ['VenueClassification', 'RegionClassification'],
-        //   ['VenueClassification', 'CountryClassification'],
-        // ]),
+        /* Invalid Solution Filter */
+        new InvalidSolutionFilter([
+          ['HouseNumberClassification', 'LocalityClassification'],
+          ['HouseNumberClassification', 'LocalityClassification', 'CountyClassification'],
+          ['HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification'],
+          ['HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification', 'CountryClassification'],
 
+          ['HouseNumberClassification', 'CountyClassification'],
+          ['HouseNumberClassification', 'CountyClassification', 'RegionClassification'],
+          ['HouseNumberClassification', 'CountyClassification', 'RegionClassification', 'CountryClassification'],
+
+          ['HouseNumberClassification', 'RegionClassification'],
+          ['HouseNumberClassification', 'RegionClassification', 'CountryClassification'],
+
+          ['HouseNumberClassification', 'CountryClassification'],
+
+          ['VenueClassification', 'HouseNumberClassification'],
+          ['VenueClassification', 'HouseNumberClassification', 'LocalityClassification'],
+          ['VenueClassification', 'HouseNumberClassification', 'LocalityClassification', 'CountyClassification'],
+          ['VenueClassification', 'HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification'],
+          ['VenueClassification', 'HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification', 'CountryClassification'],
+        ]),
+
+        /* Must Not Preceed Filter */
+        //new MustNotPreceedFilter('VenueClassification', 'UnitClassification'),
+        new MustNotPreceedFilter('HouseNumberClassification', 'VenueClassification'),
+
+        /* Must Not Follow Filter */
         new MustNotFollowFilter('RegionClassification', 'CountryClassification'),
         new MustNotFollowFilter('CountyClassification', 'CountryClassification'),
         new MustNotFollowFilter('LocalityClassification', 'CountryClassification'),
@@ -108,6 +131,8 @@ class AddressParser extends Parser {
         new MustNotFollowFilter('LocalityClassification', 'CountyClassification'),
         new MustNotFollowFilter('VillageClassification', 'CountyClassification'),
 
+        new MustNotFollowFilter('VillageClassification', 'LocalityClassification'),
+
         new MustNotFollowFilter('VenueClassification', 'CountryClassification'),
         new MustNotFollowFilter('VenueClassification', 'RegionClassification'),
         new MustNotFollowFilter('VenueClassification', 'CountyClassification'),
@@ -119,6 +144,8 @@ class AddressParser extends Parser {
         new MustNotFollowFilter('StreetClassification', 'CountyClassification'),
         new MustNotFollowFilter('StreetClassification', 'LocalityClassification'),
         new MustNotFollowFilter('StreetClassification', 'VillageClassification'),
+
+        new MustNotFollowFilter('HouseNumberClassification', 'StreetClassification'),
 
         //new HouseNumberPositionPenalty(),
         //new PostcodePositionPenalty(),

@@ -17,7 +17,7 @@ class HouseNumberClassifier extends WordClassifier {
         /^([nsewNSEW])(\d{1,5})([nsewNSEW]\d{1,5})?$/.test(span.body) // W350N5337 or N453 Style (ie Waukesha County, WI)
         // /^\d{1,5}(к\d{1,5})?(с\d{1,5})?$/.test(span.body) // Russian style including korpus (cyrillic к) and stroenie (cyrillic с)
     ) {
-      let confidence = 1
+      let confidence = 0.01
       const prev = span.graph.findOne('prev')
 
       // Housenumber must not be preceded by unit type
@@ -27,11 +27,11 @@ class HouseNumberClassifier extends WordClassifier {
 
       // it's possible to have 5 digit housenumbers
       // but they are fairly uncommon
-      if (/^\d{5}/.test(span.norm)) {
-        confidence = 0.2
-      } else if (/^\d{4}/.test(span.norm)) {
-        confidence = 0.9
-      }
+      // if (/^\d{5}/.test(span.norm)) {
+      //   confidence = 0.2
+      // } else if (/^\d{4}/.test(span.norm)) {
+      //   confidence = 0.9
+      // }
 
       span.classify(new HouseNumberClassification(confidence))
     }

@@ -175,7 +175,6 @@ mai lâm|mai lam
 đông hội|dong hoi
 yên viên|yen vien
 yên thường|yen thuong
-yên viên|yen vien
 ninh hiệp|ninh hiep
 đình xuyên|dinh xuyen
 dương hà|duong ha
@@ -204,7 +203,6 @@ thụy phương|thuy phuong
 tây tựu|tay tuu
 xuân đỉnh|xuan dinh
 xuân tảo|xuan tao
-minh khai
 cổ nhuế 1|co nhue 1
 cổ nhuế 2|co nhue 2
 phú diễn|phu dien
@@ -234,11 +232,7 @@ vạn phúc|van phuc
 đại áng|dai ang
 liên ninh|lien ninh
 đông mỹ|dong my
-quang trung
-trần phú|tran phu
-ngọc hà|ngoc ha
 nguyễn trãi|nguyen trai
-minh khai
 ngọc đường|ngoc duong
 kim thạch|kim thach
 phú linh|phu linh
@@ -271,7 +265,6 @@ giàng chu phìn|giang chu phin
 sủng trà|sung tra
 sủng máng|sung mang
 sơn vĩ|son vi
-tả lủng|ta lung
 cán chu phìn|can chu phin
 lũng pù|lung pu
 lũng chinh|lung chinh
@@ -367,7 +360,6 @@ bản nhùng|ban nhung
 tả sử choóng|ta su choong
 nậm dịch|nam dich
 hồ thầu|ho thau
-nam sơn|nam son
 nậm tỵ|nam ty
 thông nguyên|thong nguyen
 nậm khòa|nam khoa
@@ -390,11 +382,9 @@ quảng nguyên|quang nguyen
 nà chì|na chi
 khuôn lùng|khuon lung
 việt quang|viet quang
-vĩnh tuy|vinh tuy
 tân lập|tan lap
 tân thành|tan thanh
 đồng tiến|dong tien
-đồng tâm|dong tam
 tân quang|tan quang
 thượng bình|thuong binh
 hữu sản|huu san
@@ -409,7 +399,6 @@ hùng an|hung an
 đức xuân|duc xuan
 tiên kiều|tien kieu
 vĩnh hảo|vinh hao
-vĩnh phúc|vinh phuc
 đồng yên|dong yen
 đông thành|dong thanh
 xuân minh|xuan minh
@@ -423,7 +412,6 @@ tân bắc|tan bac
 bằng lang|bang lang
 yên hà|yen ha
 hương sơn|huong son
-xuân giang|xuan giang
 nà khương|na khuong
 tiên yên|tien yen
 vĩ thượng|vi thuong
@@ -490,7 +478,6 @@ trà lĩnh|tra linh
 tri phương|tri phuong
 quang hán|quang han
 xuân nội|xuan noi
-quang trung
 quang vinh
 cao chương|cao chuong
 quốc toản|quoc toan
@@ -530,7 +517,6 @@ phúc sen|phuc sen
 chí thảo|chi thao
 tự do|tu do
 hồng quang|hong quang
-ngọc động|ngoc dong
 hạnh phúc|hanh phuc
 tà lùng|ta lung
 bế văn đàn|be van dan
@@ -547,12 +533,8 @@ nam tuấn|nam tuan
 ngũ lão|ngu lao
 trương lương|truong luong
 hồng việt|hong viet
-vĩnh quang|vinh quang
 hoàng tung|hoang tung
 nguyễn huệ|nguyen hue
-quang trung
-hưng đạo|hung dao
-bạch đằng|bach dang
 bình dương|binh duong
 lê chung|le chung
 chu trinh
@@ -568,16 +550,12 @@ thể dục|the duc
 mai long
 vũ minh|vu minh
 hoa thám|hoa tham
-phan thanh
 quang thành|quang thanh
 tam kim
-thành công|thanh cong
 thịnh vượng|thinh vuong
-hưng đạo|hung dao
 đông khê|dong khe
 canh tân|canh tan
 kim đồng|kim dong
-minh khai
 đức thông|duc thong
 thái cường|thai cuong
 vân trình|van trinh
@@ -585,15 +563,11 @@ thụy hùng|thuy hung
 quang trọng|quang trong
 trọng con|trong con
 lê lai|le lai
-đức long|duc long
 lê lợi|le loi
-đức xuân|duc xuan
 nguyễn thị minh khai|nguyen thi minh khai
 sông cầu|song cau
-đức xuân|duc xuan
 phùng chí kiên|phung chi kien
 huyền tụng|huyen tung
-dương quang|duong quang
 nông thượng|nong thuong
 xuất hóa|xuat hoa
 bằng thành|bang thanh
@@ -601,7 +575,6 @@ nhạn môn|nhan mon
 bộc bố|boc bo
 công bằng|cong bang
 giáo hiệu|giao hieu
-xuân la|xuan la
 an thắng|an thang
 cổ linh|co linh
 nghiên loan|nghien loan
@@ -625,7 +598,6 @@ nà phặc|na phac
 thượng ân|thuong an
 bằng vân|bang van
 cốc đán|coc dan
-trung hoà|trung hoa
 đức vân|duc van
 vân tùng|van tung
 thượng quan|thuong quan
@@ -649,7 +621,6 @@ bằng lũng|bang lung
 xuân lạc|xuan lac
 nam cường|nam cuong
 đồng lạc|dong lac
-tân lập|tan lap
 bản thi|ban thi
 quảng bạch|quang bach
 bằng phúc|bang phuc
@@ -662,10 +633,7 @@ lương bằng|luong bang
 bằng lãng|bang lang
 đại sảo|dai sao
 nghĩa tá|nghia ta
-yên mỹ|yen my
 bình trung|binh trung
-yên phong|yen phong
-đồng tâm|dong tam
 tân sơn|tan son
 thanh vận|thanh van
 mai lạp|mai lap
@@ -690,7 +658,6 @@ sơn thành|son thanh
 văn minh|van minh
 côn minh|con minh
 cư lễ|cu le
-trần phú|tran phu
 quang phong
 dương sơn|duong son
 xuân dương|xuan duong
@@ -698,7 +665,6 @@ xuân dương|xuan duong
 liêm thuỷ|liem thuy
 phan thiết|phan thiet
 minh xuân|minh xuan
-tân quang|tan quang
 tràng đà|trang da
 nông tiến|nong tien
 ỷ la|y la
@@ -723,7 +689,6 @@ năng khả|nang kha
 thanh tương|thanh tuong
 vĩnh lộc|vinh loc
 bình an|binh an
-hồng quang|hong quang
 thổ bình|tho binh
 phúc sơn|phuc son
 minh quang
@@ -744,7 +709,6 @@ tân thịnh|tan thinh
 trung hòa|trung hoa
 kim bình|kim binh
 hòa an|hoa an
-vinh quang
 tri phú|tri phu
 nhân lý|nhan ly
 yên nguyên|yen nguyen
@@ -758,10 +722,7 @@ yên lâm|yen lam
 minh dân|minh dan
 phù lưu|phu luu
 minh hương|minh huong
-yên phú|yen phu
-tân thành|tan thanh
 bình xa|binh xa
-thái sơn|thai son
 nhân mục|nhan muc
 thành long|thanh long
 bằng cốc|bang coc
@@ -778,11 +739,9 @@ xuân vân|xuan van
 phúc ninh|phuc ninh
 hùng lợi|hung loi
 trung sơn|trung son
-tân tiến|tan tien
 tứ quận|tu quan
 đạo viện|dao vien
 tân long|tan long
-yên sơn|yen son
 kim quan
 lang quán|lang quan
 phú thịnh|phu thinh
@@ -799,7 +758,6 @@ an tường|an tuong
 lưỡng vượng|luong vuong
 hoàng khai|hoang khai
 thái long|thai long
-đội cấn|doi can
 nhữ hán|nhu han
 nhữ khê|nhu khe
 đội bình|doi binh
@@ -842,14 +800,11 @@ bắc lệnh|bac lenh
 pom hán|pom han
 xuân tăng|xuan tang
 bình minh|binh minh
-thống nhất|thong nhat
 đồng tuyển|dong tuyen
 vạn hoà|van hoa
 bắc cường|bac cuong
-nam cường|nam cuong
 cam đường|cam duong
 tả phời|ta phoi
-hợp thành|hop thanh
 bát xát|bat xat
 a mú sung|a mu sung
 nậm chạc|nam chac
@@ -882,7 +837,6 @@ nậm chảy|nam chay
 nấm lư|nam lu
 lùng khấu nhin|lung khau nhin
 thanh bình|thanh binh
-cao sơn|cao son
 lùng vai|lung vai
 bản lầu|ban lau
 la pan tẩn|la pan tan
@@ -925,26 +879,19 @@ bản cầm|ban cam
 thái niên|thai nien
 phong niên|phong nien
 gia phú|gia phu
-xuân quang|xuan quang
 sơn hải|son hai
 xuân giao|xuan giao
 trì quang|tri quang
 sơn hà|son ha
 phú nhuận|phu nhuan
 phố ràng|pho rang
-tân tiến|tan tien
-nghĩa đô|nghia do
 vĩnh yên|vinh yen
 điện quan|dien quan
 xuân hoà|xuan hoa
 tân dương|tan duong
-thượng hà|thuong ha
-kim sơn|kim son
 cam cọn|cam con
-minh tân|minh tan
 xuân thượng|xuan thuong
 việt tiến|viet tien
-yên sơn|yen son
 bảo hà|bao ha
 lương sơn|luong son
 phúc khánh|phuc khanh
@@ -954,10 +901,8 @@ sa pả|sa pa
 ngũ chỉ sơn|ngu chi son
 phan si păng|phan si pang
 trung chải|trung chai
-tả phìn|ta phin
 hàm rồng|ham rong
 hoàng liên|hoang lien
-thanh bình|thanh binh
 cầu mây|cau may
 mường hoa|muong hoa
 tả van|ta van
@@ -971,7 +916,6 @@ nậm mả|nam ma
 tân thượng|tan thuong
 nậm rạng|nam rang
 nậm chầy|nam chay
-tân an|tan an
 khánh yên thượng|khanh yen thuong
 nậm xé|nam xe
 dần thàng|dan thang
@@ -988,8 +932,6 @@ liêm phú|liem phu
 nậm xây|nam xay
 noong bua
 him lam
-thanh bình|thanh binh
-tân thanh|tan thanh
 mường thanh|muong thanh
 nam thanh
 thanh trường|thanh truong
@@ -1006,7 +948,6 @@ mường nhé|muong nhe
 nậm vì|nam vi
 nậm kè|nam ke
 mường toong|muong toong
-quảng lâm|quang lam
 pa tần|pa tan
 chà cang|cha cang
 na cô sa|na co sa
@@ -1042,10 +983,8 @@ chiềng sơ|chieng so
 mường luân|muong luan
 tủa chùa|tua chua
 huổi só|huoi so
-xín chải|xin chai
 tả sìn thàng|ta sin thang
 lao xả phình|lao xa phinh
-tả phìn|ta phin
 tủa thàng|tua thang
 trung thu
 sính phình|sinh phinh
@@ -1115,9 +1054,7 @@ phình giàng|phinh giang
 pú hồng|pu hong
 tìa dình|tia dinh
 háng lìa|hang lia
-quyết thắng|quyet thang
 tân phong|tan phong
-quyết tiến|quyet tien
 đoàn kết|doan ket
 tam đường|tam duong
 lả nhì thàng|la nhi thang
@@ -1125,7 +1062,6 @@ thèn sin|then sin
 tả lèng|ta leng
 sùng phài|sung phai
 giang ma
-hồ thầu|ho thau
 đông phong|dong phong
 san thàng|san thang
 bình lư|binh lu
@@ -1142,7 +1078,6 @@ thu lũm|thu lum
 ka lăng|ka lang
 tá bạ|ta ba
 pa ủ|pa u
-mường tè|muong te
 pa vệ sử|pa ve su
 mù cả|mu ca
 bum tở|bum to
@@ -1157,20 +1092,14 @@ nậm chà|nam cha
 nậm manh|nam manh
 nậm hàng|nam hang
 sìn hồ|sin ho
-lê lợi|le loi
 pú đao|pu dao
 chăn nưa|chan nua
 nậm pì|nam pi
 huổi luông|huoi luong
-pa tần|pa tan
-phìn hồ|phin ho
 hồng thu|hong thu
-nậm ban|nam ban
-trung chải|trung chai
 phăng sô lin|phang so lin
 ma quai
 lùng thàng|lung thang
-tả phìn|ta phin
 sà dề phìn|sa de phin
 nậm tăm|nam tam
 tả ngảo|ta ngao
@@ -1223,7 +1152,6 @@ tà gia|ta gia
 khoen on
 chiềng lề|chieng le
 tô hiệu|to hieu
-quyết thắng|quyet thang
 quyết tâm|quyet tam
 chiềng cọ|chieng co
 chiềng đen|chieng den
@@ -1232,7 +1160,6 @@ chiềng an|chieng an
 chiềng cơi|chieng coi
 chiềng ngần|chieng ngan
 hua la
-chiềng sinh|chieng sinh
 mường chiên|muong chien
 cà nàng|ca nang
 chiềng khay|chieng khay
@@ -1298,7 +1225,6 @@ háng đồng|hang dong
 pắc ngà|pac nga
 làng chếu|lang cheu
 chim vàn|chim van
-mường khoa|muong khoa
 song pe
 hồng ngài|hong ngai
 tạ khoa|ta khoa
@@ -1329,7 +1255,6 @@ tường hạ|tuong ha
 kim bon
 mường bang|muong bang
 đá đỏ|da do
-tân phong|tan phong
 nam phong
 bắc phong|bac phong
 mộc châu|moc chau
@@ -1338,7 +1263,6 @@ chiềng sơn|chieng son
 tân hợp|tan hop
 qui hướng|qui huong
 suối bàng|suoi bang
-tân lập|tan lap
 nà mường|na muong
 tà lai|ta lai
 song khủa|song khua
@@ -1346,14 +1270,11 @@ liên hoà|lien hoa
 chiềng hắc|chieng hac
 hua păng|hua pang
 tô múa|to mua
-mường tè|muong te
 chiềng khừa|chieng khua
 mường sang|muong sang
 đông sang|dong sang
-phiêng luông|phieng luong
 chiềng khoa|chieng khoa
 mường men|muong men
-quang minh
 lóng sập|long sap
 vân hồ|van ho
 lóng luông|long luong
@@ -1362,7 +1283,6 @@ chiềng xuân|chieng xuan
 xuân nha|xuan nha
 tân xuân|tan xuan
 yên châu|yen chau
-chiềng đông|chieng dong
 sập vạt|sap vat
 chiềng sàng|chieng sang
 chiềng pằn|chieng pan
@@ -1370,7 +1290,6 @@ viêng lán|vieng lan
 chiềng hặc|chieng hac
 mường lựm|muong lum
 chiềng on|chieng on
-yên sơn|yen son
 chiềng khoi|chieng khoi
 tú nang|tu nang
 lóng phiêng|long phieng
@@ -1386,7 +1305,6 @@ chiềng mung|chieng mung
 mường bon|muong bon
 chiềng chung|chieng chung
 chiềng mai|chieng mai
-hát lót|hat lot
 nà pó|na po
 cò nòi|co noi
 chiềng nơi|chieng noi
@@ -1407,7 +1325,6 @@ mường lầm|muong lam
 nậm ty|nam ty
 đứa mòn|dua mon
 yên hưng|yen hung
-chiềng sơ|chieng so
 nà nghịu|na nghiu
 nậm mằn|nam man
 chiềng khoong|chieng khoong
@@ -1424,21 +1341,14 @@ dồm cang|dom cang
 nậm lạnh|nam lanh
 mường lèo|muong leo
 mường và|muong va
-mường lạn|muong lan
-yên thịnh|yen thinh
 yên ninh|yen ninh
-minh tân|minh tan
 nguyễn thái học|nguyen thai hoc
-đồng tâm|dong tam
 nguyễn phúc|nguyen phuc
 hồng hà|hong ha
 minh bảo|minh bao
-nam cường|nam cuong
 tuy lộc|tuy loc
-tân thịnh|tan thinh
 pú trạng|pu trang
 trung tâm|trung tam
-tân an|tan an
 cầu thia|cau thia
 nghĩa lợi|nghia loi
 nghĩa phúc|nghia phuc
@@ -1451,8 +1361,6 @@ minh chuẩn|minh chuan
 mai sơn|mai son
 khai trung
 mường lai|muong lai
-an lạc|an lac
-minh xuân|minh xuan
 tô mậu|to mau
 tân lĩnh|tan linh
 yên thắng|yen thang
@@ -1460,34 +1368,26 @@ khánh hoà|khanh hoa
 vĩnh lạc|vinh lac
 liễu đô|lieu do
 động quan|dong quan
-tân lập|tan lap
 minh tiến|minh tien
 trúc lâu|truc lau
-phúc lợi|phuc loi
-phan thanh
 an phú|an phu
-trung tâm|trung tam
 mậu a|mau a
 lang thíp|lang thip
 lâm giang|lam giang
 châu quế thượng|chau que thuong
 châu quế hạ|chau que ha
 an bình|an binh
-quang minh
 đông an|dong an
 đông cuông|dong cuong
 phong dụ hạ|phong du ha
 mậu đông|mau dong
 ngòi a|ngoi a
 xuân tầm|xuan tam
-tân hợp|tan hop
 an thịnh|an thinh
 yên thái|yen thai
 phong dụ thượng|phong du thuong
 yên hợp|yen hop
-đại sơn|dai son
 đại phác|dai phac
-yên phú|yen phu
 xuân ái|xuan ai
 viễn sơn|vien son
 mỏ vàng|mo vang
@@ -1498,7 +1398,6 @@ nậm có|nam co
 khao mang
 mồ dề|mo de
 chế cu nha|che cu nha
-lao chải|lao chai
 kim nọi|kim noi
 cao phạ|cao pha
 la pán tẩn|la pan tan
@@ -1522,21 +1421,17 @@ lương thịnh|luong thinh
 âu lâu|au lau
 giới phiên|gioi phien
 hợp minh|hop minh
-văn phú|van phu
 bảo hưng|bao hung
 việt cường|viet cuong
 minh quân|minh quan
 hồng ca|hong ca
-hưng thịnh|hung thinh
 hưng khánh|hung khanh
-việt hồng|viet hong
 vân hội|van hoi
 trạm tấu|tram tau
 túc đán|tuc dan
 pá lau|pa lau
 xà hồ|xa ho
 phình hồ|phinh ho
-trạm tấu|tram tau
 tà si láng|ta si lang
 pá hu|pa hu
 làng nhì|lang nhi
@@ -1561,90 +1456,64 @@ phù nham|phu nham
 nghĩa sơn|nghia son
 suối bu|suoi bu
 sơn thịnh|son thinh
-thanh lương|thanh luong
 hạnh sơn|hanh son
-phúc sơn|phuc son
 thạch lương|thach luong
 đại lịch|dai lich
 đồng khê|dong khe
 cát thịnh|cat thinh
-tân thịnh|tan thinh
 chấn thịnh|chan thinh
 bình thuận|binh thuan
 thượng bằng la|thuong bang la
 minh an
 nghĩa tâm|nghia tam
-yên bình|yen binh
 thác bà|thac ba
 xuân long|xuan long
 cảm nhân|cam nhan
 ngọc chấn|ngoc chan
 tân nguyên|tan nguyen
-phúc ninh|phuc ninh
 bảo ái|bao ai
 mỹ gia|my gia
 xuân lai|xuan lai
 mông sơn|mong son
 cảm ân|cam an
-yên thành|yen thanh
 tân hương|tan huong
 phúc an|phuc an
 bạch hà|bach ha
 vũ linh|vu linh
 đại đồng|dai dong
 vĩnh kiên|vinh kien
-yên bình|yen binh
 thịnh hưng|thinh hung
 hán đà|han da
-phú thịnh|phu thinh
 đại minh|dai minh
-thái bình|thai binh
 tân hòa|tan hoa
 thịnh lang|thinh lang
 hữu nghị|huu nghi
-tân thịnh|tan thinh
-đồng tiến|dong tien
 phương lâm|phuong lam
 yên mông|yen mong
 quỳnh lâm|quynh lam
-dân chủ|dan chu
 hòa bình|hoa binh
-thống nhất|thong nhat
 đà bắc|da bac
 nánh nghê|nanh nghe
 giáp đắt|giap dat
 mường chiềng|muong chieng
 tân pheo|tan pheo
 đồng chum|dong chum
-tân minh|tan minh
-đoàn kết|doan ket
 đồng ruộng|dong ruong
 tú lý|tu ly
-trung thành|trung thanh
 yên hòa|yen hoa
-cao sơn|cao son
 toàn sơn|toan son
-tân thành|tan thanh
 hiền lương|hien luong
 tiền phong|tien phong
 vầy nưa|vay nua
 kỳ sơn|ky son
 thịnh minh|thinh minh
-hợp thành|hop thanh
-quang tiến|quang tien
 mông hóa|mong hoa
-trung minh
-độc lập|doc lap
-lương sơn|luong son
 yên trung|yen trung
-yên bình|yen binh
 tiến xuân|tien xuan
-đông xuân|dong xuan
 lâm sơn|lam son
 hòa sơn|hoa son
 tân vinh|tan vinh
 nhuận trạch|nhuan trach
-cao sơn|cao son
 cư yên|cu yen
 liên sơn|lien son
 ba hàng đồi|ba hang doi
@@ -1670,17 +1539,14 @@ nuông dăm|nuong dam
 cao phong
 bình thanh|binh thanh
 thung nai
-bắc phong|bac phong
 thu phong
 hợp phong|hop phong
 tây phong|tay phong
 dũng phong|dung phong
-nam phong
 thạch yên|thach yen
 mãn đức|man duc
 suối hoa|suoi hoa
 phú vinh|phu vinh
-phú cường|phu cuong
 mỹ hòa|my hoa
 quyết chiến|quyet chien
 phong phú|phong phu
@@ -1688,7 +1554,6 @@ tử nê|tu ne
 thanh hối|thanh hoi
 ngọc mỹ|ngoc my
 đông lai|dong lai
-vân sơn|van son
 nhân mỹ|nhan my
 lỗ sơn|lo son
 ngổ luông|ngo luong
@@ -1715,21 +1580,15 @@ mỹ thành|my thanh
 tuân đạo|tuan dao
 văn nghĩa|van nghia
 văn sơn|van son
-tân lập|tan lap
 nhân nghĩa|nhan nghia
 thượng cốc|thuong coc
-quyết thắng|quyet thang
-xuất hóa|xuat hoa
-yên phú|yen phu
 bình hẻm|binh hem
 định cư|dinh cu
 chí đạo|chi dao
 ngọc sơn|ngoc son
 hương nhượng|huong nhuong
 vũ bình|vu binh
-tự do|tu do
 yên nghiệp|yen nghiep
-tân mỹ|tan my
 ân nghĩa|an nghia
 ngọc lâu|ngoc lau
 hàng trạm|hang tram
@@ -1739,7 +1598,6 @@ bảo hiệu|bao hieu
 đa phúc|da phuc
 hữu lợi|huu loi
 lạc thịnh|lac thinh
-đoàn kết|doan ket
 phú lai|phu lai
 yên trị|yen tri
 ngọc lương|ngoc luong
@@ -1748,54 +1606,35 @@ phú nghĩa|phu nghia
 phú thành|phu thanh
 hưng thi|hung thi
 khoan dụ|khoan du
-đồng tâm|dong tam
 yên bồng|yen bong
-thống nhất|thong nhat
-an bình|an binh
 quán triều|quan trieu
-quang vinh
 túc duyên|tuc duyen
-hoàng văn thụ|hoang van thu
 trưng vương|trung vuong
-quang trung
 phan đình phùng|phan dinh phung
-tân thịnh|tan thinh
 thịnh đán|thinh dan
 đồng quang|dong quang
 gia sàng|gia sang
-tân lập|tan lap
 cam giá|cam gia
 phú xá|phu xa
-hương sơn|huong son
-trung thành|trung thanh
-tân thành|tan thanh
-tân long|tan long
 phúc hà|phuc ha
 phúc xuân|phuc xuan
-quyết thắng|quyet thang
 phúc trìu|phuc triu
 thịnh đức|thinh duc
 tích lương|tich luong
 tân cương|tan cuong
-lương sơn|luong son
 châu sơn|chau son
 mỏ chè|mo che
 cải đan|cai dan
-thắng lợi|thang loi
 phố cò|pho co
-tân quang|tan quang
 bách quang|bach quang
-bình sơn|binh son
 bá xuyên|ba xuyen
 chợ chu|cho chu
 linh thông|linh thong
 lam vỹ|lam vy
 quy kỳ|quy ky
-tân thịnh|tan thinh
 kim phượng|kim phuong
 bảo linh|bao linh
 phúc chu|phuc chu
-tân dương|tan duong
 phượng tiến|phuong tien
 bảo cường|bao cuong
 đồng thịnh|dong thinh
@@ -1803,34 +1642,25 @@ bảo cường|bao cuong
 thanh định|thanh dinh
 trung hội|trung hoi
 trung lương|trung luong
-bình yên|binh yen
 điềm mặc|diem mac
 phú tiến|phu tien
 bộc nhiêu|boc nhieu
-sơn phú|son phu
 phú đình|phu dinh
 bình thành|binh thanh
 giang tiên|giang tien
-yên ninh|yen ninh
 yên trạch|yen trach
 yên đổ|yen do
-yên lạc|yen lac
 ôn lương|on luong
 động đạt|dong dat
 phủ lý|phu ly
-phú đô|phu do
-hợp thành|hop thanh
 tức tranh|tuc tranh
 phấn mễ|phan me
 vô tranh|vo tranh
 cổ lũng|co lung
 sơn cẩm|son cam
-sông cầu|song cau
 chùa hang|chua hang
 trại cau|trai cau
 văn lăng|van lang
-tân long|tan long
-hòa bình|hoa binh
 quang sơn|quang son
 minh lập|minh lap
 văn hán|van han
@@ -1839,7 +1669,6 @@ khe mo
 cây thị|cay thi
 hóa thượng|hoa thuong
 cao ngạn|cao ngan
-hợp tiến|hop tien
 linh sơn|linh son
 tân lợi|tan loi
 nam hòa|nam hoa
@@ -1851,26 +1680,20 @@ nghinh tường|nghinh tuong
 thần xa|than xa
 vũ chấn|vu chan
 thượng nung|thuong nung
-phú thượng|phu thuong
 cúc đường|cuc duong
 la hiên|la hien
 lâu thượng|lau thuong
 tràng xá|trang xa
 phương giao|phuong giao
-liên minh|lien minh
 dân tiến|dan tien
 bình long|binh long
-hùng sơn|hung son
 quân chu|quan chu
 phúc lương|phuc luong
-minh tiến|minh tien
 yên lãng|yen lang
 đức lương|duc luong
-phú cường|phu cuong
 na mao
 phú lạc|phu lac
 tân linh|tan linh
-phú thịnh|phu thinh
 phục linh|phuc linh
 phú xuyên|phu xuyen
 bản ngoại|ban ngoai
@@ -1882,45 +1705,32 @@ hoàng nông|hoang nong
 khôi kỳ|khoi ky
 an khánh|an khanh
 tân thái|tan thai
-bình thuận|binh thuan
 lục ba|luc ba
 mỹ yên|my yen
 vạn thọ|van tho
 văn yên|van yen
 ký phú|ky phu
 cát nê|cat ne
-quân chu|quan chu
 bãi bông|bai bong
-bắc sơn|bac son
 ba hàng|ba hang
-phúc tân|phuc tan
 phúc thuận|phuc thuan
 hồng tiến|hong tien
 minh đức|minh duc
 đắc sơn|dac son
-đồng tiến|dong tien
-thành công|thanh cong
 tiên phong|tien phong
 vạn phái|van phai
 nam tiến|nam tien
-tân hương|tan huong
 đông cao|dong cao
-trung thành|trung thanh
 tân phú|tan phu
 thuận thành|thuan thanh
-hương sơn|huong son
 bàn đạt|ban dat
 đồng liên|dong lien
 tân khánh|tan khanh
 tân kim|tan kim
-tân thành|tan thanh
 đào xá|dao xa
 bảo lý|bao ly
-thượng đình|thuong dinh
-tân hòa|tan hoa
 nhã lộng|nha long
 điềm thụy|diem thuy
-xuân phương|xuan phuong
 tân đức|tan duc
 úc kỳ|uc ky
 lương phú|luong phu
@@ -1929,7 +1739,6 @@ kha sơn|kha son
 thanh ninh
 dương thành|duong thanh
 hà châu|ha chau
-hoàng văn thụ|hoang van thu
 tam thanh
 vĩnh trại|vinh trai
 đông kinh|dong kinh
@@ -1939,61 +1748,30 @@ quảng lạc|quang lac
 mai pha
 thất khê|that khe
 khánh long|khanh long
-đoàn kết|doan ket
 quốc khánh|quoc khanh
-vĩnh tiến|vinh tien
 cao minh
 chí minh|chi minh
-tri phương|tri phuong
-tân tiến|tan tien
-tân yên|tan yen
-đội cấn|doi can
-tân minh|tan minh
-kim đồng|kim dong
-chi lăng|chi lang
-trung thành|trung thanh
-đại đồng|dai dong
 đào viên|dao vien
-đề thám|de tham
 kháng chiến|khang chien
-hùng sơn|hung son
 quốc việt|quoc viet
 hùng việt|hung viet
-hưng đạo|hung dao
-vĩnh yên|vinh yen
-hoa thám|hoa tham
-quý hòa|quy hoa
 hồng phong|hong phong
 yên lỗ|yen lo
 thiện hòa|thien hoa
-quang trung
 thiện thuật|thien thuat
-minh khai
 thiện long|thien long
-hoàng văn thụ|hoang van thu
-hòa bình|hoa binh
-mông ân|mong an
-tân hòa|tan hoa
 bình gia|binh gia
-hồng thái|hong thai
 bình la|binh la
 tân văn|tan van
 na sầm|na sam
-trùng khánh|trung khanh
 bắc la|bac la
-thụy hùng|thuy hung
 bắc hùng|bac hung
 tân tác|tan tac
-thanh long
 hội hoan|hoi hoan
 bắc việt|bac viet
 hoàng việt|hoang viet
 gia miễn|gia mien
 thành hòa|thanh hoa
-tân thanh|tan thanh
-tân mỹ|tan my
-hồng thái|hong thai
-hoàng văn thụ|hoang van thu
 nhạc kỳ|nhac ky
 đồng đăng|dong dang
 cao lộc|cao loc
@@ -2002,25 +1780,16 @@ thanh lòa|thanh loa
 cao lâu|cao lau
 thạch đạn|thach dan
 xuất lễ|xuat le
-hồng phong|hong phong
-thụy hùng|thuy hung
 lộc yên|loc yen
-phú xá|phu xa
-bình trung|binh trung
 hải yến|hai yen
 hòa cư|hoa cu
-hợp thành|hop thanh
 công sơn|cong son
 gia cát|gia cat
 mẫu sơn|mau son
-xuân long|xuan long
 tân liên|tan lien
-yên trạch|yen trach
-tân thành|tan thanh
 văn quan|van quan
 trấn ninh|tran ninh
 liên hội|lien hoi
-hòa bình|hoa binh
 tú xuyên|tu xuyen
 điềm he|diem he
 an sơn|an son
@@ -2034,73 +1803,47 @@ tri lễ|tri le
 tràng phái|trang phai
 yên phúc|yen phuc
 hữu lễ|huu le
-bắc sơn|bac son
 long đống|long dong
 vạn thủy|van thuy
 đồng ý|dong y
 tân tri|tan tri
 bắc quỳnh|bac quynh
 hưng vũ|hung vu
-tân lập|tan lap
 vũ sơn|vu son
 chiêu vũ|chieu vu
-tân hương|tan huong
 chiến thắng|chien thang
 vũ lăng|vu lang
 trấn yên|tran yen
 vũ lễ|vu le
 nhất hòa|nhat hoa
-tân thành|tan thanh
 nhất tiến|nhat tien
 hữu lũng|huu lung
 hữu liên|huu lien
-yên bình|yen binh
-quyết thắng|quyet thang
-hòa bình|hoa binh
-yên thịnh|yen thinh
-yên sơn|yen son
 thiện tân|thien tan
 yên vượng|yen vuong
-minh tiến|minh tien
 nhật tiến|nhat tien
-thanh sơn|thanh son
-đồng tân|dong tan
 cai kinh
 hòa lạc|hoa lac
 vân nham|van nham
-đồng tiến|dong tien
-tân thành|tan thanh
-hòa sơn|hoa son
-minh sơn|minh son
 hồ sơn|ho son
-sơn hà|son ha
 minh hòa|minh hoa
 hòa thắng|hoa thang
 đồng mỏ|dong mo
-chi lăng|chi lang
 vân an|van an
 vân thủy|van thuy
 gia lộc|gia loc
 bắc thủy|bac thuy
-chiến thắng|chien thang
 mai sao
 bằng hữu|bang huu
 thượng cường|thuong cuong
 bằng mạc|bang mac
-nhân lý|nhan ly
-lâm sơn|lam son
-liên sơn|lien son
 vạn linh|van linh
-hòa bình|hoa binh
 hữu kiên|huu kien
 quan sơn|quan son
 y tịch|y tich
-chi lăng|chi lang
 na dương|na duong
 lộc bình|loc binh
-mẫu sơn|mau son
 yên khoái|yen khoai
-khánh xuân|khanh xuan
 tú mịch|tu mich
 hữu khánh|huu khanh
 đồng bục|dong buc
@@ -2108,26 +1851,19 @@ tam gia
 tú đoạn|tu doan
 khuất xá|khuat xa
 tĩnh bắc|tinh bac
-thống nhất|thong nhat
 sàn viên|san vien
 đông quan|dong quan
 minh hiệp|minh hiep
 hữu lân|huu lan
 lợi bác|loi bac
 nam quan
-xuân dương|xuan duong
 ái quốc|ai quoc
 đình lập|dinh lap
 nt thái bình|nt thai binh
 bắc xa|bac xa
 bính xá|binh xa
 kiên mộc|kien moc
-đình lập|dinh lap
-thái bình|thai binh
-cường lợi|cuong loi
-châu sơn|chau son
 lâm ca|lam ca
-đồng thắng|dong thang
 bắc lãng|bac lang
 hà khánh|ha khanh
 hà phong|ha phong
@@ -2141,21 +1877,15 @@ bãi cháy|bai chay
 cao thắng|cao thang
 hùng thắng|hung thang
 yết kiêu|yet kieu
-trần hưng đạo|tran hung dao
 hồng hải|hong hai
 hồng gai|hong gai
-bạch đằng|bach dang
-hồng hà|hong ha
 tuần châu|tuan chau
-việt hưng|viet hung
 đại yên|dai yen
 ka long
-trần phú|tran phu
 ninh dương|ninh duong
 hoà lạc|hoa lac
 trà cổ|tra co
 hải sơn|hai son
-bắc sơn|bac son
 hải đông|hai dong
 hải tiến|hai tien
 hải yên|hai yen
@@ -2183,10 +1913,6 @@ cộng hòa|cong hoa
 cẩm hải|cam hai
 dương huy|duong huy
 vàng danh|vang danh
-thanh sơn|thanh son
-bắc sơn|bac son
-quang trung
-trưng vương|trung vuong
 nam khê|nam khe
 yên thanh|yen thanh
 thượng yên công|thuong yen cong
@@ -2194,12 +1920,9 @@ phương đông|phuong dong
 phương nam|phuong nam
 bình liêu|binh lieu
 hoành mô|hoanh mo
-đồng tâm|dong tam
-đồng văn|dong van
 vô ngại|vo ngai
 lục hồn|luc hon
 húc động|huc dong
-tiên yên|tien yen
 hà lâu|ha lau
 đại dực|dai duc
 phong dụ|phong du
@@ -2211,13 +1934,9 @@ hải lạng|hai lang
 tiên lãng|tien lang
 đồng rui|dong rui
 đầm hà|dam ha
-quảng lâm|quang lam
-quảng an|quang an
 tân bình|tan binh
 dực yên|duc yen
 quảng tân|quang tan
-đầm hà|dam ha
-tân lập|tan lap
 đại bình|dai binh
 quảng hà|quang ha
 quảng đức|quang duc
@@ -2231,10 +1950,8 @@ quảng long|quang long
 quảng phong|quang phong
 cái chiên|cai chien
 ba chẽ|ba che
-thanh sơn|thanh son
 thanh lâm|thanh lam
 đạp thanh|dap thanh
-nam sơn|nam son
 lương mông|luong mong
 đồn đạc|don dac
 minh cầm|minh cam
@@ -2243,26 +1960,17 @@ cái rồng|cai rong
 bình dân|binh dan
 vạn yên|van yen
 minh châu|minh chau
-đoàn kết|doan ket
 hạ long|ha long
 đông xá|dong xa
-bản sen|ban sen
-thắng lợi|thang loi
 quan lạn|quan lan
 ngọc vừng|ngoc vung
 hoành bồ|hoanh bo
 kỳ thượng|ky thuong
 đồng sơn|dong son
-tân dân|tan dan
 đồng lâm|dong lam
-hòa bình|hoa binh
 vũ oai|vu oai
-dân chủ|dan chu
 quảng la|quang la
 bằng cả|bang ca
-thống nhất|thong nhat
-sơn dương|son duong
-lê lợi|le loi
 mạo khê|mao khe
 đông triều|dong trieu
 an sinh
@@ -2270,29 +1978,22 @@ tràng lương|trang luong
 bình khê|binh khe
 việt dân|viet dan
 tân việt|tan viet
-bình dương|binh duong
 đức chính|duc chinh
 tràng an|trang an
-nguyễn huệ|nguyen hue
 thủy an|thuy an
 xuân sơn|xuan son
 hồng thái tây|hong thai tay
 hồng thái đông|hong thai dong
 hoàng quế|hoang que
 yên thọ|yen tho
-hồng phong|hong phong
-kim sơn|kim son
-hưng đạo|hung dao
 yên đức|yen duc
 quảng yên|quang yen
 đông mai|dong mai
 minh thành|minh thanh
 sông khoai|song khoai
 hiệp hòa|hiep hoa
-cộng hòa|cong hoa
 tiền an|tien an
 hoàng tân|hoang tan
-tân an|tan an
 yên giang|yen giang
 nam hoà|nam hoa
 hà an|ha an
@@ -2302,32 +2003,22 @@ yên hải|yen hai
 liên hòa|lien hoa
 phong cốc|phong coc
 liên vị|lien vi
-tiền phong|tien phong
 cô tô|co to
-đồng tiến|dong tien
 thanh lân|thanh lan
 thọ xương|tho xuong
 trần nguyên hãn|tran nguyen han
 ngô quyền|ngo quyen
-hoàng văn thụ|hoang van thu
-trần phú|tran phu
 mỹ độ|my do
-lê lợi|le loi
 song mai
 xương giang|xuong giang
 đa mai|da mai
 dĩnh kế|dinh ke
-đồng tiến|dong tien
 canh nậu|canh nau
 xuân lương|xuan luong
 tam tiến|tam tien
 đồng vương|dong vuong
 đồng hưu|dong huu
-đồng tâm|dong tam
-tam hiệp|tam hiep
 tiến thắng|tien thang
-hồng kỳ|hong ky
-đồng lạc|dong lac
 đông sơn|dong son
 tân hiệp|tan hiep
 hương vĩ|huong vi
@@ -2340,15 +2031,11 @@ lan giới|lan gioi
 nhã nam|nha nam
 tân trung|tan trung
 đại hóa|dai hoa
-quang tiến|quang tien
-phúc sơn|phuc son
 an dương|an duong
 phúc hòa|phuc hoa
-liên sơn|lien son
 hợp đức|hop duc
 lam cốt|lam cot
 cao xá|cao xa
-cao thượng|cao thuong
 việt ngọc|viet ngoc
 song vân|song van
 ngọc châu|ngoc chau
@@ -2361,16 +2048,12 @@ quế nham|que nham
 nghĩa hòa|nghia hoa
 nghĩa hưng|nghia hung
 quang thịnh|quang thinh
-hương sơn|huong son
 đào mỹ|dao my
 tiên lục|tien luc
 an hà|an ha
 mỹ hà|my ha
 hương lạc|huong lac
 dương đức|duong duc
-tân thanh|tan thanh
-yên mỹ|yen my
-tân hưng|tan hung
 mỹ thái|my thai
 xương lâm|xuong lam
 xuân hương|xuan huong
@@ -2384,17 +2067,13 @@ dĩnh trì|dinh tri
 tam dị|tam di
 bảo sơn|bao son
 bảo đài|bao dai
-thanh lâm|thanh lam
 tiên nha|tien nha
 trường giang|truong giang
 phương sơn|phuong son
 chu điện|chu dien
 cương sơn|cuong son
 nghĩa phương|nghia phuong
-vô tranh|vo tranh
-bình sơn|binh son
 lan mẫu|lan mau
-yên sơn|yen son
 khám lạng|kham lang
 huyền sơn|huyen son
 trường sơn|truong son
@@ -2404,28 +2083,21 @@ vũ xá|vu xa
 cẩm lý|cam ly
 đan hội|dan hoi
 cấm sơn|cam son
-tân sơn|tan son
 phong minh
 phong vân|phong van
 xa lý|xa ly
 hộ đáp|ho dap
-sơn hải|son hai
 thanh hải|thanh hai
 kiên lao|kien lao
 biên sơn|bien son
-kiên thành|kien thanh
 hồng giang|hong giang
-kim sơn|kim son
 tân hoa|tan hoa
 giáp sơn|giap son
 biển động|bien dong
 quý sơn|quy son
 trù hựu|tru huu
 phì điền|phi dien
-tân quang|tan quang
 đồng cốc|dong coc
-tân lập|tan lap
-phú nhuận|phu nhuan
 mỹ an|my an
 nam dương|nam duong
 tân mộc|tan moc
@@ -2433,15 +2105,9 @@ tân mộc|tan moc
 phượng sơn|phuong son
 an châu|an chau
 tây yên tử|tay yen tu
-vân sơn|van son
-hữu sản|huu san
-đại sơn|dai son
-phúc sơn|phuc son
 giáo liêm|giao liem
 cẩm đàn|cam dan
-an lạc|an lac
 vĩnh an|vinh an
-yên định|yen dinh
 lệ viễn|le vien
 an bá|an ba
 tuấn đạo|tuan dao
@@ -2449,55 +2115,35 @@ dương hưu|duong huu
 long sơn|long son
 thanh luận|thanh luan
 nham biền|nham bien
-tân an|tan an
 lão hộ|lao ho
-tân mỹ|tan my
 hương gián|huong gian
-đồng sơn|dong son
-tân tiến|tan tien
 quỳnh sơn|quynh son
 song khê|song khe
 nội hoàng|noi hoang
-tiền phong|tien phong
 xuân phú|xuan phu
 tân liễu|tan lieu
 trí yên|tri yen
 lãng sơn|lang son
 yên lư|yen lu
 tiến dũng|tien dung
-đức giang|duc giang
 cảnh thụy|canh thuy
 tư mại|tu mai
 đồng việt|dong viet
-đồng phúc|dong phuc
 thượng lan|thuong lan
-việt tiến|viet tien
 nghĩa trung|nghia trung
-minh đức|minh duc
 hương mai|huong mai
 tự lạn|tu lan
 bích động|bich dong
-trung sơn|trung son
-hồng thái|hong thai
 tiên sơn|tien son
 tăng tiến|tang tien
-quảng minh|quang minh
 ninh sơn|ninh son
 vân trung|van trung
-vân hà|van ha
 quang châu|quang chau
-đồng tân|dong tan
-thanh vân|thanh van
 hoàng lương|hoang luong
 hoàng vân|hoang van
 hoàng thanh|hoang thanh
 hoàng an|hoang an
-ngọc sơn|ngoc son
-thái sơn|thai son
-hòa sơn|hoa son
-quang minh
 lương phong|luong phong
-hùng sơn|hung son
 đại thành|dai thanh
 thường thắng|thuong thang
 hợp thịnh|hop thinh
@@ -2509,11 +2155,9 @@ xuân cẩm|xuan cam
 hương lâm|huong lam
 đông lỗ|dong lo
 châu minh|chau minh
-mai đình|mai dinh
 dữu lâu|duu lau
 vân cơ|van co
 nông trang|nong trang
-tân dân|tan dan
 gia cẩm|gia cam
 tiên cát|tien cat
 thọ sơn|tho son
@@ -2524,16 +2168,13 @@ vân phú|van phu
 phượng lâu|phuong lau
 thụy vân|thuy van
 minh phương|minh phuong
-trưng vương|trung vuong
 minh nông|minh nong
 sông lô|song lo
 hùng vương|hung vuong
-phong châu|phong chau
 âu cơ|au co
 hà lộc|ha loc
 phú hộ|phu ho
 văn lung|van lung
-thanh minh
 hà thạch|ha thach
 thanh vinh
 đoan hùng|doan hung
@@ -2541,7 +2182,6 @@ hùng xuyên|hung xuyen
 bằng luân|bang luan
 vân du|van du
 phú lâm|phu lam
-minh lương|minh luong
 bằng doãn|bang doan
 chí đám|chi dam
 phúc lai|phuc lai
@@ -2554,17 +2194,12 @@ hùng long|hung long
 vụ quang|vu quang
 vân đồn|van don
 tiêu sơn|tieu son
-minh tiến|minh tien
-minh phú|minh phu
 chân mộng|chan mong
 ca đình|ca dinh
 hạ hoà|ha hoa
 đại phạm|dai pham
 đan thượng|dan thuong
 hà lương|ha luong
-tứ hiệp|tu hiep
-hiền lương|hien luong
-phương viên|phuong vien
 gia điền|gia dien
 ấm hạ|am ha
 hương xạ|huong xa
@@ -2574,8 +2209,6 @@ minh hạc|minh hac
 lang sơn|lang son
 bằng giã|bang gia
 yên luật|yen luat
-vô tranh|vo tranh
-văn lang|van lang
 minh côi|minh coi
 vĩnh chân|vinh chan
 thanh ba
@@ -2583,21 +2216,16 @@ vân lĩnh|van linh
 đông lĩnh|dong linh
 đại an|dai an
 hanh cù|hanh cu
-đồng xuân|dong xuan
-quảng yên|quang yen
 ninh dân|ninh dan
-võ lao|vo lao
 khải xuân|khai xuan
 mạn lạn|man lan
 hoàng cương|hoang cuong
 chí tiên|chi tien
-đông thành|dong thanh
 sơn cương|son cuong
 thanh hà|thanh ha
 đỗ sơn|do son
 đỗ xuyên|do xuyen
 lương lỗ|luong lo
-phong châu|phong chau
 phú mỹ|phu my
 lệ mỹ|le my
 liên hoa|lien hoa
@@ -2612,36 +2240,24 @@ gia thanh
 tiên du|tien du
 phú nham|phu nham
 an đạo|an dao
-bình phú|binh phu
 phù ninh|phu ninh
 kim đức|kim duc
 hùng lô|hung lo
-yên lập|yen lap
 mỹ lung|my lung
 mỹ lương|my luong
-lương sơn|luong son
 xuân an|xuan an
 xuân viên|xuan vien
-xuân thủy|xuan thuy
-trung sơn|trung son
 hưng long|hung long
 nga hoàng|nga hoang
-đồng lạc|dong lac
 thượng long|thuong long
-đồng thịnh|dong thinh
-phúc khánh|phuc khanh
-minh hòa|minh hoa
 ngọc lập|ngoc lap
 ngọc đồng|ngoc dong
 cẩm khê|cam khe
 tiên lương|tien luong
-tuy lộc|tuy loc
 ngô xá|ngo xa
-minh tân|minh tan
 phượng vĩ|phuong vi
 thụy liễu|thuy lieu
 tùng khê|tung khe
-tam sơn|tam son
 văn bán|van ban
 cấp dẫn|cap dan
 xương thịnh|xuong thinh
@@ -2650,16 +2266,13 @@ sơn tình|son tinh
 yên tập|yen tap
 hương lung|huong lung
 tạ xá|ta xa
-phú lạc|phu lac
 chương xá|chuong xa
-hùng việt|hung viet
 văn khúc|van khuc
 yên dưỡng|yen duong
 điêu lương|dieu luong
 đồng lương|dong luong
 hưng hoá|hung hoa
 hiền quan|hien quan
-bắc sơn|bac son
 thanh uyên|thanh uyen
 lam sơn|lam son
 vạn xuân|van xuan
@@ -2671,7 +2284,6 @@ dị nậu|di nau
 dân quyền|dan quyen
 lâm thao|lam thao
 tiên kiên|tien kien
-hùng sơn|hung son
 xuân lũng|xuan lung
 hy cương|hy cuong
 chu hóa|chu hoa
@@ -2680,56 +2292,41 @@ thạch sơn|thach son
 thanh đình|thanh dinh
 sơn vi|son vi
 phùng nguyên|phung nguyen
-cao xá|cao xa
 vĩnh lại|vinh lai
 tứ xã|tu xa
 bản nguyên|ban nguyen
-thanh sơn|thanh son
 thu cúc|thu cuc
 thạch kiệt|thach kiet
 thu ngạc|thu ngac
 kiệt sơn|kiet son
-đồng sơn|dong son
 lai đồng|lai dong
 sơn hùng|son hung
-tân phú|tan phu
 mỹ thuận|my thuan
 địch quả|dich qua
 giáp lai|giap lai
-tân sơn|tan son
 thục luyện|thuc luyen
 võ miếu|vo mieu
 thạch khoán|thach khoan
 xuân đài|xuan dai
 minh đài|minh dai
 văn luông|van luong
-xuân sơn|xuan son
 cự thắng|cu thang
 tất thắng|tat thang
 long cốc|long coc
-văn miếu|van mieu
 cự đồng|cu dong
 kim thượng|kim thuong
-tam thanh
 thắng sơn|thang son
 vinh tiền|vinh tien
-tân minh|tan minh
 hương cần|huong can
 khả cửu|kha cuu
 đông cửu|dong cuu
-tân lập|tan lap
-yên lãng|yen lang
 yên lương|yen luong
 thượng cửu|thuong cuu
 lương nha|luong nha
-yên sơn|yen son
 tinh nhuệ|tinh nhue
-đào xá|dao xa
 thạch đồng|thach dong
 xuân lộc|xuan loc
 tân phương|tan phuong
-thanh thủy|thanh thuy
-sơn thủy|son thuy
 bảo yên|bao yen
 đoan hạ|doan ha
 đồng trung|dong trung
@@ -2739,44 +2336,31 @@ tích sơn|tich son
 liên bảo|lien bao
 hội hợp|hoi hop
 đống đa|dong da
-ngô quyền|ngo quyen
-đồng tâm|dong tam
 định trung|dinh trung
 khai quang
 thanh trù|thanh tru
 trưng trắc|trung trac
-hùng vương|hung vuong
 trưng nhị|trung nhi
 phúc thắng|phuc thang
-xuân hoà|xuan hoa
-đồng xuân|dong xuan
 ngọc thanh|ngoc thanh
-cao minh
 nam viêm|nam viem
 tiền châu|tien chau
 lập thạch|lap thach
-quang sơn|quang son
-ngọc mỹ|ngoc my
 hợp lý|hop ly
 lãng công|lang cong
 quang yên|quang yen
 bạch lưu|bach luu
 hải lựu|hai luu
 bắc bình|bac binh
-thái hòa|thai hoa
 hoa sơn|hoa son
 liễn sơn|lien son
-xuân hòa|xuan hoa
 vân trục|van truc
 đồng quế|dong que
 nhân đạo|nhan dao
 đôn nhân|don nhan
 phương khoan|phuong khoan
-liên hòa|lien hoa
 tử du|tu du
-tân lập|tan lap
 nhạo sơn|nhao son
-tam sơn|tam son
 như thụy|nhu thuy
 yên thạch|yen thach
 bàn giản|ban gian
@@ -2784,26 +2368,20 @@ xuân lôi|xuan loi
 đồng ích|dong ich
 tiên lữ|tien lu
 văn quán|van quan
-đồng thịnh|dong thinh
 tứ yên|tu yen
 đức bác|duc bac
 đình chu|dinh chu
-cao phong
 triệu đề|trieu de
 sơn đông|son dong
-hợp hòa|hop hoa
 hoàng hoa|hoang hoa
 đồng tĩnh|dong tinh
 kim long
 hướng đạo|huong dao
 đạo tú|dao tu
 an hòa|an hoa
-thanh vân|thanh van
 duy phiên|duy phien
 hoàng đan|hoang dan
 hoàng lâu|hoang lau
-vân hội|van hoi
-hợp thịnh|hop thinh
 tam đảo|tam dao
 hợp châu|hop chau
 đạo trù|dao tru
@@ -2811,42 +2389,28 @@ yên dương|yen duong
 bồ lý|bo ly
 đại đình|dai dinh
 tam quan
-hồ sơn|ho son
-minh quang
 hương canh|huong canh
 gia khánh|gia khanh
 trung mỹ|trung my
 bá hiến|ba hien
-thiện kế|thien ke
-hương sơn|huong son
 tam hợp|tam hop
 quất lưu|quat luu
 sơn lôi|son loi
-đạo đức|dao duc
-tân phong|tan phong
 thanh lãng|thanh lang
 phú xuân|phu xuan
 chi đông|chi dong
 đại thịnh|dai thinh
 kim hoa
 thạch đà|thach da
-tiến thắng|tien thang
 tự lập|tu lap
-quang minh
-thanh lâm|thanh lam
 tam đồng|tam dong
-liên mạc|lien mac
-vạn yên|van yen
 chu phan
 tiến thịnh|tien thinh
 mê linh|me linh
 văn khê|van khe
 hoàng kim|hoang kim
-tiền phong|tien phong
 tráng việt|trang viet
-yên lạc|yen lac
 đồng cương|dong cuong
-đồng văn|dong van
 bình định|binh dinh
 trung nguyên|trung nguyen
 tề lỗ|te lo
@@ -2860,23 +2424,15 @@ trung kiên|trung kien
 liên châu|lien chau
 đại tự|dai tu
 hồng châu|hong chau
-trung hà|trung ha
 vĩnh tường|vinh tuong
 kim xá|kim xa
-yên bình|yen binh
 chấn hưng|chan hung
-nghĩa hưng|nghia hung
-yên lập|yen lap
 việt xuân|viet xuan
 bồ sao|bo sao
-đại đồng|dai dong
-tân tiến|tan tien
 lũng hoà|lung hoa
 cao đại|cao dai
 thổ tang|tho tang
 vĩnh sơn|vinh son
-bình dương|binh duong
-tân phú|tan phu
 thượng trưng|thuong trung
 vũ di|vu di
 lý nhân|ly nhan
@@ -2885,7 +2441,6 @@ vân xuân|van xuan
 tam phúc|tam phuc
 tứ trưng|tu trung
 ngũ kiên|ngu kien
-an tường|an tuong
 vĩnh thịnh|vinh thinh
 phú đa|phu da
 vĩnh ninh|vinh ninh
@@ -2894,27 +2449,20 @@ vũ ninh|vu ninh
 thị cầu|thi cau
 kinh bắc|kinh bac
 vệ an|ve an
-tiền an|tien an
 đại phúc|dai phuc
 ninh xá|ninh xa
-suối hoa|suoi hoa
 võ cường|vo cuong
 dũng liệt|dung liet
-tam đa|tam da
 tam giang
-yên trung|yen trung
 thụy hòa|thuy hoa
 hòa tiến|hoa tien
 hòa long|hoa long
 đông tiến|dong tien
-yên phụ|yen phu
 trung nghĩa|trung nghia
 vạn an|van an
-đông phong|dong phong
 long châu|long chau
 khúc xuyên|khuc xuyen
 văn môn|van mon
-đông thọ|dong tho
 phong khê|phong khe
 phố mới|pho moi
 việt thống|viet thong
@@ -2928,19 +2476,13 @@ vân dương|van duong
 phù lương|phu luong
 phù lãng|phu lang
 phượng mao|phuong mao
-việt hùng|viet hung
-nam sơn|nam son
 ngọc xá|ngoc xa
 châu phong|chau phong
 bồng lai|bong lai
 cách bi|cach bi
-đào viên|dao vien
 yên giả|yen gia
 mộ đạo|mo dao
-đức long|duc long
-chi lăng|chi lang
 hán quảng|han quang
-phú lâm|phu lam
 khắc niệm|khac niem
 nội duệ|noi due
 hạp lĩnh|hap linh
@@ -2951,12 +2493,9 @@ lạc vệ|lac ve
 việt đoàn|viet doan
 phật tích|phat tich
 tân chi|tan chi
-đại đồng|dai dong
-tri phương|tri phuong
 minh đạo|minh dao
 cảnh hưng|canh hung
 đông ngàn|dong ngan
-tam sơn|tam son
 hương mạc|huong mac
 tương giang|tuong giang
 phù khê|phu khe
@@ -2972,7 +2511,6 @@ hoài thượng|hoai thuong
 mão điền|mao dien
 song hồ|song ho
 đình tổ|dinh to
-an bình|an binh
 trí quả|tri qua
 gia đông|gia dong
 thanh khương|thanh khuong
@@ -2980,25 +2518,19 @@ trạm lộ|tram lo
 xuân lâm|xuan lam
 hà mãn|ha man
 ngũ thái|ngu thai
-nguyệt đức|nguyet duc
-ninh xá|ninh xa
 nghĩa đạo|nghia dao
 song liễu|song lieu
 gia bình|gia binh
-vạn ninh|van ninh
 thái bảo|thai bao
 giang sơn|giang son
 cao đức|cao duc
 đại lai|dai lai
 song giang
-bình dương|binh duong
 lãng ngâm|lang ngam
 nhân thắng|nhan thang
-xuân lai|xuan lai
 đông cứu|dong cuu
 đại bái|dai bai
 quỳnh phú|quynh phu
-an thịnh|an thinh
 trung kênh|trung kenh
 phú hòa|phu hoa
 mỹ hương|my huong
@@ -3007,16 +2539,7 @@ quảng phú|quang phu
 trừng xá|trung xa
 lai hạ|lai ha
 trung chính|trung chinh
-minh tân|minh tan
-bình định|binh dinh
-phú lương|phu luong
-lâm thao|lam thao
-nguyễn trãi|nguyen trai
 mộ lao|mo lao
-văn quán|van quan
-vạn phúc|van phuc
-yết kiêu|yet kieu
-quang trung
 la khê|la khe
 phú la|phu la
 phúc la|phuc la
@@ -3024,55 +2547,39 @@ hà cầu|ha cau
 yên nghĩa|yen nghia
 kiến hưng|kien hung
 phú lãm|phu lam
-phú lương|phu luong
-lê lợi|le loi
-phú thịnh|phu thinh
-ngô quyền|ngo quyen
-quang trung
 sơn lộc|son loc
 xuân khanh|xuan khanh
 đường lâm|duong lam
 viên sơn|vien son
-xuân sơn|xuan son
 trung hưng|trung hung
 thanh mỹ|thanh my
 trung sơn trầm|trung son tram
-kim sơn|kim son
-sơn đông|son dong
 cổ đông|co dong
 tây đằng|tay dang
-phú cường|phu cuong
 cổ đô|co do
 tản hồng|tan hong
 vạn thắng|van thang
-châu sơn|chau son
-phong vân|phong van
 phú đông|phu dong
 phú phương|phu phuong
 phú châu|phu chau
-thái hòa|thai hoa
 đồng thái|dong thai
 phú sơn|phu son
-minh châu|minh chau
 vật lại|vat lai
 chu minh
 tòng bạt|tong bat
 cẩm lĩnh|cam linh
 sơn đà|son da
 đông quang|dong quang
-tiên phong|tien phong
 thụy an|thuy an
 cam thượng|cam thuong
 thuần mỹ|thuan my
 tản lĩnh|tan linh
 ba trại|ba trai
-minh quang
 ba vì|ba vi
 vân hòa|van hoa
 yên bài|yen bai
 khánh thượng|khanh thuong
 phúc thọ|phuc tho
-vân hà|van ha
 vân phúc|van phuc
 vân nam|van nam
 xuân đình|xuan dinh
@@ -3080,50 +2587,37 @@ sen phương|sen phuong
 võng xuyên|vong xuyen
 thọ lộc|tho loc
 long xuyên|long xuyen
-thượng cốc|thuong coc
 hát môn|hat mon
 tích giang|tich giang
 thanh đa|thanh da
 trạch mỹ lộc|trach my loc
-phúc hòa|phuc hoa
 ngọc tảo|ngoc tao
 phụng thượng|phung thuong
 tam thuấn|tam thuan
-tam hiệp|tam hiep
 hiệp thuận|hiep thuan
-liên hiệp|lien hiep
 trung châu|trung chau
 thọ an|tho an
 thọ xuân|tho xuan
-hồng hà|hong ha
 liên hồng|lien hong
-liên hà|lien ha
 hạ mỗ|ha mo
 liên trung|lien trung
 phương đình|phuong dinh
 thượng mỗ|thuong mo
 tân hội|tan hoi
-tân lập|tan lap
 đan phượng|dan phuong
 đồng tháp|dong thap
 song phượng|song phuong
 trạm trôi|tram troi
 đức thượng|duc thuong
-minh khai
 dương liễu|duong lieu
 di trạch|di trach
-đức giang|duc giang
 cát quế|cat que
-kim chung
-yên sở|yen so
 sơn đồng|son dong
 vân canh|van canh
 đắc sở|dac so
 lại yên|lai yen
 tiền yên|tien yen
 song phương|song phuong
-an khánh|an khanh
-an thượng|an thuong
 vân côn|van con
 dương nội|duong noi
 la phù|la phu
@@ -3131,33 +2625,21 @@ la phù|la phu
 quốc oai|quoc oai
 sài sơn|sai son
 phượng cách|phuong cach
-yên sơn|yen son
 ngọc liệp|ngoc liep
-ngọc mỹ|ngoc my
 liệp tuyết|liep tuyet
 thạch thán|thach than
-đồng quang|dong quang
 phú cát|phu cat
 tuyết nghĩa|tuyet nghia
 nghĩa hương|nghia huong
-cộng hòa|cong hoa
-tân phú|tan phu
-đại thành|dai thanh
 phú mãn|phu man
 cấn hữu|can huu
-tân hòa|tan hoa
 hòa thạch|hoa thach
 đông yên|dong yen
 liên quan|lien quan
-đại đồng|dai dong
 cẩm yên|cam yen
 lại thượng|lai thuong
 phú kim|phu kim
 hương ngải|huong ngai
-canh nậu|canh nau
-kim quan
-dị nậu|di nau
-bình yên|binh yen
 chàng sơn|chang son
 thạch hoà|thach hoa
 cần kiệm|can kiem
@@ -3165,39 +2647,27 @@ hữu bằng|huu bang
 phùng xá|phung xa
 tân xã|tan xa
 thạch xá|thach xa
-bình phú|binh phu
 hạ bằng|ha bang
 đồng trúc|dong truc
 chúc sơn|chuc son
 xuân mai|xuan mai
 phụng châu|phung chau
 tiên phương|tien phuong
-đông sơn|dong son
 đông phương yên|dong phuong yen
-phú nghĩa|phu nghia
 trường yên|truong yen
 ngọc hòa|ngoc hoa
 thủy xuân tiên|thuy xuan tien
-thanh bình|thanh binh
-trung hòa|trung hoa
-đại yên|dai yen
 thụy hương|thuy huong
 tốt động|tot dong
 lam điền|lam dien
-tân tiến|tan tien
 nam phương tiến|nam phuong tien
 hợp đồng|hop dong
-hoàng văn thụ|hoang van thu
 hoàng diệu|hoang dieu
 hữu văn|huu van
 quảng bị|quang bi
-mỹ lương|my luong
 thượng vực|thuong vuc
-hồng phong|hong phong
 đồng phú|dong phu
-trần phú|tran phu
 văn võ|van vo
-đồng lạc|dong lac
 hòa chính|hoa chinh
 phú nam an|phu nam an
 kim bài|kim bai
@@ -3205,13 +2675,9 @@ kim bài|kim bai
 cự khê|cu khe
 biên giang|bien giang
 bích hòa|bich hoa
-mỹ hưng|my hung
 cao viên|cao vien
-bình minh|binh minh
 tam hưng|tam hung
-thanh cao
 thanh thùy|thanh thuy
-thanh mai
 thanh văn|thanh van
 đỗ động|do dong
 kim an
@@ -3219,55 +2685,34 @@ kim thư|kim thu
 phương trung|phuong trung
 tân ước|tan uoc
 dân hòa|dan hoa
-liên châu|lien chau
-cao dương|cao duong
-xuân dương|xuan duong
 hồng dương|hong duong
 thường tín|thuong tin
 ninh sở|ninh so
 nhị khê|nhi khe
 duyên thái|duyen thai
 khánh hà|khanh ha
-hòa bình|hoa binh
 văn bình|van binh
 hiền giang|hien giang
 hồng vân|hong van
 vân tảo|van tao
 liên phương|lien phuong
-văn phú|van phu
 tự nhiên|tu nhien
-tiền phong|tien phong
 hà hồi|ha hoi
 thư phú|thu phu
-nguyễn trãi|nguyen trai
 quất động|quat dong
-chương dương|chuong duong
-tân minh|tan minh
-lê lợi|le loi
-thắng lợi|thang loi
 dũng tiến|dung tien
-thống nhất|thong nhat
 nghiêm xuyên|nghiem xuyen
-tô hiệu|to hieu
 văn tự|van tu
 vạn điểm|van diem
 minh cường|minh cuong
-phú minh|phu minh
-phú xuyên|phu xuyen
 hồng minh|hong minh
 phượng dực|phuong duc
-nam tiến|nam tien
 tri trung
 đại thắng|dai thang
 phú túc|phu tuc
 văn hoàng|van hoang
-hồng thái|hong thai
 hoàng long|hoang long
-quang trung
-nam phong
 nam triều|nam trieu
-tân dân|tan dan
-sơn hà|son ha
 chuyên mỹ|chuyen my
 khai thái|khai thai
 phúc tiến|phuc tien
@@ -3278,69 +2723,45 @@ phú yên|phu yen
 bạch hạ|bach ha
 quang lãng|quang lang
 châu can|chau can
-minh tân|minh tan
 vân đình|van dinh
 viên an|vien an
 viên nội|vien noi
-hoa sơn|hoa son
 quảng phú cầu|quang phu cau
 trường thịnh|truong thinh
 cao thành|cao thanh
 liên bạt|lien bat
 sơn công|son cong
-đồng tiến|dong tien
 phương tú|phuong tu
 trung tú|trung tu
-đồng tân|dong tan
 tảo dương văn|tao duong van
 vạn thái|van thai
-minh đức|minh duc
 hòa lâm|hoa lam
 hòa xá|hoa xa
 trầm lộng|tram long
 kim đường|kim duong
 hòa nam|hoa nam
-hòa phú|hoa phu
-đội bình|doi binh
 đại hùng|dai hung
-đông lỗ|dong lo
-phù lưu|phu luu
 đại cường|dai cuong
 lưu hoàng|luu hoang
-hồng quang|hong quang
 đại nghĩa|dai nghia
-đồng tâm|dong tam
-thượng lâm|thuong lam
 tuy lai
 phúc lâm|phuc lam
-mỹ thành|my thanh
 bột xuyên|bot xuyen
 an mỹ|an my
 hồng sơn|hong son
 lê thanh|le thanh
 xuy xá|xuy xa
-phùng xá|phung xa
 phù lưu tế|phu luu te
 đại hưng|dai hung
 vạn kim|van kim
 đốc tín|doc tin
-hương sơn|huong son
 hùng tiến|hung tien
 an tiến|an tien
-hợp tiến|hop tien
 hợp thanh|hop thanh
-an phú|an phu
 cẩm thượng|cam thuong
 bình hàn|binh han
-ngọc châu|ngoc chau
 nhị châu|nhi chau
-quang trung
-nguyễn trãi|nguyen trai
 phạm ngũ lão|pham ngu lao
-trần hưng đạo|tran hung dao
-trần phú|tran phu
-thanh bình|thanh binh
-tân bình|tan binh
 lê thanh nghị|le thanh nghi
 hải tân|hai tan
 tứ minh|tu minh
@@ -3350,68 +2771,39 @@ sao đỏ|sao do
 bến tắm|ben tam
 hoàng hoa thám|hoang hoa tham
 bắc an|bac an
-hưng đạo|hung dao
-lê lợi|le loi
 hoàng tiến|hoang tien
 cộng hoà|cong hoa
-hoàng tân|hoang tan
 cổ thành|co thanh
 văn an|van an
-chí minh|chi minh
-văn đức|van duc
-thái học|thai hoc
 nhân huệ|nhan hue
-an lạc|an lac
-đồng lạc|dong lac
-tân dân|tan dan
 nam sách|nam sach
 nam hưng|nam hung
 nam tân|nam tan
-hợp tiến|hop tien
 hiệp cát|hiep cat
 thanh quang
 quốc tuấn|quoc tuan
 nam chính|nam chinh
-an bình|an binh
 nam trung
-an sơn|an son
-cộng hòa|cong hoa
 thái tân|thai tan
 an lâm|an lam
 phú điền|phu dien
-nam hồng|nam hong
-hồng phong|hong phong
-đồng lạc|dong lac
-ái quốc|ai quoc
-an thượng|an thuong
-minh tân|minh tan
-nam đồng|nam dong
 an lưu|an luu
-bạch đằng|bach dang
 thất hùng|that hung
 lê ninh|le ninh
 hoành sơn|hoanh son
 phạm thái|pham thai
 duy tân|duy tan
-tân dân|tan dan
-minh tân|minh tan
-quang thành|quang thanh
-hiệp hòa|hiep hoa
 phú thứ|phu thu
 thăng long|thang long
 lạc long|lac long
-an sinh
 hiệp sơn|hiep son
 thượng quận|thuong quan
 an phụ|an phu
 hiệp an|hiep an
-long xuyên|long xuyen
 thái thịnh|thai thinh
 hiến thành|hien thanh
-minh hòa|minh hoa
 phú thái|phu thai
 lai vu
-cộng hòa|cong hoa
 thượng vũ|thuong vu
 cổ dũng|co dung
 tuấn việt|tuan viet
@@ -3419,33 +2811,16 @@ kim xuyên|kim xuyen
 phúc thành a|phuc thanh a
 ngũ phúc|ngu phuc
 kim anh
-kim liên|kim lien
-kim tân|kim tan
 kim đính|kim dinh
-bình dân|binh dan
 tam kỳ|tam ky
 đồng cẩm|dong cam
-liên hòa|lien hoa
 đại đức|dai duc
-thanh hà|thanh ha
-hồng lạc|hong lac
-việt hồng|viet hong
-quyết thắng|quyet thang
-tân việt|tan viet
 cẩm chế|cam che
-thanh an
 thanh lang
 tiền tiến|tien tien
-tân an|tan an
-liên mạc|lien mac
-thanh hải|thanh hai
 thanh khê|thanh khe
 thanh xá|thanh xa
-thanh xuân|thanh xuan
-thanh thủy|thanh thuy
 an phượng|an phuong
-thanh sơn|thanh son
-thanh quang
 thanh hồng|thanh hong
 thanh cường|thanh cuong
 vĩnh lập|vinh lap
@@ -3457,71 +2832,42 @@ cẩm văn|cam van
 ngọc liên|ngoc lien
 thạch lỗi|thach loi
 cẩm vũ|cam vu
-đức chính|duc chinh
 định sơn|dinh son
 lương điền|luong dien
 cao an
 tân trường|tan truong
 cẩm phúc|cam phuc
 cẩm điền|cam dien
-cẩm đông|cam dong
 cẩm đoài|cam doai
 kẻ sặt|ke sat
-vĩnh hưng|vinh hung
-hùng thắng|hung thang
 vĩnh hồng|vinh hong
-long xuyên|long xuyen
-tân việt|tan viet
 thúc kháng|thuc khang
-tân hồng|tan hong
-bình minh|binh minh
 hồng khê|hong khe
-thái học|thai hoc
 cổ bì|co bi
 nhân quyền|nhan quyen
 thái dương|thai duong
-thái hòa|thai hoa
 bình xuyên|binh xuyen
-gia lộc|gia loc
 thạch khôi|thach khoi
-liên hồng|lien hong
-thống nhất|thong nhat
-tân hưng|tan hung
 gia xuyên|gia xuyen
-yết kiêu|yet kieu
 gia tân|gia tan
-tân tiến|tan tien
-gia khánh|gia khanh
 gia lương|gia luong
-lê lợi|le loi
 toàn thắng|toan thang
-hoàng diệu|hoang dieu
 hồng hưng|hong hung
 phạm trấn|pham tran
 đoàn thượng|doan thuong
 thống kênh|thong kenh
-quang minh
-đồng quang|dong quang
-nhật tân|nhat tan
 đức xương|duc xuong
 tứ kỳ|tu ky
-ngọc sơn|ngoc son
-đại sơn|dai son
-hưng đạo|hung dao
 ngọc kỳ|ngoc ky
 bình lăng|binh lang
-chí minh|chi minh
 tái sơn|tai son
 quang phục|quang phuc
-dân chủ|dan chu
 tân kỳ|tan ky
 quang khải|quang khai
 đại hợp|dai hop
 quảng nghiệp|quang nghiep
 an thanh
-minh đức|minh duc
 văn tố|van to
-quang trung
 phượng kỳ|phuong ky
 cộng lạc|cong lac
 tiên động|tien dong
@@ -3530,49 +2876,30 @@ hà kỳ|ha ky
 hà thanh|ha thanh
 ninh giang
 ứng hoè|ung hoe
-nghĩa an|nghia an
 hồng đức|hong duc
 an đức|an duc
-vạn phúc|van phuc
-tân hương|tan huong
 vĩnh hòa|vinh hoa
 đông xuyên|dong xuyen
-tân phong|tan phong
 ninh hải|ninh hai
-đồng tâm|dong tam
-tân quang|tan quang
 kiến quốc|kien quoc
 hồng dụ|hong du
 văn hội|van hoi
-hồng phong|hong phong
-hiệp lực|hiep luc
 hồng phúc|hong phuc
-hưng long|hung long
 thanh miện|thanh mien
 thanh tùng|thanh tung
 phạm kha|pham kha
-ngô quyền|ngo quyen
 đoàn tùng|doan tung
-hồng quang|hong quang
-tân trào|tan trao
-lam sơn|lam son
-đoàn kết|doan ket
 lê hồng|le hong
 tứ cường|tu cuong
 ngũ hùng|ngu hung
-cao thắng|cao thang
 chi lăng bắc|chi lang bac
 chi lăng nam|chi lang nam
 thanh giang
-hồng phong|hong phong
 quán toan|quan toan
-hùng vương|hung vuong
 sở dầu|so dau
 thượng lý|thuong ly
 hạ lý|ha ly
-minh khai
 trại chuối|trai chuoi
-hoàng văn thụ|hoang van thu
 phan bội châu|phan boi chau
 máy chai|may chai
 máy tơ|may to
@@ -3581,21 +2908,14 @@ cầu tre|cau tre
 lạc viên|lac vien
 cầu đất|cau dat
 gia viên|gia vien
-đông khê|dong khe
-lê lợi|le loi
 đằng giang|dang giang
 lạch tray|lach tray
 đổng quốc bình|dong quoc binh
 cát dài|cat dai
 an biên|an bien
-lam sơn|lam son
-an dương|an duong
-trần nguyên hãn|tran nguyen han
 hồ nam|ho nam
-trại cau|trai cau
 dư hàng|du hang
 hàng kênh|hang kenh
-đông hải|dong hai
 niệm nghĩa|niem nghia
 nghĩa xá|nghia xa
 dư hàng kênh|du hang kenh
@@ -3612,44 +2932,29 @@ tràng cát|trang cat
 quán trữ|quan tru
 lãm hà|lam ha
 đồng hoà|dong hoa
-bắc sơn|bac son
-nam sơn|nam son
-ngọc sơn|ngoc son
 trần thành ngọ|tran thanh ngo
 văn đẩu|van dau
 phù liễn|phu lien
 tràng minh|trang minh
 ngọc xuyên|ngoc xuyen
-hải sơn|hai son
 vạn hương|van huong
-minh đức|minh duc
 bàng la|bang la
 núi đèo|nui deo
-minh đức|minh duc
 lại xuân|lai xuan
-an sơn|an son
-kỳ sơn|ky son
 liên khê|lien khe
 lưu kiếm|luu kiem
 lưu kỳ|luu ky
 gia minh
 gia đức|gia duc
-minh tân|minh tan
-phù ninh|phu ninh
 quảng thanh|quang thanh
 chính mỹ|chinh my
 kênh giang|kenh giang
-hợp thành|hop thanh
 cao nhân|cao nhan
 mỹ đồng|my dong
-đông sơn|dong son
 hoà bình|hoa binh
-trung hà|trung ha
 an lư|an lu
 thuỷ triều|thuy trieu
-ngũ lão|ngu lao
 phục lễ|phuc le
-tam hưng|tam hung
 phả lễ|pha le
 lập lễ|lap le
 kiền bái|kien bai
@@ -3659,120 +2964,59 @@ thuỷ đường|thuy duong
 hoàng động|hoang dong
 lâm động|lam dong
 hoa động|hoa dong
-tân dương|tan duong
 dương quan|duong quan
-an dương|an duong
 lê thiện|le thien
 đại bản|dai ban
 an hoà|an hoa
-hồng phong|hong phong
-tân tiến|tan tien
 an hưng|an hung
 an hồng|an hong
-bắc sơn|bac son
-nam sơn|nam son
-lê lợi|le loi
 đặng cương|dang cuong
-đồng thái|dong thai
-quốc tuấn|quoc tuan
 an đồng|an dong
-hồng thái|hong thai
 an lão|an lao
 bát trang|bat trang
 trường thọ|truong tho
 trường thành|truong thanh
-an tiến|an tien
 quang hưng|quang hung
-quang trung
-quốc tuấn|quoc tuan
-an thắng|an thang
-trường sơn|truong son
-tân dân|tan dan
-thái sơn|thai son
 tân viên|tan vien
 mỹ đức|my duc
-chiến thắng|chien thang
 an thọ|an tho
 an thái|an thai
 núi đối|nui doi
-đa phúc|da phuc
-hưng đạo|hung dao
 anh dũng|anh dung
 hải thành|hai thanh
 đông phương|dong phuong
 thuận thiên|thuan thien
-hữu bằng|huu bang
-đại đồng|dai dong
 hoà nghĩa|hoa nghia
-ngũ phúc|ngu phuc
-kiến quốc|kien quoc
 du lễ|du le
 thuỵ hương|thuy huong
-thanh sơn|thanh son
-minh tân|minh tan
 đại hà|dai ha
 ngũ đoan|ngu doan
-tân phong|tan phong
-hợp đức|hop duc
-tân thành|tan thanh
-tân trào|tan trao
 đoàn xá|doan xa
-tú sơn|tu son
-đại hợp|dai hop
-tiên lãng|tien lang
-đại thắng|dai thang
 tiên cường|tien cuong
 tự cường|tu cuong
-quyết tiến|quyet tien
 khởi nghĩa|khoi nghia
 tiên thanh|tien thanh
-cấp tiến|cap tien
-kiến thiết|kien thiet
 đoàn lập|doan lap
-bạch đằng|bach dang
-quang phục|quang phuc
-toàn thắng|toan thang
 tiên thắng|tien thang
 tiên minh|tien minh
 bắc hưng|bac hung
-nam hưng|nam hung
-hùng thắng|hung thang
 tây hưng|tay hung
-đông hưng|dong hung
-vinh quang
 vĩnh bảo|vinh bao
-dũng tiến|dung tien
-giang biên|giang bien
 thắng thuỷ|thang thuy
 trung lập|trung lap
-việt tiến|viet tien
-vĩnh an|vinh an
 vĩnh long|vinh long
 hiệp hoà|hiep hoa
-hùng tiến|hung tien
-an hoà|an hoa
-tân hưng|tan hung
-tân liên|tan lien
 nhân hoà|nhan hoa
-tam đa|tam da
 hưng nhân|hung nhan
-vinh quang
 đồng minh|dong minh
-thanh lương|thanh luong
 liên am|lien am
 lý học|ly hoc
 tam cường|tam cuong
-hoà bình|hoa binh
-tiền phong|tien phong
-vĩnh phong|vinh phong
 cộng hiền|cong hien
-cao minh
 cổ am|co am
-vĩnh tiến|vinh tien
 trấn dương|tran duong
 cát bà|cat ba
 cát hải|cat hai
-nghĩa lộ|nghia lo
 đồng bài|dong bai
 hoàng châu|hoang chau
 văn phong|van phong
@@ -3782,28 +3026,16 @@ hiền hào|hien hao
 trân châu|tran chau
 việt hải|viet hai
 xuân đám|xuan dam
-lam sơn|lam son
 hiến nam|hien nam
 an tảo|an tao
-lê lợi|le loi
-minh khai
-quang trung
-hồng châu|hong chau
-trung nghĩa|trung nghia
-liên phương|lien phuong
-hồng nam|hong nam
 quảng châu|quang chau
 bảo khê|bao khe
 như quỳnh|nhu quynh
 lạc đạo|lac dao
 chỉ đạo|chi dao
-đại đồng|dai dong
-việt hưng|viet hung
-tân quang|tan quang
 đình dù|dinh du
 minh hải|minh hai
 lương tài|luong tai
-trưng trắc|trung trac
 lạc hồng|lac hong
 văn giang|van giang
 xuân quan|xuan quan
@@ -3813,111 +3045,61 @@ nghĩa trụ|nghia tru
 long hưng|long hung
 vĩnh khúc|vinh khuc
 liên nghĩa|lien nghia
-tân tiến|tan tien
-thắng lợi|thang loi
 mễ sở|me so
-yên mỹ|yen my
 giai phạm|giai pham
 nghĩa hiệp|nghia hiep
 đồng than|dong than
-ngọc long|ngoc long
 liêu xá|lieu xa
 hoàn long|hoan long
-tân lập|tan lap
-thanh long
-yên phú|yen phu
-việt cường|viet cuong
-trung hòa|trung hoa
-yên hòa|yen hoa
-minh châu|minh chau
-trung hưng|trung hung
 lý thường kiệt|ly thuong kiet
-tân việt|tan viet
 bần yên nhân|ban yen nhan
-phan đình phùng|phan dinh phung
 cẩm xá|cam xa
-dương quang|duong quang
 hòa phong|hoa phong
-nhân hòa|nhan hoa
 dị sử|di su
 bạch sam|bach sam
-minh đức|minh duc
-phùng chí kiên|phung chi kien
 xuân dục|xuan duc
-ngọc lâm|ngoc lam
-hưng long|hung long
 ân thi|an thi
 phù ủng|phu ung
-bắc sơn|bac son
 bãi sậy|bai say
 đào dương|dao duong
 tân phúc|tan phuc
-vân du|van du
-quang vinh
 xuân trúc|xuan truc
-hoàng hoa thám|hoang hoa tham
 quảng lãng|quang lang
 văn nhuệ|van nhue
 đặng lễ|dang le
 cẩm ninh|cam ninh
-nguyễn trãi|nguyen trai
 đa lộc|da loc
 hồ tùng mậu|ho tung mau
-tiền phong|tien phong
-hồng vân|hong van
-hồng quang|hong quang
 hạ lễ|ha le
 khoái châu|khoai chau
 đông tảo|dong tao
-bình minh|binh minh
 dạ trạch|da trach
 hàm tử|ham tu
 ông đình|ong dinh
-tân dân|tan dan
 tứ dân|tu dan
 an vĩ|an vi
 đông kết|dong ket
 bình kiều|binh kieu
-dân tiến|dan tien
-đồng tiến|dong tien
-hồng tiến|hong tien
 tân châu|tan chau
-liên khê|lien khe
 phùng hưng|phung hung
 việt hòa|viet hoa
 đông ninh|dong ninh
 đại tập|dai tap
 chí tân|chi tan
-đại hưng|dai hung
 thuần hưng|thuan hung
-thành công|thanh cong
 nhuế dương|nhue duong
-lương bằng|luong bang
 nghĩa dân|nghia dan
-toàn thắng|toan thang
 vĩnh xá|vinh xa
-phạm ngũ lão|pham ngu lao
 thọ vinh|tho vinh
 đồng thanh|dong thanh
-song mai
 chính nghĩa|chinh nghia
 nhân la|nhan la
-phú thịnh|phu thinh
-mai động|mai dong
 đức hợp|duc hop
-hùng an|hung an
-ngọc thanh|ngoc thanh
-vũ xá|vu xa
 hiệp cường|hiep cuong
-phú cường|phu cuong
 hùng cường|hung cuong
-hưng đạo|hung dao
-ngô quyền|ngo quyen
-nhật tân|nhat tan
 dị chế|di che
 lệ xá|le xa
 an viên|an vien
-đức thắng|duc thang
 trung dũng|trung dung
 hải triều|hai trieu
 thủ sỹ|thu sy
@@ -3926,46 +3108,31 @@ thụy lôi|thuy loi
 cương chính|cuong chinh
 minh phượng|minh phuong
 phương chiểu|phuong chieu
-tân hưng|tan hung
 hoàng hanh|hoang hanh
 trần cao|tran cao
-minh tân|minh tan
 phan sào nam|phan sao nam
-quang hưng|quang hung
 minh hoàng|minh hoang
 đoàn đào|doan dao
 tống phan|tong phan
 đình cao|dinh cao
 nhật quang|nhat quang
-tiền tiến|tien tien
-tam đa|tam da
-minh tiến|minh tien
 nguyên hòa|nguyen hoa
 tống trân|tong tran
 lê hồng phong|le hong phong
 bồ xuyên|bo xuyen
-đề thám|de tham
 kỳ bá|ky ba
-quang trung
 phú khánh|phu khanh
-tiền phong|tien phong
-trần hưng đạo|tran hung dao
 trần lãm|tran lam
 đông hòa|dong hoa
-hoàng diệu|hoang dieu
-phú xuân|phu xuan
 vũ phúc|vu phuc
 vũ chính|vu chinh
 quỳnh côi|quynh coi
 an khê|an khe
-an đồng|an dong
 quỳnh hoa|quynh hoa
-quỳnh lâm|quynh lam
 quỳnh thọ|quynh tho
 an hiệp|an hiep
 quỳnh hoàng|quynh hoang
 quỳnh giao|quynh giao
-an thái|an thai
 an cầu|an cau
 quỳnh hồng|quynh hong
 quỳnh khê|quynh khe
@@ -3976,98 +3143,46 @@ quỳnh hải|quynh hai
 an bài|an bai
 an ấp|an ap
 quỳnh hội|quynh hoi
-châu sơn|chau son
 quỳnh mỹ|quynh my
 an quí|an qui
-an thanh
 an vũ|an vu
 an lễ|an le
 quỳnh hưng|quynh hung
 quỳnh bảo|quynh bao
-an mỹ|an my
 quỳnh nguyên|quynh nguyen
 an vinh
 quỳnh xá|quynh xa
 an dục|an duc
-đông hải|dong hai
 quỳnh trang|quynh trang
 an tràng|an trang
-đồng tiến|dong tien
 hưng hà|hung ha
 điệp nông|diep nong
 tân lễ|tan le
-cộng hòa|cong hoa
-dân chủ|dan chu
-canh tân|canh tan
-hòa tiến|hoa tien
 hùng dũng|hung dung
-tân tiến|tan tien
-hưng nhân|hung nhan
-đoan hùng|doan hung
-duyên hải|duyen hai
-tân hòa|tan hoa
 văn cẩm|van cam
-bắc sơn|bac son
 đông đô|dong do
-phúc khánh|phuc khanh
-liên hiệp|lien hiep
 tây đô|tay do
-thống nhất|thong nhat
 tiến đức|tien duc
 thái hưng|thai hung
 thái phương|thai phuong
-hòa bình|hoa binh
-chi lăng|chi lang
-minh khai
-hồng an|hong an
-kim chung
 hồng lĩnh|hong linh
-minh tân|minh tan
-văn lang|van lang
-độc lập|doc lap
 chí hòa|chi hoa
-minh hòa|minh hoa
-hồng minh|hong minh
-đông hưng|dong hung
 đô lương|do luong
-đông phương|dong phuong
 liên giang|lien giang
-an châu|an chau
-đông sơn|dong son
 đông cường|dong cuong
-phú lương|phu luong
-mê linh|me linh
 lô giang|lo giang
-đông la|dong la
-minh tân|minh tan
-đông xá|dong xa
-chương dương|chuong duong
 nguyên xá|nguyen xa
-phong châu|phong chau
-hợp tiến|hop tien
-hồng việt|hong viet
 hà giang|ha giang
-đông kinh|dong kinh
 đông hợp|dong hop
-thăng long|thang long
 đông các|dong cac
-phú châu|phu chau
-liên hoa|lien hoa
 đông tân|dong tan
 đông vinh|dong vinh
 đông động|dong dong
 hồng bạch|hong bach
 trọng quan|trong quan
-hồng giang|hong giang
-đông quan|dong quan
-đông quang|dong quang
-đông xuân|dong xuan
 đông á|dong a
 đông hoàng|dong hoang
 đông dương|dong duong
-đông mỹ|dong my
-đông thọ|dong tho
-minh phú|minh phu
 diêm điền|diem dien
 thụy trường|thuy truong
 hồng dũng|hong dung
@@ -4093,128 +3208,73 @@ thái thượng|thai thuong
 thái nguyên|thai nguyen
 dương hồng thủy|duong hong thuy
 thái giang|thai giang
-hòa an|hoa an
-sơn hà|son ha
 thái phúc|thai phuc
-thái hưng|thai hung
 thái đô|thai do
 thái xuyên|thai xuyen
 mỹ lộc|my loc
 tân học|tan hoc
-thái thịnh|thai thinh
 thuần thành|thuan thanh
 thái thọ|thai tho
 tiền hải|tien hai
 đông trà|dong tra
 đông long|dong long
 đông quí|dong qui
-vũ lăng|vu lang
-đông xuyên|dong xuyen
 tây lương|tay luong
 tây ninh|tay ninh
 đông trung|dong trung
-đông hoàng|dong hoang
-đông minh|dong minh
-đông phong|dong phong
-an ninh
 đông cơ|dong co
 tây giang|tay giang
 đông lâm|dong lam
 phương công|phuong cong
-tây phong|tay phong
 tây tiến|tay tien
-nam cường|nam cuong
 vân trường|van truong
 nam thắng|nam thang
-nam chính|nam chinh
 bắc hải|bac hai
 nam thịnh|nam thinh
 nam hà|nam ha
-nam thanh
-nam trung
-nam hồng|nam hong
-nam hưng|nam hung
-nam hải|nam hai
 nam phú|nam phu
 kiến xương|kien xuong
 trà giang|tra giang
-quốc tuấn|quoc tuan
 vũ đông|vu dong
-an bình|an binh
 tây sơn|tay son
-hồng thái|hong thai
 bình nguyên|binh nguyen
-lê lợi|le loi
 vũ lạc|vu lac
-vũ lễ|vu le
 thanh tân|thanh tan
 thượng hiền|thuong hien
-nam cao
-đình phùng|dinh phung
-vũ ninh|vu ninh
 vũ an|vu an
 quang lịch|quang lich
-hòa bình|hoa binh
-bình minh|binh minh
 vũ quí|vu qui
 quang bình|quang binh
 vũ trung|vu trung
 vũ thắng|vu thang
 vũ công|vu cong
 vũ hòa|vu hoa
-quang minh
-quang trung
-minh quang
-vũ bình|vu binh
-minh tân|minh tan
 nam bình|nam binh
-bình thanh|binh thanh
-bình định|binh dinh
-hồng tiến|hong tien
 vũ thư|vu thu
 hồng lý|hong ly
-đồng thanh|dong thanh
-xuân hòa|xuan hoa
-hiệp hòa|hiep hoa
 phúc thành|phuc thanh
-tân phong|tan phong
 song lãng|song lang
-tân hòa|tan hoa
-việt hùng|viet hung
 minh lãng|minh lang
-tân bình|tan binh
-minh khai
 dũng nghĩa|dung nghia
-minh quang
 tam quang
-tân lập|tan lap
 bách thuận|bach thuan
 tự tân|tu tan
 song an
 trung an
 vũ hội|vu hoi
-hòa bình|hoa binh
-nguyên xá|nguyen xa
 việt thuận|viet thuan
 vũ vinh|vu vinh
 vũ đoài|vu doai
 vũ tiến|vu tien
 vũ vân|vu van
 duy nhất|duy nhat
-hồng phong|hong phong
-quang trung
 lương khánh thiện|luong khanh thien
-lê hồng phong|le hong phong
-minh khai
 hai bà trưng|hai ba trung
-trần hưng đạo|tran hung dao
 lam hạ|lam ha
 phù vân|phu van
 liêm chính|liem chinh
 liêm chung|liem chung
 thanh châu|thanh chau
-châu sơn|chau son
-đồng văn|dong van
 hòa mạc|hoa mac
 mộc bắc|moc bac
 châu giang|chau giang
@@ -4230,7 +3290,6 @@ hoàng đông|hoang dong
 yên nam|yen nam
 tiên ngoại|tien ngoai
 tiên tân|tien tan
-tiên sơn|tien son
 tiên hiệp|tien hiep
 tiên hải|tien hai
 nguyễn úy|nguyen uy
@@ -4238,204 +3297,115 @@ nguyễn úy|nguyen uy
 lê hồ|le ho
 tượng lĩnh|tuong linh
 nhật tựu|nhat tuu
-nhật tân|nhat tan
 đồng hóa|dong hoa
 hoàng tây|hoang tay
-tân sơn|tan son
-thụy lôi|thuy loi
 văn xá|van xa
 khả phong|kha phong
-ngọc sơn|ngoc son
-kim bình|kim binh
 ba sao
-liên sơn|lien son
 thi sơn|thi son
-thanh sơn|thanh son
 kiện khê|kien khe
 liêm tuyền|liem tuyen
 liêm tiết|liem tiet
 liêm phong|liem phong
-thanh hà|thanh ha
 liêm cần|liem can
 thanh tuyền|thanh tuyen
 liêm thuận|liem thuan
-thanh thủy|thanh thuy
 thanh phong
-tân thanh|tan thanh
-thanh tân|thanh tan
 liêm túc|liem tuc
 liêm sơn|liem son
 thanh hương|thanh huong
 thanh nghị|thanh nghi
 thanh tâm|thanh tam
 thanh nguyên|thanh nguyen
-thanh hải|thanh hai
 bình mỹ|binh my
 bình nghĩa|binh nghia
 đinh xá|dinh xa
-tràng an|trang an
 trịnh xá|trinh xa
 đồng du|dong du
 ngọc lũ|ngoc lu
 hưng công|hung cong
 đồn xá|don xa
-an ninh
-bồ đề|bo de
 bối cầu|boi cau
 an nội|an noi
 vũ bản|vu ban
-trung lương|trung luong
 an đổ|an do
 la sơn|la son
 tiêu động|tieu dong
-an lão|an lao
-hợp lý|hop ly
 nguyên lý|nguyen ly
 chính lý|chinh ly
 chân lý|chan ly
 đạo lý|dao ly
 công lý|cong ly
 văn lý|van ly
-bắc lý|bac ly
 đức lý|duc ly
-trần hưng đạo|tran hung dao
 vĩnh trụ|vinh tru
 nhân thịnh|nhan thinh
 nhân khang|nhan khang
-nhân mỹ|nhan my
-nhân nghĩa|nhan nghia
-nhân chính|nhan chinh
 nhân bình|nhan binh
 phú phúc|phu phuc
 xuân khê|xuan khe
-tiến thắng|tien thang
 hòa hậu|hoa hau
-hạ long|ha long
 trần tế xương|tran te xuong
 vị hoàng|vi hoang
-vị xuyên|vi xuyen
-quang trung
 cửa bắc|cua bac
-nguyễn du|nguyen du
 bà triệu|ba trieu
 trường thi|truong thi
-phan đình phùng|phan dinh phung
-ngô quyền|ngo quyen
-trần hưng đạo|tran hung dao
 trần đăng ninh|tran dang ninh
 năng tĩnh|nang tinh
-văn miếu|van mieu
 trần quang khải|tran quang khai
-thống nhất|thong nhat
 lộc hạ|loc ha
 lộc vượng|loc vuong
-cửa nam|cua nam
 lộc hòa|loc hoa
-nam phong
 mỹ xá|my xa
 lộc an|loc an
 nam vân|nam van
-mỹ lộc|my loc
-mỹ hà|my ha
 mỹ tiến|my tien
 mỹ thắng|my thang
 mỹ trung|my trung
 mỹ tân|my tan
 mỹ phúc|my phuc
-mỹ hưng|my hung
-mỹ thuận|my thuan
 mỹ thịnh|my thinh
-mỹ thành|my thanh
 minh thuận|minh thuan
 hiển khánh|hien khanh
-tân khánh|tan khanh
 hợp hưng|hop hung
-đại an|dai an
-tân thành|tan thanh
-cộng hòa|cong hoa
-trung thành|trung thanh
-quang trung
-minh tân|minh tan
-liên bảo|lien bao
 thành lợi|thanh loi
 kim thái|kim thai
-liên minh|lien minh
-đại thắng|dai thang
-tam thanh
 vĩnh hào|vinh hao
-yên trung|yen trung
-yên thành|yen thanh
 yên tân|yen tan
 yên lợi|yen loi
-yên thọ|yen tho
-yên nghĩa|yen nghia
-yên minh|yen minh
-yên phương|yen phuong
 yên chính|yen chinh
-yên bình|yen binh
-yên phú|yen phu
-yên mỹ|yen my
-yên dương|yen duong
-yên hưng|yen hung
 yên khánh|yen khanh
-yên phong|yen phong
-yên ninh|yen ninh
-yên lương|yen luong
 yên hồng|yen hong
 yên quang|yen quang
 yên tiến|yen tien
-yên thắng|yen thang
-yên phúc|yen phuc
-yên cường|yen cuong
 yên lộc|yen loc
 yên bằng|yen bang
-yên đồng|yen dong
 yên khang|yen khang
 yên nhân|yen nhan
-yên trị|yen tri
 liễu đề|lieu de
-rạng đông|rang dong
 nghĩa đồng|nghia dong
 nghĩa thịnh|nghia thinh
 nghĩa minh|nghia minh
 nghĩa thái|nghia thai
 hoàng nam|hoang nam
 nghĩa châu|nghia chau
-nghĩa trung|nghia trung
-nghĩa sơn|nghia son
 nghĩa lạc|nghia lac
 nghĩa hồng|nghia hong
 nghĩa phong|nghia phong
 nghĩa phú|nghia phu
 nghĩa bình|nghia binh
 quỹ nhất|quy nhat
-nghĩa tân|nghia tan
 nghĩa hùng|nghia hung
 nghĩa lâm|nghia lam
 nghĩa thành|nghia thanh
-phúc thắng|phuc thang
-nghĩa lợi|nghia loi
 nghĩa hải|nghia hai
 nam điền|nam dien
 nam giang
 nam mỹ|nam my
-điền xá|dien xa
-nghĩa an|nghia an
-nam thắng|nam thang
 nam toàn|nam toan
-hồng quang|hong quang
-tân thịnh|tan thinh
-nam cường|nam cuong
-nam hồng|nam hong
 nam hùng|nam hung
 nam hoa
-nam dương|nam duong
-nam thanh
 nam lợi|nam loi
-bình minh|binh minh
-đồng sơn|dong son
-nam tiến|nam tien
-nam hải|nam hai
 nam thái|nam thai
 cổ lễ|co le
 phương định|phuong dinh
@@ -4443,7 +3413,6 @@ trực chính|truc chinh
 trung đông|trung dong
 liêm hải|liem hai
 trực tuấn|truc tuan
-việt hùng|viet hung
 trực đạo|truc dao
 trực hưng|truc hung
 trực nội|truc noi
@@ -4458,33 +3427,25 @@ ninh cường|ninh cuong
 trực thái|truc thai
 trực hùng|truc hung
 trực thắng|truc thang
-xuân trường|xuan truong
 xuân châu|xuan chau
 xuân hồng|xuan hong
 xuân thành|xuan thanh
-xuân thượng|xuan thuong
 xuân phong|xuan phong
-xuân đài|xuan dai
 xuân tân|xuan tan
-xuân thủy|xuan thuy
 xuân ngọc|xuan ngoc
 xuân bắc|xuan bac
-xuân phương|xuan phuong
 thọ nghiệp|tho nghiep
-xuân phú|xuan phu
 xuân trung|xuan trung
 xuân vinh|xuan vinh
 xuân kiên|xuan kien
 xuân tiến|xuan tien
 xuân ninh|xuan ninh
-xuân hòa|xuan hoa
 ngô đồng|ngo dong
 quất lâm|quat lam
 giao hương|giao huong
 hồng thuận|hong thuan
 giao thiện|giao thien
 giao thanh
-hoành sơn|hoanh son
 bình hòa|binh hoa
 giao tiến|giao tien
 giao hà|giao ha
@@ -4500,7 +3461,6 @@ giao hải|giao hai
 bạch long|bach long
 giao long
 giao phong
-yên định|yen dinh
 thịnh long|thinh long
 hải nam|hai nam
 hải trung|hai trung
@@ -4517,9 +3477,6 @@ hải phương|hai phuong
 hải đường|hai duong
 hải lộc|hai loc
 hải quang|hai quang
-hải đông|hai dong
-hải sơn|hai son
-hải tân|hai tan
 hải phong|hai phong
 hải an|hai an
 hải tây|hai tay
@@ -4529,33 +3486,16 @@ hải giang|hai giang
 hải cường|hai cuong
 hải ninh|hai ninh
 hải chính|hai chinh
-hải xuân|hai xuan
 hải châu|hai chau
-hải triều|hai trieu
 hải hòa|hai hoa
-đông thành|dong thanh
-tân thành|tan thanh
-thanh bình|thanh binh
 vân giang|van giang
 bích đào|bich dao
-phúc thành|phuc thanh
-nam bình|nam binh
 nam thành|nam thanh
 ninh khánh|ninh khanh
 ninh nhất|ninh nhat
 ninh tiến|ninh tien
 ninh phúc|ninh phuc
-ninh sơn|ninh son
 ninh phong
-bắc sơn|bac son
-trung sơn|trung son
-nam sơn|nam son
-tây sơn|tay son
-yên sơn|yen son
-yên bình|yen binh
-tân bình|tan binh
-quang sơn|quang son
-đông sơn|dong son
 nho quan
 xích thổ|xich tho
 gia lâm|gia lam
@@ -4564,57 +3504,39 @@ thạch bình|thach binh
 gia thủy|gia thuy
 gia tường|gia tuong
 cúc phương|cuc phuong
-phú sơn|phu son
-đức long|duc long
 lạc vân|lac van
 đồng phong|dong phong
-yên quang|yen quang
 lạng phong|lang phong
 thượng hòa|thuong hoa
-văn phong|van phong
 văn phương|van phuong
 thanh lạc|thanh lac
 sơn lai|son lai
-sơn thành|son thanh
-văn phú|van phu
-phú lộc|phu loc
 kỳ phú|ky phu
 quỳnh lưu|quynh luu
-sơn hà|son ha
 phú long|phu long
-quảng lạc|quang lac
 gia hòa|gia hoa
 gia hưng|gia hung
-liên sơn|lien son
-gia thanh
 gia vân|gia van
-gia phú|gia phu
 gia xuân|gia xuan
 gia lập|gia lap
 gia vượng|gia vuong
 gia trấn|gia tran
 gia thịnh|gia thinh
 gia phương|gia phuong
-gia tân|gia tan
 gia thắng|gia thang
 gia trung
-gia minh
 gia lạc|gia lac
 gia tiến|gia tien
 gia sinh
 gia phong
 thiên tôn|thien ton
-ninh giang
-trường yên|truong yen
 ninh khang
 ninh mỹ|ninh my
 ninh hòa|ninh hoa
 ninh xuân|ninh xuan
-ninh hải|ninh hai
 ninh thắng|ninh thang
 ninh vân|ninh van
 ninh an
-yên ninh|yen ninh
 khánh tiên|khanh tien
 khánh phú|khanh phu
 khánh hòa|khanh hoa
@@ -4622,7 +3544,6 @@ khánh lợi|khanh loi
 khánh an|khanh an
 khánh cường|khanh cuong
 khánh cư|khanh cu
-khánh thiện|khanh thien
 khánh hải|khanh hai
 khánh trung|khanh trung
 khánh mậu|khanh mau
@@ -4634,12 +3555,10 @@ khánh nhạc|khanh nhac
 khánh thủy|khanh thuy
 khánh hồng|khanh hong
 phát diệm|phat diem
-bình minh|binh minh
 hồi ninh|hoi ninh
 xuân chính|xuan chinh
 kim định|kim dinh
 ân hòa|an hoa
-hùng tiến|hung tien
 quang thiện|quang thien
 như hòa|nhu hoa
 chất bình|chat binh
@@ -4647,62 +3566,25 @@ chất bình|chat binh
 kim chính|kim chinh
 thượng kiệm|thuong kiem
 lưu phương|luu phuong
-tân thành|tan thanh
-yên lộc|yen loc
 lai thành|lai thanh
 định hóa|dinh hoa
 văn hải|van hai
-kim tân|kim tan
 kim mỹ|kim my
 cồn thoi|con thoi
 kim hải|kim hai
 kim trung
 kim đông|kim dong
-yên thịnh|yen thinh
-khánh thượng|khanh thuong
 khánh dương|khanh duong
-mai sơn|mai son
 khánh thịnh|khanh thinh
-yên phong|yen phong
-yên hòa|yen hoa
-yên thắng|yen thang
 yên từ|yen tu
-yên hưng|yen hung
-yên thành|yen thanh
-yên nhân|yen nhan
-yên mỹ|yen my
 yên mạc|yen mac
-yên đồng|yen dong
-yên thái|yen thai
-yên lâm|yen lam
-hàm rồng|ham rong
-đông thọ|dong tho
 nam ngạn|nam ngan
-trường thi|truong thi
-điện biên|dien bien
-phú sơn|phu son
-lam sơn|lam son
 ba đình|ba dinh
 ngọc trạo|ngoc trao
 đông vệ|dong ve
-đông sơn|dong son
-tân sơn|tan son
 đông cương|dong cuong
 đông hương|dong huong
-đông hải|dong hai
-quảng hưng|quang hung
 quảng thắng|quang thang
-quảng thành|quang thanh
-bắc sơn|bac son
-ba đình|ba dinh
-lam sơn|lam son
-ngọc trạo|ngoc trao
-đông sơn|dong son
-phú sơn|phu son
-quang trung
-trung sơn|trung son
-bắc sơn|bac son
-trường sơn|truong son
 quảng cư|quang cu
 quảng tiến|quang tien
 mường lát|muong lat
@@ -4714,16 +3596,10 @@ pù nhi|pu nhi
 nhi sơn|nhi son
 mường chanh|muong chanh
 hồi xuân|hoi xuan
-thành sơn|thanh son
-trung sơn|trung son
 phú thanh|phu thanh
-trung thành|trung thanh
 phú lệ|phu le
-phú sơn|phu son
-phú xuân|phu xuan
 hiền chung|hien chung
 hiền kiệt|hien kiet
-nam tiến|nam tien
 thiên phủ|thien phu
 phú nghiêm|phu nghiem
 nam xuân|nam xuan
@@ -4733,7 +3609,6 @@ cành nàng|canh nang
 điền hạ|dien ha
 điền quang|dien quang
 điền trung|dien trung
-thành sơn|thanh son
 lương ngoại|luong ngoai
 ái thượng|ai thuong
 lương nội|luong noi
@@ -4742,7 +3617,6 @@ lương trung|luong trung
 lũng niêm|lung niem
 lũng cao|lung cao
 hạ trung|ha trung
-cổ lũng|co lung
 thành lâm|thanh lam
 ban công|ban cong
 kỳ tân|ky tan
@@ -4753,94 +3627,59 @@ trung xuân|trung xuan
 trung thượng|trung thuong
 trung tiến|trung tien
 trung hạ|trung ha
-sơn hà|son ha
-tam thanh
-sơn thủy|son thuy
 na mèo|na meo
 sơn lư|son lu
 tam lư|tam lu
 sơn điện|son dien
 mường mìn|muong min
 yên khương|yen khuong
-yên thắng|yen thang
 trí nang|tri nang
-giao an
-giao thiện|giao thien
-tân phúc|tan phuc
 tam văn|tam van
 lâm phú|lam phu
 lang chánh|lang chanh
-đồng lương|dong luong
 ngọc lặc|ngoc lac
-lam sơn|lam son
-mỹ tân|my tan
 thúy sơn|thuy son
 thạch lập|thach lap
 vân âm|van am
 cao ngọc|cao ngoc
-quang trung
-đồng thịnh|dong thinh
-ngọc liên|ngoc lien
-ngọc sơn|ngoc son
 lộc thịnh|loc thinh
 cao thịnh|cao thinh
 ngọc trung|ngoc trung
 phùng giáo|phung giao
 phùng minh|phung minh
-phúc thịnh|phuc thinh
 nguyệt ấn|nguyet an
 kiên thọ|kien tho
-minh tiến|minh tien
-minh sơn|minh son
 phong sơn|phong son
-cẩm thành|cam thanh
 cẩm quý|cam quy
 cẩm lương|cam luong
-cẩm thạch|cam thach
 cẩm liên|cam lien
-cẩm giang|cam giang
-cẩm bình|cam binh
 cẩm tú|cam tu
 cẩm châu|cam chau
 cẩm tâm|cam tam
 cẩm ngọc|cam ngoc
 cẩm long|cam long
-cẩm yên|cam yen
 cẩm tân|cam tan
-cẩm phú|cam phu
 cẩm vân|cam van
-kim tân|kim tan
-vân du|van du
-thạch lâm|thach lam
 thạch quảng|thach quang
 thạch tượng|thach tuong
 thạch cẩm|thach cam
-thạch sơn|thach son
-thạch bình|thach binh
 thạch định|thach dinh
-thạch đồng|thach dong
 thạch long|thach long
 thành mỹ|thanh my
 thành yên|thanh yen
 thành vinh|thanh vinh
 thành minh|thanh minh
-thành công|thanh cong
 thành tân|thanh tan
 thành trực|thanh truc
 thành tâm|thanh tam
 thành an|thanh an
 thành thọ|thanh tho
 thành tiến|thanh tien
-thành long|thanh long
 thành hưng|thanh hung
-ngọc trạo|ngoc trao
-hà trung|ha trung
 hà long|ha long
 hà vinh|ha vinh
 hà bắc|ha bac
 hoạt giang|hoat giang
-yên dương|yen duong
-hà giang|ha giang
 lĩnh toại|linh toai
 hà ngọc|ha ngoc
 yến sơn|yen son
@@ -4851,40 +3690,16 @@ hà tân|ha tan
 hà tiến|ha tien
 hà bình|ha binh
 hà lai|ha lai
-hà châu|ha chau
 hà thái|ha thai
 hà hải|ha hai
-vĩnh lộc|vinh loc
-vĩnh quang|vinh quang
-vĩnh yên|vinh yen
-vĩnh tiến|vinh tien
-vĩnh long|vinh long
-vĩnh phúc|vinh phuc
-vĩnh hưng|vinh hung
-vĩnh hòa|vinh hoa
 vĩnh hùng|vinh hung
-minh tân|minh tan
-ninh khang
-vĩnh thịnh|vinh thinh
-vĩnh an|vinh an
-thống nhất|thong nhat
-yên lâm|yen lam
 yên tâm|yen tam
-yên phú|yen phu
 quý lộc|quy loc
-yên thọ|yen tho
-yên trung|yen trung
 yên trường|yen truong
-yên phong|yen phong
-yên thái|yen thai
 yên hùng|yen hung
-yên thịnh|yen thinh
-yên ninh|yen ninh
-yên lạc|yen lac
 định tăng|dinh tang
 định hòa|dinh hoa
 định thành|dinh thanh
-định công|dinh cong
 định tân|dinh tan
 định tiến|dinh tien
 định long|dinh long
@@ -4893,75 +3708,42 @@ quán lào|quan lao
 định hưng|dinh hung
 định hải|dinh hai
 định bình|dinh binh
-xuân hồng|xuan hong
-thọ xuân|tho xuan
 bắc lương|bac luong
-nam giang
-xuân phong|xuan phong
-thọ lộc|tho loc
-xuân trường|xuan truong
-xuân hòa|xuan hoa
 thọ hải|tho hai
 tây hồ|tay ho
-xuân giang|xuan giang
 xuân sinh|xuan sinh
 xuân hưng|xuan hung
 thọ diên|tho dien
 thọ lâm|tho lam
-thọ xương|tho xuong
 xuân bái|xuan bai
-xuân phú|xuan phu
 sao vàng|sao vang
-lam sơn|lam son
 xuân thiên|xuan thien
 thuận minh|thuan minh
 thọ lập|tho lap
-quảng phú|quang phu
 xuân tín|xuan tin
-phú xuân|phu xuan
-xuân lai|xuan lai
-xuân lập|xuan lap
-xuân minh|xuan minh
 trường xuân|truong xuan
 bát mọt|bat mot
-yên nhân|yen nhan
 xuân lẹ|xuan le
-vạn xuân|van xuan
-lương sơn|luong son
 xuân cao|xuan cao
 luận thành|luan thanh
 luận khê|luan khe
 xuân thắng|xuan thang
-xuân lộc|xuan loc
 thường xuân|thuong xuan
-xuân dương|xuan duong
 thọ thanh|tho thanh
 ngọc phụng|ngoc phung
 xuân chinh|xuan chinh
-tân thành|tan thanh
 triệu sơn|trieu son
-thọ sơn|tho son
 thọ bình|tho binh
 thọ tiến|tho tien
-hợp lý|hop ly
-hợp tiến|hop tien
-hợp thành|hop thanh
 triệu thành|trieu thanh
 hợp thắng|hop thang
-minh sơn|minh son
 dân lực|dan luc
 dân lý|dan ly
-dân quyền|dan quyen
 an nông|an nong
-văn sơn|van son
-thái hòa|thai hoa
 đồng lợi|dong loi
-đồng tiến|dong tien
-đồng thắng|dong thang
 tiến nông|tien nong
 khuyến nông|khuyen nong
 xuân thịnh|xuan thinh
-xuân lộc|xuan loc
 thọ dân|tho dan
 xuân thọ|xuan tho
 thọ tân|tho tan
@@ -4971,7 +3753,6 @@ thọ phú|tho phu
 thọ vực|tho vuc
 thọ thế|tho the
 nông trường|nong truong
-bình sơn|binh son
 thiệu hóa|thieu hoa
 thiệu ngọc|thieu ngoc
 thiệu vũ|thieu vu
@@ -4990,12 +3771,10 @@ thiệu thành|thieu thanh
 thiệu toán|thieu toan
 thiệu chính|thieu chinh
 thiệu hòa|thieu hoa
-minh tâm|minh tam
 thiệu viên|thieu vien
 thiệu lý|thieu ly
 thiệu vận|thieu van
 thiệu trung|thieu trung
-tân châu|tan chau
 thiệu vân|thieu van
 thiệu giao|thieu giao
 thiệu khánh|thieu khanh
@@ -5049,23 +3828,16 @@ tiến lộc|tien loc
 lộc sơn|loc son
 cầu lộc|cau loc
 thành lộc|thanh loc
-tuy lộc|tuy loc
 phong lộc|phong loc
-mỹ lộc|my loc
 thuần lộc|thuan loc
-xuân lộc|xuan loc
 hoa lộc|hoa loc
 liên lộc|lien loc
 quang lộc|quang loc
-phú lộc|phu loc
 hòa lộc|hoa loc
 minh lộc|minh loc
 hưng lộc|hung loc
-hải lộc|hai loc
-đa lộc|da loc
 ngư lộc|ngu loc
 nga sơn|nga son
-ba đình|ba dinh
 nga vịnh|nga vinh
 nga văn|nga van
 nga thiện|nga thien
@@ -5090,19 +3862,13 @@ nga thắng|nga thang
 nga trường|nga truong
 yên cát|yen cat
 bãi trành|bai tranh
-xuân hòa|xuan hoa
 xuân bình|xuan binh
 hóa quỳ|hoa quy
 cát vân|cat van
 cát tân|cat tan
-tân bình|tan binh
 bình lương|binh luong
 thanh quân|thanh quan
-thanh xuân|thanh xuan
 thanh hòa|thanh hoa
-thanh phong
-thanh lâm|thanh lam
-thanh sơn|thanh son
 thượng ninh|thuong ninh
 bến sung|ben sung
 cán khê|can khe
@@ -5110,22 +3876,14 @@ xuân du|xuan du
 phượng nghi|phuong nghi
 mậu lâm|mau lam
 xuân khang|xuan khang
-phú nhuận|phu nhuan
-hải long|hai long
 xuân thái|xuan thai
 xuân phúc|xuan phuc
-yên thọ|yen tho
-yên lạc|yen lac
-thanh tân|thanh tan
 thanh kỳ|thanh ky
 nông cống|nong cong
-tân phúc|tan phuc
 tân thọ|tan tho
 hoàng sơn|hoang son
 tân khang|tan khang
 hoàng giang|hoang giang
-trung chính|trung chinh
-trung thành|trung thanh
 tế thắng|te thang
 tế lợi|te loi
 tế nông|te nong
@@ -5133,42 +3891,20 @@ minh nghĩa|minh nghia
 minh khôi|minh khoi
 vạn hòa|van hoa
 trường trung|truong trung
-vạn thắng|van thang
-trường giang|truong giang
 vạn thiện|van thien
-thăng long|thang long
 trường minh|truong minh
-trường sơn|truong son
 thăng bình|thang binh
 công liêm|cong liem
 tượng văn|tuong van
 thăng thọ|thang tho
-tượng lĩnh|tuong linh
 tượng sơn|tuong son
 công chính|cong chinh
-yên mỹ|yen my
 rừng thông|rung thong
-đông hoàng|dong hoang
-đông ninh|dong ninh
-đông hòa|dong hoa
-đông yên|dong yen
-đông lĩnh|dong linh
-đông minh|dong minh
 đông thanh|dong thanh
-đông tiến|dong tien
-đông khê|dong khe
 đông thịnh|dong thinh
 đông văn|dong van
-đông phú|dong phu
 đông nam|dong nam
-đông quang|dong quang
-đông vinh|dong vinh
-đông tân|dong tan
-an hưng|an hung
-tân phong|tan phong
-quảng thịnh|quang thinh
 quảng trạch|quang trach
-quảng đức|quang duc
 quảng định|quang dinh
 quảng đông|quang dong
 quảng nhân|quang nhan
@@ -5176,23 +3912,16 @@ quảng ninh|quang ninh
 quảng bình|quang binh
 quảng hợp|quang hop
 quảng văn|quang van
-quảng long|quang long
-quảng yên|quang yen
 quảng hòa|quang hoa
-quảng khê|quang khe
 quảng trung|quang trung
-quảng chính|quang chinh
 quảng ngọc|quang ngoc
 quảng trường|quang truong
 quảng cát|quang cat
 quảng phúc|quang phuc
-quảng minh|quang minh
 quảng hùng|quang hung
 quảng giao|quang giao
-quảng phú|quang phu
 quảng tâm|quang tam
 quảng thọ|quang tho
-quảng châu|quang chau
 quảng vinh|quang vinh
 quảng đại|quang dai
 quảng hải|quang hai
@@ -5202,55 +3931,30 @@ tiên trang|tien trang
 quảng nham|quang nham
 quảng thạch|quang thach
 quảng thái|quang thai
-hải hòa|hai hoa
-hải châu|hai chau
-thanh thủy|thanh thuy
-thanh sơn|thanh son
-hải ninh|hai ninh
 anh sơn|anh son
 ngọc lĩnh|ngoc linh
-hải an|hai an
 các sơn|cac son
-tân dân|tan dan
 hải lĩnh|hai linh
-định hải|dinh hai
-phú sơn|phu son
-ninh hải|ninh hai
-nguyên bình|nguyen binh
 hải nhân|hai nhan
-bình minh|binh minh
-hải thanh|hai thanh
-phú lâm|phu lam
-xuân lâm|xuan lam
 trúc lâm|truc lam
 hải bình|hai binh
-tân trường|tan truong
 tùng lâm|tung lam
 tĩnh hải|tinh hai
-mai lâm|mai lam
 trường lâm|truong lam
-hải yến|hai yen
 hải thượng|hai thuong
 nghi sơn|nghi son
-hải hà|hai ha
 đông vĩnh|dong vinh
 hà huy tập|ha huy tap
-lê lợi|le loi
 quán bàu|quan bau
 hưng bình|hung binh
 hưng phúc|hung phuc
 hưng dũng|hung dung
-cửa nam|cua nam
-quang trung
 đội cung|doi cung
 lê mao|le mao
-trường thi|truong thi
 bến thủy|ben thuy
-hồng sơn|hong son
 trung đô|trung do
 nghi phú|nghi phu
 hưng đông|hung dong
-hưng lộc|hung loc
 hưng hòa|hung hoa
 vinh tân|vinh tan
 nghi thuỷ|nghi thuy
@@ -5260,18 +3964,13 @@ nghi hòa|nghi hoa
 nghi hải|nghi hai
 nghi hương|nghi huong
 nghi thu
-kim sơn|kim son
 thông thụ|thong thu
-đồng văn|dong van
 hạnh dịch|hanh dich
-tiền phong|tien phong
 nậm giải|nam giai
-tri lễ|tri le
 châu kim|chau kim
 mường nọc|muong noc
 châu thôn|chau thon
 nậm nhoóng|nam nhoong
-quang phong
 căm muộn|cam muon
 tân lạc|tan lac
 châu bính|chau binh
@@ -5281,13 +3980,11 @@ châu nga|chau nga
 châu tiến|chau tien
 châu hạnh|chau hanh
 châu thắng|chau thang
-châu phong|chau phong
 châu bình|chau binh
 châu hoàn|chau hoan
 diên lãm|dien lam
 mường xén|muong xen
 mỹ lý|my ly
-bắc lý|bac ly
 keng đu|keng du
 đoọc mạy|dooc may
 huồi tụ|huoi tu
@@ -5302,68 +3999,41 @@ tà cạ|ta ca
 chiêu lưu|chieu luu
 mường típ|muong tip
 hữu kiệm|huu kiem
-tây sơn|tay son
 mường ải|muong ai
 na ngoi
 nậm càn|nam can
 thạch giám|thach giam
-mai sơn|mai son
 nhôn mai|nhon mai
 hữu khuông|huu khuong
 yên tĩnh|yen tinh
-nga my
 xiêng my|xieng my
 lưỡng minh|luong minh
-yên hòa|yen hoa
 yên na|yen na
 lưu kiền|luu kien
 xá lượng|xa luong
 tam thái|tam thai
 tam đình|tam dinh
-yên thắng|yen thang
-tam quang
-tam hợp|tam hop
 hoà hiếu|hoa hieu
 nghĩa đàn|nghia dan
 nghĩa mai|nghia mai
 nghĩa yên|nghia yen
-nghĩa lạc|nghia lac
-nghĩa lâm|nghia lam
-nghĩa sơn|nghia son
-nghĩa lợi|nghia loi
-nghĩa bình|nghia binh
 nghĩa thọ|nghia tho
-nghĩa minh|nghia minh
-nghĩa phú|nghia phu
-nghĩa hưng|nghia hung
-nghĩa hồng|nghia hong
-nghĩa thịnh|nghia thinh
-nghĩa trung|nghia trung
 nghĩa hội|nghia hoi
-nghĩa thành|nghia thanh
-quang phong
-quang tiến|quang tien
 nghĩa hiếu|nghia hieu
-long sơn|long son
 nghĩa tiến|nghia tien
 nghĩa mỹ|nghia my
 tây hiếu|tay hieu
-nghĩa thuận|nghia thuan
 đông hiếu|dong hieu
 nghĩa đức|nghia duc
-nghĩa an|nghia an
 nghĩa long|nghia long
 nghĩa lộc|nghia loc
 nghĩa khánh|nghia khanh
 quỳ hợp|quy hop
-yên hợp|yen hop
-châu tiến|chau tien
 châu hồng|chau hong
 đồng hợp|dong hop
 châu thành|chau thanh
 liên hợp|lien hop
 châu lộc|chau loc
-tam hợp|tam hop
 châu cường|chau cuong
 châu quang|chau quang
 thọ hợp|tho hop
@@ -5372,17 +4042,14 @@ nghĩa xuân|nghia xuan
 châu thái|chau thai
 châu đình|chau dinh
 văn lợi|van loi
-nam sơn|nam son
 châu lý|chau ly
 hạ sơn|ha son
-bắc sơn|bac son
 cầu giát|cau giat
 quỳnh thắng|quynh thang
 quỳnh vinh|quynh vinh
 quỳnh lộc|quynh loc
 quỳnh thiện|quynh thien
 quỳnh lập|quynh lap
-quỳnh trang|quynh trang
 quỳnh tân|quynh tan
 quỳnh châu|quynh chau
 mai hùng|mai hung
@@ -5390,32 +4057,20 @@ quỳnh dị|quynh di
 quỳnh xuân|quynh xuan
 quỳnh phương|quynh phuong
 quỳnh liên|quynh lien
-tân sơn|tan son
 quỳnh văn|quynh van
-ngọc sơn|ngoc son
 quỳnh tam|quynh tam
-quỳnh hoa|quynh hoa
 quỳnh thạch|quynh thach
 quỳnh bảng|quynh bang
-quỳnh mỹ|quynh my
 quỳnh thanh|quynh thanh
 quỳnh hậu|quynh hau
-quỳnh lâm|quynh lam
 quỳnh đôi|quynh doi
 quỳnh lương|quynh luong
-quỳnh hồng|quynh hong
 quỳnh yên|quynh yen
 quỳnh bá|quynh ba
-quỳnh minh|quynh minh
 quỳnh diễn|quynh dien
-quỳnh hưng|quynh hung
 quỳnh giang|quynh giang
-quỳnh ngọc|quynh ngoc
 quỳnh nghĩa|quynh nghia
-an hòa|an hoa
 tiến thủy|tien thuy
-sơn hải|son hai
-quỳnh thọ|quynh tho
 quỳnh thuận|quynh thuan
 quỳnh long|quynh long
 tân thắng|tan thang
@@ -5426,55 +4081,25 @@ cam lâm|cam lam
 thạch ngàn|thach ngan
 đôn phục|don phuc
 mậu đức|mau duc
-châu khê|chau khe
 chi khê|chi khe
 bồng khê|bong khe
 yên khê|yen khe
 lục dạ|luc da
 môn sơn|mon son
-tân kỳ|tan ky
-tân hợp|tan hop
-tân phú|tan phu
-tân xuân|tan xuan
 giai xuân|giai xuan
-nghĩa bình|nghia binh
-nghĩa đồng|nghia dong
-đồng văn|dong van
-nghĩa thái|nghia thai
 nghĩa hợp|nghia hop
 nghĩa hoàn|nghia hoan
-nghĩa phúc|nghia phuc
 tiên kỳ|tien ky
-tân an|tan an
 nghĩa dũng|nghia dung
-tân long|tan long
-kỳ sơn|ky son
-hương sơn|huong son
-kỳ tân|ky tan
-phú sơn|phu son
-tân hương|tan huong
 nghĩa hành|nghia hanh
-anh sơn|anh son
-thọ sơn|tho son
-thành sơn|thanh son
-bình sơn|binh son
-tam sơn|tam son
 đỉnh sơn|dinh son
-hùng sơn|hung son
-cẩm sơn|cam son
 đức sơn|duc son
 tường sơn|tuong son
-hoa sơn|hoa son
 tào sơn|tao son
-vĩnh sơn|vinh son
 lạng sơn|lang son
 hội sơn|hoi son
-thạch sơn|thach son
-phúc sơn|phuc son
-long sơn|long son
 khai sơn|khai son
 lĩnh sơn|linh son
-cao sơn|cao son
 diễn châu|dien chau
 diễn lâm|dien lam
 diễn đoài|dien doai
@@ -5505,123 +4130,67 @@ diễn phúc|dien phuc
 diễn cát|dien cat
 diễn thịnh|dien thinh
 diễn tân|dien tan
-minh châu|minh chau
 diễn thọ|dien tho
 diễn lợi|dien loi
 diễn lộc|dien loc
 diễn trung|dien trung
 diễn an|dien an
 diễn phú|dien phu
-yên thành|yen thanh
 mã thành|ma thanh
 tiến thành|tien thanh
 lăng thành|lang thanh
-tân thành|tan thanh
 đức thành|duc thanh
 kim thành|kim thanh
 hậu thành|hau thanh
 hùng thành|hung thanh
 đô thành|do thanh
 thọ thành|tho thanh
-quang thành|quang thanh
 tây thành|tay thanh
-phúc thành|phuc thanh
 hồng thành|hong thanh
 đồng thành|dong thanh
-phú thành|phu thanh
 hoa thành|hoa thanh
 tăng thành|tang thanh
 văn thành|van thanh
 thịnh thành|thinh thanh
-hợp thành|hop thanh
-xuân thành|xuan thanh
 bắc thành|bac thanh
 nhân thành|nhan thanh
-trung thành|trung thanh
 long thành|long thanh
-minh thành|minh thanh
-nam thành|nam thanh
 vĩnh thành|vinh thanh
 lý thành|ly thanh
-khánh thành|khanh thanh
 viên thành|vien thanh
-đại thành|dai thanh
 liên thành|lien thanh
 bảo thành|bao thanh
-mỹ thành|my thanh
 công thành|cong thanh
-sơn thành|son thanh
-đô lương|do luong
 giang sơn đông|giang son dong
 giang sơn tây|giang son tay
-lam sơn|lam son
 bồi sơn|boi son
-hồng sơn|hong son
 bài sơn|bai son
-ngọc sơn|ngoc son
-bắc sơn|bac son
 tràng sơn|trang son
-thượng sơn|thuong son
-hòa sơn|hoa son
 đặng sơn|dang son
-đông sơn|dong son
-nam sơn|nam son
 lưu sơn|luu son
-yên sơn|yen son
-văn sơn|van son
 đà sơn|da son
 lạc sơn|lac son
-tân sơn|tan son
-thái sơn|thai son
-quang sơn|quang son
 thịnh sơn|thinh son
-trung sơn|trung son
-xuân sơn|xuan son
-minh sơn|minh son
 thuận sơn|thuan son
 nhân sơn|nhan son
 hiến sơn|hien son
 mỹ sơn|my son
 trù sơn|tru son
-đại sơn|dai son
 thanh chương|thanh chuong
 cát văn|cat van
 thanh nho
 hạnh lâm|hanh lam
-thanh sơn|thanh son
-thanh hòa|thanh hoa
 phong thịnh|phong thinh
-thanh phong
-thanh mỹ|thanh my
 thanh tiên|thanh tien
 thanh liên|thanh lien
-đại đồng|dai dong
 thanh đồng|thanh dong
 thanh ngọc|thanh ngoc
-thanh hương|thanh huong
-ngọc lâm|ngoc lam
 thanh lĩnh|thanh linh
-đồng văn|dong van
-ngọc sơn|ngoc son
-thanh thịnh|thanh thinh
-thanh an
 thanh chi
 xuân tường|xuan tuong
 thanh dương|thanh duong
-thanh lương|thanh luong
-thanh khê|thanh khe
 võ liệt|vo liet
-thanh long
-thanh thủy|thanh thuy
 thanh khai
-thanh yên|thanh yen
-thanh hà|thanh ha
-thanh giang
-thanh tùng|thanh tung
-thanh lâm|thanh lam
-thanh mai
-thanh xuân|thanh xuan
-thanh đức|thanh duc
 quán hành|quan hanh
 nghi văn|nghi van
 nghi yên|nghi yen
@@ -5651,25 +4220,15 @@ nghi xuân|nghi xuan
 nghi liên|nghi lien
 nghi vạn|nghi van
 nghi ân|nghi an
-phúc thọ|phuc tho
 nghi kim
 nghi đức|nghi duc
 nghi thái|nghi thai
-nam hưng|nam hung
 nam nghĩa|nam nghia
-nam thanh
 nam anh
-nam xuân|nam xuan
-nam thái|nam thai
 nam đàn|nam dan
 nam lĩnh|nam linh
-nam giang
-xuân hòa|xuan hoa
-hùng tiến|hung tien
 thượng tân lộc|thuong tan loc
-kim liên|kim lien
 hồng long|hong long
-xuân lâm|xuan lam
 nam cát|nam cat
 khánh sơn|khanh son
 trung phúc cường|trung phuc cuong
@@ -5680,42 +4239,26 @@ hưng yên|hung yen
 hưng yên bắc|hung yen bac
 hưng tây|hung tay
 hưng chính|hung chinh
-hưng đạo|hung dao
 hưng mỹ|hung my
-hưng thịnh|hung thinh
 hưng lĩnh|hung linh
 hưng thông|hung thong
 hưng tân|hung tan
 hưng lợi|hung loi
 hưng nghĩa|hung nghia
-hưng phúc|hung phuc
 long xá|long xa
 châu nhân|chau nhan
 xuân lam|xuan lam
-hưng thành|hung thanh
-trần phú|tran phu
-nam hà|nam ha
-bắc hà|bac ha
-nguyễn du|nguyen du
-tân giang|tan giang
 đại nài|dai nai
-hà huy tập|ha huy tap
 thạch trung|thach trung
 thạch quý|thach quy
 thạch linh|thach linh
-văn yên|van yen
 thạch hạ|thach ha
 đồng môn|dong mon
 thạch hưng|thach hung
-thạch bình|thach binh
-bắc hồng|bac hong
-nam hồng|nam hong
-trung lương|trung luong
 đức thuận|duc thuan
 đậu liêu|dau lieu
 thuận lộc|thuan loc
 phố châu|pho chau
-tây sơn|tay son
 sơn hồng|son hong
 sơn tiến|son tien
 sơn lâm|son lam
@@ -5730,34 +4273,25 @@ tân mỹ hà|tan my ha
 quang diệm|quang diem
 sơn trung|son trung
 sơn bằng|son bang
-sơn bình|son binh
 sơn kim 1|son kim 1
 sơn kim 2|son kim 2
 sơn trà|son tra
 sơn long|son long
-kim hoa
 sơn hàm|son ham
-sơn phú|son phu
 sơn trường|son truong
 đức thọ|duc tho
 quang vĩnh|quang vinh
 tùng châu|tung chau
-trường sơn|truong son
-liên minh|lien minh
 yên hồ|yen ho
 tùng ảnh|tung anh
 bùi la nhân|bui la nhan
 thanh bình thịnh|thanh binh thinh
 lâm trung thủy|lam trung thuy
-hòa lạc|hoa lac
-tân dân|tan dan
 an dũng|an dung
 đức đồng|duc dong
 đức lạng|duc lang
-tân hương|tan huong
 vũ quang|vu quang
 ân phú|an phu
-đức giang|duc giang
 đức lĩnh|duc linh
 thọ điền|tho dien
 đức hương|duc huong
@@ -5765,22 +4299,16 @@ thọ điền|tho dien
 đức liên|duc lien
 hương minh|huong minh
 quang thọ|quang tho
-xuân an|xuan an
 xuân hội|xuan hoi
 đan trường|dan truong
 xuân phổ|xuan pho
 xuân hải|xuan hai
-xuân giang|xuan giang
 tiên điền|tien dien
 xuân yên|xuan yen
 xuân mỹ|xuan my
-xuân thành|xuan thanh
-xuân viên|xuan vien
-xuân hồng|xuan hong
 cỗ đạm|co dam
 xuân liên|xuan lien
 xuân lĩnh|xuan linh
-xuân lam|xuan lam
 cương gián|cuong gian
 tân lộc|tan loc
 hồng lộc|hong loc
@@ -5788,31 +4316,21 @@ thiên lộc|thien loc
 thuần thiện|thuan thien
 thịnh lộc|thinh loc
 vượng lộc|vuong loc
-bình an|binh an
 thanh lộc|thanh loc
 kim song trường|kim song truong
 thường nga|thuong nga
 tùng lộc|tung loc
-phú lộc|phu loc
 ích hậu|ich hau
 gia hanh
 khánh vĩnh yên|khanh vinh yen
 trung lộc|trung loc
-xuân lộc|xuan loc
 thượng lộc|thuong loc
-quang lộc|quang loc
-đồng lộc|dong loc
-mỹ lộc|my loc
-sơn lộc|son loc
-phù lưu|phu luu
 hương khê|huong khe
 điền mỹ|dien my
 hà linh|ha linh
 hương thủy|huong thuy
 hòa hải|hoa hai
-phúc đồng|phuc dong
 hương giang|huong giang
-lộc yên|loc yen
 hương bình|huong binh
 hương long|huong long
 phú gia|phu gia
@@ -5824,27 +4342,21 @@ hương xuân|huong xuan
 phúc trạch|phuc trach
 hương trà|huong tra
 hương trạch|huong trach
-hương lâm|huong lam
 hương liên|huong lien
 thạch hà|thach ha
-ngọc sơn|ngoc son
 lộc hà|loc ha
 thạch hải|thach hai
 thạch mỹ|thach my
 thạch kim|thach kim
 thạch châu|thach chau
 thạch kênh|thach kenh
-thạch sơn|thach son
 thạch liên|thach lien
 đỉnh bàn|dinh ban
 hộ độ|ho do
-việt tiến|viet tien
 thạch khê|thach khe
-thạch long|thach long
 thạch trị|thach tri
 thạch lạc|thach lac
 thạch ngọc|thach ngoc
-tượng sơn|tuong son
 thạch văn|thach van
 lưu vĩnh sơn|luu vinh son
 thạch thắng|thach thang
@@ -5852,35 +4364,24 @@ thạch đài|thach dai
 thạch hội|thach hoi
 tân lâm hương|tan lam huong
 thạch xuân|thach xuan
-nam điền|nam dien
 mai phụ|mai phu
 cẩm xuyên|cam xuyen
 thiên cầm|thien cam
-yên hòa|yen hoa
 cẩm dương|cam duong
-cẩm bình|cam binh
 cẩm vĩnh|cam vinh
-cẩm thành|cam thanh
 cẩm quang|cam quang
-cẩm thạch|cam thach
 cẩm nhượng|cam nhuong
 nam phúc thăng|nam phuc thang
 cẩm duệ|cam due
-cẩm lĩnh|cam linh
 cẩm quan|cam quan
 cẩm hà|cam ha
 cẩm lộc|cam loc
-cẩm hưng|cam hung
-cẩm thịnh|cam thinh
 cẩm mỹ|cam my
-cẩm trung|cam trung
-cẩm sơn|cam son
 cẩm lạc|cam lac
 cẩm minh|cam minh
 hưng trí|hung tri
 kỳ xuân|ky xuan
 kỳ bắc|ky bac
-kỳ phú|ky phu
 kỳ phong|ky phong
 kỳ tiến|ky tien
 kỳ giang|ky giang
@@ -5892,12 +4393,10 @@ kỳ trung|ky trung
 kỳ thọ|ky tho
 kỳ tây|ky tay
 kỳ lợi|ky loi
-kỳ thượng|ky thuong
 kỳ hải|ky hai
 kỳ thư|ky thu
 kỳ hà|ky ha
 kỳ châu|ky chau
-kỳ tân|ky tan
 kỳ trinh|ky trinh
 kỳ thịnh|ky thinh
 kỳ hoa|ky hoa
@@ -5905,15 +4404,10 @@ kỳ phương|ky phuong
 kỳ long|ky long
 lâm hợp|lam hop
 kỳ liên|ky lien
-kỳ sơn|ky son
 kỳ nam|ky nam
 kỳ lạc|ky lac
-hải thành|hai thanh
-đồng phú|dong phu
-bắc lý|bac ly
 nam lý|nam ly
 đồng hải|dong hai
-đồng sơn|dong son
 phú hải|phu hai
 bắc nghĩa|bac nghia
 đức ninh đông|duc ninh dong
@@ -5922,7 +4416,6 @@ lộc ninh|loc ninh
 bảo ninh|bao ninh
 nghĩa ninh|nghia ninh
 thuận đức|thuan duc
-đức ninh|duc ninh
 quy đạt|quy dat
 dân hóa|dan hoa
 trọng hóa|trong hoa
@@ -5947,7 +4440,6 @@ thuận hóa|thuan hoa
 lâm hóa|lam hoa
 lê hóa|le hoa
 sơn hóa|son hoa
-đồng hóa|dong hoa
 ngư hóa|ngu hoa
 thạch hóa|thach hoa
 đức hóa|duc hoa
@@ -5958,38 +4450,17 @@ châu hóa|chau hoa
 cao quảng|cao quang
 văn hóa|van hoa
 ba đồn|ba don
-quảng hợp|quang hop
 quảng kim|quang kim
-quảng đông|quang dong
-quảng phú|quang phu
-quảng châu|quang chau
-quảng thạch|quang thach
-quảng lưu|quang luu
 quảng tùng|quang tung
 cảnh dương|canh duong
-quảng tiến|quang tien
-quảng hưng|quang hung
 quảng xuân|quang xuan
 cảnh hóa|canh hoa
 liên trường|lien truong
 quảng phương|quang phuong
-quảng long|quang long
 phù hóa|phu hoa
-quảng thọ|quang tho
 quảng tiên|quang tien
-quảng thanh|quang thanh
-quảng trung|quang trung
-quảng phong|quang phong
 quảng thuận|quang thuan
-quảng tân|quang tan
-quảng hải|quang hai
-quảng sơn|quang son
-quảng lộc|quang loc
 quảng thủy|quang thuy
-quảng văn|quang van
-quảng phúc|quang phuc
-quảng hòa|quang hoa
-quảng minh|quang minh
 hoàn lão|hoan lao
 nt việt trung|nt viet trung
 xuân trạch|xuan trach
@@ -5999,11 +4470,8 @@ bắc trạch|bac trach
 lâm trạch|lam trach
 thanh trạch|thanh trach
 liên trạch|lien trach
-phúc trạch|phuc trach
 cự nẫm|cu nam
-hải phú|hai phu
 thượng trạch|thuong trach
-sơn lộc|son loc
 hưng trạch|hung trach
 đồng trạch|dong trach
 đức trạch|duc trach
@@ -6019,38 +4487,27 @@ tân trạch|tan trach
 nam trạch|nam trach
 lý trạch|ly trach
 quán hàu|quan hau
-trường sơn|truong son
 lương ninh|luong ninh
-vĩnh ninh|vinh ninh
 võ ninh|vo ninh
-hải ninh|hai ninh
 hàm ninh|ham ninh
 duy ninh
 gia ninh
-trường xuân|truong xuan
-hiền ninh|hien ninh
 tân ninh|tan ninh
-xuân ninh|xuan ninh
-an ninh
-vạn ninh|van ninh
 nt lệ ninh|nt le ninh
 kiến giang|kien giang
 hồng thủy|hong thuy
 ngư thủy bắc|ngu thuy bac
 hoa thủy|hoa thuy
-thanh thủy|thanh thuy
 an thủy|an thuy
 phong thủy|phong thuy
 cam thủy|cam thuy
 ngân thủy|ngan thuy
-sơn thủy|son thuy
 lộc thủy|loc thuy
 liên thủy|lien thuy
 hưng thủy|hung thuy
 dương thủy|duong thuy
 tân thủy|tan thuy
 phú thủy|phu thuy
-xuân thủy|xuan thuy
 mỹ thủy|my thuy
 ngư thủy|ngu thuy
 mai thủy|mai thuy
@@ -6062,32 +4519,24 @@ lâm thủy|lam thuy
 đông giang|dong giang
 phường 1|phuong 1|p.1|p. 1|p1|p 1
 đông lễ|dong le
-đông thanh|dong thanh
 phường 2|phuong 2|p.2|p. 2|p2|p 2
 phường 4|phuong 4|p.4|p. 4|p4|p 4
 phường 5|phuong 5|p.5|p. 5|p5|p 5
 đông lương|dong luong
 phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 1|phuong 1|p.1|p. 1|p1|p 1
 an đôn|an don
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 3|phuong 3|p.3|p. 3|p3|p 3
 hồ xá|ho xa
 bến quan|ben quan
 vĩnh thái|vinh thai
 vĩnh tú|vinh tu
 vĩnh chấp|vinh chap
 trung nam
-kim thạch|kim thach
-vĩnh long|vinh long
 vĩnh khê|vinh khe
-vĩnh hòa|vinh hoa
 vĩnh thủy|vinh thuy
 vĩnh lâm|vinh lam
 hiền thành|hien thanh
 cửa tùng|cua tung
 vĩnh hà|vinh ha
-vĩnh sơn|vinh son
 vĩnh giang|vinh giang
 vĩnh ô|vinh o
 khe sanh
@@ -6097,12 +4546,7 @@ hướng việt|huong viet
 hướng phùng|huong phung
 hướng sơn|huong son
 hướng linh|huong linh
-tân hợp|tan hop
 hướng tân|huong tan
-tân thành|tan thanh
-tân long|tan long
-tân lập|tan lap
-tân liên|tan lien
 hướng lộc|huong loc
 ba tầng|ba tang
 a dơi|a doi
@@ -6110,7 +4554,6 @@ gio linh
 cửa việt|cua viet
 trung giang
 trung hải|trung hai
-trung sơn|trung son
 phong bình|phong binh
 gio mỹ|gio my
 gio hải|gio hai
@@ -6127,7 +4570,6 @@ krông klang|krong klang
 mò ó|mo o
 hướng hiệp|huong hiep
 đa krông|da krong
-triệu nguyên|trieu nguyen
 ba lòng|ba long
 ba nang
 tà long|ta long
@@ -6138,8 +4580,6 @@ a bung
 a ngo
 cam lộ|cam lo
 cam tuyền|cam tuyen
-thanh an
-cam thủy|cam thuy
 cam thành|cam thanh
 cam hiếu|cam hieu
 cam chính|cam chinh
@@ -6154,51 +4594,35 @@ triệu thuận|trieu thuan
 triệu đại|trieu dai
 triệu hòa|trieu hoa
 triệu lăng|trieu lang
-triệu sơn|trieu son
 triệu long|trieu long
 triệu tài|trieu tai
 triệu trung|trieu trung
 triệu ái|trieu ai
 triệu thượng|trieu thuong
 triệu giang|trieu giang
-triệu thành|trieu thanh
 diên sanh|dien sanh
-hải an|hai an
 hải ba|hai ba
 hải quy|hai quy
 hải quế|hai que
-hải hưng|hai hung
-hải phú|hai phu
 hải lệ|hai le
-hải thượng|hai thuong
 hải dương|hai duong
 hải định|hai dinh
 hải lâm|hai lam
-hải phong|hai phong
 hải trường|hai truong
-hải sơn|hai son
 hải chánh|hai chanh
 hải khê|hai khe
 tây lộc|tay loc
-thuận lộc|thuan loc
-gia hội|gia hoi
 phú hậu|phu hau
 thuận hòa|thuan hoa
 đông ba|dong ba
-kim long
 vỹ dạ|vy da
 phường đúc|phuong duc
-vĩnh ninh|vinh ninh
 phú hội|phu hoi
-phú nhuận|phu nhuan
-xuân phú|xuan phu
 trường an|truong an
 phước vĩnh|phuoc vinh
 an cựu|an cuu
-an hòa|an hoa
 hương sơ|huong so
 thuỷ biều|thuy bieu
-hương long|huong long
 thuỷ xuân|thuy xuan
 an đông|an dong
 an tây|an tay
@@ -6206,10 +4630,8 @@ phong điền|phong dien
 điền hương|dien huong
 điền môn|dien mon
 điền lộc|dien loc
-phong bình|phong binh
 điền hòa|dien hoa
 phong chương|phong chuong
-phong hải|phong hai
 điền hải|dien hai
 phong hòa|phong hoa
 phong thu
@@ -6217,35 +4639,20 @@ phong hiền|phong hien
 phong mỹ|phong my
 phong an
 phong xuân|phong xuan
-phong sơn|phong son
-quảng thái|quang thai
 quảng ngạn|quang ngan
 quảng lợi|quang loi
 quảng công|quang cong
 quảng phước|quang phuoc
-quảng vinh|quang vinh
-quảng an|quang an
-quảng thành|quang thanh
-quảng thọ|quang tho
-quảng phú|quang phu
 thuận an|thuan an
 phú thuận|phu thuan
 phú dương|phu duong
 phú mậu|phu mau
 phú an|phu an
-phú hải|phu hai
-phú xuân|phu xuan
 phú diên|phu dien
-phú thanh|phu thanh
-phú mỹ|phu my
-phú thượng|phu thuong
 phú hồ|phu ho
 vinh xuân|vinh xuan
-phú lương|phu luong
-phú đa|phu da
 vinh thanh
 vinh an
-phú gia|phu gia
 vinh hà|vinh ha
 phú bài|phu bai
 thủy vân|thuy van
@@ -6257,67 +4664,43 @@ thủy lương|thuy luong
 thủy bằng|thuy bang
 thủy tân|thuy tan
 thủy phù|thuy phu
-phú sơn|phu son
 dương hòa|duong hoa
 tứ hạ|tu ha
-hải dương|hai duong
 hương phong|huong phong
 hương toàn|huong toan
 hương vân|huong van
 hương văn|huong van
 hương vinh|huong vinh
-hương xuân|huong xuan
 hương chữ|huong chu
 hương an|huong an
-hương bình|huong binh
 hương hồ|huong ho
 hương thọ|huong tho
 bình tiến|binh tien
-bình thành|binh thanh
 a lưới|a luoi
-hồng vân|hong van
 hồng hạ|hong ha
 hồng kim|hong kim
-trung sơn|trung son
 hương nguyên|huong nguyen
 hồng bắc|hong bac
-a ngo
-sơn thủy|son thuy
-phú vinh|phu vinh
-hương phong|huong phong
 quảng nhâm|quang nham
 hồng thượng|hong thuong
-hồng thái|hong thai
 a roàng|a roang
-đông sơn|dong son
 lâm đớt|lam dot
-hồng thủy|hong thuy
-phú lộc|phu loc
 lăng cô|lang co
 vinh mỹ|vinh my
 vinh hưng|vinh hung
 giang hải|giang hai
 vinh hiền|vinh hien
 lộc bổn|loc bon
-lộc sơn|loc son
-lộc bình|loc binh
 lộc vĩnh|loc vinh
-lộc an|loc an
 lộc điền|loc dien
-lộc thủy|loc thuy
 lộc trì|loc tri
 lộc tiến|loc tien
-lộc hòa|loc hoa
-xuân lộc|xuan loc
 khe tre
 hương phú|huong phu
-hương sơn|huong son
 hương lộc|huong loc
 thượng quảng|thuong quang
-hương xuân|huong xuan
 hương hữu|huong huu
 thượng lộ|thuong lo
-thượng long|thuong long
 thượng nhật|thuong nhat
 hòa hiệp bắc|hoa hiep bac
 hòa hiệp nam|hoa hiep nam
@@ -6330,11 +4713,8 @@ thanh khê đông|thanh khe dong
 xuân hà|xuan ha
 tân chính|tan chinh
 chính gián|chinh gian
-vĩnh trung|vinh trung
 thạc gián|thac gian
-an khê|an khe
 hòa khê|hoa khe
-thanh bình|thanh binh
 thuận phước|thuan phuoc
 thạch thang|thach thang
 hải châu i|hai chau i
@@ -6342,9 +4722,7 @@ hải châu ii|hai chau ii
 phước ninh|phuoc ninh
 hòa thuận tây|hoa thuan tay
 hòa thuận đông|hoa thuan dong
-nam dương|nam duong
 bình hiên|binh hien
-bình thuận|binh thuan
 hòa cường bắc|hoa cuong bac
 hòa cường nam|hoa cuong nam
 khuê trung|khue trung
@@ -6355,63 +4733,43 @@ an hải bắc|an hai bac
 phước mỹ|phuoc my
 an hải tây|an hai tay
 an hải đông|an hai dong
-mỹ an|my an
 khuê mỹ|khue my
 hoà quý|hoa quy
 hoà hải|hoa hai
 hòa bắc|hoa bac
 hòa liên|hoa lien
 hòa ninh|hoa ninh
-hòa sơn|hoa son
 hòa phát|hoa phat
-hòa an|hoa an
 hòa nhơn|hoa nhon
 hòa thọ tây|hoa tho tay
 hòa thọ đông|hoa tho dong
 hòa xuân|hoa xuan
-hòa phú|hoa phu
-hòa phong|hoa phong
 hòa châu|hoa chau
-hòa tiến|hoa tien
 hòa phước|hoa phuoc
 hòa khương|hoa khuong
 tân thạnh|tan thanh
 phước hòa|phuoc hoa
-an mỹ|an my
 hòa hương|hoa huong
 an xuân|an xuan
-an sơn|an son
-trường xuân|truong xuan
-an phú|an phu
-tam thanh
 tam thăng|tam thang
-phú thịnh|phu thinh
 tam thành|tam thanh
 tam an
 tam phú|tam phu
 tam đàn|tam dan
-hoà thuận|hoa thuan
 tam lộc|tam loc
 tam phước|tam phuoc
 tam vinh
-tam thái|tam thai
 tam đại|tam dai
 tam ngọc|tam ngoc
 tam dân|tam dan
 tam lãnh|tam lanh
-minh an
-tân an|tan an
 cẩm phô|cam pho
-thanh hà|thanh ha
 sơn phong|son phong
-cẩm châu|cam chau
 cửa đại|cua dai
 cẩm an|cam an
-cẩm hà|cam ha
 cẩm kim|cam kim
 cẩm nam|cam nam
 cẩm thanh|cam thanh
-tân hiệp|tan hiep
 ga ri
 a xan
 a nông|a nong
@@ -6428,22 +4786,14 @@ za hung
 mà cooi|ma cooi
 ka dăng|ka dang
 ái nghĩa|ai nghia
-đại sơn|dai son
 đại lãnh|dai lanh
-đại hưng|dai hung
 đại hồng|dai hong
-đại đồng|dai dong
 đại quang|dai quang
-đại nghĩa|dai nghia
 đại hiệp|dai hiep
 đại thạnh|dai thanh
 đại chánh|dai chanh
 đại tân|dai tan
 đại phong|dai phong
-đại minh|dai minh
-đại thắng|dai thang
-đại cường|dai cuong
-đại an|dai an
 đại hòa|dai hoa
 vĩnh điện|vinh dien
 điện tiến|dien tien
@@ -6468,7 +4818,6 @@ vĩnh điện|vinh dien
 nam phước|nam phuoc
 duy thu
 duy phú|duy phu
-duy tân|duy tan
 duy hòa|duy hoa
 duy châu|duy chau
 duy trinh
@@ -6478,18 +4827,14 @@ duy phước|duy phuoc
 duy thành|duy thanh
 duy vinh
 duy nghĩa|duy nghia
-duy hải|duy hai
-đông phú|dong phu
 quế xuân 1|que xuan 1
 quế xuân 2|que xuan 2
 quế phú|que phu
-hương an|huong an
 quế trung|que trung
 quế hiệp|que hiep
 quế thuận|que thuan
 quế mỹ|que my
 ninh phước|ninh phuoc
-phước ninh|phuoc ninh
 quế lộc|que loc
 sơn viên|son vien
 quế long|que long
@@ -6514,56 +4859,41 @@ phước hiệp|phuoc hiep
 phước hoà|phuoc hoa
 phước đức|phuoc duc
 phước năng|phuoc nang
-phước mỹ|phuoc my
 phước chánh|phuoc chanh
 phước công|phuoc cong
 phước kim|phuoc kim
 phước lộc|phuoc loc
 phước thành|phuoc thanh
-hiệp hòa|hiep hoa
-hiệp thuận|hiep thuan
 quế thọ|que tho
 bình lâm|binh lam
 sông trà|song tra
 phước trà|phuoc tra
 phước gia|phuoc gia
-tân bình|tan binh
 quế lưu|que luu
 thăng phước|thang phuoc
-bình sơn|binh son
 hà lam|ha lam
-bình dương|binh duong
 bình giang|binh giang
-bình nguyên|binh nguyen
 bình phục|binh phuc
 bình triều|binh trieu
 bình đào|binh dao
-bình minh|binh minh
 bình lãnh|binh lanh
 bình trị|binh tri
 bình định bắc|binh dinh bac
 bình định nam|binh dinh nam
 bình quý|binh quy
-bình phú|binh phu
 bình chánh|binh chanh
 bình tú|binh tu
 bình sa|binh sa
 bình hải|binh hai
 bình quế|binh que
-bình an|binh an
-bình trung|binh trung
 bình nam|binh nam
-tiên kỳ|tien ky
-tiên sơn|tien son
 tiên hà|tien ha
 tiên cẩm|tien cam
 tiên châu|tien chau
 tiên lãnh|tien lanh
 tiên ngọc|tien ngoc
-tiên hiệp|tien hiep
 tiên cảnh|tien canh
 tiên mỹ|tien my
-tiên phong|tien phong
 tiên thọ|tien tho
 tiên an|tien an
 tiên lộc|tien loc
@@ -6574,7 +4904,6 @@ trà kót|tra kot
 trà nú|tra nu
 trà đông|tra dong
 trà dương|tra duong
-trà giang|tra giang
 trà bui|tra bui
 trà đốc|tra doc
 trà tân|tra tan
@@ -6594,66 +4923,37 @@ trà vinh|tra vinh
 núi thành|nui thanh
 tam xuân i|tam xuan i
 tam xuân ii|tam xuan ii
-tam tiến|tam tien
-tam sơn|tam son
 tam thạnh|tam thanh
 tam anh bắc|tam anh bac
 tam anh nam
 tam hòa|tam hoa
-tam hiệp|tam hiep
 tam hải|tam hai
-tam giang
-tam quang
 tam nghĩa|tam nghia
 tam mỹ tây|tam my tay
 tam mỹ đông|tam my dong
 tam trà|tam tra
-lê hồng phong|le hong phong
-trần phú|tran phu
-quảng phú|quang phu
 nghĩa chánh|nghia chanh
-trần hưng đạo|tran hung dao
 nguyễn nghiêm|nguyen nghiem
-nghĩa lộ|nghia lo
 chánh lộ|chanh lo
-nghĩa dũng|nghia dung
 nghĩa dõng|nghia dong
 châu ổ|chau o
-bình thuận|binh thuan
 bình thạnh|binh thanh
 bình đông|binh dong
-bình chánh|binh chanh
-bình nguyên|binh nguyen
 bình khương|binh khuong
-bình trị|binh tri
-bình an|binh an
-bình hải|binh hai
-bình dương|binh duong
 bình phước|binh phuoc
-bình hòa|binh hoa
-bình trung|binh trung
-bình minh|binh minh
-bình long|binh long
-bình thanh|binh thanh
 bình chương|binh chuong
 bình hiệp|binh hiep
-bình mỹ|binh my
 bình tân phú|binh tan phu
 bình châu|binh chau
 trà xuân|tra xuan
-trà giang|tra giang
 trà thủy|tra thuy
 trà hiệp|tra hiep
 trà bình|tra binh
 trà phú|tra phu
 trà lâm|tra lam
-trà tân|tra tan
-trà sơn|tra son
 trà bùi|tra bui
 trà thanh|tra thanh
-sơn trà|son tra
 trà phong|tra phong
-hương trà|huong tra
 trà xinh|tra xinh
 trà tây|tra tay
 trương quang trọng|truong quang trong
@@ -6679,33 +4979,18 @@ tịnh minh|tinh minh
 tịnh an|tinh an
 la hà|la ha
 sông vệ|song ve
-nghĩa lâm|nghia lam
 nghĩa thắng|nghia thang
-nghĩa thuận|nghia thuan
 nghĩa kỳ|nghia ky
-nghĩa phú|nghia phu
 nghĩa hà|nghia ha
-nghĩa sơn|nghia son
-nghĩa an|nghia an
-nghĩa hòa|nghia hoa
 nghĩa điền|nghia dien
 nghĩa thương|nghia thuong
-nghĩa trung|nghia trung
-nghĩa hiệp|nghia hiep
-nghĩa phương|nghia phuong
-nghĩa mỹ|nghia my
 di lăng|di lang
 sơn hạ|son ha
-sơn thành|son thanh
 sơn nham|son nham
 sơn bao|son bao
 sơn linh|son linh
-sơn giang|son giang
-sơn trung|son trung
 sơn thượng|son thuong
 sơn cao|son cao
-sơn hải|son hai
-sơn thủy|son thuy
 sơn kỳ|son ky
 sơn ba|son ba
 sơn bua|son bua
@@ -6714,12 +4999,8 @@ sơn liên|son lien
 sơn tân|son tan
 sơn màu|son mau
 sơn dung|son dung
-sơn long|son long
 sơn tinh|son tinh
-sơn lập|son lap
-long sơn|long son
 long mai
-thanh an
 long môn|long mon
 long hiệp|long hiep
 chợ chùa|cho chua
@@ -6736,7 +5017,6 @@ hành tín tây|hanh tin tay
 hành tín đông|hanh tin dong
 mộ đức|mo duc
 đức lợi|duc loi
-đức thắng|duc thang
 đức nhuận|duc nhuan
 đức chánh|duc chanh
 đức hiệp|duc hiep
@@ -6747,7 +5027,6 @@ mộ đức|mo duc
 đức phú|duc phu
 đức phong|duc phong
 đức lân|duc lan
-nguyễn nghiêm|nguyen nghiem
 phổ an|pho an
 phổ phong|pho phong
 phổ thuận|pho thuan
@@ -6777,23 +5056,15 @@ ba tiêu|ba tieu
 ba trang
 ba tô|ba to
 ba bích|ba bich
-ba vì|ba vi
 ba lế|ba le
 ba nam
 ba xa
 nhơn bình|nhon binh
 nhơn phú|nhon phu
-đống đa|dong da
 trần quang diệu|tran quang dieu
 hải cảng|hai cang
-quang trung
 thị nại|thi nai
-lê hồng phong|le hong phong
-trần hưng đạo|tran hung dao
 ngô mây|ngo may
-lý thường kiệt|ly thuong kiet
-lê lợi|le loi
-trần phú|tran phu
 bùi thị xuân|bui thi xuan
 nguyễn văn cừ|nguyen van cu
 ghềnh ráng|ghenh rang
@@ -6801,17 +5072,10 @@ nhơn lý|nhon ly
 nhơn hội|nhon hoi
 nhơn hải|nhon hai
 nhơn châu|nhon chau
-an lão|an lao
-an hưng|an hung
 an trung
-an dũng|an dung
-an vinh
 an toàn|an toan
-an tân|an tan
-an hòa|an hoa
 an quang
 an nghĩa|an nghia
-tam quan
 bồng sơn|bong son
 hoài sơn|hoai son
 hoài châu bắc|hoai chau bac
@@ -6842,20 +5106,12 @@ tăng bạt hổ|tang bat ho
 bok tới|bok toi
 ân tường tây|an tuong tay
 ân tường đông|an tuong dong
-ân nghĩa|an nghia
 phù mỹ|phu my
-bình dương|binh duong
-mỹ đức|my duc
 mỹ châu|my chau
-mỹ thắng|my thang
-mỹ lộc|my loc
 mỹ lợi|my loi
-mỹ an|my an
 mỹ phong|my phong
 mỹ trinh|my trinh
 mỹ thọ|my tho
-mỹ hòa|my hoa
-mỹ thành|my thanh
 mỹ chánh|my chanh
 mỹ quang|my quang
 mỹ hiệp|my hiep
@@ -6863,48 +5119,32 @@ mỹ tài|my tai
 mỹ cát|my cat
 mỹ chánh tây|my chanh tay
 vĩnh thạnh|vinh thanh
-vĩnh sơn|vinh son
 vĩnh kim|vinh kim
 vĩnh hiệp|vinh hiep
-vĩnh hảo|vinh hao
-vĩnh hòa|vinh hoa
-vĩnh thịnh|vinh thinh
 vĩnh thuận|vinh thuan
-vĩnh quang|vinh quang
-phú phong|phu phong
 bình tân|binh tan
 tây thuận|tay thuan
-bình thuận|binh thuan
-tây giang|tay giang
-bình thành|binh thanh
 tây an|tay an
-bình hòa|binh hoa
 tây bình|tay binh
 bình tường|binh tuong
 tây vinh|tay vinh
-vĩnh an|vinh an
 tây xuân|tay xuan
 bình nghi|binh nghi
 tây phú|tay phu
-ngô mây|ngo may
 cát sơn|cat son
 cát minh|cat minh
 cát khánh|cat khanh
 cát tài|cat tai
 cát lâm|cat lam
 cát hanh|cat hanh
-cát thành|cat thanh
 cát trinh|cat trinh
-cát hải|cat hai
 cát hiệp|cat hiep
 cát nhơn|cat nhon
 cát hưng|cat hung
 cát tường|cat tuong
-cát tân|cat tan
 cát tiến|cat tien
 cát thắng|cat thang
 cát chánh|cat chanh
-bình định|binh dinh
 đập đá|dap da
 nhơn mỹ|nhon my
 nhơn thành|nhon thanh
@@ -6924,54 +5164,29 @@ diêu trì|dieu tri
 phước thắng|phuoc thang
 phước hưng|phuoc hung
 phước quang|phuoc quang
-phước hòa|phuoc hoa
 phước sơn|phuoc son
-phước hiệp|phuoc hiep
-phước lộc|phuoc loc
 phước nghĩa|phuoc nghia
 phước thuận|phuoc thuan
 phước an|phuoc an
-phước thành|phuoc thanh
-phước mỹ|phuoc my
-vân canh|van canh
 canh liên|canh lien
 canh hiệp|canh hiep
 canh vinh
 canh hiển|canh hien
 canh thuận|canh thuan
 canh hòa|canh hoa
-phường 1|phuong 1|p.1|p. 1|p1|p 1
 phường 8|phuong 8|p.8|p. 8|p8|p 8
-phường 2|phuong 2|p.2|p. 2|p2|p 2
 phường 9|phuong 9|p.9|p. 9|p9|p 9
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 5|phuong 5|p.5|p. 5|p5|p 5
 phường 7|phuong 7|p.7|p. 7|p7|p 7
 phường 6|phuong 6|p.6|p. 6|p6|p 6
 phú thạnh|phu thanh
-phú đông|phu dong
 hòa kiến|hoa kien
 bình kiến|binh kien
-bình ngọc|binh ngoc
-xuân phú|xuan phu
-xuân lâm|xuan lam
-xuân thành|xuan thanh
-xuân hải|xuan hai
-xuân lộc|xuan loc
-xuân bình|xuan binh
 xuân cảnh|xuan canh
-xuân thịnh|xuan thinh
-xuân phương|xuan phuong
-xuân yên|xuan yen
 xuân thọ 1|xuan tho 1
-xuân đài|xuan dai
 xuân thọ 2|xuan tho 2
 la hai
-đa lộc|da loc
 phú mỡ|phu mo
 xuân lãnh|xuan lanh
-xuân long|xuan long
 xuân quang 1|xuan quang 1
 xuân sơn bắc|xuan son bac
 xuân quang 2|xuan quang 2
@@ -6986,19 +5201,13 @@ an thạch|an thach
 an định|an dinh
 an nghiệp|an nghiep
 an cư|an cu
-an xuân|an xuan
 an lĩnh|an linh
 an hòa hải|an hoa hai
-an hiệp|an hiep
-an mỹ|an my
 an chấn|an chan
-an thọ|an tho
-an phú|an phu
 củng sơn|cung son
 phước tân|phuoc tan
 sơn hội|son hoi
 sơn định|son dinh
-sơn long|son long
 cà lúi|ca lui
 sơn phước|son phuoc
 sơn xuân|son xuan
@@ -7006,31 +5215,23 @@ sơn nguyên|son nguyen
 eachà rang|eacha rang
 krông pa|krong pa
 suối bạc|suoi bac
-sơn hà|son ha
 suối trai|suoi trai
 hai riêng|hai rieng
 ea lâm|ea lam
 đức bình tây|duc binh tay
 ea bá|ea ba
-sơn giang|son giang
 đức bình đông|duc binh dong
 sông hinh|song hinh
-phú lâm|phu lam
 hòa thành|hoa thanh
-hòa hiệp bắc|hoa hiep bac
 sơn thành tây|son thanh tay
 sơn thành đông|son thanh dong
 hòa bình 1|hoa binh 1
-phú thứ|phu thu
 hoà vinh|hoa vinh
 hoà hiệp trung|hoa hiep trung
-hòa phong|hoa phong
 hòa tân đông|hoa tan dong
-hòa phú|hoa phu
 hòa tân tây|hoa tan tay
 hòa đồng|hoa dong
 hòa xuân tây|hoa xuan tay
-hòa hiệp nam|hoa hiep nam
 hòa mỹ đông|hoa my dong
 hòa mỹ tây|hoa my tay
 hòa xuân đông|hoa xuan dong
@@ -7041,39 +5242,25 @@ hòa quang bắc|hoa quang bac
 hòa quang nam|hoa quang nam
 hòa hội|hoa hoi
 hòa trị|hoa tri
-hòa an|hoa an
 hòa định đông|hoa dinh dong
 phú hoà|phu hoa
 hòa định tây|hoa dinh tay
-hòa thắng|hoa thang
-vĩnh hòa|vinh hoa
 vĩnh hải|vinh hai
 vĩnh phước|vinh phuoc
 ngọc hiệp|ngoc hiep
 vĩnh thọ|vinh tho
 xương huân|xuong huan
-vạn thắng|van thang
 vạn thạnh|van thanh
 phương sài|phuong sai
-phương sơn|phuong son
 phước hải|phuoc hai
-phước tân|phuoc tan
 lộc thọ|loc tho
 phước tiến|phuoc tien
-tân lập|tan lap
-phước hòa|phuoc hoa
 vĩnh nguyên|vinh nguyen
 phước long|phuoc long
 vĩnh trường|vinh truong
 vĩnh lương|vinh luong
 vĩnh phương|vinh phuong
-vĩnh ngọc|vinh ngoc
-vĩnh thạnh|vinh thanh
-vĩnh trung|vinh trung
-vĩnh hiệp|vinh hiep
-vĩnh thái|vinh thai
 phước đồng|phuoc dong
-cam nghĩa|cam nghia
 cam phúc bắc|cam phuc bac
 cam phúc nam|cam phuc nam
 cam lộc|cam loc
@@ -7086,7 +5273,6 @@ cam tân|cam tan
 cam hòa|cam hoa
 cam hải đông|cam hai dong
 cam hải tây|cam hai tay
-sơn tân|son tan
 cam hiệp bắc|cam hiep bac
 cam đức|cam duc
 cam hiệp nam|cam hiep nam
@@ -7101,28 +5287,18 @@ cam thịnh đông|cam thinh dong
 cam lập|cam lap
 cam bình|cam binh
 vạn giã|van gia
-đại lãnh|dai lanh
 vạn phước|van phuoc
 vạn long|van long
 vạn bình|van binh
-vạn thọ|van tho
 vạn khánh|van khanh
 vạn phú|van phu
 vạn lương|van luong
-vạn thắng|van thang
-vạn thạnh|van thanh
-xuân sơn|xuan son
 vạn hưng|van hung
-ninh hiệp|ninh hiep
-ninh sơn|ninh son
 ninh tây|ninh tay
 ninh thượng|ninh thuong
-ninh an
-ninh hải|ninh hai
 ninh thọ|ninh tho
 ninh trung
 ninh sim
-ninh xuân|ninh xuan
 ninh thân|ninh than
 ninh diêm|ninh diem
 ninh đông|ninh dong
@@ -7130,29 +5306,21 @@ ninh thủy|ninh thuy
 ninh đa|ninh da
 ninh phụng|ninh phung
 ninh bình|ninh binh
-ninh phước|ninh phuoc
 ninh phú|ninh phu
 ninh tân|ninh tan
 ninh quang
-ninh giang
 ninh hà|ninh ha
 ninh hưng|ninh hung
 ninh lộc|ninh loc
 ninh ích|ninh ich
-ninh vân|ninh van
 khánh vĩnh|khanh vinh
 khánh hiệp|khanh hiep
 khánh bình|khanh binh
-khánh trung|khanh trung
 khánh đông|khanh dong
-khánh thượng|khanh thuong
 khánh nam|khanh nam
-sông cầu|song cau
 giang ly
 cầu bà|cau ba
 liên sang|lien sang
-khánh thành|khanh thanh
-khánh phú|khanh phu
 sơn thái|son thai
 diên khánh|dien khanh
 diên lâm|dien lam
@@ -7175,75 +5343,44 @@ suối tiên|suoi tien
 suối cát|suoi cat
 suối tân|suoi tan
 tô hạp|to hap
-thành sơn|thanh son
-sơn lâm|son lam
 sơn hiệp|son hiep
-sơn bình|son binh
-sơn trung|son trung
 ba cụm bắc|ba cum bac
 ba cụm nam|ba cum nam
 trường sa|truong sa
 song tử tây|song tu tay
 đô vinh|do vinh
 sinh tồn|sinh ton
-phước mỹ|phuoc my
 bảo an|bao an
 phủ hà|phu ha
-thanh sơn|thanh son
-mỹ hương|my huong
 tấn tài|tan tai
 kinh dinh
 đạo long|dao long
 đài sơn|dai son
-đông hải|dong hai
 mỹ đông|my dong
 thành hải|thanh hai
-văn hải|van hai
 mỹ bình|my binh
 mỹ hải|my hai
 phước bình|phuoc binh
-phước hòa|phuoc hoa
-phước tân|phuoc tan
-phước tiến|phuoc tien
-phước thắng|phuoc thang
-phước thành|phuoc thanh
 phước đại|phuoc dai
 phước chính|phuoc chinh
 phước trung|phuoc trung
-tân sơn|tan son
-lâm sơn|lam son
-lương sơn|luong son
-quảng sơn|quang son
-mỹ sơn|my son
-hòa sơn|hoa son
 ma nới|ma noi
 nhơn sơn|nhon son
-khánh hải|khanh hai
 phước chiến|phuoc chien
 công hải|cong hai
 phước kháng|phuoc khang
-vĩnh hải|vinh hai
 lợi hải|loi hai
 phương hải|phuong hai
-bắc sơn|bac son
 tân hải|tan hai
-bắc phong|bac phong
-xuân hải|xuan hai
 hộ hải|ho hai
 tri hải|tri hai
-nhơn hải|nhon hai
-thanh hải|thanh hai
 phước dân|phuoc dan
-phước sơn|phuoc son
 phước thái|phuoc thai
 phước hậu|phuoc hau
-phước thuận|phuoc thuan
 phước hà|phuoc ha
 an hải|an hai
 phước hữu|phuoc huu
-phước hải|phuoc hai
 phước nam|phuoc nam
-phước ninh|phuoc ninh
 nhị hà|nhi ha
 phước dinh|phuoc dinh
 phước minh|phuoc minh
@@ -7253,60 +5390,33 @@ phước vinh|phuoc vinh
 mũi né|mui ne
 hàm tiến|ham tien
 phú hài|phu hai
-phú thủy|phu thuy
 phú tài|phu tai
 phú trinh|phu trinh
-xuân an|xuan an
-thanh hải|thanh hai
 bình hưng|binh hung
 đức nghĩa|duc nghia
-lạc đạo|lac dao
-đức thắng|duc thang
-hưng long|hung long
-đức long|duc long
 thiện nghiệp|thien nghiep
 phong nẫm|phong nam
 tiến lợi|tien loi
-tiến thành|tien thanh
 liên hương|lien huong
 phan rí cửa|phan ri cua
 phan dũng|phan dung
-phong phú|phong phu
-vĩnh hảo|vinh hao
 vĩnh tân|vinh tan
-phú lạc|phu lac
 phước thể|phuoc the
-hòa minh|hoa minh
 chí công|chi cong
-bình thạnh|binh thanh
 chợ lầu|cho lau
 phan sơn|phan son
 phan lâm|phan lam
-bình an|binh an
 phan điền|phan dien
-hải ninh|hai ninh
 sông lũy|song luy
 phan tiến|phan tien
 sông bình|song binh
-lương sơn|luong son
 phan hòa|phan hoa
-phan thanh
-hồng thái|hong thai
 phan hiệp|phan hiep
-bình tân|binh tan
 phan rí thành|phan ri thanh
-hòa thắng|hoa thang
-hồng phong|hong phong
 ma lâm|ma lam
-phú long|phu long
 la dạ|la da
-đông tiến|dong tien
-thuận hòa|thuan hoa
-đông giang|dong giang
 hàm phú|ham phu
 hồng liêm|hong liem
-thuận minh|thuan minh
-hồng sơn|hong son
 hàm trí|ham tri
 hàm đức|ham duc
 hàm liêm|ham liem
@@ -7322,78 +5432,44 @@ hàm thạnh|ham thanh
 hàm kiệm|ham kiem
 hàm cường|ham cuong
 hàm mỹ|ham my
-tân lập|tan lap
 hàm minh|ham minh
 thuận quí|thuan qui
 tân thuận|tan thuan
-tân thành|tan thanh
 lạc tánh|lac tanh
 bắc ruộng|bac ruong
 nghị đức|nghi duc
 la ngâu|la ngau
 huy khiêm|huy khiem
 măng tố|mang to
-đức phú|duc phu
 đồng kho|dong kho
 gia an
 đức bình|duc binh
 gia huynh
-đức thuận|duc thuan
 suối kiết|suoi kiet
 võ xu|vo xu
 đức tài|duc tai
 đa kai|da kai
 sùng nhơn|sung nhon
 mê pu|me pu
-nam chính|nam chinh
-đức hạnh|duc hanh
 đức tín|duc tin
 vũ hoà|vu hoa
-tân hà|tan ha
-đông hà|dong ha
-trà tân|tra tan
-tân minh|tan minh
 phước hội|phuoc hoi
-phước lộc|phuoc loc
 tân thiện|tan thien
-tân an|tan an
 tân nghĩa|tan nghia
-bình tân|binh tan
 sông phan|song phan
-tân phúc|tan phuc
-tân hải|tan hai
-tân tiến|tan tien
-tân bình|tan binh
-tân đức|tan duc
-tân thắng|tan thang
 thắng hải|thang hai
-tân hà|tan ha
-tân xuân|tan xuan
 sơn mỹ|son my
 tân phước|tan phuoc
 ngũ phụng|ngu phung
 long hải|long hai
-tam thanh
-quang trung
-duy tân|duy tan
-quyết thắng|quyet thang
 trường chinh|truong chinh
-thắng lợi|thang loi
-ngô mây|ngo may
-thống nhất|thong nhat
-lê lợi|le loi
-nguyễn trãi|nguyen trai
-trần hưng đạo|tran hung dao
 đắk cấm|dak cam
 ngọk bay|ngok bay
-vinh quang
 đắk blà|dak bla
 ia chim
 đăk năng|dak nang
-đoàn kết|doan ket
 chư hreng|chu hreng
 đắk rơ wa|dak ro wa
-hòa bình|hoa binh
 đắk glei|dak glei
 đắk blô|dak blo
 đắk man|dak man
@@ -7401,7 +5477,6 @@ hòa bình|hoa binh
 đắk pék|dak pek
 đắk choong|dak choong
 mường hoong|muong hoong
-ngọc linh|ngoc linh
 đắk long|dak long
 đắk kroong|dak kroong
 đắk môn|dak mon
@@ -7447,8 +5522,6 @@ măng đen|mang den
 đắk ruồng|dak ruong
 đắk pne|dak pne
 đắk tờ re|dak to re
-tân lập|tan lap
-đắk hà|dak ha
 đắk pxi|dak pxi
 đăk long|dak long
 đắk hring|dak hring
@@ -7478,46 +5551,26 @@ diên hồng|dien hong
 ia kring
 hội thương|hoi thuong
 hội phú|hoi phu
-phù đổng|phu dong
 hoa lư|hoa lu
-tây sơn|tay son
-thống nhất|thong nhat
-đống đa|dong da
 trà bá|tra ba
-thắng lợi|thang loi
-yên thế|yen the
-chi lăng|chi lang
 biển hồ|bien ho
-tân sơn|tan son
 trà đa|tra da
 chư á|chu a
-an phú|an phu
-diên phú|dien phu
 ia kênh|ia kenh
-an bình|an binh
-tây sơn|tay son
-an phú|an phu
-an tân|an tan
 tú an|tu an
-xuân an|xuan an
 cửu an|cuu an
 an phước|an phuoc
-song an
-ngô mây|ngo may
-thành an|thanh an
 kon pne
 đăk roong|dak roong
 sơn lang|son lang
 sơ pai|so pai
 lơ ku|lo ku
 đak smar|dak smar
-nghĩa an|nghia an
 tơ tung|to tung
 kông lơng khơng|kong long khong
 kông pla|kong pla
 đăk hlơ|dak hlo
 đăk đoa|dak doa
-hà đông|ha dong
 đăk sơmei|dak somei
 đăk krong|dak krong
 hải yang|hai yang
@@ -7526,11 +5579,9 @@ hà bầu|ha bau
 nam yang
 k' dang|k  dang
 h' neng|h  neng
-tân bình|tan binh
 a dơk|a dok
 ia pết|ia pet
 ia băng|ia bang
-phú hòa|phu hoa
 hà tây|ha tay
 ia khươl|ia khuol
 ia phí|ia phi
@@ -7538,12 +5589,9 @@ ia ly
 ia mơ nông|ia mo nong
 ia kreng
 đăk tơ ver|dak to ver
-hòa phú|hoa phu
 chư đăng ya|chu dang ya
 ia ka
 ia nhin
-nghĩa hòa|nghia hoa
-nghĩa hưng|nghia hung
 ia kha
 ia sao
 ia yok
@@ -7569,7 +5617,6 @@ kon chiêng|kon chieng
 đăk trôi|dak troi
 kông chro|kong chro
 chư krêy|chu krey
-an trung
 kông yang|kong yang
 đăk tơ pang|dak to pang
 đắk kơ ning|dak ko ning
@@ -7585,7 +5632,6 @@ ia dơk|ia dok
 ia krêl|ia krel
 ia din
 ia kla
-ia dom
 ia lang
 ia kriêng|ia krieng
 ia pnôn|ia pnon
@@ -7597,10 +5643,8 @@ ia drăng|ia drang
 thăng hưng|thang hung
 bàu cạn|bau can
 ia phìn|ia phin
-ia băng|ia bang
 ia tôr|ia tor
 ia boòng|ia boong
-ia o
 ia púch|ia puch
 ia me
 ia vê|ia ve
@@ -7611,7 +5655,6 @@ ia lâu|ia lau
 ia piơr|ia pior
 ia mơ|ia mo
 chư sê|chu se
-nhơn hoà|nhon hoa
 ia tiêm|ia tiem
 chư pơng|chu pong
 bar măih|bar maih
@@ -7637,22 +5680,17 @@ an thành|an thanh
 đak pơ|dak po
 yang bắc|yang bac
 cư an|cu an
-tân an|tan an
-phú an|phu an
 ya hội|ya hoi
 pờ tó|po to
 chư răng|chu rang
 ia kdăm|ia kdam
-kim tân|kim tan
 chư mố|chu mo
 ia tul
 ia ma rơn|ia ma ron
 ia broăi|ia broai
 ia trok
 cheo reo
-hòa bình|hoa binh
 phú thiện|phu thien
-đoàn kết|doan ket
 sông bờ|song bo
 chư a thai|chu a thai
 ayun hạ|ayun ha
@@ -7666,8 +5704,6 @@ ia rbol
 chư băh|chu bah
 ia yeng
 ia rtô|ia rto
-ia sao
-phú túc|phu tuc
 ia rsai
 ia rsươm|ia rsuom
 chư gu|chu gu
@@ -7680,27 +5716,14 @@ ia rmok
 chư ngọc|chu ngoc
 chư rcăm|chu rcam
 krông năng|krong nang
-tân lập|tan lap
-tân hòa|tan hoa
-tân an|tan an
-thống nhất|thong nhat
 thành nhất|thanh nhat
-thắng lợi|thang loi
-tân lợi|tan loi
-thành công|thanh cong
-tân thành|tan thanh
-tân tiến|tan tien
 tự an|tu an
 ea tam
-khánh xuân|khanh xuan
 hòa thuận|hoa thuan
 cư êbur|cu ebur
 ea tu
-hòa thắng|hoa thang
 ea kao
-hòa phú|hoa phu
 hòa khánh|hoa khanh
-hòa xuân|hoa xuan
 ea drăng|ea drang
 ea h'leo|ea h leo
 ea sol
@@ -7731,8 +5754,6 @@ cuôr knia|cuor knia
 ea bar
 ea nuôl|ea nuol
 ea pốk|ea pok
-quảng phú|quang phu
-quảng tiến|quang tien
 ea kuêh|ea kueh
 ea kiết|ea kiet
 ea tar
@@ -7747,42 +5768,29 @@ ea d'rơng|ea d rong
 ea m'nang|ea m nang
 cư suê|cu sue
 cuor đăng|cuor dang
-an lạc|an lac
 cư né|cu ne
-an bình|an binh
 chư kbô|chu kbo
 thiện an|thien an
 cư pơng|cu pong
 ea sin
 pơng drang|pong drang
-tân lập|tan lap
 đạt hiếu|dat hieu
 ea ngai
-đoàn kết|doan ket
 ea blang
 ea drông|ea drong
-thống nhất|thong nhat
-bình tân|binh tan
 ea siên|ea sien
-bình thuận|binh thuan
 cư bao|cu bao
-krông năng|krong nang
 đliê ya|dlie ya
 ea tóh|ea toh
-ea tam
-phú lộc|phu loc
-tam giang
 ea puk
 ea dăh|ea dah
 ea hồ|ea ho
-phú xuân|phu xuan
 cư klông|cu klong
 ea tân|ea tan
 ea kar
 ea knốp|ea knop
 ea sô|ea so
 ea sar
-xuân phú|xuan phu
 cư huê|cu hue
 ea tih
 ea đar|ea dar
@@ -7809,30 +5817,23 @@ ea trang
 krông kmar|krong kmar
 dang kang
 cư kty|cu kty
-hòa thành|hoa thanh
 hòa tân|hoa tan
-hòa phong|hoa phong
 hòa lễ|hoa le
 yang reh
 ea trul
 khuê ngọc điền|khue ngoc dien
 cư pui|cu pui
-hòa sơn|hoa son
 cư drăm|cu dram
 yang mao
-phước an|phuoc an
 krông búk|krong buk
 ea kly
 ea kênh|ea kenh
 ea phê|ea phe
 ea knuec
 ea yông|ea yong
-hòa an|hoa an
 ea kuăng|ea kuang
 hòa đông|hoa dong
 ea hiu
-hòa tiến|hoa tien
-tân tiến|tan tien
 vụ bổn|vu bon
 ea uy
 ea yiêng|ea yieng
@@ -7850,9 +5851,7 @@ hòa hiệp|hoa hiep
 ea bông|ea bong
 băng a drênh|bang a drenh
 dur kmăl|dur kmal
-bình hòa|binh hoa
 quảng điền|quang dien
-liên sơn|lien son
 yang tao
 bông krang|bong krang
 đắk liêng|dak lieng
@@ -7863,19 +5862,11 @@ buôn tría|buon tria
 krông nô|krong no
 nam ka
 ea r'bin|ea r bin
-nghĩa đức|nghia duc
-nghĩa thành|nghia thanh
-nghĩa phú|nghia phu
-nghĩa tân|nghia tan
-quảng sơn|quang son
-nghĩa trung|nghia trung
 đăk r'moan|dak r moan
-quảng thành|quang thanh
 quảng hoà|quang hoa
 đắk ha|dak ha
 đắk r'măng|dak r mang
 đắk nia|dak nia
-quảng khê|quang khe
 đắk plao|dak plao
 đắk som|dak som
 ea t'ling|ea t ling
@@ -7892,69 +5883,41 @@ trúc sơn|truc son
 đắk gằn|dak gan
 đức mạnh|duc manh
 đắk n'drót|dak n drot
-long sơn|long son
 đắk sắk|dak sak
-thuận an|thuan an
-đức minh|duc minh
 đắk mâm|dak mam
 đắk sôr|dak sor
-nam xuân|nam xuan
 buôn choah|buon choah
 nam đà|nam da
-tân thành|tan thanh
 đắk drô|dak dro
 nâm nung|nam nung
 đức xuyên|duc xuyen
 đắk nang|dak nang
-quảng phú|quang phu
 nâm n'đir|nam n dir
 đức an|duc an
 đắk môl|dak mol
 đắk hòa|dak hoa
-nam bình|nam binh
 thuận hà|thuan ha
 thuận hạnh|thuan hanh
 đắk n'dung|dak n dung
 nâm n'jang|nam n jang
-trường xuân|truong xuan
 kiến đức|kien duc
 quảng trực|quang truc
 đắk búk so|dak buk so
-quảng tâm|quang tam
 đắk r'tíh|dak r tih
 quảng tín|quang tin
 đắk ngo|dak ngo
-quảng tân|quang tan
 đắk wer|dak wer
 nhân cơ|nhan co
 kiến thành|kien thanh
-nghĩa thắng|nghia thang
 đạo nghĩa|dao nghia
 đắk sin|dak sin
-hưng bình|hung binh
 đắk ru|dak ru
-nhân đạo|nhan dao
-phường 7|phuong 7|p.7|p. 7|p7|p 7
-phường 8|phuong 8|p.8|p. 8|p8|p 8
 phường 12|phuong 12|p.12|p. 12|p12|p 12
-phường 9|phuong 9|p.9|p. 9|p9|p 9
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 6|phuong 6|p.6|p. 6|p6|p 6
-phường 5|phuong 5|p.5|p. 5|p5|p 5
-phường 4|phuong 4|p.4|p. 4|p4|p 4
 phường 10|phuong 10|p.10|p. 10|p10|p 10
 phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-xuân thọ|xuan tho
 tà nung|ta nung
 trạm hành|tram hanh
-xuân trường|xuan truong
 lộc phát|loc phat
-lộc tiến|loc tien
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-lộc sơn|loc son
 đạm bri|dam bri
 lộc thanh|loc thanh
 lộc nga|loc nga
@@ -7973,23 +5936,10 @@ nam ban
 liêng srônh|lieng sronh
 đạ rsal|da rsal
 rô men|ro men
-phú sơn|phu son
 phi tô|phi to
 phi liêng|phi lieng
 đạ k' nàng|da k  nang
-mê linh|me linh
 đạ đờn|da don
-phúc thọ|phuc tho
-đông thanh|dong thanh
-gia lâm|gia lam
-tân thanh|tan thanh
-tân văn|tan van
-hoài đức|hoai duc
-tân hà|tan ha
-liên hà|lien ha
-đan phượng|dan phuong
-nam hà|nam ha
-thạnh mỹ|thanh my
 lạc xuân|lac xuan
 đạ ròn|da ron
 lạc lâm|lac lam
@@ -7997,15 +5947,8 @@ ka đô|ka do
 quảng lập|quang lap
 ka đơn|ka don
 tu tra
-liên nghĩa|lien nghia
-hiệp an|hiep an
-liên hiệp|lien hiep
 hiệp thạnh|hiep thanh
-bình thạnh|binh thanh
 n'thol hạ|n thol ha
-tân hội|tan hoi
-tân thành|tan thanh
-phú hội|phu hoi
 ninh gia
 tà năng|ta nang
 đa quyn|da quyn
@@ -8014,10 +5957,7 @@ tà hine|ta hine
 ninh loan
 di linh
 đinh trang thượng|dinh trang thuong
-tân thượng|tan thuong
 tân lâm|tan lam
-tân châu|tan chau
-tân nghĩa|tan nghia
 gia hiệp|gia hiep
 đinh lạc|dinh lac
 tam bố|tam bo
@@ -8025,10 +5965,7 @@ tam bố|tam bo
 liên đầm|lien dam
 gung ré|gung re
 bảo thuận|bao thuan
-hòa ninh|hoa ninh
 hòa trung|hoa trung
-hòa nam|hoa nam
-hòa bắc|hoa bac
 sơn điền|son dien
 gia bắc|gia bac
 lộc thắng|loc thang
@@ -8041,8 +5978,6 @@ lộc ngãi|loc ngai
 lộc quảng|loc quang
 lộc tân|loc tan
 lộc đức|loc duc
-lộc an|loc an
-tân lạc|tan lac
 lộc thành|loc thanh
 lộc nam|loc nam
 đạ m'ri|da m ri
@@ -8051,13 +5986,8 @@ hà lâm|ha lam
 đạ tồn|da ton
 đạ oai|da oai
 đạ ploa|da ploa
-ma đa guôi|ma da guoi
-đoàn kết|doan ket
-phước lộc|phuoc loc
 đạ tẻh|da teh
 an nhơn|an nhon
-quốc oai|quoc oai
-mỹ đức|my duc
 quảng trị|quang tri
 đạ lây|da lay
 triệu hải|trieu hai
@@ -8072,172 +6002,82 @@ phước cát|phuoc cat
 đức phổ|duc pho
 quảng ngãi|quang ngai
 đồng nai thượng|dong nai thuong
-tân phú|tan phu
-tân đồng|tan dong
-tân bình|tan binh
-tân xuân|tan xuan
-tân thiện|tan thien
-tân thành|tan thanh
-tiến thành|tien thanh
 tiến hưng|tien hung
 thác mơ|thac mo
 long thủy|long thuy
-phước bình|phuoc binh
 long phước|long phuoc
 bù gia mập|bu gia map
 đak ơ|dak o
-đức hạnh|duc hanh
 phú văn|phu van
 đa kia|da kia
-phước minh|phuoc minh
 bình thắng|binh thang
-sơn giang|son giang
 long bình|long binh
-bình tân|binh tan
-bình sơn|binh son
 long giang
-long hưng|long hung
 phước tín|phuoc tin
-phước tân|phuoc tan
 bù nho|bu nho
 long hà|long ha
 long tân|long tan
 phú trung|phu trung
 phú riềng|phu rieng
-phú nghĩa|phu nghia
-lộc ninh|loc ninh
-lộc hòa|loc hoa
-lộc an|loc an
 lộc tấn|loc tan
 lộc thạnh|loc thanh
 lộc hiệp|loc hiep
 lộc thiện|loc thien
 lộc thuận|loc thuan
 lộc quang|loc quang
-lộc phú|loc phu
-lộc thành|loc thanh
 lộc thái|loc thai
-lộc điền|loc dien
 lộc hưng|loc hung
-lộc thịnh|loc thinh
 lộc khánh|loc khanh
-thanh bình|thanh binh
 hưng phước|hung phuoc
 phước thiện|phuoc thien
 thiện hưng|thien hung
-thanh hòa|thanh hoa
-tân thành|tan thanh
 hưng chiến|hung chien
-tân tiến|tan tien
 an lộc|an loc
-phú thịnh|phu thinh
 phú đức|phu duc
-thanh an
 an khương|an khuong
-thanh lương|thanh luong
 thanh phú|thanh phu
-an phú|an phu
-tân lợi|tan loi
-tân hưng|tan hung
-minh đức|minh duc
-minh tâm|minh tam
-phước an|phuoc an
-thanh bình|thanh binh
 tân khai|tan khai
 đồng nơ|dong no
-tân hiệp|tan hiep
-tân phú|tan phu
 thuận lợi|thuan loi
-đồng tâm|dong tam
-tân phước|tan phuoc
-tân hưng|tan hung
-tân lợi|tan loi
-tân lập|tan lap
-tân hòa|tan hoa
 thuận phú|thuan phu
-đồng tiến|dong tien
-tân tiến|tan tien
-đức phong|duc phong
 đường 10|duong 10
 đak nhau|dak nhau
-phú sơn|phu son
-thọ sơn|tho son
-bình minh|binh minh
 bom bo
 minh hưng|minh hung
-đoàn kết|doan ket
 đồng nai|dong nai
 đức liễu|duc lieu
-thống nhất|thong nhat
-nghĩa trung|nghia trung
-nghĩa bình|nghia binh
 đăng hà|dang ha
-phước sơn|phuoc son
 chơn thành|chon thanh
-thành tâm|thanh tam
-minh lập|minh lap
 tân quan|tan quan
-quang minh
-minh hưng|minh hung
-minh long
-minh thành|minh thanh
 nha bích|nha bich
 minh thắng|minh thang
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 4|phuong 4|p.4|p. 4|p4|p 4
 hiệp ninh|hiep ninh
-phường 2|phuong 2|p.2|p. 2|p2|p 2
 thạnh tân|thanh tan
-tân bình|tan binh
-bình minh|binh minh
-ninh sơn|ninh son
 ninh thạnh|ninh thanh
 tân biên|tan bien
-tân lập|tan lap
 thạnh bắc|thanh bac
-tân bình|tan binh
 thạnh bình|thanh binh
 thạnh tây|thanh tay
-hòa hiệp|hoa hiep
-tân phong|tan phong
 mỏ công|mo cong
 trà vong|tra vong
-tân châu|tan chau
-tân hà|tan ha
 tân đông|tan dong
-tân hội|tan hoi
-tân hòa|tan hoa
 suối ngô|suoi ngo
 suối dây|suoi day
-tân hiệp|tan hiep
 thạnh đông|thanh dong
-tân thành|tan thanh
-tân phú|tan phu
-tân hưng|tan hung
 dương minh châu|duong minh chau
 suối đá|suoi da
-phước ninh|phuoc ninh
-phước minh|phuoc minh
 bàu năng|bau nang
 chà là|cha la
 cầu khởi|cau khoi
 bến củi|ben cui
-lộc ninh|loc ninh
 truông mít|truong mit
-châu thành|chau thanh
 hảo đước|hao duoc
-phước vinh|phuoc vinh
 đồng khởi|dong khoi
-thái bình|thai binh
 an cơ|an co
 biên giới|bien gioi
 hòa thạnh|hoa thanh
 trí bình|tri binh
-hòa hội|hoa hoi
-an bình|an binh
 thanh điền|thanh dien
-thành long|thanh long
 ninh điền|ninh dien
 long vĩnh|long vinh
 long hoa
@@ -8250,8 +6090,6 @@ trường tây|truong tay
 long thành nam|long thanh nam
 gò dầu|go dau
 thạnh đức|thanh duc
-cẩm giang|cam giang
-hiệp thạnh|hiep thanh
 bàu đồn|bau don
 phước thạnh|phuoc thanh
 phước đông|phuoc dong
@@ -8259,8 +6097,6 @@ phước trạch|phuoc trach
 thanh phước|thanh phuoc
 bến cầu|ben cau
 long chữ|long chu
-long phước|long phuoc
-long giang
 tiên thuận|tien thuan
 long khánh|long khanh
 lợi thuận|loi thuan
@@ -8269,222 +6105,114 @@ an thạnh|an thanh
 trảng bàng|trang bang
 đôn thuận|don thuan
 hưng thuận|hung thuan
-lộc hưng|loc hung
-gia lộc|gia loc
-gia bình|gia binh
-phước bình|phuoc binh
 an tịnh|an tinh
-an hòa|an hoa
 phước chỉ|phuoc chi
 hiệp thành|hiep thanh
 phú lợi|phu loi
-phú cường|phu cuong
-phú hòa|phu hoa
 phú thọ|phu tho
 chánh nghĩa|chanh nghia
 định hoà|dinh hoa
 hoà phú|hoa phu
-phú mỹ|phu my
 phú tân|phu tan
-tân an|tan an
-hiệp an|hiep an
 tương bình hiệp|tuong binh hiep
 chánh mỹ|chanh my
 dầu tiếng|dau tieng
 minh hoà|minh hoa
 minh thạnh|minh thanh
-minh tân|minh tan
 định an|dinh an
 long hoà|long hoa
-định thành|dinh thanh
 định hiệp|dinh hiep
 an lập|an lap
-long tân|long tan
-thanh an
-thanh tuyền|thanh tuyen
 mỹ phước|my phuoc
 trừ văn thố|tru van tho
 cây trường ii|cay truong ii
 lai uyên|lai uyen
-tân hưng|tan hung
 long nguyên|long nguyen
-hưng hòa|hung hoa
 lai hưng|lai hung
 chánh phú hòa|chanh phu hoa
 an điền|an dien
-an tây|an tay
 thới hòa|thoi hoa
 hòa lợi|hoa loi
 tân định|tan dinh
-phú an|phu an
-phước vĩnh|phuoc vinh
 an linh
 phước sang|phuoc sang
-an thái|an thai
 an long
-an bình|an binh
-tân hiệp|tan hiep
 tam lập|tam lap
-tân long|tan long
 vĩnh hoà|vinh hoa
-phước hoà|phuoc hoa
 uyên hưng|uyen hung
 tân phước khánh|tan phuoc khanh
-tân định|tan dinh
-bình mỹ|binh my
-tân bình|tan binh
-tân lập|tan lap
-tân thành|tan thanh
 đất cuốc|dat cuoc
 hiếu liêm|hieu liem
 lạc an|lac an
-vĩnh tân|vinh tan
 hội nghĩa|hoi nghia
-tân mỹ|tan my
-tân hiệp|tan hiep
-khánh bình|khanh binh
 phú chánh|phu chanh
 thường tân|thuong tan
-bạch đằng|bach dang
 tân vĩnh hiệp|tan vinh hiep
 thạnh phước|thanh phuoc
 thạnh hội|thanh hoi
-thái hòa|thai hoa
 dĩ an|di an
-tân bình|tan binh
 tân đông hiệp|tan dong hiep
-bình an|binh an
-bình thắng|binh thang
-đông hòa|dong hoa
-an bình|an binh
-an thạnh|an thanh
 lái thiêu|lai thieu
-bình chuẩn|binh chuan
 thuận giao|thuan giao
-an phú|an phu
 hưng định|hung dinh
-an sơn|an son
 bình nhâm|binh nham
-bình hòa|binh hoa
 vĩnh phú|vinh phu
 trảng dài|trang dai
-tân phong|tan phong
-tân biên|tan bien
 hố nai|ho nai
-tân hòa|tan hoa
-tân hiệp|tan hiep
 bửu long|buu long
-tân tiến|tan tien
-tam hiệp|tam hiep
-long bình|long binh
-quang vinh
-tân mai|tan mai
-thống nhất|thong nhat
-trung dũng|trung dung
-tam hòa|tam hoa
-hòa bình|hoa binh
-quyết thắng|quyet thang
-thanh bình|thanh binh
 bình đa|binh da
-an bình|an binh
 bửu hòa|buu hoa
 long bình tân|long binh tan
 tân vạn|tan van
 tân hạnh|tan hanh
-hiệp hòa|hiep hoa
 hóa an|hoa an
-xuân trung|xuan trung
 xuân thanh|xuan thanh
-xuân bình|xuan binh
-xuân an|xuan an
-xuân hoà|xuan hoa
-phú bình|phu binh
-bình lộc|binh loc
 bảo quang|bao quang
 suối tre|suoi tre
 bảo vinh|bao vinh
-xuân lập|xuan lap
 bàu sen|bau sen
 bàu trâm|bau tram
-xuân tân|xuan tan
 hàng gòn|hang gon
-tân phú|tan phu
 dak lua
 nam cát tiên|nam cat tien
-phú an|phu an
 núi tượng|nui tuong
 tà lài|ta lai
 phú lập|phu lap
-phú sơn|phu son
-phú thịnh|phu thinh
-thanh sơn|thanh son
-phú trung|phu trung
-phú xuân|phu xuan
-phú lộc|phu loc
-phú lâm|phu lam
-phú bình|phu binh
-phú thanh|phu thanh
-trà cổ|tra co
-phú điền|phu dien
-vĩnh an|vinh an
 phú lý|phu ly
 trị an|tri an
-tân an|tan an
-vĩnh tân|vinh tan
 bình lợi|binh loi
 thạnh phú|thanh phu
-thiện tân|thien tan
-tân bình|tan binh
-bình hòa|binh hoa
 mã đà|ma da
-hiếu liêm|hieu liem
 định quán|dinh quan
-thanh sơn|thanh son
-phú tân|phu tan
-phú vinh|phu vinh
-phú lợi|phu loi
-phú hòa|phu hoa
 ngọc định|ngoc dinh
 la ngà|la nga
 gia canh
 phú ngọc|phu ngoc
-phú cường|phu cuong
 túc trưng|tuc trung
-phú túc|phu tuc
 suối nho|suoi nho
 trảng bom|trang bom
-thanh bình|thanh binh
 cây gáo|cay gao
 bàu hàm|bau ham
 sông thao|song thao
 sông trầu|song trau
 đông hoà|dong hoa
-bắc sơn|bac son
 hố nai 3|ho nai 3
 tây hoà|tay hoa
-bình minh|binh minh
-trung hoà|trung hoa
 đồi 61|doi 61
-hưng thịnh|hung thinh
-quảng tiến|quang tien
 giang điền|giang dien
 an viễn|an vien
 gia tân 1|gia tan 1
 gia tân 2|gia tan 2
 gia tân 3|gia tan 3
 gia kiệm|gia kiem
-quang trung
 bàu hàm 2|bau ham 2
-hưng lộc|hung loc
 lộ 25|lo 25
 xuân thiện|xuan thien
 dầu giây|dau giay
 sông nhạn|song nhan
 xuân quế|xuan que
-nhân nghĩa|nhan nghia
 xuân đường|xuan duong
 long giao
-xuân mỹ|xuan my
 thừa đức|thua duc
 bảo bình|bao binh
 xuân bảo|xuan bao
@@ -8492,146 +6220,73 @@ xuân tây|xuan tay
 xuân đông|xuan dong
 sông ray|song ray
 lâm san|lam san
-long thành|long thanh
-an hòa|an hoa
-tam phước|tam phuoc
-phước tân|phuoc tan
-long hưng|long hung
-an phước|an phuoc
-bình an|binh an
 long đức|long duc
-lộc an|loc an
-bình sơn|binh son
-tam an
 cẩm đường|cam duong
 long an
-bàu cạn|bau can
-long phước|long phuoc
-phước bình|phuoc binh
-tân hiệp|tan hiep
-phước thái|phuoc thai
 gia ray
-xuân bắc|xuan bac
 suối cao|suoi cao
-xuân thành|xuan thanh
-xuân thọ|xuan tho
-xuân trường|xuan truong
-xuân hòa|xuan hoa
-xuân hưng|xuan hung
 xuân tâm|xuan tam
-suối cát|suoi cat
 xuân hiệp|xuan hiep
-xuân phú|xuan phu
 xuân định|xuan dinh
 bảo hoà|bao hoa
 lang minh
 phước thiền|phuoc thien
-long tân|long tan
 đại phước|dai phuoc
 hiệp phước|hiep phuoc
 phú hữu|phu huu
-phú hội|phu hoi
-phú thạnh|phu thanh
-phú đông|phu dong
 long thọ|long tho
 vĩnh thanh|vinh thanh
 phước khánh|phuoc khanh
-phước an|phuoc an
-phường 1|phuong 1|p.1|p. 1|p1|p 1
 thắng tam|thang tam
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 5|phuong 5|p.5|p. 5|p5|p 5
 thắng nhì|thang nhi
-phường 7|phuong 7|p.7|p. 7|p7|p 7
 nguyễn an ninh|nguyen an ninh
-phường 8|phuong 8|p.8|p. 8|p8|p 8
-phường 9|phuong 9|p.9|p. 9|p9|p 9
 thắng nhất|thang nhat
 rạch dừa|rach dua
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 12|phuong 12|p.12|p. 12|p12|p 12
-long sơn|long son
-phước hưng|phuoc hung
-phước hiệp|phuoc hiep
 phước nguyên|phuoc nguyen
 long toàn|long toan
 long tâm|long tam
-phước trung|phuoc trung
 long hương|long huong
 kim dinh
-tân hưng|tan hung
-long phước|long phuoc
 hoà long|hoa long
 bàu chinh|bau chinh
 ngãi giao|ngai giao
 bình ba|binh ba
 suối nghệ|suoi nghe
-xuân sơn|xuan son
-sơn bình|son binh
 bình giã|binh gia
-bình trung|binh trung
 xà bang|xa bang
 cù bị|cu bi
 láng lớn|lang lon
-quảng thành|quang thanh
-kim long
 suối rao|suoi rao
 đá bạc|da bac
-nghĩa thành|nghia thanh
 phước bửu|phuoc buu
-phước thuận|phuoc thuan
-phước tân|phuoc tan
 xuyên mộc|xuyen moc
 bông trang|bong trang
-tân lâm|tan lam
 bàu lâm|bau lam
-hòa bình|hoa binh
 hòa hưng|hoa hung
-hòa hiệp|hoa hiep
-hòa hội|hoa hoi
 bưng riềng|bung rieng
-bình châu|binh chau
 long điền|long dien
-long hải|long hai
 an ngãi|an ngai
-tam phước|tam phuoc
 an nhứt|an nhut
 phước tỉnh|phuoc tinh
-phước hưng|phuoc hung
 đất đỏ|dat do
 phước long thọ|phuoc long tho
-phước hội|phuoc hoi
 long mỹ|long my
-phước hải|phuoc hai
-long tân|long tan
 láng dài|lang dai
-lộc an|loc an
-phú mỹ|phu my
-tân hoà|tan hoa
-tân hải|tan hai
-phước hoà|phuoc hoa
-tân phước|tan phuoc
 mỹ xuân|my xuan
 sông xoài|song xoai
 hắc dịch|hac dich
 châu pha|chau pha
 tóc tiên|toc tien
-tân định|tan dinh
 đa kao|da kao
 bến nghé|ben nghe
 bến thành|ben thanh
 nguyễn thái bình|nguyen thai binh
-phạm ngũ lão|pham ngu lao
 cầu ông lãnh|cau ong lanh
 cô giang|co giang
 nguyễn cư trinh|nguyen cu trinh
 cầu kho|cau kho
 thạnh xuân|thanh xuan
 thạnh lộc|thanh loc
-hiệp thành|hiep thanh
 thới an|thoi an
 tân chánh hiệp|tan chanh hiep
 an phú đông|an phu dong
@@ -8644,210 +6299,56 @@ linh xuân|linh xuan
 bình chiểu|binh chieu
 linh trung
 tam bình|tam binh
-tam phú|tam phu
 hiệp bình phước|hiep binh phuoc
 hiệp bình chánh|hiep binh chanh
 linh chiểu|linh chieu
 linh tây|linh tay
 linh đông|linh dong
 bình thọ|binh tho
-trường thọ|truong tho
-long bình|long binh
 long thạnh mỹ|long thanh my
-tân phú|tan phu
 hiệp phú|hiep phu
 tăng nhơn phú a|tang nhon phu a
 tăng nhơn phú b|tang nhon phu b
 phước long b|phuoc long b
 phước long a|phuoc long a
 trường thạnh|truong thanh
-long phước|long phuoc
 long trường|long truong
-phước bình|phuoc binh
-phú hữu|phu huu
 phường 15|phuong 15|p.15|p. 15|p15|p 15
 phường 13|phuong 13|p.13|p. 13|p13|p 13
 phường 17|phuong 17|p.17|p. 17|p17|p 17
-phường 6|phuong 6|p.6|p. 6|p6|p 6
 phường 16|phuong 16|p.16|p. 16|p16|p 16
-phường 12|phuong 12|p.12|p. 12|p12|p 12
 phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 10|phuong 10|p.10|p. 10|p10|p 10
 phường 05|phuong 05|p.05|p. 05|p05|p 05
 phường 07|phuong 07|p.07|p. 07|p07|p 07
 phường 04|phuong 04|p.04|p. 04|p04|p 04
 phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 9|phuong 9|p.9|p. 9|p9|p 9
-phường 8|phuong 8|p.8|p. 8|p8|p 8
-phường 11|phuong 11|p.11|p. 11|p11|p 11
 phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 13|phuong 13|p.13|p. 13|p13|p 13
-phường 11|phuong 11|p.11|p. 11|p11|p 11
 phường 27|phuong 27|p.27|p. 27|p27|p 27
 phường 26|phuong 26|p.26|p. 26|p26|p 26
-phường 12|phuong 12|p.12|p. 12|p12|p 12
 phường 25|phuong 25|p.25|p. 25|p25|p 25
-phường 05|phuong 05|p.05|p. 05|p05|p 05
-phường 07|phuong 07|p.07|p. 07|p07|p 07
 phường 24|phuong 24|p.24|p. 24|p24|p 24
 phường 06|phuong 06|p.06|p. 06|p06|p 06
-phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 15|phuong 15|p.15|p. 15|p15|p 15
 phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 17|phuong 17|p.17|p. 17|p17|p 17
 phường 21|phuong 21|p.21|p. 21|p21|p 21
 phường 22|phuong 22|p.22|p. 22|p22|p 22
 phường 19|phuong 19|p.19|p. 19|p19|p 19
 phường 28|phuong 28|p.28|p. 28|p28|p 28
-phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 04|phuong 04|p.04|p. 04|p04|p 04
-phường 12|phuong 12|p.12|p. 12|p12|p 12
-phường 13|phuong 13|p.13|p. 13|p13|p 13
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 07|phuong 07|p.07|p. 07|p07|p 07
-phường 05|phuong 05|p.05|p. 05|p05|p 05
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-phường 06|phuong 06|p.06|p. 06|p06|p 06
 phường 08|phuong 08|p.08|p. 08|p08|p 08
 phường 09|phuong 09|p.09|p. 09|p09|p 09
-phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 15|phuong 15|p.15|p. 15|p15|p 15
 tân sơn nhì|tan son nhi
 tây thạnh|tay thanh
-sơn kỳ|son ky
 tân quý|tan quy
-tân thành|tan thanh
 phú thọ hòa|phu tho hoa
-phú thạnh|phu thanh
-phú trung|phu trung
-hòa thạnh|hoa thanh
-hiệp tân|hiep tan
 tân thới hòa|tan thoi hoa
-phường 04|phuong 04|p.04|p. 04|p04|p 04
-phường 05|phuong 05|p.05|p. 05|p05|p 05
-phường 09|phuong 09|p.09|p. 09|p09|p 09
-phường 07|phuong 07|p.07|p. 07|p07|p 07
-phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 08|phuong 08|p.08|p. 08|p08|p 08
-phường 15|phuong 15|p.15|p. 15|p15|p 15
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 17|phuong 17|p.17|p. 17|p17|p 17
-phường 13|phuong 13|p.13|p. 13|p13|p 13
 thảo điền|thao dien
-an phú|an phu
-an khánh|an khanh
 bình trưng đông|binh trung dong
 bình trưng tây|binh trung tay
 cát lái|cat lai
 thạnh mỹ lợi|thanh my loi
 an lợi đông|an loi dong
 thủ thiêm|thu thiem
-phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 12|phuong 12|p.12|p. 12|p12|p 12
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 13|phuong 13|p.13|p. 13|p13|p 13
 võ thị sáu|vo thi sau
-phường 09|phuong 09|p.09|p. 09|p09|p 09
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-phường 04|phuong 04|p.04|p. 04|p04|p 04
-phường 05|phuong 05|p.05|p. 05|p05|p 05
-phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 15|phuong 15|p.15|p. 15|p15|p 15
-phường 13|phuong 13|p.13|p. 13|p13|p 13
-phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 12|phuong 12|p.12|p. 12|p12|p 12
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-phường 09|phuong 09|p.09|p. 09|p09|p 09
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 08|phuong 08|p.08|p. 08|p08|p 08
-phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 04|phuong 04|p.04|p. 04|p04|p 04
-phường 07|phuong 07|p.07|p. 07|p07|p 07
-phường 05|phuong 05|p.05|p. 05|p05|p 05
-phường 06|phuong 06|p.06|p. 06|p06|p 06
-phường 15|phuong 15|p.15|p. 15|p15|p 15
-phường 05|phuong 05|p.05|p. 05|p05|p 05
-phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-phường 13|phuong 13|p.13|p. 13|p13|p 13
-phường 08|phuong 08|p.08|p. 08|p08|p 08
-phường 09|phuong 09|p.09|p. 09|p09|p 09
-phường 12|phuong 12|p.12|p. 12|p12|p 12
-phường 07|phuong 07|p.07|p. 07|p07|p 07
-phường 06|phuong 06|p.06|p. 06|p06|p 06
-phường 04|phuong 04|p.04|p. 04|p04|p 04
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 16|phuong 16|p.16|p. 16|p16|p 16
-phường 13|phuong 13|p.13|p. 13|p13|p 13
-phường 09|phuong 09|p.09|p. 09|p09|p 09
-phường 06|phuong 06|p.06|p. 06|p06|p 06
-phường 08|phuong 08|p.08|p. 08|p08|p 08
-phường 10|phuong 10|p.10|p. 10|p10|p 10
 phường 18|phuong 18|p.18|p. 18|p18|p 18
-phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 04|phuong 04|p.04|p. 04|p04|p 04
-phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 16|phuong 16|p.16|p. 16|p16|p 16
-phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 15|phuong 15|p.15|p. 15|p15|p 15
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 04|phuong 04|p.04|p. 04|p04|p 04
-phường 09|phuong 09|p.09|p. 09|p09|p 09
-phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 12|phuong 12|p.12|p. 12|p12|p 12
-phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 08|phuong 08|p.08|p. 08|p08|p 08
-phường 07|phuong 07|p.07|p. 07|p07|p 07
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 05|phuong 05|p.05|p. 05|p05|p 05
-phường 06|phuong 06|p.06|p. 06|p06|p 06
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-phường 13|phuong 13|p.13|p. 13|p13|p 13
-phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 13|phuong 13|p.13|p. 13|p13|p 13
-phường 09|phuong 09|p.09|p. 09|p09|p 09
-phường 06|phuong 06|p.06|p. 06|p06|p 06
-phường 12|phuong 12|p.12|p. 12|p12|p 12
-phường 05|phuong 05|p.05|p. 05|p05|p 05
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 04|phuong 04|p.04|p. 04|p04|p 04
-phường 08|phuong 08|p.08|p. 08|p08|p 08
-phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 07|phuong 07|p.07|p. 07|p07|p 07
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-phường 08|phuong 08|p.08|p. 08|p08|p 08
-phường 02|phuong 02|p.02|p. 02|p02|p 02
-phường 01|phuong 01|p.01|p. 01|p01|p 01
-phường 03|phuong 03|p.03|p. 03|p03|p 03
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 09|phuong 09|p.09|p. 09|p09|p 09
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-phường 04|phuong 04|p.04|p. 04|p04|p 04
-phường 13|phuong 13|p.13|p. 13|p13|p 13
-phường 12|phuong 12|p.12|p. 12|p12|p 12
-phường 05|phuong 05|p.05|p. 05|p05|p 05
-phường 14|phuong 14|p.14|p. 14|p14|p 14
-phường 06|phuong 06|p.06|p. 06|p06|p 06
-phường 15|phuong 15|p.15|p. 15|p15|p 15
-phường 16|phuong 16|p.16|p. 16|p16|p 16
-phường 07|phuong 07|p.07|p. 07|p07|p 07
 bình hưng hòa|binh hung hoa
 bình hưng hoà a|binh hung hoa a
 bình hưng hoà b|binh hung hoa b
@@ -8856,47 +6357,32 @@ bình trị đông a|binh tri dong a
 bình trị đông b|binh tri dong b
 tân tạo|tan tao
 tân tạo a|tan tao a
-an lạc|an lac
 an lạc a|an lac a
 tân thuận đông|tan thuan dong
 tân thuận tây|tan thuan tay
 tân kiểng|tan kieng
-tân hưng|tan hung
-bình thuận|binh thuan
 tân quy|tan quy
-phú thuận|phu thuan
-tân phú|tan phu
-tân phong|tan phong
-phú mỹ|phu my
 củ chi|cu chi
 phú mỹ hưng|phu my hung
-an phú|an phu
 trung lập thượng|trung lap thuong
 an nhơn tây|an nhon tay
 nhuận đức|nhuan duc
 phạm văn cội|pham van coi
 phú hòa đông|phu hoa dong
 trung lập hạ|trung lap ha
-trung an
-phước thạnh|phuoc thanh
-phước hiệp|phuoc hiep
 tân an hội|tan an hoi
 phước vĩnh an|phuoc vinh an
 thái mỹ|thai my
 tân thạnh tây|tan thanh tay
-hòa phú|hoa phu
 tân thạnh đông|tan thanh dong
-bình mỹ|binh my
 tân phú trung|tan phu trung
 tân thông hội|tan thong hoi
 hóc môn|hoc mon
-tân hiệp|tan hiep
 nhị bình|nhi binh
 đông thạnh|dong thanh
 tân thới nhì|tan thoi nhi
 thới tam thôn|thoi tam thon
 xuân thới sơn|xuan thoi son
-tân xuân|tan xuan
 xuân thới đông|xuan thoi dong
 trung chánh|trung chanh
 xuân thới thượng|xuan thoi thuong
@@ -8905,25 +6391,17 @@ tân túc|tan tuc
 phạm văn hai|pham van hai
 vĩnh lộc a|vinh loc a
 vĩnh lộc b|vinh loc b
-bình lợi|binh loi
 lê minh xuân|le minh xuan
 tân nhựt|tan nhut
 tân kiên|tan kien
-bình hưng|binh hung
-phong phú|phong phu
 an phú tây|an phu tay
-hưng long|hung long
 đa phước|da phuoc
 tân quý tây|tan quy tay
-bình chánh|binh chanh
 quy đức|quy duc
 nhà bè|nha be
 phước kiển|phuoc kien
-phước lộc|phuoc loc
 nhơn đức|nhon duc
-phú xuân|phu xuan
 long thới|long thoi
-hiệp phước|hiep phuoc
 cần thạnh|can thanh
 bình khánh|binh khanh
 tam thôn hiệp|tam thon hiep
@@ -8931,109 +6409,63 @@ an thới đông|an thoi dong
 thạnh an|thanh an
 long hòa|long hoa
 lý nhơn|ly nhon
-phường 5|phuong 5|p.5|p. 5|p5|p 5
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-tân khánh|tan khanh
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 7|phuong 7|p.7|p. 7|p7|p 7
-phường 6|phuong 6|p.6|p. 6|p6|p 6
 hướng thọ phú|huong tho phu
 nhơn thạnh trung|nhon thanh trung
 lợi bình nhơn|loi binh nhon
 bình tâm|binh tam
 khánh hậu|khanh hau
 an vĩnh ngãi|an vinh ngai
-tân hưng|tan hung
-hưng hà|hung ha
 hưng điền b|hung dien b
 hưng điền|hung dien
 thạnh hưng|thanh hung
 hưng thạnh|hung thanh
-vĩnh thạnh|vinh thanh
 vĩnh châu b|vinh chau b
-vĩnh lợi|vinh loi
 vĩnh đại|vinh dai
 vĩnh châu a|vinh chau a
 vĩnh bửu|vinh buu
-vĩnh hưng|vinh hung
 hưng điền a|hung dien a
 khánh hưng|khanh hung
 thái trị|thai tri
 vĩnh trị|vinh tri
 thái bình trung|thai binh trung
 vĩnh bình|vinh binh
-vĩnh thuận|vinh thuan
 tuyên bình|tuyen binh
 tuyên bình tây|tuyen binh tay
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 2|phuong 2|p.2|p. 2|p2|p 2
 thạnh trị|thanh tri
-bình hiệp|binh hiep
 bình hòa tây|binh hoa tay
-bình tân|binh tan
-bình thạnh|binh thanh
 tuyên thạnh|tuyen thanh
-phường 3|phuong 3|p.3|p. 3|p3|p 3
 bình hòa trung|binh hoa trung
 bình hòa đông|binh hoa dong
 bình phong thạnh|binh phong thanh
-thạnh hưng|thanh hung
-tân lập|tan lap
-tân thành|tan thanh
-tân thạnh|tan thanh
 bắc hòa|bac hoa
 hậu thạnh tây|hau thanh tay
 nhơn hòa lập|nhon hoa lap
-tân lập|tan lap
 hậu thạnh đông|hau thanh dong
-nhơn hoà|nhon hoa
 kiến bình|kien binh
-tân thành|tan thanh
-tân bình|tan binh
-tân ninh|tan ninh
 nhơn ninh|nhon ninh
-tân hòa|tan hoa
 thạnh hóa|thanh hoa
-tân hiệp|tan hiep
 thuận bình|thuan binh
-thạnh phước|thanh phuoc
-thạnh phú|thanh phu
 thuận nghĩa hòa|thuan nghia hoa
 thủy đông|thuy dong
 thủy tây|thuy tay
 tân tây|tan tay
-tân đông|tan dong
-thạnh an|thanh an
-đông thành|dong thanh
 mỹ quý đông|my quy dong
 mỹ thạnh bắc|my thanh bac
 mỹ quý tây|my quy tay
 mỹ thạnh tây|my thanh tay
 mỹ thạnh đông|my thanh dong
-bình thành|binh thanh
 bình hòa bắc|binh hoa bac
 bình hòa hưng|binh hoa hung
 bình hòa nam|binh hoa nam
-mỹ bình|my binh
 hậu nghĩa|hau nghia
-hiệp hòa|hiep hoa
-đức hòa|duc hoa
 lộc giang|loc giang
-an ninh đông|an ninh dong
-an ninh tây|an ninh tay
-tân mỹ|tan my
-hiệp hòa|hiep hoa
 đức lập thượng|duc lap thuong
 đức lập hạ|duc lap ha
-tân phú|tan phu
 mỹ hạnh bắc|my hanh bac
 đức hòa thượng|duc hoa thuong
 hòa khánh tây|hoa khanh tay
 hòa khánh đông|hoa khanh dong
 mỹ hạnh nam|my hanh nam
-hòa khánh nam|hoa khanh nam
 đức hòa đông|duc hoa dong
 đức hòa hạ|duc hoa ha
 hựu thạnh|huu thanh
@@ -9042,115 +6474,63 @@ thạnh lợi|thanh loi
 lương bình|luong binh
 thạnh hòa|thanh hoa
 lương hòa|luong hoa
-tân hòa|tan hoa
 tân bửu|tan buu
-an thạnh|an thanh
 bình đức|binh duc
-mỹ yên|my yen
-thanh phú|thanh phu
-long hiệp|long hiep
-thạnh đức|thanh duc
 phước lợi|phuoc loi
 nhựt chánh|nhut chanh
 thủ thừa|thu thua
 long thạnh|long thanh
-tân thành|tan thanh
-long thuận|long thuan
 mỹ lạc|my lac
-mỹ thạnh|my thanh
-bình an|binh an
 nhị thành|nhi thanh
-mỹ an|my an
-bình thạnh|binh thanh
 mỹ phú|my phu
-tân long|tan long
 tân trụ|tan tru
-tân bình|tan binh
 quê mỹ thạnh|que my thanh
 lạc tấn|lac tan
 bình trinh đông|binh trinh dong
 tân phước tây|tan phuoc tay
 bình lãng|binh lang
 bình tịnh|binh tinh
-đức tân|duc tan
 nhựt ninh|nhut ninh
 cần đước|can duoc
 long trạch|long trach
 long khê|long khe
 long định|long dinh
 phước vân|phuoc van
-long hòa|long hoa
 long cang
-long sơn|long son
-tân trạch|tan trach
 mỹ lệ|my le
 tân lân|tan lan
 phước tuy|phuoc tuy
 long hựu đông|long huu dong
 tân ân|tan an
-phước đông|phuoc dong
 long hựu tây|long huu tay
 tân chánh|tan chanh
 cần giuộc|can giuoc
 phước lý|phuoc ly
 long thượng|long thuong
 long hậu|long hau
-phước hậu|phuoc hau
-mỹ lộc|my loc
 phước lại|phuoc lai
 phước lâm|phuoc lam
-thuận thành|thuan thanh
 phước vĩnh tây|phuoc vinh tay
 phước vĩnh đông|phuoc vinh dong
-long an
 long phụng|long phung
-đông thạnh|dong thanh
 tân tập|tan tap
 tầm vu|tam vu
 bình quới|binh quoi
-hòa phú|hoa phu
 phú ngãi trị|phu ngai tri
 vĩnh công|vinh cong
 thuận mỹ|thuan my
-hiệp thạnh|hiep thanh
 phước tân hưng|phuoc tan hung
 thanh phú long|thanh phu long
 dương xuân hội|duong xuan hoi
 an lục long|an luc long
 long trì|long tri
 thanh vĩnh đông|thanh vinh dong
-phường 5|phuong 5|p.5|p. 5|p5|p 5
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 7|phuong 7|p.7|p. 7|p7|p 7
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 8|phuong 8|p.8|p. 8|p8|p 8
-phường 6|phuong 6|p.6|p. 6|p6|p 6
-phường 9|phuong 9|p.9|p. 9|p9|p 9
-phường 10|phuong 10|p.10|p. 10|p10|p 10
-tân long|tan long
 đạo thạnh|dao thanh
-trung an
-mỹ phong|my phong
 tân mỹ chánh|tan my chanh
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 5|phuong 5|p.5|p. 5|p5|p 5
-long hưng|long hung
-long thuận|long thuan
 long chánh|long chanh
-long hòa|long hoa
-mỹ phước|my phuoc
 tân hòa đông|tan hoa dong
-thạnh tân|thanh tan
-thạnh mỹ|thanh my
 thạnh hoà|thanh hoa
-phú mỹ|phu my
 tân hòa thành|tan hoa thanh
-hưng thạnh|hung thanh
 tân lập 1|tan lap 1
 tân hòa tây|tan hoa tay
 tân lập 2|tan lap 2
@@ -9158,93 +6538,49 @@ phước lập|phuoc lap
 cái bè|cai be
 hậu mỹ bắc b|hau my bac b
 hậu mỹ bắc a|hau my bac a
-mỹ trung|my trung
 hậu mỹ trinh|hau my trinh
 hậu mỹ phú|hau my phu
-mỹ tân|my tan
 mỹ lợi b|my loi b
 thiện trung|thien trung
 mỹ hội|my hoi
-an cư|an cu
-hậu thành|hau thanh
 mỹ lợi a|my loi a
-hòa khánh|hoa khanh
 thiện trí|thien tri
 mỹ đức đông|my duc dong
 mỹ đức tây|my duc tay
 đông hòa hiệp|dong hoa hiep
 an thái đông|an thai dong
-tân hưng|tan hung
-mỹ lương|my luong
-tân thanh|tan thanh
 an thái trung|an thai trung
 an hữu|an huu
-hòa hưng|hoa hung
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-thạnh lộc|thanh loc
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 5|phuong 5|p.5|p. 5|p5|p 5
 mỹ thành bắc|my thanh bac
-phú cường|phu cuong
 mỹ phước tây|my phuoc tay
 mỹ hạnh đông|my hanh dong
 mỹ hạnh trung|my hanh trung
 mỹ thành nam|my thanh nam
-tân phú|tan phu
-tân bình|tan binh
-phú nhuận|phu nhuan
-tân hội|tan hoi
-bình phú|binh phu
 nhị mỹ|nhi my
 nhị quý|nhi quy
-thanh hòa|thanh hoa
 phú quý|phu quy
-long khánh|long khanh
-cẩm sơn|cam son
-phú an|phu an
 mỹ long|my long
 long tiên|long tien
 hiệp đức|hiep duc
 long trung
 hội xuân|hoi xuan
-tân phong|tan phong
-tam bình|tam binh
-ngũ hiệp|ngu hiep
-tân hiệp|tan hiep
 tân hội đông|tan hoi dong
-tân hương|tan huong
 tân lý đông|tan ly dong
 tân lý tây|tan ly tay
 thân cửu nghĩa|than cuu nghia
-tam hiệp|tam hiep
 điềm hy|diem hy
-nhị bình|nhi binh
 dưỡng điềm|duong diem
-đông hòa|dong hoa
-long định|long dinh
 hữu đạo|huu dao
-long an
-long hưng|long hung
 bình trưng|binh trung
-phước thạnh|phuoc thanh
-thạnh phú|thanh phu
 bàn long|ban long
-vĩnh kim|vinh kim
-bình đức|binh duc
 song thuận|song thuan
-kim sơn|kim son
-phú phong|phu phong
 thới sơn|thoi son
 chợ gạo|cho gao
-trung hòa|trung hoa
 hòa tịnh|hoa tinh
 mỹ tịnh an|my tinh an
 tân bình thạnh|tan binh thanh
 phú kiết|phu kiet
 lương hòa lạc|luong hoa lac
-thanh bình|thanh binh
 quơn long|quon long
 bình phục nhứt|binh phuc nhut
 đăng hưng phước|dang hung phuoc
@@ -9253,222 +6589,103 @@ song bình|song binh
 bình phan|binh phan
 long bình điền|long binh dien
 an thạnh thủy|an thanh thuy
-xuân đông|xuan dong
 hòa định|hoa dinh
 bình ninh|binh ninh
-vĩnh bình|vinh binh
-đồng sơn|dong son
-bình phú|binh phu
 đồng thạnh|dong thanh
-thành công|thanh cong
 bình nhì|binh nhi
 yên luông|yen luong
-thạnh trị|thanh tri
 thạnh nhựt|thanh nhut
-long vĩnh|long vinh
-bình tân|binh tan
 vĩnh hựu|vinh huu
-long bình|long binh
 tân thới|tan thoi
-tân phú|tan phu
-phú thạnh|phu thanh
-tân thạnh|tan thanh
-tân hòa|tan hoa
 tăng hoà|tang hoa
-bình đông|binh dong
-tân phước|tan phuoc
 gia thuận|gia thuan
 bình xuân|binh xuan
 vàm láng|vam lang
-tân tây|tan tay
 kiểng phước|kieng phuoc
-tân trung|tan trung
-tân đông|tan dong
 bình ân|binh an
 tân điền|tan dien
 bình nghị|binh nghi
-phước trung|phuoc trung
-tân thành|tan thanh
-phú đông|phu dong
-phú tân|phu tan
 phú khương|phu khuong
-phú tân|phu tan
-phường 8|phuong 8|p.8|p. 8|p8|p 8
-phường 6|phuong 6|p.6|p. 6|p6|p 6
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 5|phuong 5|p.5|p. 5|p5|p 5
 an hội|an hoi
-phường 7|phuong 7|p.7|p. 7|p7|p 7
-sơn đông|son dong
 phú hưng|phu hung
-bình phú|binh phu
 mỹ thạnh an|my thanh an
 nhơn thạnh|nhon thanh
-phú nhuận|phu nhuan
-châu thành|chau thanh
 tân thạch|tan thach
 qưới sơn|quoi son
-an khánh|an khanh
-giao long
-phú túc|phu tuc
-phú đức|phu duc
 phú an hòa|phu an hoa
-an phước|an phuoc
-tam phước|tam phuoc
 thành triệu|thanh trieu
 tường đa|tuong da
-tân phú|tan phu
 quới thành|quoi thanh
-phước thạnh|phuoc thanh
 an hóa|an hoa
 tiên long|tien long
-an hiệp|an hiep
 hữu định|huu dinh
 tiên thủy|tien thuy
 sơn hòa|son hoa
 chợ lách|cho lach
 phú phụng|phu phung
-sơn định|son dinh
-vĩnh bình|vinh binh
 hòa nghĩa|hoa nghia
-long thới|long thoi
-phú sơn|phu son
-phú mỹ|phu my
 tân thiềng|tan thieng
-vĩnh thành|vinh thanh
-vĩnh hòa|vinh hoa
 hưng khánh trung b|hung khanh trung b
 hưng khánh trung a|hung khanh trung a
 mỏ cày|mo cay
-thanh tân|thanh tan
 thạnh ngãi|thanh ngai
 tân phú tây|tan phu tay
 phước mỹ trung|phuoc my trung
 tân thành bình|tan thanh binh
-thành an|thanh an
-hòa lộc|hoa loc
 tân thanh tây|tan thanh tay
 định thủy|dinh thuy
-tân bình|tan binh
 nhuận phú tân|nhuan phu tan
 đa phước hội|da phuoc hoi
-tân hội|tan hoi
-phước hiệp|phuoc hiep
-bình khánh|binh khanh
 khánh thạnh tân|khanh thanh tan
-an thạnh|an thanh
-an định|an dinh
 thành thới b|thanh thoi b
-tân trung|tan trung
 an thới|an thoi
 thành thới a|thanh thoi a
-minh đức|minh duc
 ngãi đăng|ngai dang
-cẩm sơn|cam son
 hương mỹ|huong my
 giồng trôm|giong trom
-phong nẫm|phong nam
-mỹ thạnh|my thanh
 châu hòa|chau hoa
-lương hòa|luong hoa
 lương quới|luong quoi
-lương phú|luong phu
-châu bình|chau binh
 thuận điền|thuan dien
-sơn phú|son phu
 bình hoà|binh hoa
-phước long|phuoc long
 hưng phong|hung phong
-long mỹ|long my
 tân hào|tan hao
-bình thành|binh thanh
-tân thanh|tan thanh
 tân lợi thạnh|tan loi thanh
 thạnh phú đông|thanh phu dong
 hưng nhượng|hung nhuong
 hưng lễ|hung le
 bình đại|binh dai
-tam hiệp|tam hiep
-long định|long dinh
-long hòa|long hoa
-phú thuận|phu thuan
 vang quới tây|vang quoi tay
 vang quới đông|vang quoi dong
 châu hưng|chau hung
 phú vang|phu vang
-lộc thuận|loc thuan
-định trung|dinh trung
 thới lai|thoi lai
 bình thới|binh thoi
-phú long|phu long
-bình thắng|binh thang
-thạnh trị|thanh tri
 đại hòa lộc|dai hoa loc
-thừa đức|thua duc
-thạnh phước|thanh phuoc
 thới thuận|thoi thuan
 ba tri
-tân mỹ|tan my
-mỹ hòa|my hoa
-tân xuân|tan xuan
-mỹ chánh|my chanh
 bảo thạnh|bao thanh
 an phú trung|an phu trung
-mỹ thạnh|my thanh
 mỹ nhơn|my nhon
 phước ngãi|phuoc ngai
 an ngãi trung|an ngai trung
 phú lễ|phu le
 an bình tây|an binh tay
-bảo thuận|bao thuan
-tân hưng|tan hung
 an ngãi tây|an ngai tay
-an hiệp|an hiep
-vĩnh hòa|vinh hoa
-tân thủy|tan thuy
-vĩnh an|vinh an
-an đức|an duc
 an hòa tây|an hoa tay
-an thủy|an thuy
-thạnh phú|thanh phu
-phú khánh|phu khanh
 đại điền|dai dien
 quới điền|quoi dien
-tân phong|tan phong
-mỹ hưng|my hung
-an thạnh|an thanh
 thới thạnh|thoi thanh
-hòa lợi|hoa loi
-an điền|an dien
-bình thạnh|binh thanh
 an thuận|an thuan
 an quy
 thạnh hải|thanh hai
-an nhơn|an nhon
 giao thạnh|giao thanh
 thạnh phong|thanh phong
-mỹ an|my an
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 5|phuong 5|p.5|p. 5|p5|p 5
-phường 6|phuong 6|p.6|p. 6|p6|p 6
-phường 7|phuong 7|p.7|p. 7|p7|p 7
-phường 8|phuong 8|p.8|p. 8|p8|p 8
-phường 9|phuong 9|p.9|p. 9|p9|p 9
-long đức|long duc
 càng long|cang long
 mỹ cẩm|my cam
 an trường a|an truong a
 an trường|an truong
 huyền hội|huyen hoi
-tân an|tan an
-tân bình|tan binh
-bình phú|binh phu
 phương thạnh|phuong thanh
-đại phúc|dai phuc
-đại phước|dai phuoc
 nhị long phú|nhi long phu
 nhị long|nhi long
 đức mỹ|duc my
@@ -9478,343 +6695,152 @@ châu điền|chau dien
 an phú tân|an phu tan
 hoà tân|hoa tan
 ninh thới|ninh thoi
-phong phú|phong phu
 phong thạnh|phong thanh
 tam ngãi|tam ngai
 thông hòa|thong hoa
-thạnh phú|thanh phu
 tiểu cần|tieu can
 cầu quan|cau quan
-phú cần|phu can
 hiếu tử|hieu tu
 hiếu trung|hieu trung
-long thới|long thoi
 hùng hòa|hung hoa
 tân hùng|tan hung
 tập ngãi|tap ngai
 ngãi hùng|ngai hung
-tân hòa|tan hoa
-châu thành|chau thanh
-đa lộc|da loc
-mỹ chánh|my chanh
-thanh mỹ|thanh my
 lương hoà a|luong hoa a
-lương hòa|luong hoa
 song lộc|song loc
 nguyệt hóa|nguyet hoa
-hòa thuận|hoa thuan
-hòa lợi|hoa loi
 phước hảo|phuoc hao
-hưng mỹ|hung my
-hòa minh|hoa minh
-long hòa|long hoa
 cầu ngang|cau ngang
-mỹ long|my long
 mỹ long bắc|my long bac
 mỹ long nam|my long nam
-mỹ hòa|my hoa
-vĩnh kim|vinh kim
 kim hòa|kim hoa
-hiệp hòa|hiep hoa
-thuận hòa|thuan hoa
-long sơn|long son
 nhị trường|nhi truong
-trường thọ|truong tho
 hiệp mỹ đông|hiep my dong
 hiệp mỹ tây|hiep my tay
 thạnh hòa sơn|thanh hoa son
 trà cú|tra cu
-định an|dinh an
-phước hưng|phuoc hung
 tập sơn|tap son
-tân sơn|tan son
 an quảng hữu|an quang huu
 lưu nghiệp anh|luu nghiep anh
 ngãi xuyên|ngai xuyen
-kim sơn|kim son
-thanh sơn|thanh son
 hàm giang|ham giang
 hàm tân|ham tan
-đại an|dai an
-định an|dinh an
 đôn xuân|don xuan
 đôn châu|don chau
 ngọc biên|ngoc bien
-long hiệp|long hiep
-tân hiệp|tan hiep
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-long thành|long thanh
-long toàn|long toan
-phường 2|phuong 2|p.2|p. 2|p2|p 2
 long hữu|long huu
-long khánh|long khanh
 dân thành|dan thanh
 trường long hòa|truong long hoa
 ngũ lạc|ngu lac
-long vĩnh|long vinh
-đông hải|dong hai
-hiệp thạnh|hiep thanh
-phường 9|phuong 9|p.9|p. 9|p9|p 9
-phường 5|phuong 5|p.5|p. 5|p5|p 5
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 8|phuong 8|p.8|p. 8|p8|p 8
 tân ngãi|tan ngai
-tân hòa|tan hoa
-tân hội|tan hoi
-trường an|truong an
 long hồ|long ho
-đồng phú|dong phu
 bình hòa phước|binh hoa phuoc
-hòa ninh|hoa ninh
-an bình|an binh
-thanh đức|thanh duc
-tân hạnh|tan hanh
-phước hậu|phuoc hau
-long phước|long phuoc
-phú đức|phu duc
-lộc hòa|loc hoa
-long an
 phú quới|phu quoi
 thạnh quới|thanh quoi
-hòa phú|hoa phu
-mỹ an|my an
-mỹ phước|my phuoc
-an phước|an phuoc
-nhơn phú|nhon phu
-long mỹ|long my
-hòa tịnh|hoa tinh
 cái nhum|cai nhum
-bình phước|binh phuoc
 chánh an|chanh an
-tân an hội|tan an hoi
-tân long|tan long
 tân long hội|tan long hoi
 vũng liêm|vung liem
 tân quới trung|tan quoi trung
 quới thiện|quoi thien
 quới an|quoi an
-trung chánh|trung chanh
 tân an luông|tan an luong
-thanh bình|thanh binh
 trung thành tây|trung thanh tay
 trung hiệp|trung hiep
 hiếu phụng|hieu phung
 trung thành đông|trung thanh dong
-trung thành|trung thanh
 trung hiếu|trung hieu
 trung ngãi|trung ngai
 hiếu thuận|hieu thuan
-trung nghĩa|trung nghia
-trung an
 hiếu nhơn|hieu nhon
 hiếu thành|hieu thanh
 hiếu nghĩa|hieu nghia
-tam bình|tam binh
-tân lộc|tan loc
-phú thịnh|phu thinh
-hậu lộc|hau loc
-hòa thạnh|hoa thanh
 hoà lộc|hoa loc
-phú lộc|phu loc
 song phú|song phu
-hòa hiệp|hoa hiep
-mỹ lộc|my loc
-tân phú|tan phu
 long phú|long phu
 mỹ thạnh trung|my thanh trung
 tường lộc|tuong loc
 loan mỹ|loan my
 ngãi tứ|ngai tu
-bình ninh|binh ninh
 cái vồn|cai von
 thành phước|thanh phuoc
-tân hưng|tan hung
-tân thành|tan thanh
 thành trung|thanh trung
 tân an thạnh|tan an thanh
 tân lược|tan luoc
 nguyễn văn thảnh|nguyen van thanh
-thành lợi|thanh loi
-mỹ thuận|my thuan
-tân bình|tan binh
 tân quới|tan quoi
-thuận an|thuan an
-đông thạnh|dong thanh
 đông bình|dong binh
 đông thuận|dong thuan
-mỹ hòa|my hoa
-đông thành|dong thanh
 trà ôn|tra on
-xuân hiệp|xuan hiep
-nhơn bình|nhon binh
-hòa bình|hoa binh
-thới hòa|thoi hoa
 trà côn|tra con
-tân mỹ|tan my
 hựu thành|huu thanh
 vĩnh xuân|vinh xuan
 thuận thới|thuan thoi
-phú thành|phu thanh
 thiện mỹ|thien my
 lục sỹ thành|luc sy thanh
 tích thiện|tich thien
-phường 11|phuong 11|p.11|p. 11|p11|p 11
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 6|phuong 6|p.6|p. 6|p6|p 6
 mỹ ngãi|my ngai
-mỹ tân|my tan
 mỹ trà|my tra
-mỹ phú|my phu
-tân thuận tây|tan thuan tay
-hoà thuận|hoa thuan
-hòa an|hoa an
-tân thuận đông|tan thuan dong
 tịnh thới|tinh thoi
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 2|phuong 2|p.2|p. 2|p2|p 2
 tân khánh đông|tan khanh dong
 tân quy đông|tan quy dong
-an hoà|an hoa
 tân quy tây|tan quy tay
 tân phú đông|tan phu dong
 sa rài|sa rai
 tân hộ cơ|tan ho co
 thông bình|thong binh
-bình phú|binh phu
 tân thành a|tan thanh a
 tân thành b|tan thanh b
-tân phước|tan phuoc
 tân công chí|tan cong chi
-an phước|an phuoc
-an lộc|an loc
-an thạnh|an thanh
 thường phước 1|thuong phuoc 1
-bình thạnh|binh thanh
 thường thới hậu a|thuong thoi hau a
-tân hội|tan hoi
 thường thới tiền|thuong thoi tien
 thường phước 2|thuong phuoc 2
 thường lạc|thuong lac
-an lạc|an lac
 long khánh a|long khanh a
 long khánh b|long khanh b
 an bình b|an binh b
 an bình a|an binh a
-long thuận|long thuan
 phú thuận b|phu thuan b
 phú thuận a|phu thuan a
 tràm chim|tram chim
-hoà bình|hoa binh
 tân công sính|tan cong sinh
 phú hiệp|phu hiep
-phú đức|phu duc
 phú thành b|phu thanh b
-an hòa|an hoa
-an long
-phú cường|phu cuong
 phú ninh|phu ninh
-phú thọ|phu tho
 phú thành a|phu thanh a
-mỹ an|my an
-thạnh lợi|thanh loi
-hưng thạnh|hung thanh
-trường xuân|truong xuan
 tân kiều|tan kieu
-mỹ hòa|my hoa
 mỹ quý|my quy
-mỹ đông|my dong
 đốc binh kiều|doc binh kieu
-mỹ an|my an
-phú điền|phu dien
 láng biển|lang bien
-thanh mỹ|thanh my
-mỹ thọ|my tho
 gáo giồng|gao giong
 phương thịnh|phuong thinh
-ba sao
-phong mỹ|phong my
-tân nghĩa|tan nghia
 phương trà|phuong tra
-nhị mỹ|nhi my
-mỹ thọ|my tho
 tân hội trung|tan hoi trung
-an bình|an binh
-mỹ hội|my hoi
-mỹ hiệp|my hiep
-mỹ long|my long
 bình hàng trung|binh hang trung
 mỹ xương|my xuong
 bình hàng tây|binh hang tay
-bình thạnh|binh thanh
-thanh bình|thanh binh
-tân quới|tan quoi
-tân hòa|tan hoa
 an phong
-phú lợi|phu loi
-tân mỹ|tan my
 bình tấn|binh tan
 tân huề|tan hue
-tân bình|tan binh
-tân thạnh|tan thanh
-tân phú|tan phu
-bình thành|binh thanh
-tân long|tan long
 lấp vò|lap vo
 mỹ an hưng a|my an hung a
-tân mỹ|tan my
 mỹ an hưng b|my an hung b
 tân khánh trung|tan khanh trung
 long hưng a|long hung a
-vĩnh thạnh|vinh thanh
 long hưng b|long hung b
-bình thành|binh thanh
-định an|dinh an
 định yên|dinh yen
 hội an đông|hoi an dong
 bình thạnh trung|binh thanh trung
 lai vung
-tân dương|tan duong
-hòa thành|hoa thanh
-long hậu|long hau
-tân phước|tan phuoc
-hòa long|hoa long
-tân thành|tan thanh
 long thắng|long thang
 vĩnh thới|vinh thoi
-tân hòa|tan hoa
-định hòa|dinh hoa
-phong hòa|phong hoa
 cái tàu hạ|cai tau ha
-an hiệp|an hiep
-an nhơn|an nhon
 tân nhuận đông|tan nhuan dong
-tân bình|tan binh
-tân phú trung|tan phu trung
-phú long|phu long
 an phú thuận|an phu thuan
 phú hựu|phu huu
-an khánh|an khanh
-tân phú|tan phu
-hòa tân|hoa tan
-mỹ bình|my binh
-mỹ long|my long
-đông xuyên|dong xuyen
 mỹ xuyên|my xuyen
-bình đức|binh duc
-bình khánh|binh khanh
-mỹ phước|my phuoc
-mỹ quý|my quy
 mỹ thới|my thoi
-mỹ thạnh|my thanh
-mỹ hòa|my hoa
 mỹ khánh|my khanh
 mỹ hoà hưng|my hoa hung
 châu phú b|chau phu b
@@ -9824,107 +6850,43 @@ núi sam|nui sam
 vĩnh ngươn|vinh nguon
 vĩnh tế|vinh te
 vĩnh châu|vinh chau
-an phú|an phu
-khánh an|khanh an
-long bình|long binh
-khánh bình|khanh binh
 quốc thái|quoc thai
-nhơn hội|nhon hoi
-phú hữu|phu huu
-phú hội|phu hoi
-phước hưng|phuoc hung
-vĩnh lộc|vinh loc
 vĩnh hậu|vinh hau
-vĩnh trường|vinh truong
 vĩnh hội đông|vinh hoi dong
-đa phước|da phuoc
-long thạnh|long thanh
-long hưng|long hung
-long châu|long chau
-phú lộc|phu loc
 vĩnh xương|vinh xuong
-vĩnh hòa|vinh hoa
-tân thạnh|tan thanh
-tân an|tan an
-long an
-long phú|long phu
-châu phong|chau phong
 phú vĩnh|phu vinh
 lê chánh|le chanh
-phú mỹ|phu my
 chợ vàm|cho vam
-long sơn|long son
-long hoà|long hoa
-phú long|phu long
-phú lâm|phu lam
-phú hiệp|phu hiep
-phú thạnh|phu thanh
-hoà lạc|hoa lac
-phú thành|phu thanh
-phú an|phu an
-phú xuân|phu xuan
 hiệp xương|hiep xuong
-phú bình|phu binh
-phú thọ|phu tho
-phú hưng|phu hung
 bình thạnh đông|binh thanh dong
-tân hòa|tan hoa
-tân trung|tan trung
 cái dầu|cai dau
-khánh hòa|khanh hoa
-mỹ đức|my duc
-mỹ phú|my phu
 ô long vỹ|o long vy
 vĩnh thạnh trung|vinh thanh trung
 thạnh mỹ tây|thanh my tay
-bình long|binh long
-bình mỹ|binh my
 bình thủy|binh thuy
 đào hữu cảnh|dao huu canh
-bình phú|binh phu
-bình chánh|binh chanh
 nhà bàng|nha bang
-chi lăng|chi lang
 núi voi|nui voi
-nhơn hưng|nhon hung
-an phú|an phu
-thới sơn|thoi son
 tịnh biên|tinh bien
 văn giáo|van giao
-an cư|an cu
-an nông|an nong
-vĩnh trung|vinh trung
-tân lợi|tan loi
 an hảo|an hao
-tân lập|tan lap
 tri tôn|tri ton
 ba chúc|ba chuc
 lạc quới|lac quoi
 lê trì|le tri
 vĩnh gia|vinh gia
-vĩnh phước|vinh phuoc
 châu lăng|chau lang
 lương phi|luong phi
 lương an trà|luong an tra
 tà đảnh|ta danh
 núi tô|nui to
 an tức|an tuc
-cô tô|co to
 tân tuyến|tan tuyen
 ô lâm|o lam
-an châu|an chau
-an hòa|an hoa
 cần đăng|can dang
 vĩnh hanh|vinh hanh
-bình thạnh|binh thanh
-vĩnh bình|vinh binh
-bình hòa|binh hoa
-vĩnh an|vinh an
 hòa bình thạnh|hoa binh thanh
-vĩnh lợi|vinh loi
 vĩnh nhuận|vinh nhuan
-tân phú|tan phu
-vĩnh thành|vinh thanh
 chợ mới|cho moi
 mỹ luông|my luong
 kiến an|kien an
@@ -9932,371 +6894,192 @@ mỹ hội đông|my hoi dong
 long điền a|long dien a
 tấn mỹ|tan my
 long điền b|long dien b
-kiến thành|kien thanh
-mỹ hiệp|my hiep
-mỹ an|my an
-nhơn mỹ|nhon my
-long giang
 long kiến|long kien
 bình phước xuân|binh phuoc xuan
 an thạnh trung|an thanh trung
 hội an|hoi an
-hòa bình|hoa binh
-hòa an|hoa an
 núi sập|nui sap
-phú hoà|phu hoa
 óc eo|oc eo
-tây phú|tay phu
-an bình|an binh
-vĩnh phú|vinh phu
 vĩnh trạch|vinh trach
-phú thuận|phu thuan
 vĩnh chánh|vinh chanh
 định mỹ|dinh my
-định thành|dinh thanh
 mỹ phú đông|my phu dong
 vọng đông|vong dong
 vĩnh khánh|vinh khanh
 thoại giang|thoai giang
-bình thành|binh thanh
 vọng thê|vong the
 vĩnh thanh vân|vinh thanh van
-vĩnh thanh|vinh thanh
-vĩnh quang|vinh quang
-vĩnh hiệp|vinh hiep
-vĩnh bảo|vinh bao
-vĩnh lạc|vinh lac
-an hòa|an hoa
-an bình|an binh
 rạch sỏi|rach soi
-vĩnh lợi|vinh loi
 vĩnh thông|vinh thong
 phi thông|phi thong
 tô châu|to chau
 đông hồ|dong ho
 bình san|binh san
 pháo đài|phao dai
-mỹ đức|my duc
-tiên hải|tien hai
 thuận yên|thuan yen
 kiên lương|kien luong
 kiên bình|kien binh
-vĩnh phú|vinh phu
 vĩnh điều|vinh dieu
 tân khánh hòa|tan khanh hoa
-phú lợi|phu loi
-phú mỹ|phu my
 hòa điền|hoa dien
-dương hòa|duong hoa
-bình an|binh an
-bình trị|binh tri
-sơn hải|son hai
 hòn nghệ|hon nghe
 hòn đất|hon dat
-sóc sơn|soc son
-bình sơn|binh son
-bình giang|binh giang
-mỹ thái|my thai
 nam thái sơn|nam thai son
 mỹ hiệp sơn|my hiep son
 sơn kiên|son kien
-sơn bình|son binh
-mỹ thuận|my thuan
 lình huỳnh|linh huynh
 thổ sơn|tho son
-mỹ lâm|my lam
-mỹ phước|my phuoc
-tân hiệp|tan hiep
-tân hội|tan hoi
-tân thành|tan thanh
 tân hiệp b|tan hiep b
-tân hoà|tan hoa
 thạnh đông b|thanh dong b
-thạnh đông|thanh dong
 tân hiệp a|tan hiep a
-tân an|tan an
 thạnh đông a|thanh dong a
-thạnh trị|thanh tri
-minh lương|minh luong
 mong thọ a|mong tho a
 mong thọ b|mong tho b
 mong thọ|mong tho
 giục tượng|giuc tuong
 vĩnh hòa hiệp|vinh hoa hiep
 vĩnh hoà phú|vinh hoa phu
-minh hòa|minh hoa
-bình an|binh an
-thạnh lộc|thanh loc
 giồng riềng|giong rieng
-thạnh hưng|thanh hung
-thạnh phước|thanh phuoc
-thạnh lộc|thanh loc
-thạnh hòa|thanh hoa
-thạnh bình|thanh binh
 bàn thạch|ban thach
 bàn tân định|ban tan dinh
 ngọc thành|ngoc thanh
 ngọc chúc|ngoc chuc
 ngọc thuận|ngoc thuan
-hòa hưng|hoa hung
 hoà lợi|hoa loi
 hoà an|hoa an
-long thạnh|long thanh
-vĩnh thạnh|vinh thanh
-vĩnh phú|vinh phu
-hòa thuận|hoa thuan
 ngọc hoà|ngoc hoa
 gò quao|go quao
 vĩnh hòa hưng bắc|vinh hoa hung bac
-định hòa|dinh hoa
 thới quản|thoi quan
-định an|dinh an
 thủy liễu|thuy lieu
 vĩnh hòa hưng nam|vinh hoa hung nam
 vĩnh phước a|vinh phuoc a
 vĩnh phước b|vinh phuoc b
-vĩnh tuy|vinh tuy
 vĩnh thắng|vinh thang
 thứ ba|thu ba
 tây yên|tay yen
 tây yên a|tay yen a
 nam yên|nam yen
-hưng yên|hung yen
-nam thái|nam thai
 nam thái a|nam thai a
 đông thái|dong thai
-đông yên|dong yen
 thạnh yên|thanh yen
 thạnh yên a|thanh yen a
 thứ mười một|thu muoi mot
-thuận hoà|thuan hoa
-đông hòa|dong hoa
 an minh bắc|an minh bac
-đông thạnh|dong thanh
-tân thạnh|tan thanh
-đông hưng|dong hung
 đông hưng a|dong hung a
 đông hưng b|dong hung b
 vân khánh|van khanh
 vân khánh đông|van khanh dong
 vân khánh tây|van khanh tay
-vĩnh thuận|vinh thuan
-vĩnh hòa|vinh hoa
 hoà chánh|hoa chanh
 vĩnh bình bắc|vinh binh bac
 vĩnh bình nam|vinh binh nam
-bình minh|binh minh
-minh thuận|minh thuan
-vĩnh thuận|vinh thuan
-tân thuận|tan thuan
 phong đông|phong dong
-vĩnh phong|vinh phong
 dương đông|duong dong
-an thới|an thoi
 cửa cạn|cua can
 gành dầu|ganh dau
 cửa dương|cua duong
-hàm ninh|ham ninh
 dương tơ|duong to
 bãi thơm|bai thom
 thổ châu|tho chau
 hòn tre|hon tre
 lại sơn|lai son
-an sơn|an son
 nam du
 cái khế|cai khe
-an hòa|an hoa
 thới bình|thoi binh
-an nghiệp|an nghiep
-an cư|an cu
-tân an|tan an
-an phú|an phu
 xuân khánh|xuan khanh
-hưng lợi|hung loi
-an khánh|an khanh
-an bình|an binh
 châu văn liêm|chau van liem
-thới hòa|thoi hoa
 thới long|thoi long
-long hưng|long hung
-thới an|thoi an
 phước thới|phuoc thoi
 trường lạc|truong lac
-bình thủy|binh thuy
 trà an|tra an
 trà nóc|tra noc
 thới an đông|thoi an dong
-an thới|an thoi
 bùi hữu nghĩa|bui huu nghia
-long hòa|long hoa
 long tuyền|long tuyen
 lê bình|le binh
 hưng phú|hung phu
-hưng thạnh|hung thanh
 ba láng|ba lang
 thường thạnh|thuong thanh
-phú thứ|phu thu
-tân phú|tan phu
 thốt nốt|thot not
-thới thuận|thoi thuan
-vĩnh bình|vinh binh
-thuận an|thuan an
-tân lộc|tan loc
 trung nhứt|trung nhut
-thạnh hoà|thanh hoa
-trung kiên|trung kien
-trung an
 trung thạnh|trung thanh
-tân hưng|tan hung
 thuận hưng|thuan hung
-thanh an
-vĩnh thạnh|vinh thanh
-thạnh mỹ|thanh my
 vĩnh trinh|vinh trinh
-thạnh an|thanh an
 thạnh tiến|thanh tien
 thạnh thắng|thanh thang
-thạnh lợi|thanh loi
 thạnh qưới|thanh quoi
-thạnh phú|thanh phu
-thạnh lộc|thanh loc
-trung hưng|trung hung
-thới lai|thoi lai
 cờ đỏ|co do
 thới hưng|thoi hung
-thới thạnh|thoi thanh
-tân thạnh|tan thanh
-xuân thắng|xuan thang
 đông hiệp|dong hiep
 đông thắng|dong thang
 thới đông|thoi dong
 thới xuân|thoi xuan
-đông bình|dong binh
-đông thuận|dong thuan
 thới tân|thoi tan
 trường thắng|truong thang
 định môn|dinh mon
-trường thành|truong thanh
-trường xuân|truong xuan
 trường xuân a|truong xuan a
 trường xuân b|truong xuan b
-phong điền|phong dien
 nhơn ái|nhon ai
-giai xuân|giai xuan
-tân thới|tan thoi
 trường long|truong long
-mỹ khánh|my khanh
 nhơn nghĩa|nhon nghia
 vị tân|vi tan
 hoả lựu|hoa luu
-tân tiến|tan tien
 hoả tiến|hoa tien
 ngã bảy|nga bay
 lái hiếu|lai hieu
 một ngàn|mot ngan
-hiệp thành|hiep thanh
 hiệp lợi|hiep loi
-tân hoà|tan hoa
 bảy ngàn|bay ngan
 trường long tây|truong long tay
 trường long a|truong long a
 nhơn nghĩa a|nhon nghia a
 rạch gòi|rach goi
-thạnh xuân|thanh xuan
 cái tắc|cai tac
 tân phú thạnh|tan phu thanh
 ngã sáu|nga sau
-đông thạnh|dong thanh
-đông phú|dong phu
-phú hữu|phu huu
-phú tân|phu tan
 mái dầm|mai dam
 đông phước|dong phuoc
 đông phước a|dong phuoc a
 kinh cùng|kinh cung
 cây dương|cay duong
-tân bình|tan binh
-bình thành|binh thanh
-thạnh hòa|thanh hoa
-long thạnh|long thanh
-đại thành|dai thanh
-tân thành|tan thanh
 phụng hiệp|phung hiep
 hòa mỹ|hoa my
-hòa an|hoa an
 phương bình|phuong binh
 hiệp hưng|hiep hung
 tân phước hưng|tan phuoc hung
 búng tàu|bung tau
 phương phú|phuong phu
-tân long|tan long
 nàng mau|nang mau
 vị trung|vi trung
 vị thuỷ|vi thuy
 vị thắng|vi thang
 vĩnh thuận tây|vinh thuan tay
-vĩnh trung|vinh trung
-vĩnh tường|vinh tuong
 vị đông|vi dong
 vị thanh|vi thanh
 vị bình|vi binh
-thuận an|thuan an
 trà lồng|tra long
-bình thạnh|binh thanh
-long bình|long binh
-vĩnh tường|vinh tuong
 long trị|long tri
 long trị a|long tri a
-long phú|long phu
-tân phú|tan phu
-thuận hưng|thuan hung
-thuận hòa|thuan hoa
 vĩnh thuận đông|vinh thuan dong
 vĩnh viễn|vinh vien
 vĩnh viễn a|vinh vien a
 lương tâm|luong tam
 lương nghĩa|luong nghia
 xà phiên|xa phien
-phường 5|phuong 5|p.5|p. 5|p5|p 5
-phường 7|phuong 7|p.7|p. 7|p7|p 7
-phường 8|phuong 8|p.8|p. 8|p8|p 8
-phường 6|phuong 6|p.6|p. 6|p6|p 6
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 9|phuong 9|p.9|p. 9|p9|p 9
-phường 10|phuong 10|p.10|p. 10|p10|p 10
 kế sách|ke sach
 an lạc thôn|an lac thon
-xuân hòa|xuan hoa
-phong nẫm|phong nam
 an lạc tây|an lac tay
 trinh phú|trinh phu
 ba trinh
 thới an hội|thoi an hoi
-nhơn mỹ|nhon my
 kế thành|ke thanh
 kế an|ke an
 đại hải|dai hai
-an mỹ|an my
 huỳnh hữu nghĩa|huynh huu nghia
-châu thành|chau thanh
 hồ đắc kiện|ho dac kien
 phú tâm|phu tam
-thuận hòa|thuan hoa
-long hưng|long hung
-phú tân|phu tan
-thiện mỹ|thien my
-hưng phú|hung phu
-mỹ hương|my huong
-an hiệp|an hiep
 mỹ tú|my tu
-an ninh
-mỹ phước|my phuoc
-thuận hưng|thuan hung
-mỹ thuận|my thuan
-phú mỹ|phu my
 cù lao dung|cu lao dung
 an thạnh 1|an thanh 1
 an thạnh tây|an thanh tay
@@ -10305,166 +7088,83 @@ an thạnh đông|an thanh dong
 an thạnh 2|an thanh 2
 an thạnh 3|an thanh 3
 an thạnh nam|an thanh nam
-long phú|long phu
 song phụng|song phung
 đại ngãi|dai ngai
 hậu thạnh|hau thanh
-long đức|long duc
 trường khánh|truong khanh
-phú hữu|phu huu
-tân hưng|tan hung
 châu khánh|chau khanh
-tân thạnh|tan thanh
-long phú|long phu
 đại ân 2|dai an 2
 trần đề|tran de
 liêu tú|lieu tu
 lịch hội thượng|lich hoi thuong
-lịch hội thượng|lich hoi thuong
 trung bình|trung binh
-mỹ xuyên|my xuyen
 tài văn|tai van
 đại tâm|dai tam
 tham đôn|tham don
-viên an|vien an
 thạnh thới an|thanh thoi an
 thạnh thới thuận|thanh thoi thuan
 viên bình|vien binh
-thạnh phú|thanh phu
 ngọc đông|ngoc dong
-thạnh quới|thanh quoi
 hòa tú 1|hoa tu 1
 gia hòa 1|gia hoa 1
 ngọc tố|ngoc to
 gia hòa 2|gia hoa 2
 hòa tú ii|hoa tu ii
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 2|phuong 2|p.2|p. 2|p2|p 2
 vĩnh quới|vinh quoi
-tân long|tan long
-long bình|long binh
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-mỹ bình|my binh
 mỹ quới|my quoi
-phú lộc|phu loc
-hưng lợi|hung loi
 lâm tân|lam tan
-thạnh tân|thanh tan
 lâm kiết|lam kiet
 tuân tức|tuan tuc
-vĩnh thành|vinh thanh
-thạnh trị|thanh tri
-vĩnh lợi|vinh loi
-châu hưng|chau hung
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-hòa đông|hoa dong
-khánh hòa|khanh hoa
-vĩnh hiệp|vinh hiep
-vĩnh hải|vinh hai
 lạc hòa|lac hoa
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-vĩnh phước|vinh phuoc
-vĩnh tân|vinh tan
 lai hòa|lai hoa
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 3|phuong 3|p.3|p. 3|p3|p 3
-phường 5|phuong 5|p.5|p. 5|p5|p 5
-phường 7|phuong 7|p.7|p. 7|p7|p 7
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 8|phuong 8|p.8|p. 8|p8|p 8
 nhà mát|nha mat
-vĩnh trạch|vinh trach
 vĩnh trạch đông|vinh trach dong
-hiệp thành|hiep thanh
 ngan dừa|ngan dua
 ninh quới|ninh quoi
 ninh quới a|ninh quoi a
-ninh hòa|ninh hoa
-lộc ninh|loc ninh
-vĩnh lộc|vinh loc
-vĩnh lộc a|vinh loc a
 ninh thạnh lợi a|ninh thanh loi a
 ninh thạnh lợi|ninh thanh loi
-phước long|phuoc long
 vĩnh phú đông|vinh phu dong
 vĩnh phú tây|vinh phu tay
-phước long|phuoc long
-hưng phú|hung phu
-vĩnh thanh|vinh thanh
 phong thạnh tây a|phong thanh tay a
 phong thạnh tây b|phong thanh tay b
-hòa bình|hoa binh
-vĩnh hưng|vinh hung
 vĩnh hưng a|vinh hung a
-châu hưng|chau hung
 châu hưng a|chau hung a
-hưng thành|hung thanh
 hưng hội|hung hoi
 châu thới|chau thoi
 minh diệu|minh dieu
-vĩnh bình|vinh binh
-long thạnh|long thanh
 vĩnh mỹ b|vinh my b
-vĩnh hậu|vinh hau
 vĩnh hậu a|vinh hau a
 vĩnh mỹ a|vinh my a
-vĩnh thịnh|vinh thinh
-phường 1|phuong 1|p.1|p. 1|p1|p 1
 hộ phòng|ho phong
 phong thạnh đông|phong thanh dong
 láng tròn|lang tron
 phong tân|phong tan
-tân phong|tan phong
-phong thạnh|phong thanh
 phong thạnh a|phong thanh a
 phong thạnh tây|phong thanh tay
-tân thạnh|tan thanh
 gành hào|ganh hao
 long điền đông|long dien dong
 long điền đông a|long dien dong a
-long điền|long dien
 long điền tây|long dien tay
-điền hải|dien hai
 an trạch|an trach
 an trạch a|an trach a
 an phúc|an phuc
-định thành|dinh thanh
 định thành a|dinh thanh a
-phường 9|phuong 9|p.9|p. 9|p9|p 9
-phường 4|phuong 4|p.4|p. 4|p4|p 4
-phường 1|phuong 1|p.1|p. 1|p1|p 1
-phường 5|phuong 5|p.5|p. 5|p5|p 5
-phường 2|phuong 2|p.2|p. 2|p2|p 2
-phường 8|phuong 8|p.8|p. 8|p8|p 8
-phường 6|phuong 6|p.6|p. 6|p6|p 6
-phường 7|phuong 7|p.7|p. 7|p7|p 7
 tân xuyên|tan xuyen
 an xuyên|an xuyen
-tân thành|tan thanh
-tân thành|tan thanh
 tắc vân|tac van
 lý văn lâm|ly van lam
-định bình|dinh binh
-hòa thành|hoa thanh
-hòa tân|hoa tan
 u minh
-khánh hòa|khanh hoa
 khánh thuận|khanh thuan
 khánh tiến|khanh tien
 nguyễn phích|nguyen phich
 khánh lâm|khanh lam
-khánh an|khanh an
-khánh hội|khanh hoi
-thới bình|thoi binh
 biển bạch|bien bach
 tân bằng|tan bang
 trí phải|tri phai
 trí lực|tri luc
 biển bạch đông|bien bach dong
-thới bình|thoi binh
-tân phú|tan phu
 tân lộc bắc|tan loc bac
-tân lộc|tan loc
 tân lộc đông|tan loc dong
 hồ thị kỷ|ho thi ky
 trần văn thời|tran van thoi
@@ -10473,21 +7173,12 @@ khánh bình tây bắc|khanh binh tay bac
 khánh bình tây|khanh binh tay
 trần hợi|tran hoi
 khánh lộc|khanh loc
-khánh bình|khanh binh
-khánh hưng|khanh hung
 khánh bình đông|khanh binh dong
-khánh hải|khanh hai
 lợi an|loi an
-phong điền|phong dien
 phong lạc|phong lac
 cái nước|cai nuoc
-thạnh phú|thanh phu
 lương thế trân|luong the tran
-phú hưng|phu hung
-tân hưng|tan hung
-hưng mỹ|hung my
 hoà mỹ|hoa my
-đông hưng|dong hung
 đông thới|dong thoi
 tân hưng đông|tan hung dong
 trần thới|tran thoi
@@ -10495,31 +7186,19 @@ trần thới|tran thoi
 tạ an khương|ta an khuong
 tạ an khương đông|ta an khuong dong
 trần phán|tran phan
-tân trung|tan trung
-tân đức|tan duc
-tân thuận|tan thuan
 tạ an khương nam|ta an khuong nam
 tân duyệt|tan duyet
-tân dân|tan dan
-tân tiến|tan tien
 quách phẩm bắc|quach pham bac
 quách phẩm|quach pham
-thanh tùng|thanh tung
 ngọc chánh|ngoc chanh
 nguyễn huân|nguyen huan
 năm căn|nam can
-hàm rồng|ham rong
 hiệp tùng|hiep tung
 đất mới|dat moi
 lâm hải|lam hai
 hàng vịnh|hang vinh
-tam giang
 tam giang đông|tam giang dong
 cái đôi vàm|cai doi vam
-phú thuận|phu thuan
-phú mỹ|phu my
-phú tân|phu tan
-tân hải|tan hai
 việt thắng|viet thang
 tân hưng tây|tan hung tay
 rạch chèo|rach cheo
@@ -10527,7 +7206,5 @@ nguyễn việt khái|nguyen viet khai
 tam giang tây|tam giang tay
 tân ân tây|tan an tay
 viên an đông|vien an dong
-viên an|vien an
 rạch gốc|rach goc
-tân ân|tan an
 đất mũi|dat mui
