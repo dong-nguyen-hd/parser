@@ -4,6 +4,6 @@ công trường|ct
 đại lộ|đl
 quảng trường|qt|
 quốc lộ|ql
-tỉnh lộ|tl
+tỉnh lộ|tl|lộ
 ngõ
 phố

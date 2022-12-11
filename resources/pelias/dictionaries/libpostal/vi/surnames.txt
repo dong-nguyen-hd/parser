@@ -145,7 +145,6 @@ linh|linh
 loan|loan
 lò
 lỗ
-lộ
 lộc|loc
 luyện|luyen
 lục|luc
@@ -283,7 +282,6 @@ vừ
 vương|vuong
 vưu|vuu
 vu
-xa
 xung
 yên|yen
 nguyễn|nguyen
@@ -291,6 +289,7 @@ trương
 trần|tran
 lê|le
 phạm|pham
+thoại
 hoàng|hoang
 huỳnh|huynh
 phan|phan

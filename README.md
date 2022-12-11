@@ -174,7 +174,8 @@ SurnameClassifier
 PersonalSuffixClassifier
 PersonalTitleClassifier
 ChainClassifier
-PlaceClassifier
+PlacePrefixClassifier
+PlaceSuffixClassifier
 WhosOnFirstClassifier
 ```
 

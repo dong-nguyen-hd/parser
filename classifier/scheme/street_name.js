@@ -8,11 +8,11 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: []
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
@@ -23,15 +23,15 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: []
       },
       {
-        is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        is: ['AlphaClassification'],
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
-        is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        is: ['AlphaClassification'],
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
@@ -42,19 +42,19 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: []
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
-        is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        is: ['AlphaClassification'],
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       },
       {
-        is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        is: ['AlphaClassification'],
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
@@ -65,23 +65,23 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: []
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification',, 'VenueClassification', 'ObscureClassification']
       },
       {
-        is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        is: ['AlphaClassification'],
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
-        is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        is: ['AlphaClassification'],
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
-        is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification', 'ObscureClassification']
+        is: ['AlphaClassification'],
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },

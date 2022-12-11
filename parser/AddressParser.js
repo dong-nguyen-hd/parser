@@ -20,7 +20,8 @@ const SurnameClassifier = require('../classifier/SurnameClassifier')
 // const PersonalSuffixClassifier = require('../classifier/PersonalSuffixClassifier')
 // const PersonalTitleClassifier = require('../classifier/PersonalTitleClassifier')
 // const ChainClassifier = require('../classifier/ChainClassifier')
-const PlaceClassifier = require('../classifier/PlaceClassifier')
+const PlacePrefixClassifier = require('../classifier/PlacePrefixClassifier')
+const PlaceSuffixClassifier = require('../classifier/PlaceSuffixClassifier')
 // const IntersectionClassifier = require('../classifier/IntersectionClassifier')
 // const MultiStreetClassifier = require('../classifier/MultiStreetClassifier')
 //const CentralEuropeanStreetNameClassifier = require('../classifier/CentralEuropeanStreetNameClassifier')
@@ -64,7 +65,8 @@ class AddressParser extends Parser {
         // phrase classifiers
         new ToponymClassifier(),
         new RoadTypeClassifier(),
-        new PlaceClassifier(),
+        new PlacePrefixClassifier(),
+        new PlaceSuffixClassifier(),
         //new IntersectionClassifier(),
         //new PersonClassifier(),
         //new GivenNameClassifier(),

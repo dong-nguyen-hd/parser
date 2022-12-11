@@ -2,20 +2,100 @@ const StreetClassification = require('../../classification/StreetClassification'
 
 module.exports = [
   {
-    // [street-prefix + word + number]
+    // [street-prefix + number/alphaNumeric]
     confidence: 0.81,
     Class: StreetClassification,
     scheme: [
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['AreaClassification']
+      },
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      }
+    ]
+  },
+  {
+    // [number/alphaNumeric + street-prefix + number/alphaNumeric]
+    confidence: 0.81,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
+      },
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      }
+    ]
+  },
+  {
+    // [number/alphaNumeric + 2 street-prefix + number/alphaNumeric]
+    confidence: 0.81,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
+      },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
+      },
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      }
+    ]
+  },
+  {
+    // [street-prefix + obscure + number]
+    confidence: 0.81,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
       },
       {
         is: ['StopWordClassification', 'ObscureClassification'],
         not: []
       },
       {
-        is: ['NumericClassification'],
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      }
+    ]
+  },
+  {
+    // [numeric/alphaNumeric + street-prefix + obscure + numeric/alphaNumeric]
+    confidence: 0.81,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
+      },
+      {
+        is: ['StopWordClassification', 'ObscureClassification'],
+        not: []
+      },
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
         not: []
       }
     ]
@@ -31,8 +111,43 @@ module.exports = [
       },
       {
         is: ['AreaClassification', 'VenueClassification'],
+        not: ['VillageClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification',]
+      },
+    ]
+  },
+
+  {
+    // [numeric/alphaNumeric + street-prefix + 1 area]
+    confidence: 0.82,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
         not: []
       },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
+      },
+      {
+        is: ['AreaClassification'],
+        not: ['VillageClassification']
+      }
+    ]
+  },
+  {
+    // [street-prefix + 1 area]
+    confidence: 0.82,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
+      },
+      {
+        is: ['AreaClassification'],
+        not: ['VillageClassification']
+      }
     ]
   },
   {
@@ -42,15 +157,38 @@ module.exports = [
     scheme: [
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['AreaClassification']
       },
       {
         is: ['AreaClassification'],
-        not: []
+        not: ['VillageClassification']
       },
       {
         is: ['AreaClassification'],
+        not: ['VillageClassification']
+      }
+    ]
+  },
+  {
+    // [numeric/alphaNumeric + street-prefix + 2 area]
+    confidence: 0.82,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
         not: []
+      },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
+      },
+      {
+        is: ['AreaClassification'],
+        not: ['VillageClassification']
+      },
+      {
+        is: ['AreaClassification'],
+        not: ['VillageClassification']
       }
     ]
   },
@@ -61,15 +199,15 @@ module.exports = [
     scheme: [
       {
         is: ['NumericClassification', 'AlphaNumericClassification'],
-        not: ['VenueClassification', 'PlaceClassification']
+        not: []
       },
       {
         is: ['StreetNameClassification', 'AreaClassification', 'SurnameClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
       },
       {
         is: ['StreetNameClassification', 'AreaClassification', 'AlphaClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
       },
       {
         is: ['NumericClassification'],
@@ -84,15 +222,15 @@ module.exports = [
     scheme: [
       {
         is: ['NumericClassification', 'AlphaNumericClassification'],
-        not: ['VenueClassification', 'PlaceClassification']
+        not: []
       },
       {
-        is: ['StreetNameClassification', 'AreaClassification', 'SurnameClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        is: ['StreetNameClassification', 'AreaClassification'],
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
       },
       {
         is: ['StreetNameClassification', 'AreaClassification', 'AlphaClassification'],
-        not: ['VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
       }
     ]
   },
@@ -103,19 +241,19 @@ module.exports = [
     scheme: [
       {
         is: ['NumericClassification', 'AlphaNumericClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification']
+        not: []
       },
       {
-        is: ['SurnameClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
-      },
-      {
-        is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        is: ['StreetNameClassification', 'AreaClassification'],
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
       },
       {
         is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
+      },
+      {
+        is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
       }
     ]
   },
@@ -126,23 +264,23 @@ module.exports = [
     scheme: [
       {
         is: ['NumericClassification', 'AlphaNumericClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification']
+        not: []
       },
       {
-        is: ['SurnameClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
-      },
-      {
-        is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        is: ['StreetNameClassification', 'AreaClassification'],
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
       },
       {
         is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
       },
       {
         is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
+      },
+      {
+        is: ['AlphaClassification', 'StreetNameClassification', 'AreaClassification'],
+        not: ['VenueClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'ObscureClassification', 'VillageClassification']
       }
     ]
   },
@@ -153,7 +291,7 @@ module.exports = [
     scheme: [
       {
         is: ['StreetNameClassification'],
-        not: [ 'PlaceClassification', 'RoadTypeClassification']
+        not: ['PlacePrefixClassification', 'PlaceSuffixClassification', 'RoadTypeClassification']
       }
     ]
   },
@@ -168,7 +306,7 @@ module.exports = [
       },
       {
         is: ['StreetNameClassification'],
-        not: [ 'PlaceClassification', 'RoadTypeClassification']
+        not: ['PlacePrefixClassification', 'PlaceSuffixClassification', 'RoadTypeClassification']
       }
     ]
   },
@@ -179,11 +317,11 @@ module.exports = [
     scheme: [
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['AreaClassification']
       },
       {
         is: ['StreetNameClassification'],
-        not: [ 'PlaceClassification', 'RoadTypeClassification']
+        not: ['PlacePrefixClassification', 'PlaceSuffixClassification', 'RoadTypeClassification']
       }
     ]
   },
@@ -198,11 +336,11 @@ module.exports = [
       },
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['PlacePrefixClassification', 'PlaceSuffixClassification', 'AreaClassification']
       },
       {
         is: ['StreetNameClassification'],
-        not: [ 'PlaceClassification', 'RoadTypeClassification']
+        not: ['PlacePrefixClassification', 'PlaceSuffixClassification', 'RoadTypeClassification']
       }
     ]
   },
@@ -213,11 +351,11 @@ module.exports = [
     scheme: [
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['AreaClassification']
       },
       {
         is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       },
     ]
   },
@@ -228,11 +366,11 @@ module.exports = [
     scheme: [
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['PlacePrefixClassification', 'PlaceSuffixClassification', 'AreaClassification']
       },
       {
         is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       },
       {
         is: ['NumericClassification'],
@@ -251,11 +389,11 @@ module.exports = [
       },
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['PlacePrefixClassification', 'PlaceSuffixClassification', 'AreaClassification']
       },
       {
         is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       }
     ]
   },
@@ -270,7 +408,7 @@ module.exports = [
       },
       {
         is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       },
     ]
   },
@@ -285,7 +423,7 @@ module.exports = [
       },
       {
         is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlaceClassification', 'VenueClassification']
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       },
       {
         is: ['NumericClassification'],
@@ -295,31 +433,31 @@ module.exports = [
   },
   {
     // [street-prefix + date]
-    confidence: 0.85,
+    confidence: 0.86,
     Class: StreetClassification,
     scheme: [
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['AreaClassification']
       },
       {
         is: ['DateClassification'],
-        not: [ 'VenueClassification', 'PlaceClassification', 'ObscureClassification']
+        not: []
       },
     ]
   },
   {
     // [numeric/alphaNumeric + street-prefix + date]
-    confidence: 0.85,
+    confidence: 0.86,
     Class: StreetClassification,
     scheme: [
       {
         is: ['NumericClassification', 'AlphaNumericClassification'],
-        not: []
+        not: ['AreaClassification']
       },
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['AreaClassification']
       },
       {
         is: ['DateClassification'],
@@ -329,12 +467,12 @@ module.exports = [
   },
   {
     // [street-prefix + numeric + date_word + numeric]
-    confidence: 0.85,
+    confidence: 0.86,
     Class: StreetClassification,
     scheme: [
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['PlacePrefixClassification', 'PlaceSuffixClassification', 'AreaClassification']
       },
       {
         is: ['NumericClassification', 'AlphaClassification'],
@@ -352,7 +490,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + street-prefix + numeric + date_word + numeric]
-    confidence: 0.85,
+    confidence: 0.86,
     Class: StreetClassification,
     scheme: [
       {
@@ -361,7 +499,7 @@ module.exports = [
       },
       {
         is: ['StreetPrefixClassification', 'RoadTypeClassification'],
-        not: [ 'PlaceClassification']
+        not: ['AreaClassification']
       },
       {
         is: ['NumericClassification'],
@@ -379,7 +517,7 @@ module.exports = [
   },
   {
     // [numeric/alphaNumeric + numeric + date_word + numeric]
-    confidence: 0.85,
+    confidence: 0.86,
     Class: StreetClassification,
     scheme: [
       {
