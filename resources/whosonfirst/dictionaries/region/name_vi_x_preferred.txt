@@ -46,7 +46,7 @@ bình phước|binh phuoc|bp|tpbp
 tây ninh|tay ninh|tn|tptn
 bình dương|binh duong|bd|tpbd
 đồng nai|dong nai|dn|đn|tpdn
-bà rịa vũng tàu|ba ria vung tau|brvt|tpbrvt
+bà rịa vũng tàu|ba ria vung tau|brvt|tpbrvt|vũng tàu|vung tau
 hồ chí minh|ho chi minh|hcm|tphcm
 long an|long an|la|tpla
 tiền giang|tien giang|tg|tptg

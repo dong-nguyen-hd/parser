@@ -15,7 +15,8 @@ khu dân cư|khu dan cư|khu dan cu
 khu dân dụng
 khu căn hộ|khu căn hộ cao tầng|cao ốc căn hộ|căn hộ|khu nhà ở di dân
 khu nhà ở
-khu đô thị
+khu đô thị|khu đô thị mới|khu đô thị mới phía
+khu dịch vụ cao cấp
 khu phố
 phố đi bộ
 siêu thị
@@ -32,7 +33,7 @@ sân vận động|san van dong|svd|s v d
 tiểu học|tieu hoc|th|t h
 trung học cơ sở|trung hoc co so|thcs|t h c s
 trung học phổ thông|trung hoc pho thong|thpt|t h p t
-khu trung tâm thương mại|trung tâm thương mại|trung tam thuong mai|tttm|t t t m|trung tâm tm|tòa nhà trung tâm thương mại|khu thương mại
+khu trung tâm thương mại|trung tâm thương mại|trung tam thuong mai|tttm|t t t m|trung tâm tm|tòa nhà trung tâm thương mại|khu thương mại|khu trung tâm mua sắm
 cao ốc căn hộ thương mại 
 trung tâm|trung tam|tt|t t
 toà|toà nhà|tòa nhà
@@ -47,7 +48,7 @@ chùa
 dinh
 chung cư|tòa nhà chung cư
 bệnh viện
-vincom|vinhome|vinhomes|winmart|vinmart|vincity|vinpearl|vinfast|vinmec|vinschool|vineco
+vincom|vinhome|vinhomes|winmart|vinmart|vincity|vinpearl|vinfast|vinmec|vinschool|vineco|aeon|lotte
 khu công
 khu tập thể
 công an|cong an
@@ -55,3 +56,5 @@ công an|cong an
 nhà máy
 nhà thuốc
 vòng xoay ngã tư
+nhà thiếu nhi
+cảng hàng không

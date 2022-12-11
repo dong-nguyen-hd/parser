@@ -99,8 +99,7 @@ hán|han
 hề|he
 hi|hi
 hình|hinh
-hoa|hoa
-hoà|hoa
+hoà|hoa|hòa
 hoài|hoai
 hoàng|hoang
 phủ|phu
@@ -243,9 +242,7 @@ tinh|tinh
 tòng|tong
 tô|to
 tôn|ton
-tôn|ton
 nữ|nu
-tôn|ton
 thất|that
 tông|tong
 tống|tong
@@ -290,7 +287,6 @@ trần|tran
 lê|le
 phạm|pham
 thoại
-hoàng|hoang
 huỳnh|huynh
 phan|phan
 vũ|vu
@@ -300,6 +296,4 @@ bùi|bui
 đỗ|do
 hồ|ho
 ngô|ngo
-dương
 thuận
-lý|ly

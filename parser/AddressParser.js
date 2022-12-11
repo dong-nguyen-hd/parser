@@ -108,12 +108,6 @@ class AddressParser extends Parser {
           ['HouseNumberClassification', 'RegionClassification', 'CountryClassification'],
 
           ['HouseNumberClassification', 'CountryClassification'],
-
-          ['VenueClassification', 'HouseNumberClassification'],
-          ['VenueClassification', 'HouseNumberClassification', 'LocalityClassification'],
-          ['VenueClassification', 'HouseNumberClassification', 'LocalityClassification', 'CountyClassification'],
-          ['VenueClassification', 'HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification'],
-          ['VenueClassification', 'HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification', 'CountryClassification'],
         ]),
 
         /* Must Not Preceed Filter */

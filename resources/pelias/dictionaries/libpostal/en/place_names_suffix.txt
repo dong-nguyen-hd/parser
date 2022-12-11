@@ -57,7 +57,7 @@ cinema
 cinemas
 cineplex
 circus|crcs|crc
-city hall
+city hall|city
 clinic
 club|clb
 clubhouse|club house

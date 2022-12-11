@@ -17,7 +17,7 @@ class RoadTypeClassifier extends PhraseClassifier {
     if (span.contains.numerals) { return }
 
     // base confidence
-    let confidence = 1
+    let confidence = 0.5
 
     // use an inverted index for full token matching as it's O(1)
     if (this.index.hasOwnProperty(span.norm)) {
