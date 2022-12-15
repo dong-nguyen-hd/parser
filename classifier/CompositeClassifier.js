@@ -51,9 +51,9 @@ class CompositeClassifier extends SectionClassifier {
   each(section) {
     const phrases = section.graph.findAll('phrase')
 
-    // sort phrases so longer phrases are matched first
+    // sort phrases so shorter phrases are matched first
     // note: this mutates the original array
-    phrases.sort((a, b) => b.norm.length - a.norm.length)
+    phrases.sort((a, b) => a.norm.length - b.norm.length)
 
     this.schemes.forEach(s => {
       // invalid scheme
