@@ -94,21 +94,21 @@ class AddressParser extends Parser {
         new SubsetFilter(),
 
         /* Invalid Solution Filter */
-        new InvalidSolutionFilter([
-          ['HouseNumberClassification', 'LocalityClassification'],
-          ['HouseNumberClassification', 'LocalityClassification', 'CountyClassification'],
-          ['HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification'],
-          ['HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification', 'CountryClassification'],
+        // new InvalidSolutionFilter([
+        //   ['HouseNumberClassification', 'LocalityClassification'],
+        //   ['HouseNumberClassification', 'LocalityClassification', 'CountyClassification'],
+        //   ['HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification'],
+        //   ['HouseNumberClassification', 'LocalityClassification', 'CountyClassification', 'RegionClassification', 'CountryClassification'],
 
-          ['HouseNumberClassification', 'CountyClassification'],
-          ['HouseNumberClassification', 'CountyClassification', 'RegionClassification'],
-          ['HouseNumberClassification', 'CountyClassification', 'RegionClassification', 'CountryClassification'],
+        //   ['HouseNumberClassification', 'CountyClassification'],
+        //   ['HouseNumberClassification', 'CountyClassification', 'RegionClassification'],
+        //   ['HouseNumberClassification', 'CountyClassification', 'RegionClassification', 'CountryClassification'],
 
-          ['HouseNumberClassification', 'RegionClassification'],
-          ['HouseNumberClassification', 'RegionClassification', 'CountryClassification'],
+        //   ['HouseNumberClassification', 'RegionClassification'],
+        //   ['HouseNumberClassification', 'RegionClassification', 'CountryClassification'],
 
-          ['HouseNumberClassification', 'CountryClassification'],
-        ]),
+        //   ['HouseNumberClassification', 'CountryClassification'],
+        // ]),
 
         /* Must Not Preceed Filter */
         //new MustNotPreceedFilter('VenueClassification', 'UnitClassification'),
