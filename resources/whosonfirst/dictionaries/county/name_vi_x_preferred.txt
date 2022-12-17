@@ -390,7 +390,7 @@ mộ đức|mo duc
 đức phổ|duc pho
 ba tơ|ba to
 lý sơn|ly son
-quy nhơn|quy nhon
+quy nhơn|quy nhon|qui nhơn|qui nhon
 an lão|an lao
 hoài nhơn|hoai nhon
 hoài ân|hoai an
