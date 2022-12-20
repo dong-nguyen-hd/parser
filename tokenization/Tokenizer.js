@@ -5,10 +5,15 @@ const permutate = require('./permutate')
 const libpostal = require('../resources/libpostal/libpostal')
 
 class Tokenizer {
-  constructor(s, isNonAccent) {
+  /**
+   * @param {*} s - text input
+   * @param {*} isNonAccent - boolean: support non-accent
+   * @param {*} isRemoveDuplicate - boolean: support remove duplicate
+   */
+  constructor(s, isNonAccent = false, isRemoveDuplicate =  false) {
     var temp = s;
     if (isNonAccent) temp = this.toLowerCaseNonAccentVietnamese(s);
-    this.span = new Span(this.removeQualifier(temp))
+    this.span = new Span(this.removeQualifier(temp, isRemoveDuplicate))
     this.segment()
     this.split()
     this.computeCoverage()
@@ -16,7 +21,7 @@ class Tokenizer {
     this.solution = []
   }
 
-  removeQualifier(src) {
+  removeQualifier(src, isRemoveDuplicate) {
     if (!src) return src;
 
     this.index = {}
@@ -24,13 +29,13 @@ class Tokenizer {
 
     // Clean input string
     let temp = src.trim().toLowerCase().normalize('NFC');
+    temp = temp.replace(/(?:\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{2,4}\)?[\s.-]?\d{2,4}[\s.-]?\d{4}/g, ""); // remove phone number
     temp = temp.replace(/\([^()]*\)/g, ''); // remove text within parentheses
     temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
     temp = temp.replace(/(?<=\D)(?:\s+(–|-)\s+)(?=\D+)/g, ' '); // (space) remove all [word + dash + word] => [word + space + word]
     temp = temp.replace(/(?<=\D)(?:–|-)(?=\D+)/g, ' '); // (non-space) remove all [word + dash + word] => [word + space + word]
-    temp = temp.replace(/(?:^[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char start
-    temp = temp.replace(/(?:[;|:|{|}|\[|\]|+|_|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char body
-    temp = temp.replace(/(?:[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+$)/g, ""); // remove special char end
+    temp = this.removeSpecialCharacter(temp);
+    temp = temp.replace(/(?:[,])(?=\S+)/g, ', '); // smooth comma
 
     if (!temp) return temp;
 
@@ -55,6 +60,11 @@ class Tokenizer {
       }
     }
 
+    // remove duplicate text
+    if (isRemoveDuplicate && temp.includes(',')) {
+      temp = Array.from(new Set(temp.split(',').map(item => this.removeSpecialCharacter(item.trim())))).join(', ');
+    }
+
     temp = temp.trim().replace(/ +(?= )/g, ''); // remove duplicate space
 
     if (temp.length > 140) {
@@ -63,6 +73,14 @@ class Tokenizer {
     }
 
     return temp
+  }
+
+  removeSpecialCharacter(input) {
+    let temp = input.replace(/(?:^[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char start
+    temp = temp.replace(/(?:[;|:|{|}|\[|\]|+|_|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char body
+    temp = temp.replace(/(?:[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+$)/g, ""); // remove special char end
+
+    return temp;
   }
 
   /**

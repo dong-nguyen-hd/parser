@@ -3,15 +3,21 @@ const DebugOutputBuilder = require('../../debug/DebugOutputBuilder')
 
 module.exports = function (req, res) {
   // address parser
-  const parser = req.app.locals.parser.address
+  var parser = req.app.locals.parser.address
 
   // input text
   const text = req.query.text || ''
 
   // tokenizer
-  const t = new Tokenizer(text)
+  var t = new Tokenizer(text)
   parser.classify(t)
   parser.solve(t)
+
+  if (!t.solution.length) {
+    t = new Tokenizer(text, false, true)
+    parser.classify(t)
+    parser.solve(t)
+  }
 
   // send json
   res.status(200).json({
@@ -25,7 +31,7 @@ module.exports = function (req, res) {
   })
 }
 
-function jsonify (solution) {
+function jsonify(solution) {
   return {
     score: solution.score,
     classifications: solution.pair.map(c => {

@@ -152,7 +152,7 @@ frontage|frtg|fr
 gap|gp
 garden|gdn|grd|grdn
 gardens|gdns|grds|grdns
-gate|ga|gte
+gate|gte
 gates|gtes
 gateway|gwy|gway|gtwy|gtway
 glade|gl|gld|glde

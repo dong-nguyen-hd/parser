@@ -129,8 +129,8 @@ module.exports = [
         not: []
       },
       {
-        is: ['AreaClassification', 'VenueClassification'],
-        not: ['VillageClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification',]
+        is: ['AreaClassification'],
+        not: ['VillageClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       },
     ]
   },

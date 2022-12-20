@@ -10,6 +10,7 @@ căn cứ không quân|can cu khong quan|cckq|c c k q
 học viện|hoc vien
 đường sắt|duong sat|ds|d s
 khu công nghiệp|khu cong nghiep|kcn|k c n
+khu kinh tế|khu kinh te
 khu du lịch|khu du lich|kdl|k d l
 khu dân cư|khu dan cư|khu dan cu
 khu dân dụng
@@ -19,6 +20,7 @@ khu đô thị|khu đô thị mới|khu đô thị mới phía
 khu dịch vụ cao cấp
 khu phố
 phố đi bộ
+nhà ga|ga
 siêu thị
 khu nghỉ mát|khu nghi mat|knm|k n m
 khách sạn|khach san|ks
