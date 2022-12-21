@@ -10,7 +10,7 @@ class Tokenizer {
    * @param {*} isNonAccent - boolean: support non-accent
    * @param {*} isRemoveDuplicate - boolean: support remove duplicate
    */
-  constructor(s, isNonAccent = false, isRemoveDuplicate =  false) {
+  constructor(s, isNonAccent = false, isRemoveDuplicate = true) {
     var temp = s;
     if (isNonAccent) temp = this.toLowerCaseNonAccentVietnamese(s);
     this.span = new Span(this.removeQualifier(temp, isRemoveDuplicate))
@@ -61,10 +61,12 @@ class Tokenizer {
     }
 
     // remove duplicate text
-    if (isRemoveDuplicate && temp.includes(',')) {
-      temp = Array.from(new Set(temp.split(',').map(item => this.removeSpecialCharacter(item.trim())))).join(', ');
+    if (isRemoveDuplicate) {
+      let splitBySpace = temp.split(/(\s+)/).map(item => this.removeSpecialCharacter(item.trim(), true)).filter(x => x.length > 0);
+      temp = Array.from(new Set(splitBySpace)).join(' ');
     }
 
+    temp = this.removeSpecialCharacter(temp);
     temp = temp.trim().replace(/ +(?= )/g, ''); // remove duplicate space
 
     if (temp.length > 140) {
@@ -75,10 +77,15 @@ class Tokenizer {
     return temp
   }
 
-  removeSpecialCharacter(input) {
-    let temp = input.replace(/(?:^[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char start
-    temp = temp.replace(/(?:[;|:|{|}|\[|\]|+|_|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char body
-    temp = temp.replace(/(?:[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+$)/g, ""); // remove special char end
+  removeSpecialCharacter(input, all = false) {
+    let temp = input;
+    if (all) {
+      temp = temp.replace(/(?:[\.|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char body
+    } else {
+      temp = input.replace(/(?:^[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char start
+      temp = temp.replace(/(?:[;|:|{|}|\[|\]|+|_|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char body
+      temp = temp.replace(/(?:[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+$)/g, ""); // remove special char end
+    }
 
     return temp;
   }
