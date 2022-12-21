@@ -10,7 +10,7 @@ class Tokenizer {
    * @param {*} isNonAccent - boolean: support non-accent
    * @param {*} isRemoveDuplicate - boolean: support remove duplicate
    */
-  constructor(s, isNonAccent = false, isRemoveDuplicate = true) {
+  constructor(s, isNonAccent = false, isRemoveDuplicate = false) {
     var temp = s;
     if (isNonAccent) temp = this.toLowerCaseNonAccentVietnamese(s);
     this.span = new Span(this.removeQualifier(temp, isRemoveDuplicate))
