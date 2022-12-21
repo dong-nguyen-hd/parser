@@ -63,7 +63,7 @@ class Tokenizer {
     // remove duplicate text
     if (isRemoveDuplicate) {
       let splitBySpace = temp.split(/(\s+)/).map(item => this.removeSpecialCharacter(item.trim(), true)).filter(x => x.length > 0);
-      temp = Array.from(new Set(splitBySpace)).join(' ');
+      temp = Array.from(new Set(splitBySpace.reverse())).reverse().join(' ');
     }
 
     temp = this.removeSpecialCharacter(temp);
