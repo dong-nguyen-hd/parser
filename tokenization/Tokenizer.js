@@ -12,8 +12,7 @@ class Tokenizer {
    */
   constructor(s, isNonAccent = false, isRemoveDuplicate = false) {
     var temp = s;
-    if (isNonAccent) temp = this.toLowerCaseNonAccentVietnamese(s);
-    this.span = new Span(this.removeQualifier(temp, isRemoveDuplicate))
+    this.span = new Span(this.removeQualifier(temp, isNonAccent, isRemoveDuplicate))
     this.segment()
     this.split()
     this.computeCoverage()
@@ -21,14 +20,16 @@ class Tokenizer {
     this.solution = []
   }
 
-  removeQualifier(src, isRemoveDuplicate) {
+  removeQualifier(src, isNonAccent = false, isRemoveDuplicate = false) {
     if (!src) return src;
 
     this.index = {}
     libpostal.load(this.index, ['vi'], 'qualifiers.txt');
 
-    // Clean input string
     let temp = src.trim().toLowerCase().normalize('NFC');
+    if(isNonAccent) temp = this.toLowerCaseNonAccentVietnamese(temp);
+
+    // Clean input string
     temp = temp.replace(/(?:\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{2,4}\)?[\s.-]?\d{2,4}[\s.-]?\d{4}/g, ""); // remove phone number
     temp = temp.replace(/\([^()]*\)/g, ''); // remove text within parentheses
     temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
@@ -145,3 +146,4 @@ class Tokenizer {
 }
 
 module.exports = Tokenizer
+module.exports.removeQualifier = removeQualifier
