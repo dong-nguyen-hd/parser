@@ -11,8 +11,9 @@ class Tokenizer {
    * @param {*} isRemoveDuplicate - boolean: support remove duplicate
    */
   constructor(s, isNonAccent = false, isRemoveDuplicate = false) {
-    var temp = s;
-    this.span = new Span(this.removeQualifier(temp, isNonAccent, isRemoveDuplicate))
+    this.text = s;
+    this.removeQualifier(this.text, isNonAccent, isRemoveDuplicate)
+    this.span = new Span(this.text)
     this.segment()
     this.split()
     this.computeCoverage()
@@ -27,7 +28,7 @@ class Tokenizer {
     libpostal.load(this.index, ['vi'], 'qualifiers.txt');
 
     let temp = src.trim().toLowerCase().normalize('NFC');
-    if(isNonAccent) temp = this.toLowerCaseNonAccentVietnamese(temp);
+    if (isNonAccent) temp = this.toLowerCaseNonAccentVietnamese(temp);
 
     // Clean input string
     temp = temp.replace(/(?:\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{2,4}\)?[\s.-]?\d{2,4}[\s.-]?\d{4}/g, ""); // remove phone number
@@ -75,7 +76,7 @@ class Tokenizer {
       temp = temp.slice(index);
     }
 
-    return temp
+    this.text = temp;
   }
 
   removeSpecialCharacter(input, all = false) {
@@ -146,4 +147,3 @@ class Tokenizer {
 }
 
 module.exports = Tokenizer
-module.exports.removeQualifier = removeQualifier
