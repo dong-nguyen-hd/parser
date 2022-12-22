@@ -30,6 +30,8 @@ function load (set, placetypes, filenames, options) {
   placetypes.forEach(placetype => {
     custom.load({ directory: path.join('whosonfirst', placetype), filenames }, add, remove)
   })
+
+  return set;
 }
 
 function _normalize (cell, options) {
