@@ -135,3 +135,4 @@ class WhosOnFirstClassifier extends PhraseClassifier {
 }
 
 module.exports = WhosOnFirstClassifier
+module.exports.placetypes = placetypes
