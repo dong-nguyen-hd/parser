@@ -6,7 +6,7 @@ const generateFilenames = require('../helper').generateFilenames
 const dictPath = path.join(__dirname, './dictionaries')
 const allPlacetypes = fs.readdirSync(dictPath).filter(p => !p.includes('.'))
 
-function load (set, placetypes, filenames, options) {
+function load(set, placetypes, filenames, options) {
   const add = _add(set, options)
   const remove = _remove(set, options)
 
@@ -30,11 +30,9 @@ function load (set, placetypes, filenames, options) {
   placetypes.forEach(placetype => {
     custom.load({ directory: path.join('whosonfirst', placetype), filenames }, add, remove)
   })
-
-  return set;
 }
 
-function _normalize (cell, options) {
+function _normalize(cell, options) {
   let value = cell.trim()
   if (options && options.replace) {
     value = value.replace(options.replace[0], options.replace[1])
@@ -51,7 +49,7 @@ function _normalize (cell, options) {
   return value
 }
 
-function _add (set, options) {
+function _add(set, options) {
   return cell => {
     const value = _normalize(cell, options)
     if (value && value.length) {
@@ -60,7 +58,7 @@ function _add (set, options) {
   }
 }
 
-function _remove (set, options) {
+function _remove(set, options) {
   return cell => {
     const value = _normalize(cell, options)
     if (value && value.length) {
