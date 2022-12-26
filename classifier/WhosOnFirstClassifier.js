@@ -91,7 +91,7 @@ class WhosOnFirstClassifier extends PhraseClassifier {
   }
 
   each(span) {
-    let confidence = 0
+    let confidence = 0.1
 
     // do not classify tokens preceeded by an 'IntersectionClassification' or add a penality to 'StopWordClassification'
     //const firstChild = span.graph.findOne('child:first') || span
