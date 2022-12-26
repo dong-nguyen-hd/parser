@@ -67,7 +67,7 @@ class Tokenizer {
       let splitBySpace = temp.split(/(\s+)/).map(item => this.removeSpecialCharacter(item.trim(), true)).filter(x => x.length > 0);
       temp = Array.from(new Set(splitBySpace.reverse())).reverse().join(' ');
     }
-
+    
     temp = this.removeSpecialCharacter(temp);
     temp = temp.trim().replace(/ +(?= )/g, ''); // remove duplicate space
 
@@ -80,11 +80,11 @@ class Tokenizer {
   }
 
   removeSpecialCharacter(input, all = false) {
-    let temp = input;
+    let temp = input.trim();
     if (all) {
       temp = temp.replace(/(?:[\.|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char body
     } else {
-      temp = input.replace(/(?:^[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char start
+      temp = temp.replace(/(?:^[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char start
       temp = temp.replace(/(?:[;|:|{|}|\[|\]|+|_|!|@|#|$|%|^|&|*|(|)|?]+)/g, ""); // remove special char body
       temp = temp.replace(/(?:[\.|,|;|:|{|}|\[|\]|+|_|\-|!|@|#|$|%|^|&|*|(|)|?]+$)/g, ""); // remove special char end
     }
