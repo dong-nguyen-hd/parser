@@ -50,10 +50,10 @@ class Tokenizer {
         // Avoid case "phường 4"
         if (propertyName.indexOf('.') == (propertyName.length - 1)) {
           let reg = new RegExp(`(?<=\\s)(${strRegex})`, 'g');
-          temp = temp.replace(reg, '');
+          temp = temp.replace(reg, ' , ');
         } else {
           let reg = new RegExp(`(?<=\\s|^)(${strRegex})(?=\\s+|,|\\.|$)`, 'g');
-          temp = temp.replace(reg, '');
+          temp = temp.replace(reg, ' , ');
         }
       } else {
         // TODO: temp of convert abbreviated, you should replace this function
