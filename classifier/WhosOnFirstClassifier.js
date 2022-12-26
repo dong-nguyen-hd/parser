@@ -123,7 +123,7 @@ class WhosOnFirstClassifier extends PhraseClassifier {
         if (placetype == "country") confidence = 1.0;
         if (placetype == "region") confidence = 0.99;
         if (placetype == "county") confidence = 0.98;
-        if (placetype === "locality") confidence = 0.01;
+        if (placetype === "locality") confidence = 0.5;
         if (placetype == "village") confidence = 0.01;
 
         // do not classify tokens if they already have a 'StopWordClassification'
