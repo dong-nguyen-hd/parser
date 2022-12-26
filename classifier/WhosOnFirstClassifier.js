@@ -121,8 +121,8 @@ class WhosOnFirstClassifier extends PhraseClassifier {
     Object.keys(placetypes).forEach(placetype => {
       if (this.tokens[placetype].has(normalizedSpan)) {
         if (placetype == "country") confidence = 1.0;
-        if (placetype == "region") confidence = 0.49;
-        if (placetype == "county") confidence = 0.48;
+        if (placetype == "region") confidence = 0.99;
+        if (placetype == "county") confidence = 0.98;
         if (placetype === "locality") confidence = 0.47;
         if (placetype == "village") confidence = 0.46;
 
