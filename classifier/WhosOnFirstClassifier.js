@@ -91,7 +91,8 @@ class WhosOnFirstClassifier extends PhraseClassifier {
   }
 
   each(span) {
-    let confidence = 1.0
+    let confidence = 0
+
     // do not classify tokens preceeded by an 'IntersectionClassification' or add a penality to 'StopWordClassification'
     //const firstChild = span.graph.findOne('child:first') || span
     //const prev = firstChild.graph.findOne('prev')
@@ -119,6 +120,12 @@ class WhosOnFirstClassifier extends PhraseClassifier {
     const normalizedSpan = normalize(span.norm)
     Object.keys(placetypes).forEach(placetype => {
       if (this.tokens[placetype].has(normalizedSpan)) {
+        if (placetype == "country") confidence = 1.0;
+        if (placetype == "region") confidence = 0.49;
+        if (placetype == "county") confidence = 0.48;
+        if (placetype === "locality") confidence = 0.47;
+        if (placetype == "village") confidence = 0.46;
+
         // do not classify tokens if they already have a 'StopWordClassification'
         // if (
         //   span.classifications.hasOwnProperty('StopWordClassification') || (
