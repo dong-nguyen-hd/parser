@@ -57,8 +57,8 @@ class Tokenizer {
         }
       } else {
         // TODO: temp of convert abbreviated, you should replace this function
-        if (propertyName == "p.") temp = temp.replace(/p\./g, ' phường ');
-        if (propertyName == "q.") temp = temp.replace(/q\./g, ' quận ');
+        if (propertyName == "p.") temp = temp.replace(/p\./g, ' , phường ');
+        if (propertyName == "q.") temp = temp.replace(/q\./g, ' , quận ');
       }
     }
 

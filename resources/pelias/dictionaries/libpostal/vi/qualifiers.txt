@@ -9,6 +9,6 @@ số điện thoại|sđt|sdt|số dt|số đt
 liên hệ|lh
 căn tin
 phường|p.|p
-xã
+xã|x.|x
 con cưng
 xem vị trí
