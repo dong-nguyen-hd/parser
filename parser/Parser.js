@@ -53,31 +53,31 @@ class Parser {
     return b.score - a.score
   }
 
-  comparitorAdministrative(a, b) {
-    // if scores are equal then enforce a slight penalty for administrative ordering
-    if (b.score === a.score) {
-      const areas = {
-        a: a.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification')),
-        b: b.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification'))
-      }
+  // comparitorAdministrative(a, b) {
+  //   // if scores are equal then enforce a slight penalty for administrative ordering
+  //   if (b.score === a.score) {
+  //     const areas = {
+  //       a: a.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification')),
+  //       b: b.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification'))
+  //     }
 
-      const classification = {
-        a: (areas.a.length ? areas.a[0].classification.constructor.name : ''),
-        b: (areas.b.length ? areas.b[0].classification.constructor.name : '')
-      }
+  //     const classification = {
+  //       a: (areas.a.length ? areas.a[0].classification.constructor.name : ''),
+  //       b: (areas.b.length ? areas.b[0].classification.constructor.name : '')
+  //     }
 
-      if (classification.a === 'CountryClassification') { return -1 }
-      if (classification.b === 'CountryClassification') { return +1 }
-      if (classification.a === 'RegionClassification') { return -1 }
-      if (classification.b === 'RegionClassification') { return +1 }
-      if (classification.a === 'CountyClassification') { return -1 }
-      if (classification.b === 'CountyClassification') { return +1 }
-      if (classification.a === 'LocalityClassification') { return -1 }
-      if (classification.b === 'LocalityClassification') { return +1 }
-      if (classification.a === 'VillageClassification') { return -1 }
-      if (classification.b === 'VillageClassification') { return +1 }
-    }
-  }
+  //     if (classification.a === 'CountryClassification') { return -1 }
+  //     if (classification.b === 'CountryClassification') { return +1 }
+  //     if (classification.a === 'RegionClassification') { return -1 }
+  //     if (classification.b === 'RegionClassification') { return +1 }
+  //     if (classification.a === 'CountyClassification') { return -1 }
+  //     if (classification.b === 'CountyClassification') { return +1 }
+  //     if (classification.a === 'LocalityClassification') { return -1 }
+  //     if (classification.b === 'LocalityClassification') { return +1 }
+  //     if (classification.a === 'VillageClassification') { return -1 }
+  //     if (classification.b === 'VillageClassification') { return +1 }
+  //   }
+  // }
 }
 
 module.exports = Parser
