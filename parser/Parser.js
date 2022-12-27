@@ -5,7 +5,7 @@ class Parser {
     this.options = (typeof options === 'object') ? options : {}
 
     // default options
-    if (typeof this.options.max_solutions !== 'number') { this.options.max_solutions = 5 }
+    if (typeof this.options.max_solutions !== 'number') { this.options.max_solutions = 10 }
   }
 
   // run all classifiers
