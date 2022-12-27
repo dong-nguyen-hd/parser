@@ -1,5 +1,5 @@
 class Parser {
-  constructor (classifiers, solvers, options) {
+  constructor(classifiers, solvers, options) {
     this.classifiers = classifiers
     this.solvers = solvers
     this.options = (typeof options === 'object') ? options : {}
@@ -10,7 +10,7 @@ class Parser {
 
   // run all classifiers
   // returns timing information
-  classify (tokenizer) {
+  classify(tokenizer) {
     const start = new Date()
     this.classifiers.forEach(c => c.classify(tokenizer))
     return new Date() - start
@@ -18,7 +18,7 @@ class Parser {
 
   // run all solvers
   // returns timing information
-  solve (tokenizer) {
+  solve(tokenizer) {
     const start = new Date()
     this.solvers.forEach(s => {
       this.scoreAndSort(tokenizer)
@@ -31,7 +31,7 @@ class Parser {
     return new Date() - start
   }
 
-  scoreAndSort (tokenizer) {
+  scoreAndSort(tokenizer) {
     // recompute scores
     tokenizer.solution.forEach(s => s.computeScore(tokenizer))
 
@@ -48,34 +48,35 @@ class Parser {
   }
 
   // comparitor function used to compare solutions for sorting
-  // @todo: possibly move the admin penalty scoring to another file
-  comparitor (a, b) {
-    // if scores are equal then enforce a slight penalty for administrative ordering
-    // if (b.score === a.score) {
-    //   const areas = {
-    //     a: a.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification')),
-    //     b: b.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification'))
-    //   }
-
-    //   const classification = {
-    //     a: (areas.a.length ? areas.a[0].classification.constructor.name : ''),
-    //     b: (areas.b.length ? areas.b[0].classification.constructor.name : '')
-    //   }
-
-    //   if (classification.a === 'CountryClassification') { return -1 }
-    //   if (classification.b === 'CountryClassification') { return +1 }
-    //   if (classification.a === 'RegionClassification') { return -1 }
-    //   if (classification.b === 'RegionClassification') { return +1 }
-    //   if (classification.a === 'CountyClassification') { return -1 }
-    //   if (classification.b === 'CountyClassification') { return +1 }
-    //   if (classification.a === 'LocalityClassification') { return -1 }
-    //   if (classification.b === 'LocalityClassification') { return +1 }
-    //   if (classification.a === 'VillageClassification') { return -1 }
-    //   if (classification.b === 'VillageClassification') { return +1 }
-    // }
-
+  comparitor(a, b) {
     // sort results by score desc
     return b.score - a.score
+  }
+
+  comparitorAdministrative(a, b) {
+    // if scores are equal then enforce a slight penalty for administrative ordering
+    if (b.score === a.score) {
+      const areas = {
+        a: a.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification')),
+        b: b.pair.filter(p => p.span.classifications.hasOwnProperty('AreaClassification'))
+      }
+
+      const classification = {
+        a: (areas.a.length ? areas.a[0].classification.constructor.name : ''),
+        b: (areas.b.length ? areas.b[0].classification.constructor.name : '')
+      }
+
+      if (classification.a === 'CountryClassification') { return -1 }
+      if (classification.b === 'CountryClassification') { return +1 }
+      if (classification.a === 'RegionClassification') { return -1 }
+      if (classification.b === 'RegionClassification') { return +1 }
+      if (classification.a === 'CountyClassification') { return -1 }
+      if (classification.b === 'CountyClassification') { return +1 }
+      if (classification.a === 'LocalityClassification') { return -1 }
+      if (classification.b === 'LocalityClassification') { return +1 }
+      if (classification.a === 'VillageClassification') { return -1 }
+      if (classification.b === 'VillageClassification') { return +1 }
+    }
   }
 }
 
