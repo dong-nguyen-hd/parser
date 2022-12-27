@@ -427,7 +427,7 @@ ninh phước|ninh phuoc
 thuận bắc|thuan bac
 thuận nam|thuan nam
 phan thiết|phan thiet
-la gi
+la gi|lagi
 tuy phong
 bắc bình|bac binh
 hàm thuận bắc|ham thuan bac

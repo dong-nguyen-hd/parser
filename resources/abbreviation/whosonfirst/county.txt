@@ -10,3 +10,4 @@ quận 10 => q10
 quận 11 => q11
 quận 12 => q12
 quy nhơn => qui nhơn|qui nhon
+la gi => lagi
