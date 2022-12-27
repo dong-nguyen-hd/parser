@@ -1,4 +1,12 @@
 thủ đức => quận 2|quận 9
-quận 2 => quận 2
-quận 9 => quận 9
+quận 2 => quận 2|q2
+quận 3 => q3
+quận 4 => q4
+quận 5 => q5
+quận 7 => q6
+quận 9 => quận 9|q9
+quận 9 => quận 9|q9
+quận 10 => q10
+quận 11 => q11
+quận 12 => q12
 quy nhơn => qui nhơn|qui nhon
