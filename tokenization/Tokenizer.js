@@ -68,9 +68,9 @@ class Tokenizer {
       temp = Array.from(new Set(splitBySpace.reverse())).reverse().join(' ');
     }
     
-    temp = this.removeSpecialCharacter(temp);
     temp = temp.replace(/(?:,+\s*){1,}/g, ", "); // remove multi comma
     temp = temp.replace(/\s+\.\s*/g, " "); // remove multi dot
+    temp = this.removeSpecialCharacter(temp);
     temp = temp.trim().replace(/ +(?= )/g, ''); // remove duplicate space
 
     if (temp.length > 140) {

@@ -6277,7 +6277,7 @@ sông xoài|song xoai
 hắc dịch|hac dich
 châu pha|chau pha
 tóc tiên|toc tien
-đa kao|da kao
+đa kao|da kao|dakao
 bến nghé|ben nghe
 bến thành|ben thanh
 nguyễn thái bình|nguyen thai binh

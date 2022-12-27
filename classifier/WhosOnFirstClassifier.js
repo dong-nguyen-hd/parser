@@ -123,31 +123,11 @@ class WhosOnFirstClassifier extends PhraseClassifier {
       if (this.tokens[placetype].has(normalizedSpan)) {
         let tempConfidence = Number(span.start) / 140 * baseConfidence;
 
-        if (placetype == "country") {
-          confidence = 0.95 + tempConfidence;
-          if (!!span.classifications.RegionClassification) span.classifications.RegionClassification.confidence = 0.01;
-          if (!!span.classifications.CountyClassification) span.classifications.CountyClassification.confidence = 0.01;
-          if (!!span.classifications.LocalityClassification) span.classifications.LocalityClassification.confidence = 0.01;
-          if (!!span.classifications.VillageClassification) span.classifications.VillageClassification.confidence = 0.01;
-        }
-        if (placetype == "region") {
-          confidence = 0.94 + tempConfidence;
-          if (!!span.classifications.CountyClassification) span.classifications.CountyClassification.confidence = 0.01;
-          if (!!span.classifications.LocalityClassification) span.classifications.LocalityClassification.confidence = 0.01;
-          if (!!span.classifications.VillageClassification) span.classifications.VillageClassification.confidence = 0.01;
-        }
-        if (placetype == "county") {
-          confidence = 0.93 + tempConfidence;
-          if (!!span.classifications.LocalityClassification) span.classifications.LocalityClassification.confidence = 0.01;
-          if (!!span.classifications.VillageClassification) span.classifications.VillageClassification.confidence = 0.01;
-        }
-        if (placetype === "locality") {
-          confidence = 0.51 + tempConfidence; if (!!span.classifications.CountyClassification) span.classifications.CountyClassification.confidence = 0.01;
-          if (!!span.classifications.VillageClassification) span.classifications.VillageClassification.confidence = 0.01;
-        }
-        if (placetype == "village") {
-          confidence = 0.5 + tempConfidence;
-        }
+        if (placetype == "country") confidence = 0.95 + tempConfidence;
+        if (placetype == "region") confidence = 0.94 + tempConfidence;
+        if (placetype == "county") confidence = 0.93 + tempConfidence;
+        if (placetype === "locality") confidence = 0.51 + tempConfidence;
+        if (placetype == "village") confidence = 0.5 + tempConfidence;
 
         // do not classify tokens if they already have a 'StopWordClassification'
         // if (

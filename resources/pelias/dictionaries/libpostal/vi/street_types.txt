@@ -1,6 +1,7 @@
 # only 1 word
 công trường|ct
 đường|duong|đg|đg.|đ.|dg|đ|d
+bis
 đại lộ|đl
 quảng trường|qt|
 quốc lộ|ql
