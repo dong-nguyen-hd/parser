@@ -3,3 +3,4 @@ học viện tài chính => aof|tachi|hvtc
 khoa học tự nhiên => khtn
 ubnd => ủy ban nhân dân|uy ban nhan dan
 khu công nghiệp => kcn
+đường => đg|đg.|đ.|dg|đ|d

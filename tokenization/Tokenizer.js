@@ -69,6 +69,7 @@ class Tokenizer {
     }
     
     temp = this.removeSpecialCharacter(temp);
+    temp = temp.replace(/,\s*,\s*/g, ", "); // remove double comma
     temp = temp.trim().replace(/ +(?= )/g, ''); // remove duplicate space
 
     if (temp.length > 140) {
