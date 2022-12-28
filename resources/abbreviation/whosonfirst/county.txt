@@ -1,10 +1,12 @@
 thủ đức => quận 2|quận 9
+quận 1 => q1
 quận 2 => quận 2|q2
 quận 3 => q3
 quận 4 => q4
 quận 5 => q5
-quận 7 => q6
-quận 9 => quận 9|q9
+quận 6 => q6
+quận 7 => q7
+quận 8 => q8
 quận 9 => quận 9|q9
 quận 10 => q10
 quận 11 => q11
