@@ -432,6 +432,21 @@ module.exports = [
     ]
   },
   {
+    //  [toponyms + numeric/alphaNumeric]
+    confidence: 0.85,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
+      },
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      }
+    ]
+  },
+  {
     //  [numeric/alphaNumeric + toponyms + numeric]
     confidence: 0.85,
     Class: StreetClassification,
