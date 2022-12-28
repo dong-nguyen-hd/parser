@@ -47,7 +47,7 @@ tây ninh|tay ninh|tn|tptn
 bình dương|binh duong|bd|tpbd
 đồng nai|dong nai|dn|đn|tpdn
 bà rịa vũng tàu|ba ria vung tau|brvt|tpbrvt|vũng tàu|vung tau
-hồ chí minh|ho chi minh|hcm|tphcm
+hồ chí minh|ho chi minh|hcm|tphcm|tphồ chí minh|tpho chi minh
 long an|long an|la|tpla
 tiền giang|tien giang|tg|tptg
 bến tre|ben tre|bt|tpbt

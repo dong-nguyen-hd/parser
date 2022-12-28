@@ -36,6 +36,7 @@ class Tokenizer {
     temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
     temp = temp.replace(/(?<=\D)(?:\s+(–|-)\s+)(?=\D+)/g, ' '); // (space) remove all [word + dash + word] => [word + space + word]
     temp = temp.replace(/(?<=\D)(?:–|-)(?=\D+)/g, ' '); // (non-space) remove all [word + dash + word] => [word + space + word]
+    temp = temp.replace(/(?<=quận|phường)(?=\d)/g, ' '); // pretty district
     temp = this.removeSpecialCharacter(temp);
     temp = temp.replace(/(?:[,])(?=\S+)/g, ', '); // smooth comma
 
