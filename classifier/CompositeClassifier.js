@@ -5,8 +5,7 @@ const SectionClassifier = require('./super/SectionClassifier')
 
 // compute cartesian product of arrays
 // https://stackoverflow.com/a/43053803
-const f = (a, b) => [].concat(...a.map(d => b.map(e => [].concat(d, e))))
-const cartesian = (a, b, ...c) => (b ? cartesian(f(a, b), ...c) : a)
+const cartesian = (...a) => a.reduce((a, b) => a.flatMap(d => b.map(e => [d, e].flat())));
 
 class CompositeClassifier extends SectionClassifier {
   constructor(schemes) {
