@@ -17,7 +17,7 @@ class ObscureClassifier extends WordClassifier {
     if (span.contains.numerals) { return }
 
     // base confidence
-    let confidence = 0.1
+    let confidence = 0.01
 
     // use an inverted index for full token matching as it's O(1)
     if (this.stopWords.hasOwnProperty(span.norm)) {

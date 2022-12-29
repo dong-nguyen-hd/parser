@@ -1,14 +1,6 @@
-thành phố|thanh pho|tp.|tp
-thị xã|thi xa|tx.|tx
-thị trấn|thi tran|tt.|tt
-tỉnh|t.|t
-huyện|h.|h
-quận|q.|q
 địa chỉ|dc|đc|dchi|đchỉ|đ.c|d.c
 số điện thoại|sđt|sdt|số dt|số đt
 liên hệ|lh
 căn tin
-phường|p.|p
-x.|x
 con cưng
 xem vị trí

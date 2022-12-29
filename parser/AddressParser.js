@@ -21,6 +21,9 @@ const SurnameClassifier = require('../classifier/SurnameClassifier')
 // const PersonalTitleClassifier = require('../classifier/PersonalTitleClassifier')
 // const ChainClassifier = require('../classifier/ChainClassifier')
 const PlacePrefixClassifier = require('../classifier/PlacePrefixClassifier')
+const LocalityPrefixClassifier = require('../classifier/LocalityPrefixClassifier')
+const CountyPrefixClassifier = require('../classifier/CountyPrefixClassifier')
+const RegionPrefixClassifier = require('../classifier/RegionPrefixClassifier')
 const PlaceSuffixClassifier = require('../classifier/PlaceSuffixClassifier')
 // const IntersectionClassifier = require('../classifier/IntersectionClassifier')
 // const MultiStreetClassifier = require('../classifier/MultiStreetClassifier')
@@ -66,6 +69,9 @@ class AddressParser extends Parser {
         new ToponymClassifier(),
         new RoadTypeClassifier(),
         new PlacePrefixClassifier(),
+        new LocalityPrefixClassifier(),
+        new CountyPrefixClassifier(),
+        new RegionPrefixClassifier(),
         new PlaceSuffixClassifier(),
         //new IntersectionClassifier(),
         //new PersonClassifier(),
@@ -81,6 +87,7 @@ class AddressParser extends Parser {
         new CompositeClassifier(require('../classifier/scheme/venue')),
         new CompositeClassifier(require('../classifier/scheme/street_name')),
         new CompositeClassifier(require('../classifier/scheme/street')),
+        new CompositeClassifier(require('../classifier/scheme/area')),
         //new CompositeClassifier(require('../classifier/scheme/intersection')),
 
         // additional classifiers which act on unclassified tokens
