@@ -5,7 +5,7 @@ const permutate = require('./permutate')
 const libpostal = require('../resources/libpostal/libpostal')
 
 const patternVietnameseChar = "aàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz";
-const patternSpecialCharBig = `.,!@#$%^&*()_+\-=\[\]{};':"\/|<>?~"`; // Includes "dot, comma"
+const patternSpecialCharBig = `.,!@#$%^&*()_+\=\[\]{};':"|<>?~"`; // Includes "dot, comma, dash, slash" => .,!@#$%^&*()_+\-=\[\]{};':"\/|<>?~"
 const patternSpecialCharLittle = `!@#$%^&*()_+\-=\[\]{};':"\/|<>?~"`; // Not includes "dot, comma"
 
 class Tokenizer {
@@ -40,6 +40,7 @@ class Tokenizer {
     // Clean input string
     temp = temp.replace(/(?:\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{2,4}\)?[\s.-]?\d{2,4}[\s.-]?\d{4}/g, ""); // remove phone number
     temp = temp.replace(/\([^()]*\)/g, ''); // remove text within parentheses
+
     temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
     temp = temp.replace(/(?<=\D)(?:\s+(–|-)\s+)(?=\D+)/g, ' '); // (space) remove all [word + dash + word] => [word + space + word]
     temp = temp.replace(/(?<=\D)(?:–|-)(?=\D+)/g, ' '); // (non-space) remove all [word + dash + word] => [word + space + word]
