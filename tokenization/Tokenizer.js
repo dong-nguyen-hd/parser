@@ -5,7 +5,8 @@ const permutate = require('./permutate')
 const libpostal = require('../resources/libpostal/libpostal')
 
 const patternVietnameseChar = "aàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz";
-const patternSpecialChar = `!@#$%^&*()_+\-=\[\]{};':"\/|<>?~"`; // Not includes "dot, comma"
+const patternSpecialCharBig = `.,!@#$%^&*()_+\-=\[\]{};':"\/|<>?~"`; // Includes "dot, comma"
+const patternSpecialCharLittle = `!@#$%^&*()_+\-=\[\]{};':"\/|<>?~"`; // Not includes "dot, comma"
 
 class Tokenizer {
   /**
@@ -15,6 +16,12 @@ class Tokenizer {
   */
   constructor(s, isNonAccent = false, isRemoveDuplicate = false) {
     this.text = s;
+    this.localityPrefix = {};
+    this.countyPrefix = {};
+    this.regionPrefix = {};
+    libpostal.load(this.localityPrefix, ['vi'], 'locality_prefix.txt');
+    libpostal.load(this.countyPrefix, ['vi'], 'county_prefix.txt');
+    libpostal.load(this.regionPrefix, ['vi'], 'region_prefix.txt');
     this.prettyInput(this.text, isNonAccent, isRemoveDuplicate)
     this.span = new Span(this.text)
     this.segment()
@@ -39,11 +46,12 @@ class Tokenizer {
     temp = this.removeQualifier(temp);
     if (!temp.trim()) return temp;
     temp = temp.replace(/(?:[,])(?=\S+)/g, ', '); // smooth comma
+    temp = this.prettyArea(temp);
     // TODO: temp of convert abbreviated, you should replace this function
-    temp = temp.replace(/\s+p\./g, ' , phường ');
-    temp = temp.replace(/\s+q\./g, ' , quận '); // end
+    temp = temp.replace(new RegExp(`(?<=,+|^|\\s+)(?:p\\.[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g'), ' , phường ');
+    temp = temp.replace(new RegExp(`(?<=,+|^|\\s+)(?:q\\.[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g'), ' , quận '); // end
     temp = temp.replace(/(?<=quận|phường)(?=\d)/g, ' '); // pretty district
-    
+
     // remove duplicate text
     if (isRemoveDuplicate) {
       let splitBySpace = temp.split(/(\s+)/).map(item => removeSpecialCharacter(item.trim(), true)).filter(x => x.length > 0);
@@ -64,15 +72,66 @@ class Tokenizer {
     this.text = temp;
   }
 
+  prettyArea(input) {
+    var temp = input.trim();
+
+    for (const prefix in this.localityPrefix) {
+      let strRegex = escapeRegExp(prefix);
+      if (prefix.includes(".")) {
+        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
+        if (reg.test(temp)) {
+          temp = temp.replace(reg, ` , ${prefix} `);
+        }
+      } else {
+        let reg = new RegExp(`(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        if (reg.test(temp)) {
+          temp = temp.replace(reg, ` , ${prefix} `);
+        }
+      }
+    }
+
+    for (const prefix in this.countyPrefix) {
+      let strRegex = escapeRegExp(prefix);
+      if (prefix.includes(".")) {
+        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
+        if (reg.test(temp)) {
+          temp = temp.replace(reg, ` , ${prefix} `);
+        }
+      } else {
+        let reg = new RegExp(`(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        if (reg.test(temp)) {
+          temp = temp.replace(reg, ` , ${prefix} `);
+        }
+      }
+    }
+
+    for (const prefix in this.regionPrefix) {
+      let strRegex = escapeRegExp(prefix);
+      if (prefix.includes(".")) {
+        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
+        if (reg.test(temp)) {
+          temp = temp.replace(reg, ` , ${prefix} `);
+        }
+      } else {
+        let reg = new RegExp(`(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        if (reg.test(temp)) {
+          temp = temp.replace(reg, ` , ${prefix} `);
+        }
+      }
+    }
+
+    return temp;
+  }
+
   removeQualifier(input) {
     let temp = input.trim();
 
     this.qualifiers = {}
-    libpostal.load(this.qualifiers, ['vi'], 'qualifiers.txt');
+    libpostal.load(this.qualifiers, ['en', 'vi'], 'qualifiers.txt');
 
     for (var propertyName in this.qualifiers) {
       let strRegex = escapeRegExp(propertyName);
-      let reg = new RegExp(`(?<=\s|^)(${strRegex})(?![${patternVietnameseChar}0-9])`, 'g');
+      let reg = new RegExp(`(?<=\\s|^)(?:${strRegex})(?![${patternVietnameseChar}0-9])`, 'g');
       temp = temp.replace(reg, ' , ');
     }
 
@@ -151,11 +210,11 @@ function toLowerCaseNonAccentVietnamese(str) {
 function removeSpecialCharacter(input, all = false) {
   var temp = input.trim();
   if (all) {
-    let reg = new RegExp(`(?:[${escapeRegExp(`${patternSpecialChar}.,`)}])`, 'g');
+    let reg = new RegExp(`(?:[${escapeRegExp(patternSpecialCharBig)}])`, 'g');
     temp = temp.replace(reg, " ");
   } else {
-    let reg = new RegExp(`(?:^[${escapeRegExp(` .,${patternSpecialChar}`)}]+)|(?:[${escapeRegExp(patternSpecialChar)}]+)|(?:[${escapeRegExp(` .,${patternSpecialChar}`)}]+$)`, 'g');
-    temp = temp.replace(reg, " "); 
+    let reg = new RegExp(`(?:^[${escapeRegExp(` ${patternSpecialCharBig}`)}]+)|(?:[${escapeRegExp(patternSpecialCharLittle)}]+)|(?:[${escapeRegExp(` ${patternSpecialCharBig}`)}]+$)`, 'g');
+    temp = temp.replace(reg, " ");
   }
 
   return temp;

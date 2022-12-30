@@ -8,11 +8,11 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: []
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
@@ -23,15 +23,15 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: []
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
@@ -42,19 +42,19 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: []
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },
@@ -65,23 +65,23 @@ module.exports = [
     scheme: [
       {
         is: ['SurnameClassification'],
-        not: []
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification']
       },
       {
         is: ['AlphaClassification', 'SurnameClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification',, 'VenueClassification', 'ObscureClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification',, 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       },
       {
         is: ['AlphaClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
+        not: ['LocalityPrefixClassification', 'CountyPrefixClassification', 'RegionPrefixClassification', 'NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification', 'ObscureClassification']
       }
     ]
   },

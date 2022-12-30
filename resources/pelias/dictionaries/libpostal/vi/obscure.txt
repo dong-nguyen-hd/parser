@@ -89,4 +89,12 @@ tầng
 lũ
 lụt
 bão
+huyện|h.|h
+quận|q.|q
+xã|x.|x
+xã|tx.|tx
+phường|p.|p
+trấn|tt.|tt
+phố|tp.|tp
+tỉnh|t.|t
 a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z

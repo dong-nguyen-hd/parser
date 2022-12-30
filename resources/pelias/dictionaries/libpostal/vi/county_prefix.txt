@@ -1,2 +1,3 @@
 huyện|h.|h
 quận|q.|q
+thành phố|thanh pho|tp.|tp
