@@ -218,4 +218,19 @@ module.exports = [
       }
     ]
   },
+  {
+    // toponyms + area]
+    confidence: 0.73,
+    Class: VenueClassification,
+    scheme: [
+      {
+        is: ['ToponymClassification'],
+        not: []
+      },
+      {
+        is: ['AreaClassification'],
+        not: ['VillageClassification']
+      }
+    ]
+  },
 ]

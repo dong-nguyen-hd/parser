@@ -75,7 +75,7 @@ class Tokenizer {
   prettyArea(input) {
     var temp = input.trim();
 
-    for (const prefix in this.localityPrefix) {
+    for (const prefix in this.regionPrefix) {
       let strRegex = escapeRegExp(prefix);
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
@@ -105,10 +105,15 @@ class Tokenizer {
       }
     }
 
-    for (const prefix in this.regionPrefix) {
+    for (const prefix in this.localityPrefix) {
       let strRegex = escapeRegExp(prefix);
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
+        if (reg.test(temp)) {
+          temp = temp.replace(reg, ` , ${prefix} `);
+        }
+      } else if (prefix == "xã") {
+        let reg = new RegExp(`(?<!thị\\s*)(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` , ${prefix} `);
         }
