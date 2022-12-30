@@ -204,7 +204,7 @@ tây tựu|tay tuu
 xuân đỉnh|xuan dinh
 xuân tảo|xuan tao
 cổ nhuế 1|co nhue 1
-cổ nhuế 2|co nhue 2
+cổ nhuế 2|co nhue 2|co nhue|cổ nhuế
 phú diễn|phu dien
 phúc diễn|phuc dien
 xuân phương|xuan phuong
