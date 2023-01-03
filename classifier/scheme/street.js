@@ -119,6 +119,30 @@ module.exports = [
       }
     ]
   },
+  
+  {
+    // [number/alphaNumeric + street-prefix + number/alphaNumeric + 1 area]
+    confidence: 0.82,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
+      },
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['AreaClassification'],
+        not: ['VillageClassification']
+      }
+    ]
+  },
   {
     // [numeric/alphaNumeric + 1 area]
     confidence: 0.82,
