@@ -123,8 +123,8 @@ class WhosOnFirstClassifier extends PhraseClassifier {
       if (this.tokens[placetype].has(normalizedSpan)) {
         let tempConfidence = Number(span.end) / 140 * baseConfidence;
 
-        if (placetype == "country") confidence = 0.65 + tempConfidence;
-        if (placetype == "region") confidence = 0.64 + tempConfidence;
+        if (placetype == "country") confidence = 0.85 + tempConfidence;
+        if (placetype == "region") confidence = 0.84 + tempConfidence;
         if (placetype == "county") confidence = 0.63 + tempConfidence;
         if (placetype === "locality") confidence = 0.62 + tempConfidence;
         if (placetype == "village") confidence = 0.61 + tempConfidence;
