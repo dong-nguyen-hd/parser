@@ -2,8 +2,8 @@
 // eg. {housenumber} should not be more than n chars from {street}
 
 const MAX_DISTANCE = 2;
-const MAX_DISTANCE_LOCALITY_COUNTY = 8;
-const MAX_DISTANCE_COUNTY_REGION = 8;
+const MAX_DISTANCE_LOCALITY_COUNTY = 15;
+const MAX_DISTANCE_COUNTY_REGION = 15;
 
 class TokenDistanceFilter {
   solve (tokenizer) {

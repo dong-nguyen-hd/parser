@@ -6,7 +6,7 @@ const libpostal = require('../resources/libpostal/libpostal')
 
 const patternVietnameseChar = "aàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz";
 const patternSpecialCharBig = `.,!@#$%^&*()_+\=\[\]{};':"|<>?~"`; // Includes "dot, comma, dash, slash" => .,!@#$%^&*()_+\-=\[\]{};':"\/|<>?~"
-const patternSpecialCharLittle = `!@#$%^&*()_+\-=\[\]{};':"\/|<>?~"`; // Not includes "dot, comma"
+const patternSpecialCharLittle = `!@#$%^&*()_+\=\[\]{};':"|<>?~"`; // Not includes "dot, comma"
 
 class Tokenizer {
   /**

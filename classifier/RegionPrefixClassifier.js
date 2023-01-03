@@ -16,7 +16,7 @@ class RegionPrefixClassifier extends PhraseClassifier {
 
     // use an inverted index for full token matching as it's O(1)
     if (this.index.hasOwnProperty(span.norm)) {
-      span.classify(new RegionPrefixClassification(1))
+      span.classify(new RegionPrefixClassification(0.01))
     }
   }
 }

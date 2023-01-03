@@ -5,7 +5,7 @@ const RegionClassification = require('../../classification/RegionClassification'
 module.exports = [
   {
     //  [prefix + locality]
-    confidence: 1.0,
+    confidence: 0.97,
     Class: LocalityClassification,
     scheme: [
       {
@@ -20,7 +20,7 @@ module.exports = [
   },
   {
     //  [prefix + county]
-    confidence: 1.0,
+    confidence: 0.98,
     Class: CountyClassification,
     scheme: [
       {
@@ -35,7 +35,7 @@ module.exports = [
   },
   {
     //  [prefix + region]
-    confidence: 1.0,
+    confidence: 0.99,
     Class: RegionClassification,
     scheme: [
       {

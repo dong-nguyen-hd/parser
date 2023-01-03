@@ -16,7 +16,7 @@ class LocalityPrefixClassifier extends PhraseClassifier {
 
     // use an inverted index for full token matching as it's O(1)
     if (this.index.hasOwnProperty(span.norm)) {
-      span.classify(new LocalityPrefixClassification(1))
+      span.classify(new LocalityPrefixClassification(0.01))
     }
   }
 }
