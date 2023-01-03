@@ -14,7 +14,7 @@ module.exports = function (req, res) {
   parser.solve(t)
 
   if (!t.solution.length) {
-    t = new Tokenizer(text, false, true)
+    t = new Tokenizer(text, true)
     parser.classify(t)
     parser.solve(t)
   }

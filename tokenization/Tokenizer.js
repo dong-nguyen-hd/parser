@@ -14,7 +14,7 @@ class Tokenizer {
    * @param {*} isNonAccent - boolean: support non-accent
    * @param {*} isRemoveDuplicate - boolean: support remove duplicate
   */
-  constructor(s, isNonAccent = false, isRemoveDuplicate = false) {
+  constructor(s, isNonAccent = false) {
     this.text = s;
     this.localityPrefix = {};
     this.countyPrefix = {};
@@ -22,7 +22,7 @@ class Tokenizer {
     libpostal.load(this.localityPrefix, ['vi'], 'locality_prefix.txt');
     libpostal.load(this.countyPrefix, ['vi'], 'county_prefix.txt');
     libpostal.load(this.regionPrefix, ['vi'], 'region_prefix.txt');
-    this.prettyInput(this.text, isNonAccent, isRemoveDuplicate)
+    this.prettyInput(this.text, isNonAccent)
     this.span = new Span(this.text)
     this.segment()
     this.split()
@@ -31,7 +31,7 @@ class Tokenizer {
     this.solution = []
   }
 
-  prettyInput(src, isNonAccent = false, isRemoveDuplicate = false) {
+  prettyInput(src, isNonAccent = false) {
     if (!src) return src;
 
     let temp = src.trim().toLowerCase().normalize('NFC');
@@ -52,12 +52,6 @@ class Tokenizer {
     temp = temp.replace(new RegExp(`(?<=,+|^|\\s+)(?:p\\.[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g'), ' , phường ');
     temp = temp.replace(new RegExp(`(?<=,+|^|\\s+)(?:q\\.[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g'), ' , quận '); // end
     temp = temp.replace(/(?<=quận|phường)(?=\d)/g, ' '); // pretty district
-
-    // remove duplicate text
-    if (isRemoveDuplicate) {
-      let splitBySpace = temp.split(/(\s+)/).map(item => removeSpecialCharacter(item.trim(), true)).filter(x => x.length > 0);
-      temp = Array.from(new Set(splitBySpace.reverse())).reverse().join(' ');
-    }
 
     temp = temp.replace(/(?:,+\s*){1,}/g, ", "); // remove multi comma
     temp = temp.replace(/\s+\.\s*/g, " "); // remove multi dot
