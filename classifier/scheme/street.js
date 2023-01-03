@@ -119,7 +119,6 @@ module.exports = [
       }
     ]
   },
-  
   {
     // [number/alphaNumeric + street-prefix + number/alphaNumeric + 1 area]
     confidence: 0.82,
