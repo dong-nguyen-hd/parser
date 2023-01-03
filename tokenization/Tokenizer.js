@@ -26,12 +26,6 @@ class Tokenizer {
   */
   constructor(s, isNonAccent = false) {
     this.text = s;
-    // this.localityPrefix = {};
-    // this.countyPrefix = {};
-    // this.regionPrefix = {};
-    // libpostal.load(this.localityPrefix, ['vi'], 'locality_prefix.txt');
-    // libpostal.load(this.countyPrefix, ['vi'], 'county_prefix.txt');
-    // libpostal.load(this.regionPrefix, ['vi'], 'region_prefix.txt');
     this.prettyInput(this.text, isNonAccent)
     this.span = new Span(this.text)
     this.segment()
