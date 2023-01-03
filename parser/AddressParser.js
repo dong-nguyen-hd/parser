@@ -131,13 +131,11 @@ class AddressParser extends Parser {
         new MustNotFollowFilter('VenueClassification', 'RegionClassification'),
         new MustNotFollowFilter('VenueClassification', 'CountyClassification'),
         new MustNotFollowFilter('VenueClassification', 'LocalityClassification'),
-        new MustNotFollowFilter('VenueClassification', 'VillageClassification'),
 
         new MustNotFollowFilter('StreetClassification', 'CountryClassification'),
         new MustNotFollowFilter('StreetClassification', 'RegionClassification'),
         new MustNotFollowFilter('StreetClassification', 'CountyClassification'),
         new MustNotFollowFilter('StreetClassification', 'LocalityClassification'),
-        new MustNotFollowFilter('StreetClassification', 'VillageClassification'),
 
         new MustNotFollowFilter('HouseNumberClassification', 'StreetClassification'),
 
