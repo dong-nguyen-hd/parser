@@ -8,6 +8,16 @@ const patternVietnameseChar = "aàảãáạăằẳẵắặâầẩẫấậbc
 const patternSpecialCharBig = `.,!@#$%^&*()_+\=\[\]{};':"|<>?~"`; // Includes "dot, comma, dash, slash" => .,!@#$%^&*()_+\-=\[\]{};':"\/|<>?~"
 const patternSpecialCharLittle = `!@#$%^&*()_+\=\[\]{};':"|<>?~"`; // Not includes "dot, comma"
 
+var localityPrefix = {};
+var countyPrefix = {};
+var regionPrefix = {};
+var qualifiers = {}
+
+libpostal.load(localityPrefix, ['vi'], 'locality_prefix.txt');
+libpostal.load(countyPrefix, ['vi'], 'county_prefix.txt');
+libpostal.load(regionPrefix, ['vi'], 'region_prefix.txt');
+libpostal.load(qualifiers, ['en', 'vi'], 'qualifiers.txt');
+
 class Tokenizer {
   /**
    * @param {*} s - text input
@@ -16,12 +26,12 @@ class Tokenizer {
   */
   constructor(s, isNonAccent = false) {
     this.text = s;
-    this.localityPrefix = {};
-    this.countyPrefix = {};
-    this.regionPrefix = {};
-    libpostal.load(this.localityPrefix, ['vi'], 'locality_prefix.txt');
-    libpostal.load(this.countyPrefix, ['vi'], 'county_prefix.txt');
-    libpostal.load(this.regionPrefix, ['vi'], 'region_prefix.txt');
+    // this.localityPrefix = {};
+    // this.countyPrefix = {};
+    // this.regionPrefix = {};
+    // libpostal.load(this.localityPrefix, ['vi'], 'locality_prefix.txt');
+    // libpostal.load(this.countyPrefix, ['vi'], 'county_prefix.txt');
+    // libpostal.load(this.regionPrefix, ['vi'], 'region_prefix.txt');
     this.prettyInput(this.text, isNonAccent)
     this.span = new Span(this.text)
     this.segment()
@@ -70,7 +80,7 @@ class Tokenizer {
   prettyArea(input) {
     var temp = input.trim();
 
-    for (const prefix in this.regionPrefix) {
+    for (const prefix in regionPrefix) {
       let strRegex = escapeRegExp(prefix);
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
@@ -85,7 +95,7 @@ class Tokenizer {
       }
     }
 
-    for (const prefix in this.countyPrefix) {
+    for (const prefix in countyPrefix) {
       let strRegex = escapeRegExp(prefix);
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
@@ -100,7 +110,7 @@ class Tokenizer {
       }
     }
 
-    for (const prefix in this.localityPrefix) {
+    for (const prefix in localityPrefix) {
       let strRegex = escapeRegExp(prefix);
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
@@ -126,10 +136,7 @@ class Tokenizer {
   removeQualifier(input) {
     let temp = input.trim();
 
-    this.qualifiers = {}
-    libpostal.load(this.qualifiers, ['en', 'vi'], 'qualifiers.txt');
-
-    for (var propertyName in this.qualifiers) {
+    for (var propertyName in qualifiers) {
       let strRegex = escapeRegExp(propertyName);
       let reg = new RegExp(`(?<=\\s|^)(?:${strRegex})(?![${patternVietnameseChar}0-9])`, 'g');
       temp = temp.replace(reg, ' , ');
