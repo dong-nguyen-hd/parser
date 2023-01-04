@@ -231,4 +231,5 @@ function removeSpecialCharacter(input, all = false) {
 module.exports = Tokenizer
 module.exports.escapeRegExp = escapeRegExp
 module.exports.toLowerCaseNonAccentVietnamese = toLowerCaseNonAccentVietnamese
+module.exports.renewAccentVietnamese = renewAccentVietnamese
 module.exports.removeSpecialCharacter = removeSpecialCharacter
