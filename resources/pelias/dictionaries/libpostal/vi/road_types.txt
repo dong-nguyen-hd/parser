@@ -1,10 +1,10 @@
-# >= 2 word
+# >= 2 words
 công trường|cong truong|c t
 đại lộ|dai lo|d l
 đường hẻm|duong hem
 đường nhỏ|duong nho
 đường phố|duong pho
-cao tốc
+cao tốc|cao toc
 quảng trường|quang truong|q t
 quốc lộ|quoc lo|q l
 tỉnh lộ|tinh lo|t l

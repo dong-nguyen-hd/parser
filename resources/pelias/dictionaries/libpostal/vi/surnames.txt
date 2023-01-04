@@ -87,9 +87,8 @@ giản|gian
 giảng|giang
 giáp|giap
 hưng|hung
-h'|h 
-h'ma|h ma
-h'nia|h nia
+h ma|h ma
+h nia|h nia
 hầu|hau
 hà|ha
 hạ|ha

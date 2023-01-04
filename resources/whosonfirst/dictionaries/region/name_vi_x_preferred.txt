@@ -29,9 +29,9 @@ hà tĩnh|ha tinh|ht|tpht
 quảng bình|quang binh|qb|tpqb
 quảng trị|quang tri|qt|tpqt
 thừa thiên huế|thua thien hue|tth|tptth|huế
-đà nẵng|da nang|dna|đna|tpdna|tpđna
-quảng nam|quang nam|qna|tpqna
-quảng ngãi|quang ngai|qng|tpqng
+đà nẵng|da nang|dna|đna|đn|dn|tpdna|tpđna|tpdn|tpđn
+quảng nam|quang nam|qna|qn|tpqna|tpqn
+quảng ngãi|quang ngai|qng|qn|tpqng|tpqn
 bình định|binh dinh|bd|tpbd
 phú yên|phu yen|py|tppy
 khánh hòa|khanh hoa|kh|tpkh
@@ -45,7 +45,7 @@ lâm đồng|lam dong|ld|tpld
 bình phước|binh phuoc|bp|tpbp
 tây ninh|tay ninh|tn|tptn
 bình dương|binh duong|bd|tpbd
-đồng nai|dong nai|dn|đn|tpdn
+đồng nai|dong nai|dn|đn|tpdn|tpđn
 bà rịa vũng tàu|ba ria vung tau|brvt|tpbrvt|vũng tàu|vung tau
 hồ chí minh|ho chi minh|hcm|hcmc|tphcm|tphồ chí minh|tpho chi minh
 long an|long an|la|tpla

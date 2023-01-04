@@ -6,5 +6,5 @@ bis
 quảng trường|qt|
 quốc lộ|ql
 tỉnh lộ|tl|lộ
-ngõ
-phố
+ngõ|ngo
+phố|pho

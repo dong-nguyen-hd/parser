@@ -39,6 +39,7 @@ class Tokenizer {
     if (!src) return src;
 
     let temp = src.trim().toLowerCase().normalize('NFC');
+    temp = renewAccentVietnamese(temp);
     if (isNonAccent) temp = toLowerCaseNonAccentVietnamese(temp);
 
     // Clean input string
@@ -79,12 +80,12 @@ class Tokenizer {
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` , ${prefix} `);
+          temp = temp.replace(reg, ` ${prefix} `);
         }
       } else {
         let reg = new RegExp(`(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` , ${prefix} `);
+          temp = temp.replace(reg, ` ${prefix} `);
         }
       }
     }
@@ -94,12 +95,12 @@ class Tokenizer {
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` , ${prefix} `);
+          temp = temp.replace(reg, ` ${prefix} `);
         }
       } else {
         let reg = new RegExp(`(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` , ${prefix} `);
+          temp = temp.replace(reg, ` ${prefix} `);
         }
       }
     }
@@ -109,17 +110,17 @@ class Tokenizer {
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` , ${prefix} `);
+          temp = temp.replace(reg, ` ${prefix} `);
         }
       } else if (prefix == "xã") {
         let reg = new RegExp(`(?<!thị\\s*)(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` , ${prefix} `);
+          temp = temp.replace(reg, ` ${prefix} `);
         }
       } else {
         let reg = new RegExp(`(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` , ${prefix} `);
+          temp = temp.replace(reg, ` ${prefix} `);
         }
       }
     }
@@ -178,6 +179,30 @@ class Tokenizer {
 */
 function escapeRegExp(text) {
   return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+}
+
+function renewAccentVietnamese(str) {
+  str = str.replace(/(?:òa)/g, "oà");
+  str = str.replace(/(?:óa)/g, "oá");
+  str = str.replace(/(?:ỏa)/g, "oả");
+  str = str.replace(/(?:õa)/g, "oã");
+  str = str.replace(/(?:ọa)/g, "oạ");
+
+  str = str.replace(/(?:òe)/g, "oè");
+  str = str.replace(/(?:óe)/g, "oé");
+  str = str.replace(/(?:ỏe)/g, "oẻ");
+  str = str.replace(/(?:õe)/g, "oẽ");
+  str = str.replace(/(?:ọe)/g, "oẹ");
+
+  str = str.replace(/(?:ùy)/g, "uỳ");
+  str = str.replace(/(?:úy)/g, "uý");
+  str = str.replace(/(?:ủy)/g, "uỷ");
+  str = str.replace(/(?:ũy)/g, "uỹ");
+  str = str.replace(/(?:ụy)/g, "uỵ");
+
+  str = str.replace(/(?:qui)/g, "quy");
+
+  return str;
 }
 
 function toLowerCaseNonAccentVietnamese(str) {

@@ -2,6 +2,17 @@ const StreetClassification = require('../../classification/StreetClassification'
 
 module.exports = [
   {
+    //  [toponyms]
+    confidence: 0.81,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['ToponymClassification'],
+        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
+      },
+    ]
+  },
+  {
     // [street-prefix + number/alphaNumeric]
     confidence: 0.81,
     Class: StreetClassification,
@@ -384,17 +395,6 @@ module.exports = [
         is: ['StreetNameClassification'],
         not: ['PlacePrefixClassification', 'PlaceSuffixClassification', 'RoadTypeClassification']
       }
-    ]
-  },
-  {
-    //  [toponyms]
-    confidence: 0.85,
-    Class: StreetClassification,
-    scheme: [
-      {
-        is: ['ToponymClassification'],
-        not: ['NumericClassification', 'PlacePrefixClassification', 'PlaceSuffixClassification', 'VenueClassification']
-      },
     ]
   },
   {

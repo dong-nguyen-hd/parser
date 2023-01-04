@@ -4,7 +4,7 @@ công ty cổ phần|cong ty co phan|ctcp|c t c p|cty cp|cty c p
 công ty|cong ty|cty
 công viên văn hóa|cong vien van hoa|cvvh|c v v h
 công viên|cong vien|cv|c v
-công viên hồ điều hoà
+công viên hồ điều hoà|cong vien ho dieu hoa
 căn cứ không quân|can cu khong quan|cckq|c c k q
 đại học|dai hoc|dh|d h|trường đại học|truong dai hoc
 học viện|hoc vien
@@ -13,15 +13,23 @@ khu công nghiệp|khu cong nghiep|kcn|k c n
 khu kinh tế|khu kinh te
 khu du lịch|khu du lich|kdl|k d l
 khu dân cư|khu dan cư|khu dan cu
-khu dân dụng
-khu căn hộ|khu căn hộ cao tầng|cao ốc căn hộ|căn hộ|khu nhà ở di dân
-khu nhà ở
-khu đô thị|khu đô thị mới|khu đô thị mới phía
-khu dịch vụ cao cấp
-khu phố
-phố đi bộ
-nhà ga|ga
-siêu thị
+khu dân dụng|khu dan dung
+khu căn hộ|khu can ho
+khu căn hộ cao tầng|khu can ho cao tang
+cao ốc căn hộ|cao oc can ho
+căn hộ|can ho
+khu nhà ở di dân|khu nha o di dan
+dự án|du an
+dự án căn hộ|du an can ho
+khu nhà ở|khu nha o
+khu đô thị|khu do thi
+khu đô thị mới|khu do thi
+khu đô thị mới phía|khu do thi moi phia
+khu dịch vụ cao cấp|khu dich vu cao cap
+khu phố|khu pho
+phố đi bộ|pho di bo
+nhà ga|nha ga|ga
+siêu thị|sieu thi
 khu nghỉ mát|khu nghi mat|knm|k n m
 khách sạn|khach san|ks
 nhà hát|nha hat|nh|n h
@@ -35,29 +43,37 @@ sân vận động|san van dong|svd|s v d
 tiểu học|tieu hoc|th|t h
 trung học cơ sở|trung hoc co so|thcs|t h c s
 trung học phổ thông|trung hoc pho thong|thpt|t h p t
-khu trung tâm thương mại|trung tâm thương mại|trung tam thuong mai|tttm|t t t m|trung tâm tm|tòa nhà trung tâm thương mại|khu thương mại|khu trung tâm mua sắm
-cao ốc căn hộ thương mại 
+khu trung tâm thương mại|khu trung tam thuong mai|khu tttm|ktttm
+trung tâm thương mại|trung tam thuong mai|tttm|t t t m|trung tâm tm
+toà nhà trung tâm thương mại|toa nha trung tam thuong mai|toa nha tttm
+khu thương mại|khu thuong mai|ktm
+khu trung tâm mua sắm|khu trung tam mua sam|khu ttms|kttms
+cao ốc căn hộ thương mại|cao oc can ho thuong mai|cao oc can ho tm
 trung tâm|trung tam|tt|t t
-toà|toà nhà|tòa nhà
-tầng hầm
-bến
-cao ốc
+toà nhà|toa nha
+tòa|toa
+tầng hầm|tang ham
+bến|ben
+cao ốc|cao oc
 tổng công ty|tong cong ty|tcty|tct
 viện bảo tàng|vien bao tang|bảo tàng|vbt|v b t
 vườn quốc gia|vuon quoc gia|vqg|v q g
-chợ
-chùa
+chợ|cho
+chùa|chua
 dinh
-chung cư|tòa nhà chung cư
-bệnh viện
+chung cư|chung cu
+tòa nhà chung cư|toa nha chung cu
+bệnh viện|benh vien
 vincom|vinhome|vinhomes|winmart|vinmart|vincity|vinpearl|vinfast|vinmec|vinschool|vineco|aeon|lotte
-khu công
-khu tập thể
+khu công|khu cong
+khu tập thể|khu tap the
 công an|cong an
 ủy ban nhân dân|uy ban nhan dan|ubnd
-nhà máy
-nhà thuốc
-vòng xoay ngã tư
-nhà thiếu nhi
-cảng hàng không
+nhà máy|nha may
+nhà thuốc|nha thuoc
+hieu thuoc|hieu thuoc
+vòng xoay ngã tư|vong xoay nga tu
+nhà thiếu nhi|nha thieu nhi
+cung thiếu nhi|cung thieu nhi
+cảng hàng không|cang hang khong
 kiot

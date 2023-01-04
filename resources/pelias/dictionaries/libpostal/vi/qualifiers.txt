@@ -1,6 +1,6 @@
-địa chỉ|dc|đc|dchi|đchỉ|đ.c|d.c
-số điện thoại|sđt|sdt|số dt|số đt
-liên hệ|lh
+địa chỉ|dia chi|dc|đc|dchi|đchỉ|đ.c|d.c
+số điện thoại|so dien thoai|sđt|sdt|số dt|số đt
+liên hệ|lien he|lh
 căn tin
 con cưng
-xem vị trí
+xem vị trí|xem vi tri
