@@ -80,10 +80,10 @@ class Tokenizer {
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` ${prefix} `);
+          temp = temp.replace(reg, ` , ${prefix} `);
         }
       } else {
-        let reg = new RegExp(`(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` ${prefix} `);
         }
@@ -95,10 +95,10 @@ class Tokenizer {
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` ${prefix} `);
+          temp = temp.replace(reg, ` , ${prefix} `);
         }
       } else {
-        let reg = new RegExp(`(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` ${prefix} `);
         }
@@ -110,15 +110,15 @@ class Tokenizer {
       if (prefix.includes(".")) {
         let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
         if (reg.test(temp)) {
-          temp = temp.replace(reg, ` ${prefix} `);
+          temp = temp.replace(reg, ` , ${prefix} `);
         }
-      } else if (prefix == "xã") {
-        let reg = new RegExp(`(?<!thị\\s*)(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
+      } else if (prefix == "xã") { // except case "thị xã"
+        let reg = new RegExp(`(?<!thị\\s*)(?<=,+|\\s+)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` ${prefix} `);
         }
       } else {
-        let reg = new RegExp(`(?<=[,]+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` ${prefix} `);
         }
