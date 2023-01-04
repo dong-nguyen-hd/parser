@@ -51,7 +51,7 @@ khu trung tâm mua sắm|khu trung tam mua sam|khu ttms|kttms
 cao ốc căn hộ thương mại|cao oc can ho thuong mai|cao oc can ho tm
 trung tâm|trung tam|tt|t t
 toà nhà|toa nha
-tòa|toa
+toà|toa
 tầng hầm|tang ham
 bến|ben
 cao ốc|cao oc
@@ -62,7 +62,7 @@ chợ|cho
 chùa|chua
 dinh
 chung cư|chung cu
-tòa nhà chung cư|toa nha chung cu
+toà nhà chung cư|toa nha chung cu
 bệnh viện|benh vien
 vincom|vinhome|vinhomes|winmart|vinmart|vincity|vinpearl|vinfast|vinmec|vinschool|vineco|aeon|lotte
 khu công|khu cong
