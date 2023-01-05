@@ -45,17 +45,20 @@ class Tokenizer {
     // Clean input string
     temp = temp.replace(/(?:\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{2,4}\)?[\s.-]?\d{2,4}[\s.-]?\d{4}/g, ""); // remove phone number
     temp = temp.replace(/\([^()]*\)/g, ''); // remove text within parentheses
+    temp = temp.replace(/["“”][^"“”]*["“”]/g, ''); // remove text within double-quote
 
     temp = temp.replace(/(?:\s*[\/\\]\s*)/g, '/'); // remove space around slash
-    temp = temp.replace(/(?:\s+[–|-]\s+)/g, ' , '); // replace all dash to comma
+    temp = temp.replace(/(?:\s+[–|-]\s+)/g, ' '); // replace all dash to comma
     temp = temp.replace(/(?<=\D)(?:–|-)(?=\D+)/g, ' '); // (non-space) remove all [word + dash + word] => [word + space + word]
     temp = this.removeQualifier(temp);
     if (!temp.trim()) return temp;
     temp = temp.replace(/(?:[,])(?=\S+)/g, ', '); // smooth comma
     temp = this.prettyArea(temp);
     // TODO: temp of convert abbreviated, you should replace this function
-    temp = temp.replace(new RegExp(`(?<=,+|^|\\s+)(?:p\\.[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g'), ' , phường ');
-    temp = temp.replace(new RegExp(`(?<=,+|^|\\s+)(?:q\\.[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g'), ' , quận '); // end
+    temp = temp.replace(new RegExp(`(?<=,|^|\\s)(?:p\\.[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g'), ' , phường ');
+    temp = temp.replace(/(?<=,|^|\s)(?:p)(?=\d+)/g, ' , phường '); // p1 => phường 1
+    temp = temp.replace(new RegExp(`(?<=,|^|\\s)(?:q\\.[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g'), ' , quận '); // end
+    temp = temp.replace(/(?<=,|^|\s)(?:q)(?=\d+)/g, ' , quận '); // q1 => quận 1
     temp = temp.replace(/(?<=quận|phường)(?=\d)/g, ' '); // pretty district
 
     temp = temp.replace(/(?:,+\s*){1,}/g, ", "); // remove multi comma
@@ -78,12 +81,12 @@ class Tokenizer {
     for (const prefix in regionPrefix) {
       let strRegex = escapeRegExp(prefix);
       if (prefix.includes(".")) {
-        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
+        let reg = new RegExp(`(?<=,|\\s)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` , ${prefix} `);
         }
       } else {
-        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        let reg = new RegExp(`(?<=,|\\s)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` ${prefix} `);
         }
@@ -93,12 +96,12 @@ class Tokenizer {
     for (const prefix in countyPrefix) {
       let strRegex = escapeRegExp(prefix);
       if (prefix.includes(".")) {
-        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
+        let reg = new RegExp(`(?<=,|\\s)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` , ${prefix} `);
         }
       } else {
-        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        let reg = new RegExp(`(?<=,|\\s)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` ${prefix} `);
         }
@@ -108,17 +111,17 @@ class Tokenizer {
     for (const prefix in localityPrefix) {
       let strRegex = escapeRegExp(prefix);
       if (prefix.includes(".")) {
-        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
+        let reg = new RegExp(`(?<=,|\\s)(?:${strRegex}[${escapeRegExp(` ${patternSpecialCharBig}`)}]*)(?=[${patternVietnameseChar}0-9])`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` , ${prefix} `);
         }
       } else if (prefix == "xã") { // except case "thị xã"
-        let reg = new RegExp(`(?<!thị\\s*)(?<=,+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        let reg = new RegExp(`(?<!thị\\s)(?<=,|\\s)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` ${prefix} `);
         }
       } else {
-        let reg = new RegExp(`(?<=,+|\\s+)(?:${strRegex}\\s+)`, 'g');
+        let reg = new RegExp(`(?<=,|\\s)(?:${strRegex}\\s+)`, 'g');
         if (reg.test(temp)) {
           temp = temp.replace(reg, ` ${prefix} `);
         }

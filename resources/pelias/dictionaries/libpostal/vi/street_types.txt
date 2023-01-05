@@ -8,3 +8,4 @@ quốc lộ|ql
 tỉnh lộ|tl|lộ
 ngõ|ngo
 phố|pho
+ngã|nga

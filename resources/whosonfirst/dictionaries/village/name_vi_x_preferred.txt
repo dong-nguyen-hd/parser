@@ -20764,7 +20764,6 @@ xóm trung ngãi|xom trung ngai
 khu an lạc i|khu an lac i
 khu an lạc ii|khu an lac ii
 khu an thọ i|khu an tho i
-khu dần|khu dan
 khu hon i
 khu liên hiệp i|khu lien hiep i
 khu liên hiệp ii|khu lien hiep ii
@@ -33287,16 +33286,16 @@ khóm sa nhiên|khom sa nhien
 ấp phú hoà|ap phu hoa
 khóm cồng cộc|khom cong coc
 khóm trà đư|khom tra du
-|ấp thượng hoà|1||ap thuong hoa|1
+ấp thượng hoà|ap thuong hoa
 khóm sở thượng|khom so thuong
-|ấp thuận lợi||ap thuan loi
+ấp thuận lợi|ap thuan loi
 khóm cây da|khom cay da
 khóm an lợi|khom an loi
 khóm an thạnh b|khom an thanh b
 khóm an tài|khom an tai
 khóm an thạnh a|khom an thanh a
 khóm an thành|khom an thanh
-|ấp an ninh||ap an ninh
+ấp an ninh|ap an ninh
 khóm bình hưng|khom binh hung
 khóm mương nhà máy|khom muong nha may
 khóm cả gốc|khom ca goc
@@ -33307,7 +33306,6 @@ khóm mỹ thới|khom my thoi
 ấp bình thành a|ap binh thanh a
 ấp bình thành b|ap binh thanh b
 ấp tân hoà|ap tan hoa
-|ấp tân hoà||ap tan hoa
 ấp tân hoà trung|ap tan hoa trung
 ấp tân hoà thuận|ap tan hoa thuan
 ấp an nghiệp|ap an nghiep
@@ -33320,23 +33318,17 @@ khóm mỹ thới|khom my thoi
 ấp phú nhuận|ap phu nhuan
 ấp tân quới|ap tan quoi
 ấp long hậu|ap long hau
-|ấp long hậu||ap long hau
 ấp long hữu|ap long huu
-|ấp long hựu||ap long huu
+ấp long hựu
 ấp long tả|ap long ta
-|ấp long tả||ap long ta
 ấp long thạnh a|ap long thanh a
-|ấp long phước||ap long phuoc
+ấp long phước|ap long phuoc
 ấp long thạnh b|ap long thanh b
-|ấp long thạnh 1||ap long thanh 1
+ấp long thạnh 1|ap long thanh 1
 ấp long bình|ap long binh
-|ấp long bình||ap long binh
 ấp long châu|ap long chau
-|ấp long châu||ap long chau
 ấp long thái|ap long thai
-|ấp long thái||ap long thai
 ấp long hưng|ap long hung
-|ấp long hưng|4||ap long hung|4
 ấp long thới a|ap long thoi a
 ấp long thới b|ap long thoi b
 ấp phú hoà b|ap phu hoa b
@@ -33345,25 +33337,25 @@ khóm mỹ thới|khom my thoi
 ấp phú lợi a|ap phu loi a
 ấp phú lợi b|ap phu loi b
 ấp thị|ap thi
-|ấp thị trà dư||ap thi tra du
+ấp thị trà dư|ap thi tra du
 ấp trà đư|ap tra du
 ấp phú hoà a|ap phu hoa a
 ấp 2|ap 2
-|ấp vĩnh lạc 2||ap vinh lac 2
+ấp vĩnh lạc 2|ap vinh lac 2
 ấp 3|ap 3
-|ấp vĩnh lạc||ap vinh lac
+ấp vĩnh lạc|ap vinh lac
 ấp chòm xoài|ap chom xoai
 ấp giồng bàng|ap giong bang
-|ấp an lạc||ap an lac
+ấp an lạc|ap an lac
 ấp bình hoà trung|ap binh hoa trung
-|ấp bình hoà hạ||ap binh hoa ha
+ấp bình hoà hạ|ap binh hoa ha
 ấp bình hoà hạ|ap binh hoa ha
 ấp bình hoà thượng|ap binh hoa thuong
-|bào gốc||bao goc
+bào gốc|bao goc
 ấp 1|ap 1
-|ấp thượng quới||ap thuong quoi
+ấp thượng quới|ap thuong quoi
 ấp thượng 2|ap thuong 2
-|thượng thới||thuong thoi
+thượng thới|thuong thoi
 ấp định mỹ|ap dinh my
 ấp định phú|ap dinh phu
 ấp định thành|ap dinh thanh
@@ -33423,7 +33415,7 @@ khóm phú mỹ thành|khom phu my thanh
 ấp an phát|ap an phat
 ấp an tài|ap an tai
 ấp cả găng|ap ca gang
-|gò goòng||go goong
+gò goòng|go goong
 ấp công tạo|ap cong tao
 ấp gò da|ap go da
 ấp bắc trang 1|ap bac trang 1
@@ -33433,21 +33425,19 @@ khóm phú mỹ thành|khom phu my thanh
 ấp thống nhất 2|ap thong nhat 2
 ấp bắc trang 2|ap bac trang 2
 ấp đuôi tôm|ap duoi tom
-|gò đuôi tôm||go duoi tom
+gò đuôi tôm|go duoi tom
 ấp dinh bà|ap dinh ba
-|dinh bà||dinh ba
+dinh bà|dinh ba
 ấp gò bói|ap go boi
 ấp tân bảnh|ap tan banh
 ấp hoàng việt|ap hoang viet
 ấp tuyết hồng|ap tuyet hong
 ấp anh dũng|ap anh dung
-|cái cái||cai cai
 ấp cả cái|ap ca cai
 ấp tham bua|ap tham bua
-|tham bua
 ấp thi sơn|ap thi son
-|gò bẩy châu giang||go bay chau giang
-|gò chùa nhỏ||go chua nho
+gò bẩy châu giang|go bay chau giang
+gò chùa nhỏ|go chua nho
 ấp cà vàng|ap ca vang
 ấp phước tiên|ap phuoc tien
 khóm tân đông b|khom tan dong b
@@ -34845,7 +34835,7 @@ thôn dũng nghĩa|thon dung nghia
 khu dân cư hồng đức|khu dan cu hong duc
 khu dân cư nam long|khu dan cu nam long
 khu dân cư nam tân|khu dan cu nam tan
-khu dân cư tâythành|khu dan cu taythanh
+khu dân cư tây thành|khu dan cu tay thanh
 khu dân cư trung long|khu dan cu trung long
 khu dân cư trung lang|khu dan cu trung lang
 thôn hành dũng nghĩa|thon hanh dung nghia

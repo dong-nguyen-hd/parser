@@ -77,3 +77,6 @@ nhà thiếu nhi|nha thieu nhi
 cung thiếu nhi|cung thieu nhi
 cảng hàng không|cang hang khong
 kiot
+cầu|cau
+đảo|dao
+coop|sai gon coop|saigon coop|sài gòn coop

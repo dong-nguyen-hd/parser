@@ -204,6 +204,25 @@ module.exports = [
     ]
   },
   {
+    // [street-prefix + numeric + 1 area]
+    confidence: 0.82,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['StreetPrefixClassification', 'RoadTypeClassification'],
+        not: ['AreaClassification']
+      },
+      {
+        is: ['NumericClassification'],
+        not: []
+      },
+      {
+        is: ['AreaClassification'],
+        not: ['VillageClassification']
+      }
+    ]
+  },
+  {
     // [street-prefix + 2 area]
     confidence: 0.82,
     Class: StreetClassification,
