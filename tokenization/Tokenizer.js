@@ -182,6 +182,9 @@ function escapeRegExp(text) {
 }
 
 function renewAccentVietnamese(str) {
+  let reg = new RegExp(`(?:òa)|(?:óa)|(?:ỏa)|(?:õa)|(?:ọa)|(?:òe)|(?:óe)|(?:ỏe)|(?:õe)|(?:ọe)|(?:ùy)|(?:úy)|(?:ủy)|(?:ũy)|(?:ụy)|(?:qui)`, 'g');
+  if (!reg.test(str)) return str;
+
   str = str.replace(/(?:òa)/g, "oà");
   str = str.replace(/(?:óa)/g, "oá");
   str = str.replace(/(?:ỏa)/g, "oả");
