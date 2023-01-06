@@ -239,3 +239,4 @@ module.exports.escapeRegExp = escapeRegExp
 module.exports.toLowerCaseNonAccentVietnamese = toLowerCaseNonAccentVietnamese
 module.exports.renewAccentVietnamese = renewAccentVietnamese
 module.exports.removeSpecialCharacter = removeSpecialCharacter
+module.exports.patternVietnameseChar = patternVietnameseChar
