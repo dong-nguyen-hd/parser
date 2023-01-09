@@ -4982,6 +4982,7 @@ khu 10
 khu 11
 khu 12
 khu cầu xéo|khu cau xeo
+khu cầu đơ|khu cau do
 khu kim sơn|khu kim son
 khu phước hải|khu phuoc hai
 khu phước long|khu phuoc long
@@ -52021,3 +52022,4 @@ rạch hàm|rach ham
 khu tượng|khu tuong
 cây thôn trong|cay thon trong
 cửa lấp|cua lap
+xóm chùa tổng|xom chua tong

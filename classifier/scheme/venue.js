@@ -36,8 +36,27 @@ module.exports = [
     ]
   },
   {
-    // [place-prefix + 2 slot]
+    // [place-prefix + alphaNumeric + alpha/area]
     confidence: 0.71,
+    Class: VenueClassification,
+    scheme: [
+      {
+        is: ['PlacePrefixClassification'],
+        not: []
+      },
+      {
+        is: ['NumericClassification', 'AlphaNumericClassification'],
+        not: []
+      },
+      {
+        is: ['AlphaClassification', 'AreaClassification'],
+        not: ['ObscureClassification', 'VillageClassification']
+      }
+    ]
+  },
+  {
+    // [place-prefix + 2 slot]
+    confidence: 0.72,
     Class: VenueClassification,
     scheme: [
       {
@@ -56,7 +75,7 @@ module.exports = [
   },
   {
     // [place-prefix + 3 slot]
-    confidence: 0.71,
+    confidence: 0.72,
     Class: VenueClassification,
     scheme: [
       {
@@ -79,7 +98,7 @@ module.exports = [
   },
   {
     // [place-prefix + 4 slot]
-    confidence: 0.71,
+    confidence: 0.72,
     Class: VenueClassification,
     scheme: [
       {
@@ -106,7 +125,7 @@ module.exports = [
   },
   {
     // [1 slot + place-suffix]
-    confidence: 0.72,
+    confidence: 0.73,
     Class: VenueClassification,
     scheme: [
       {
@@ -121,7 +140,7 @@ module.exports = [
   },
   {
     // [2 slot + place-suffix]
-    confidence: 0.72,
+    confidence: 0.73,
     Class: VenueClassification,
     scheme: [
       {
@@ -140,7 +159,7 @@ module.exports = [
   },
   {
     // [3 slot + place-suffix]
-    confidence: 0.72,
+    confidence: 0.73,
     Class: VenueClassification,
     scheme: [
       {
@@ -163,7 +182,7 @@ module.exports = [
   },
   {
     // [4 slot + place-suffix]
-    confidence: 0.72,
+    confidence: 0.73,
     Class: VenueClassification,
     scheme: [
       {
@@ -190,7 +209,7 @@ module.exports = [
   },
   {
     // [toponyms + place-suffix]
-    confidence: 0.73,
+    confidence: 0.74,
     Class: VenueClassification,
     scheme: [
       {
@@ -205,7 +224,7 @@ module.exports = [
   },
   {
     // [place-prefix + toponyms]
-    confidence: 0.73,
+    confidence: 0.74,
     Class: VenueClassification,
     scheme: [
       {
@@ -220,7 +239,7 @@ module.exports = [
   },
   {
     // toponyms + area]
-    confidence: 0.73,
+    confidence: 0.74,
     Class: VenueClassification,
     scheme: [
       {

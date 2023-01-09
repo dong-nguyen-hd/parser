@@ -22,11 +22,12 @@ khu nhà ở di dân|khu nha o di dan
 dự án|du an
 dự án căn hộ|du an can ho
 khu nhà ở|khu nha o
-khu đô thị|khu do thi
-khu đô thị mới|khu do thi
+khu đô thị|khu do thi|kđt|kdt
+khu đô thị mới|khu do thi moi|kđt mới|kdt moi|kđtm|kdtm
 khu đô thị mới phía|khu do thi moi phia
 khu dịch vụ cao cấp|khu dich vu cao cap
 khu phố|khu pho
+khu phức hợp|khu phuc hop
 phố đi bộ|pho di bo
 nhà ga|nha ga|ga
 siêu thị|sieu thi
