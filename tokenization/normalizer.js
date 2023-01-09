@@ -1,4 +1,4 @@
-const removeAccents = require('remove-accents')
+const helperToken = require('./Tokenizer');
 
 function normalizer (options = {}) {
   return (value) => {
@@ -7,7 +7,7 @@ function normalizer (options = {}) {
       value = value.toLowerCase()
     }
     if (options.removeAccents) {
-      value = removeAccents(value)
+      value = helperToken.toLowerCaseNonAccentVietnamese(value)
     }
     if (options.removeHyphen) {
       value = value.replace(/-/g, ' ')

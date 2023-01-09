@@ -1,9 +1,9 @@
 {
-  "name": "pelias-parser",
+  "name": "parser-vietnamese-address",
   "version": "0.0.0-development",
-  "author": "pelias",
-  "description": "Pelias parsing library",
-  "homepage": "https://github.com/pelias/parser",
+  "author": "pelias - Dong Nguyen",
+  "description": "Vietnamese Address Classification ",
+  "homepage": "https://github.com/dong-nguyen-hd/parser-vietnamese-address",
   "license": "MIT",
   "main": "server/http.js",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pelias/parser.git"
+    "url": "https://github.com/dong-nguyen-hd/parser-vietnamese-address.git"
   },
   "keywords": [
     "pelias",
@@ -35,7 +35,6 @@
     "cluster": "^0.7.7",
     "express": "^4.16.4",
     "pluralize": "^8.0.0",
-    "remove-accents": "^0.4.2",
     "stringbuffer": "^1.0.0"
   },
   "devDependencies": {
