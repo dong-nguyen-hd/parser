@@ -32,35 +32,27 @@ const numberFirstLangs = {
 
 class HouseNumberPositionPenalty extends BaseSolver {
   solve(tokenizer) {
-    // tokenizer.solution.forEach(s => {
-    //   const housenumber = s.pair.find(p => p.classification.constructor === HouseNumberClassification)
-    //   const street = s.pair.find(p => p.classification.constructor === StreetClassification)
+    tokenizer.solution.forEach(s => {
+      const housenumber = s.pair.find(p => p.classification.constructor === HouseNumberClassification)
+      const street = s.pair.find(p => p.classification.constructor === StreetClassification)
 
-    //   // Do nothing if there is no street/housenumber or no meta in street classification
-    //   if (!housenumber || !street || !street.classification.meta || !street.classification.meta.langs) { return }
+      // Do nothing if there is no street/housenumber or no meta in street classification
+      if (!housenumber || !street || !street.classification.meta || !street.classification.meta.langs) { return }
 
-    //   const langs = Object.keys(street.classification.meta.langs)
+      const langs = Object.keys(street.classification.meta.langs)
 
-    //   // For now, we don't supports multi-lang entries
-    //   if (langs.length !== 1 || langs[0] === 'all') { return }
+      // For now, we don't supports multi-lang entries
+      if (langs.length !== 1 || langs[0] === 'all') { return }
 
-    //   const lang = langs[0]
+      const lang = langs[0]
 
-    //   // Check if the number should be in last position (after street) or first position (before street)
-    //   if (numberLastLangs.hasOwnProperty(lang) && housenumber.span.start < street.span.start) {
-    //     s.penalty += numberLastLangs[lang]
-    //   } else if (numberFirstLangs.hasOwnProperty(lang) && street.span.start < housenumber.span.start) {
-    //     s.penalty += numberFirstLangs[lang]
-    //   }
-    // })
-
-    tokenizer.solution = tokenizer.solution.filter(s => {
-      const housenumber = s.pair.find(p => p.classification.constructor === HouseNumberClassification);
-      const street = s.pair.find(p => p.classification.constructor === StreetClassification);
-
-      if (housenumber && !street) return;
-      return s
-    }, this)
+      // Check if the number should be in last position (after street) or first position (before street)
+      if (numberLastLangs.hasOwnProperty(lang) && housenumber.span.start < street.span.start) {
+        s.penalty += numberLastLangs[lang]
+      } else if (numberFirstLangs.hasOwnProperty(lang) && street.span.start < housenumber.span.start) {
+        s.penalty += numberFirstLangs[lang]
+      }
+    })
   }
 }
 

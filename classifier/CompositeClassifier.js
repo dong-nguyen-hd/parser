@@ -87,12 +87,12 @@ class CompositeClassifier extends SectionClassifier {
           // avoid adding tokens to the front of a street classification
           // that begins with a street prefix.
           // eg. 'A + Ave B' (ave is both a valid prefix & suffix)
-          if (next && next.classifications.hasOwnProperty('StreetClassification')) {
-            const firstChild = next.graph.findOne('child')
-            if (firstChild && firstChild.classifications.hasOwnProperty('StreetPrefixClassification')) {
-              return false
-            }
-          }
+          // if (next && next.classifications.hasOwnProperty('StreetClassification')) {
+          //   const firstChild = next.graph.findOne('child')
+          //   if (firstChild && firstChild.classifications.hasOwnProperty('StreetPrefixClassification')) {
+          //     return false
+          //   }
+          // }
         }
         return true
       })
