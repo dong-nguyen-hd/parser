@@ -297,4 +297,5 @@ hồ|ho
 ngô|ngo
 thuận
 tùng|tung
-láng|!lang
+láng|lang
+hàm|ham
