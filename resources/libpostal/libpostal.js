@@ -30,7 +30,7 @@ function load (index, langs, filename, options) {
 }
 
 function _normalize (cell, options) {
-  let value = cell.trim()
+  let value = cell.trim().normalize('NFC');
   if (options && options.replace) {
     value = value.replace(options.replace[0], options.replace[1])
   }
@@ -40,7 +40,8 @@ function _normalize (cell, options) {
   if (options && options.lowercase) {
     value = value.toLowerCase()
   }
-  return value
+
+  return value;
 }
 
 function _add (index, options) {

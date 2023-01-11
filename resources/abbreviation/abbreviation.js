@@ -1,13 +1,14 @@
-const fs = require('fs');
+const fs = require('fs')
 const path = require('path')
-const filepathRegion = path.join(__dirname, './whosonfirst/region.txt');
+const filepathRegion = path.join(__dirname, './whosonfirst/region.txt')
 const filepathCounty = path.join(__dirname, './whosonfirst/county.txt')
 const filepathLocality = path.join(__dirname, './whosonfirst/locality.txt')
 const filepathStreet = path.join(__dirname, './whosonfirst/street.txt')
+const helperToken = require('../../tokenization/Tokenizer')
 
 function setContentRegionToMap() {
     let mapObj = new Map();
-    
+
     if (!fs.existsSync(filepathRegion)) { return }
 
     const dict = fs.readFileSync(filepathRegion, 'utf8');
@@ -31,7 +32,7 @@ function setContentRegionToMap() {
 
 function setContentCountyToMap() {
     let mapObj = new Map();
-    
+
     if (!fs.existsSync(filepathCounty)) { return }
 
     const dict = fs.readFileSync(filepathCounty, 'utf8');
@@ -55,7 +56,7 @@ function setContentCountyToMap() {
 
 function setContentLocalityToMap() {
     let mapObj = new Map();
-    
+
     if (!fs.existsSync(filepathLocality)) { return }
 
     const dict = fs.readFileSync(filepathLocality, 'utf8');
@@ -79,7 +80,7 @@ function setContentLocalityToMap() {
 
 function setContentStreetToMap() {
     let mapObj = new Map();
-    
+
     if (!fs.existsSync(filepathStreet)) { return }
 
     const dict = fs.readFileSync(filepathStreet, 'utf8');
@@ -102,7 +103,7 @@ function setContentStreetToMap() {
 }
 
 function _normalize(cell) {
-    if (cell) return cell.trim().toLowerCase().normalize('NFC');
+    if (cell) return helperToken.renewAccentVietnamese(cell.trim().toLowerCase().normalize('NFC'));
 
     return cell;
 }

@@ -57,7 +57,7 @@ class AddressParser extends Parser {
         new HouseNumberClassifier(),
         new StreetPrefixClassifier(),
         new StreetSuffixClassifier(),
-        new StreetProperNameClassifier(),
+        //new StreetProperNameClassifier(),
         // new CompoundStreetClassifier(),
         // new DirectionalClassifier(),
         // new OrdinalClassifier(),
@@ -97,7 +97,7 @@ class AddressParser extends Parser {
       [
         new ExclusiveCartesianSolver(),
         new LeadingAreaDeclassifier(),
-        new MultiStreetSolver(),
+        //new MultiStreetSolver(),
         new SubsetFilter(),
 
         /* Invalid Solution Filter */
@@ -109,7 +109,6 @@ class AddressParser extends Parser {
         // ]),
 
         /* Must Not Preceed Filter */
-        //new MustNotPreceedFilter('VenueClassification', 'UnitClassification'),
         new MustNotPreceedFilter('HouseNumberClassification', 'VenueClassification'),
 
         /* Must Not Follow Filter */
@@ -142,7 +141,7 @@ class AddressParser extends Parser {
         //new HouseNumberPositionPenalty(),
         //new PostcodePositionPenalty(),
         new TokenDistanceFilter(),
-        new OrphanedUnitTypeDeclassifier(),
+        //new OrphanedUnitTypeDeclassifier(),
         new SubsetFilter()
       ],
       options
