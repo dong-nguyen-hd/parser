@@ -13,5 +13,4 @@ quận 11 => q11
 quận 12 => q12
 quy nhơn => qui nhơn|qui nhon
 la gi => lagi
-phú mỹ => tân thành|tan thanh
-tân thành => tân thành|tan thanh
+phú mỹ => tân thành
