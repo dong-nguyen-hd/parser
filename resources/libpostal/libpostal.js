@@ -30,7 +30,7 @@ function load (index, langs, filename, options) {
 }
 
 function _normalize (cell, options) {
-  let value = cell.trim().normalize('NFC');
+  let value = cell.trim().normalize('NFC').replace(/ +(?= )/g, '');
   if (options && options.replace) {
     value = value.replace(options.replace[0], options.replace[1])
   }
