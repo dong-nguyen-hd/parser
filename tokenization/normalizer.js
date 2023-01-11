@@ -1,8 +1,10 @@
 const helperToken = require('./Tokenizer');
 
-function normalizer (options = {}) {
+function normalizer(options = {}) {
   return (value) => {
-    value = value.trim()
+    value = value.trim();
+    if (!value) return value;
+
     if (options.lowercase) {
       value = value.toLowerCase()
     }
@@ -15,7 +17,7 @@ function normalizer (options = {}) {
     if (options.removeSpaces) {
       value = value.replace(/ /g, '')
     }
-    return value
+    return helperToken.renewAccentVietnamese(value);
   }
 }
 
