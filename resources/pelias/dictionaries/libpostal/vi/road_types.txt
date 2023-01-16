@@ -6,7 +6,7 @@ công trường|cong truong|c t
 đường phố|duong pho
 cao tốc|cao toc
 quảng trường|quang truong|q t
-quốc lộ|quoc lo|q l
+quốc lộ|quoc lo|q l|quốc lo|quốc lô
 tỉnh lộ|tinh lo|t l
 ngã tư|nga tu
 ngã ba|nga ba
